@@ -1,0 +1,42 @@
+name: 每周数据同步并发布
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 每周日 22:00 UTC = 北京时间周一 06:00
+    - cron: "0 22 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 重新生成周快照数据（自动累积）
+        run: python generate_toy_radar_data.py
+
+      - name: 上传静态站点
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
