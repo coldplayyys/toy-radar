@@ -1,6 +1,124 @@
 window.TOY_RADAR_DATA = {
   "weekRange": "2026.8.9 - 2026.8.15",
   "statDate": "2026.8.15",
+  "vsPrev": {
+    "prevLabel": "7.26-8.1",
+    "totalDeltaPct": -24.8,
+    "categoryDelta": {
+      "blind_box": -27.7,
+      "action_figure": 71.2,
+      "trading_card": -2.3,
+      "ai_toy": 5.6
+    },
+    "newCount": 38,
+    "newFaces": [
+      {
+        "category": "盲盒",
+        "name": "星星人好梦气象局盲盒",
+        "ip": "星星人",
+        "soldLabel": "10万+",
+        "sold": 100000,
+        "priceLabel": "79",
+        "price": 79.0,
+        "shop": "泡泡玛特旗舰店",
+        "date": "2026.8.15",
+        "section": "blind_box",
+        "sectionLabel": "盲盒"
+      },
+      {
+        "category": "盲盒",
+        "name": "DIMOO秘密话剧社盲盒",
+        "ip": "DIMOO",
+        "soldLabel": "9万+",
+        "sold": 90000,
+        "priceLabel": "129",
+        "price": 129.0,
+        "shop": "泡泡玛特旗舰店",
+        "date": "2026.8.15",
+        "section": "blind_box",
+        "sectionLabel": "盲盒"
+      },
+      {
+        "category": "盲盒",
+        "name": "SKULLPANDA不想不想毛绒盲盒",
+        "ip": "SKULLPANDA",
+        "soldLabel": "4万+",
+        "sold": 40000,
+        "priceLabel": "89",
+        "price": 89.0,
+        "shop": "泡泡玛特官方旗舰店",
+        "date": "2026.8.15",
+        "section": "blind_box",
+        "sectionLabel": "盲盒"
+      },
+      {
+        "category": "盲盒",
+        "name": "凡人修仙传盲盒",
+        "ip": "凡人修仙传",
+        "soldLabel": "3万+",
+        "sold": 30000,
+        "priceLabel": "79",
+        "price": 79.0,
+        "shop": "共鸣官方旗舰店",
+        "date": "2026.8.15",
+        "section": "blind_box",
+        "sectionLabel": "盲盒"
+      },
+      {
+        "category": "盲盒",
+        "name": "凡人修仙传盲盒",
+        "ip": "凡人修仙传",
+        "soldLabel": "3万+",
+        "sold": 30000,
+        "priceLabel": "79",
+        "price": 79.0,
+        "shop": "共鸣旗舰店",
+        "date": "2026.8.15",
+        "section": "blind_box",
+        "sectionLabel": "盲盒"
+      },
+      {
+        "category": "盲盒",
+        "name": "无限火力代拆",
+        "ip": "",
+        "soldLabel": "5000+",
+        "sold": 5000,
+        "priceLabel": "289",
+        "price": 289.0,
+        "shop": "NB卡牌max",
+        "date": "2026.8.15",
+        "section": "blind_box",
+        "sectionLabel": "盲盒"
+      },
+      {
+        "category": "盲盒",
+        "name": "阿玛莉莉丝联名盲盒",
+        "ip": "阿玛莉莉丝",
+        "soldLabel": "5000+",
+        "sold": 5000,
+        "priceLabel": "104",
+        "price": 104.0,
+        "shop": "M Stand官方旗舰店",
+        "date": "2026.8.15",
+        "section": "blind_box",
+        "sectionLabel": "盲盒"
+      },
+      {
+        "category": "盲盒",
+        "name": "YOYO萌动心愿盲盒",
+        "ip": "YOYO",
+        "soldLabel": "5000+",
+        "sold": 5000,
+        "priceLabel": "58",
+        "price": 58.0,
+        "shop": "miniso名创优品旗舰店",
+        "date": "2026.8.15",
+        "section": "blind_box",
+        "sectionLabel": "盲盒"
+      }
+    ],
+    "repeatedCount": 39
+  },
   "totalItems": 78,
   "totalSold": 982400,
   "avgPrice": 825.4,
@@ -26,6 +144,7 @@ window.TOY_RADAR_DATA = {
       "topItem": {
         "category": "盲盒",
         "name": "YOYO萌趣歪头盲盒",
+        "ip": "YOYO",
         "soldLabel": "20万+",
         "sold": 200000,
         "priceLabel": "49",
@@ -39,6 +158,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "YOYO萌趣歪头盲盒",
+          "ip": "YOYO",
           "soldLabel": "20万+",
           "sold": 200000,
           "priceLabel": "49",
@@ -51,6 +171,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "星星人怦然星动盲盒",
+          "ip": "星星人",
           "soldLabel": "10万+",
           "sold": 100000,
           "priceLabel": "89",
@@ -63,6 +184,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "星星人好梦气象局盲盒",
+          "ip": "星星人",
           "soldLabel": "10万+",
           "sold": 100000,
           "priceLabel": "79",
@@ -75,6 +197,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "DIMOO秘密话剧社盲盒",
+          "ip": "DIMOO",
           "soldLabel": "9万+",
           "sold": 90000,
           "priceLabel": "129",
@@ -87,6 +210,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "SKULLPANDA不想不想毛绒盲盒",
+          "ip": "SKULLPANDA",
           "soldLabel": "4万+",
           "sold": 40000,
           "priceLabel": "89",
@@ -99,6 +223,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "DIMOO WORLD × PIXAR联名盲盒",
+          "ip": "DIMOO",
           "soldLabel": "4万+",
           "sold": 40000,
           "priceLabel": "69",
@@ -111,6 +236,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "DIMOO WORLD × PIXAR联名盲盒",
+          "ip": "DIMOO",
           "soldLabel": "4万+",
           "sold": 40000,
           "priceLabel": "129",
@@ -123,6 +249,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "凡人修仙传盲盒",
+          "ip": "凡人修仙传",
           "soldLabel": "3万+",
           "sold": 30000,
           "priceLabel": "79",
@@ -135,6 +262,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "一日一菇毛绒盲盒端盒",
+          "ip": "一日一菇",
           "soldLabel": "3万+",
           "sold": 30000,
           "priceLabel": "99",
@@ -147,6 +275,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "小嗷-惊喜BOX盲盒",
+          "ip": "小嗷",
           "soldLabel": "3万+",
           "sold": 30000,
           "priceLabel": "79",
@@ -159,6 +288,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "凡人修仙传盲盒",
+          "ip": "凡人修仙传",
           "soldLabel": "3万+",
           "sold": 30000,
           "priceLabel": "79",
@@ -171,6 +301,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "RELAX手表盲盒",
+          "ip": "RELAX",
           "soldLabel": "3万+",
           "sold": 30000,
           "priceLabel": "68起",
@@ -183,6 +314,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "小嗷-万物可爱守则系列盲盒",
+          "ip": "小嗷",
           "soldLabel": "2万+",
           "sold": 20000,
           "priceLabel": "79",
@@ -195,6 +327,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "HelloKitty泳衣派对萌粒",
+          "ip": "Hello Kitty",
           "soldLabel": "1万+",
           "sold": 10000,
           "priceLabel": "49",
@@ -207,6 +340,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "猫猫pai乐无忧转转盲盒",
+          "ip": "猫猫pai",
           "soldLabel": "1万+",
           "sold": 10000,
           "priceLabel": "13.5",
@@ -219,6 +353,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "宝可梦小小奇遇最初的伙伴盲盒",
+          "ip": "宝可梦",
           "soldLabel": "8000+",
           "sold": 8000,
           "priceLabel": "59",
@@ -231,6 +366,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "我是大王系列盲盒",
+          "ip": "我是大王",
           "soldLabel": "8000+",
           "sold": 8000,
           "priceLabel": "69",
@@ -243,6 +379,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "DODO RARA拒绝驯服毛绒盲盒",
+          "ip": "DODO RARA",
           "soldLabel": "7000+",
           "sold": 7000,
           "priceLabel": "79",
@@ -255,6 +392,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "无限火力代拆",
+          "ip": "",
           "soldLabel": "5000+",
           "sold": 5000,
           "priceLabel": "289",
@@ -267,6 +405,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "阿玛莉莉丝联名盲盒",
+          "ip": "阿玛莉莉丝",
           "soldLabel": "5000+",
           "sold": 5000,
           "priceLabel": "104",
@@ -279,6 +418,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "YOYO萌动心愿盲盒",
+          "ip": "YOYO",
           "soldLabel": "5000+",
           "sold": 5000,
           "priceLabel": "58",
@@ -291,6 +431,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "宝可梦御三家盲盒",
+          "ip": "宝可梦",
           "soldLabel": "5000+",
           "sold": 5000,
           "priceLabel": "59",
@@ -303,6 +444,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "Pingu迷你相机盲盒",
+          "ip": "Pingu",
           "soldLabel": "5000+",
           "sold": 5000,
           "priceLabel": "139起",
@@ -315,6 +457,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "DUIDUIDUI怼堆堆早安毛绒盲盒",
+          "ip": "DUIDUIDUI 怼堆堆",
           "soldLabel": "4000+",
           "sold": 4000,
           "priceLabel": "79",
@@ -327,6 +470,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "雪王世界观盲盒",
+          "ip": "雪王",
           "soldLabel": "3000+",
           "sold": 3000,
           "priceLabel": "59",
@@ -339,6 +483,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "YOYO心愿魔法少女盲盒",
+          "ip": "YOYO",
           "soldLabel": "2000+",
           "sold": 2000,
           "priceLabel": "69",
@@ -351,6 +496,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "吉伊卡哇Chiikawa 天使恶魔盲盒",
+          "ip": "吉伊卡哇",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "79",
@@ -363,6 +509,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "小水豚噜噜的日常萌粒盲盒",
+          "ip": "小水豚噜噜",
           "soldLabel": "800+",
           "sold": 800,
           "priceLabel": "19.9",
@@ -375,6 +522,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "米菲梦幻海岛主题盲盒",
+          "ip": "米菲",
           "soldLabel": "700+",
           "sold": 700,
           "priceLabel": "79.9",
@@ -387,6 +535,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "盲盒",
           "name": "【奥比岛:梦想国度】12分可动BJD盲盒",
+          "ip": "奥比岛",
           "soldLabel": "700+",
           "sold": 700,
           "priceLabel": "159",
@@ -415,6 +564,7 @@ window.TOY_RADAR_DATA = {
       "topItem": {
         "category": "可动手办",
         "name": "光年正传巴斯光年拼装模型",
+        "ip": "巴斯光年",
         "soldLabel": "3000+",
         "sold": 3000,
         "priceLabel": "169",
@@ -428,6 +578,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "可动手办",
           "name": "光年正传巴斯光年拼装模型",
+          "ip": "巴斯光年",
           "soldLabel": "3000+",
           "sold": 3000,
           "priceLabel": "169",
@@ -440,6 +591,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "高达模型",
           "name": "万代高达模型拼装RG",
+          "ip": "高达",
           "soldLabel": "3000+",
           "sold": 3000,
           "priceLabel": "153",
@@ -452,6 +604,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "可动手办",
           "name": "DIMOO Tiny Puppy 可动人偶",
+          "ip": "DIMOO",
           "soldLabel": "2000+",
           "sold": 2000,
           "priceLabel": "399",
@@ -464,6 +617,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "高达模型",
           "name": "HG强袭自由机甲拼装玩具",
+          "ip": "",
           "soldLabel": "2000+",
           "sold": 2000,
           "priceLabel": "37.5",
@@ -476,6 +630,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "可动手办",
           "name": "【预付款】INART Action-《超人:钢铁之躯》-超人",
+          "ip": "INART",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "600",
@@ -488,6 +643,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "可动手办",
           "name": "【预付款】INART Action-《黑暗之夜:金属》-蹂躏者",
+          "ip": "INART",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "150",
@@ -500,6 +656,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "可动手办",
           "name": "【预付款】INART Action-《黑暗之夜:金属》-破晓诡灯",
+          "ip": "INART",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "140",
@@ -512,6 +669,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "可动手办",
           "name": "暗源战锤40K莫塔里安 纳垢恶魔原体",
+          "ip": "战锤40K",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "850",
@@ -524,6 +682,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "高达模型",
           "name": "【定金】MGSD 飞翼零式高达（EW）",
+          "ip": "高达",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "439",
@@ -536,6 +695,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "高达模型",
           "name": "HG强袭自由机甲拼装玩具",
+          "ip": "",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "96.8",
@@ -548,6 +708,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "可动手办",
           "name": "阿卡姆骑士 猫女",
+          "ip": "DC 蝙蝠侠",
           "soldLabel": "500+",
           "sold": 500,
           "priceLabel": "329",
@@ -560,6 +721,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "可动手办",
           "name": "新蝙蝠侠 1/12成品可动模型",
+          "ip": "蝙蝠侠",
           "soldLabel": "500+",
           "sold": 500,
           "priceLabel": "425",
@@ -572,6 +734,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "可动手办",
           "name": "莉洛洛红楼梦系列12分可动关节玩偶盲盒",
+          "ip": "莉洛洛",
           "soldLabel": "400+",
           "sold": 400,
           "priceLabel": "119",
@@ -584,6 +747,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "可动手办",
           "name": "【预售】WAY STUDIOS正版变形金刚飞翼擎天柱",
+          "ip": "变形金刚",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "1199",
@@ -596,6 +760,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "高达模型",
           "name": "高达模型mgex强袭自由午夜配色",
+          "ip": "高达",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "498",
@@ -608,6 +773,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "高达模型",
           "name": "模寿至臻级先祖效应上帝之鞭",
+          "ip": "模寿",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "1564",
@@ -620,6 +786,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "高达模型",
           "name": "HG强袭自由红异端独角兽",
+          "ip": "",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "97.8",
@@ -632,6 +799,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "高达模型",
           "name": "万代QMSV MINI海牛高达模型",
+          "ip": "高达",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "62",
@@ -660,6 +828,7 @@ window.TOY_RADAR_DATA = {
       "topItem": {
         "category": "卡牌",
         "name": "卡牌对对碰",
+        "ip": "卡牌对对碰",
         "soldLabel": "8万+",
         "sold": 80000,
         "priceLabel": "11.9",
@@ -673,6 +842,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "卡牌",
           "name": "卡牌对对碰",
+          "ip": "卡牌对对碰",
           "soldLabel": "8万+",
           "sold": 80000,
           "priceLabel": "11.9",
@@ -685,6 +855,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "卡牌",
           "name": "宝可梦简中卡牌盲盒代拆",
+          "ip": "宝可梦",
           "soldLabel": "1万+",
           "sold": 10000,
           "priceLabel": "17.9",
@@ -697,6 +868,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "卡牌",
           "name": "宝可梦抓精灵代拆",
+          "ip": "宝可梦",
           "soldLabel": "3000+",
           "sold": 3000,
           "priceLabel": "169",
@@ -709,6 +881,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "卡牌",
           "name": "《永恒之镜》收藏卡牌",
+          "ip": "永恒之镜",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "109.9",
@@ -721,6 +894,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "卡牌",
           "name": "凡人动画收藏卡",
+          "ip": "凡人修仙传",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "29.9",
@@ -733,6 +907,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "卡牌",
           "name": "宝可梦简中太晶盛聚组合",
+          "ip": "宝可梦",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "390",
@@ -745,6 +920,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "卡牌",
           "name": "小马宝莉辉月代拆",
+          "ip": "小马宝莉",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "19.9",
@@ -757,6 +933,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "卡牌",
           "name": "卡游心悦斗天包",
+          "ip": "卡游",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "39.9",
@@ -769,6 +946,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "卡牌",
           "name": "怪奇物语收藏卡",
+          "ip": "怪奇物语",
           "soldLabel": "500+",
           "sold": 500,
           "priceLabel": "79.9",
@@ -781,6 +959,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "卡牌",
           "name": "篮球帕尼尼国宝系列卡牌",
+          "ip": "帕尼尼",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "40000",
@@ -809,6 +988,7 @@ window.TOY_RADAR_DATA = {
       "topItem": {
         "category": "AI玩具",
         "name": "儿童AI随学宝早教翻译机",
+        "ip": "",
         "soldLabel": "1000+",
         "sold": 1000,
         "priceLabel": "269",
@@ -822,6 +1002,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI玩具",
           "name": "儿童AI随学宝早教翻译机",
+          "ip": "",
           "soldLabel": "1000+",
           "sold": 1000,
           "priceLabel": "269",
@@ -834,6 +1015,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI玩具",
           "name": "索迪机器狗智能 AI 机器人",
+          "ip": "",
           "soldLabel": "500+",
           "sold": 500,
           "priceLabel": "129",
@@ -846,6 +1028,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI玩具",
           "name": "京东京造AI毛绒玩具儿童玩具",
+          "ip": "",
           "soldLabel": "500+",
           "sold": 500,
           "priceLabel": "159",
@@ -858,6 +1041,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI玩具",
           "name": "超棋大师多功能30合一智能棋盘",
+          "ip": "",
           "soldLabel": "500+",
           "sold": 500,
           "priceLabel": "399",
@@ -870,6 +1054,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI玩具",
           "name": "喜马拉雅儿童波波AI电话故事机",
+          "ip": "",
           "soldLabel": "500+",
           "sold": 500,
           "priceLabel": "489",
@@ -882,6 +1067,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI玩具",
           "name": "星云宝贝ai陪伴机器人",
+          "ip": "",
           "soldLabel": "500+",
           "sold": 500,
           "priceLabel": "149",
@@ -894,6 +1080,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI陪伴机器人",
           "name": "enabot EBO SE 全屋移动监控摄像头",
+          "ip": "",
           "soldLabel": "200+",
           "sold": 200,
           "priceLabel": "699",
@@ -906,6 +1093,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI陪伴机器人",
           "name": "豆包智能ai儿童陪伴机器人",
+          "ip": "",
           "soldLabel": "200+",
           "sold": 200,
           "priceLabel": "399",
@@ -918,6 +1106,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI陪伴机器人",
           "name": "米德宝机器人发耳机配饰装饰品头盔帽子",
+          "ip": "",
           "soldLabel": "200+",
           "sold": 200,
           "priceLabel": "199",
@@ -930,6 +1119,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI陪伴机器人",
           "name": "WhalesBot鲸鱼AI智能眼镜",
+          "ip": "",
           "soldLabel": "200+",
           "sold": 200,
           "priceLabel": "219",
@@ -942,6 +1132,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI玩具",
           "name": "Fuzozo芙崽AI情感陪伴机器人毛绒玩具",
+          "ip": "",
           "soldLabel": "200+",
           "sold": 200,
           "priceLabel": "499",
@@ -954,6 +1145,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI玩具",
           "name": "天文（TEN-WIN）专注力训练机",
+          "ip": "",
           "soldLabel": "200+",
           "sold": 200,
           "priceLabel": "298",
@@ -966,6 +1158,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI玩具",
           "name": "奇多多星球口语宝儿童同声翻译机",
+          "ip": "",
           "soldLabel": "200+",
           "sold": 200,
           "priceLabel": "349",
@@ -978,6 +1171,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI玩具",
           "name": "活石AI磁悬浮地球仪",
+          "ip": "",
           "soldLabel": "200+",
           "sold": 200,
           "priceLabel": "368",
@@ -990,6 +1184,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI陪伴机器人",
           "name": "物灵 灵宇宙AI小方机学伴机",
+          "ip": "",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "1399",
@@ -1002,6 +1197,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI陪伴机器人",
           "name": "Loona机器狗AI智能陪伴机器人",
+          "ip": "",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "3259",
@@ -1014,6 +1210,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI陪伴机器人",
           "name": "Moii H1 AI家庭陪伴机器人",
+          "ip": "",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "1599",
@@ -1026,6 +1223,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI陪伴机器人",
           "name": "enabot EBO SE 全屋移动监控摄像头",
+          "ip": "",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "699",
@@ -1038,6 +1236,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI陪伴机器人",
           "name": "WhalesBot鲸鱼AI教育机器人",
+          "ip": "",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "149",
@@ -1050,6 +1249,7 @@ window.TOY_RADAR_DATA = {
         {
           "category": "AI陪伴机器人",
           "name": "肉派派AI机器宠物",
+          "ip": "",
           "soldLabel": "100+",
           "sold": 100,
           "priceLabel": "1880",
@@ -1066,6 +1266,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "YOYO萌趣歪头盲盒",
+      "ip": "YOYO",
       "soldLabel": "20万+",
       "sold": 200000,
       "priceLabel": "49",
@@ -1078,6 +1279,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "星星人怦然星动盲盒",
+      "ip": "星星人",
       "soldLabel": "10万+",
       "sold": 100000,
       "priceLabel": "89",
@@ -1090,6 +1292,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "星星人好梦气象局盲盒",
+      "ip": "星星人",
       "soldLabel": "10万+",
       "sold": 100000,
       "priceLabel": "79",
@@ -1102,6 +1305,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "DIMOO秘密话剧社盲盒",
+      "ip": "DIMOO",
       "soldLabel": "9万+",
       "sold": 90000,
       "priceLabel": "129",
@@ -1114,6 +1318,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "卡牌",
       "name": "卡牌对对碰",
+      "ip": "卡牌对对碰",
       "soldLabel": "8万+",
       "sold": 80000,
       "priceLabel": "11.9",
@@ -1126,6 +1331,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "SKULLPANDA不想不想毛绒盲盒",
+      "ip": "SKULLPANDA",
       "soldLabel": "4万+",
       "sold": 40000,
       "priceLabel": "89",
@@ -1138,6 +1344,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "DIMOO WORLD × PIXAR联名盲盒",
+      "ip": "DIMOO",
       "soldLabel": "4万+",
       "sold": 40000,
       "priceLabel": "69",
@@ -1150,6 +1357,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "DIMOO WORLD × PIXAR联名盲盒",
+      "ip": "DIMOO",
       "soldLabel": "4万+",
       "sold": 40000,
       "priceLabel": "129",
@@ -1162,6 +1370,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "凡人修仙传盲盒",
+      "ip": "凡人修仙传",
       "soldLabel": "3万+",
       "sold": 30000,
       "priceLabel": "79",
@@ -1174,6 +1383,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "一日一菇毛绒盲盒端盒",
+      "ip": "一日一菇",
       "soldLabel": "3万+",
       "sold": 30000,
       "priceLabel": "99",
@@ -1236,6 +1446,48 @@ window.TOY_RADAR_DATA = {
       "items": 1
     }
   ],
+  "topIps": [
+    {
+      "ip": "YOYO",
+      "sold": 207000,
+      "items": 3
+    },
+    {
+      "ip": "星星人",
+      "sold": 200000,
+      "items": 2
+    },
+    {
+      "ip": "DIMOO",
+      "sold": 172000,
+      "items": 4
+    },
+    {
+      "ip": "卡牌对对碰",
+      "sold": 80000,
+      "items": 1
+    },
+    {
+      "ip": "凡人修仙传",
+      "sold": 61000,
+      "items": 3
+    },
+    {
+      "ip": "小嗷",
+      "sold": 50000,
+      "items": 2
+    },
+    {
+      "ip": "SKULLPANDA",
+      "sold": 40000,
+      "items": 1
+    },
+    {
+      "ip": "一日一菇",
+      "sold": 30000,
+      "items": 1
+    }
+  ],
   "priceBands": [
     {
       "key": "under100",
@@ -1266,6 +1518,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "YOYO萌趣歪头盲盒",
+      "ip": "YOYO",
       "soldLabel": "20万+",
       "sold": 200000,
       "priceLabel": "49",
@@ -1278,6 +1531,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "YOYO萌趣歪头盲盒",
+      "ip": "YOYO",
       "soldLabel": "20万+",
       "sold": 200000,
       "priceLabel": "49",
@@ -1290,6 +1544,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "一日一菇毛绒盲盒端盒",
+      "ip": "一日一菇",
       "soldLabel": "3万+",
       "sold": 30000,
       "priceLabel": "99",
@@ -1304,6 +1559,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "盲盒",
       "name": "YOYO萌趣歪头盲盒",
+      "ip": "YOYO",
       "soldLabel": "20万+",
       "sold": 200000,
       "priceLabel": "49",
@@ -1316,6 +1572,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "可动手办",
       "name": "光年正传巴斯光年拼装模型",
+      "ip": "巴斯光年",
       "soldLabel": "3000+",
       "sold": 3000,
       "priceLabel": "169",
@@ -1328,6 +1585,7 @@ window.TOY_RADAR_DATA = {
     {
       "category": "卡牌",
       "name": "卡牌对对碰",
+      "ip": "卡牌对对碰",
       "soldLabel": "8万+",
       "sold": 80000,
       "priceLabel": "11.9",
@@ -1356,6 +1614,7 @@ window.TOY_RADAR_DATA = {
       "detail": {
         "weekRange": "2026.7.21 - 2026.7.25",
         "statDate": "2026.7.25",
+        "vsPrev": null,
         "totalItems": 78,
         "totalSold": 904300,
         "avgPrice": 763.0,
@@ -1381,6 +1640,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "盲盒",
               "name": "CRYBABY Vacation Mode On系列搪胶毛绒盲盒",
+              "ip": "CRYBABY",
               "soldLabel": "30万+",
               "sold": 300000,
               "priceLabel": "129",
@@ -1394,6 +1654,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "CRYBABY Vacation Mode On系列搪胶毛绒盲盒",
+                "ip": "CRYBABY",
                 "soldLabel": "30万+",
                 "sold": 300000,
                 "priceLabel": "129",
@@ -1406,6 +1667,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "YOYO萌趣歪头盲盒",
+                "ip": "YOYO",
                 "soldLabel": "10万+",
                 "sold": 100000,
                 "priceLabel": "49",
@@ -1418,6 +1680,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DIMOO秘密话剧毛绒盲盒",
+                "ip": "DIMOO",
                 "soldLabel": "9万+",
                 "sold": 90000,
                 "priceLabel": "129",
@@ -1430,6 +1693,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "ZSIGA l'm Zsiga毛绒盲盒",
+                "ip": "ZSIGA",
                 "soldLabel": "5万+",
                 "sold": 50000,
                 "priceLabel": "129",
@@ -1442,6 +1706,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "WAKUKU哇库库毛毛潮趣派对系列盲盒",
+                "ip": "WAKUKU 哇库库",
                 "soldLabel": "4万+",
                 "sold": 40000,
                 "priceLabel": "89",
@@ -1454,6 +1719,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "RELAX手表盲盒",
+                "ip": "RELAX",
                 "soldLabel": "3万+",
                 "sold": 30000,
                 "priceLabel": "68起",
@@ -1466,6 +1732,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "一日一菇毛绒盲盒端盒",
+                "ip": "一日一菇",
                 "soldLabel": "2万+",
                 "sold": 20000,
                 "priceLabel": "99",
@@ -1478,6 +1745,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "小嗷-万物可爱守则系列盲盒",
+                "ip": "小嗷",
                 "soldLabel": "2万+",
                 "sold": 20000,
                 "priceLabel": "79",
@@ -1490,6 +1758,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "小嗷-惊喜BOX盲盒",
+                "ip": "小嗷",
                 "soldLabel": "2万+",
                 "sold": 20000,
                 "priceLabel": "79",
@@ -1502,6 +1771,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DIMOO WORLD × PIXAR联名盲盒",
+                "ip": "DIMOO",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "69",
@@ -1514,6 +1784,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "玩具总动员5陪你长大系列盲盒",
+                "ip": "玩具总动员",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "59",
@@ -1526,6 +1797,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "糯米儿粉色能量毛绒盲盒",
+                "ip": "糯米儿",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "79",
@@ -1538,6 +1810,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "哇库库WAKUKU立刻开挂吧盲盒手办",
+                "ip": "WAKUKU 哇库库",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "69",
@@ -1550,6 +1823,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "HelloKitty泳衣派对萌粒",
+                "ip": "Hello Kitty",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "49",
@@ -1562,6 +1836,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DORA甜酷警告毛绒盲盒",
+                "ip": "DORA",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "79",
@@ -1574,6 +1849,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "YOYO萌趣歪头S2盲盒",
+                "ip": "YOYO",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "58",
@@ -1586,6 +1862,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "HelloKitty泳衣派对萌粒",
+                "ip": "Hello Kitty",
                 "soldLabel": "9000+",
                 "sold": 9000,
                 "priceLabel": "49",
@@ -1598,6 +1875,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "猫猫pai乐无忧转转盲盒",
+                "ip": "猫猫pai",
                 "soldLabel": "7000+",
                 "sold": 7000,
                 "priceLabel": "14.3",
@@ -1610,6 +1888,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "我是大王系列盲盒",
+                "ip": "我是大王",
                 "soldLabel": "6000+",
                 "sold": 6000,
                 "priceLabel": "69",
@@ -1622,6 +1901,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "小嗷mini二代万物可爱守则毛绒盲盒",
+                "ip": "小嗷",
                 "soldLabel": "5000+",
                 "sold": 5000,
                 "priceLabel": "79",
@@ -1634,6 +1914,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "HEYONE黑玩心动契约毛绒盲盒",
+                "ip": "HEYONE 黑玩",
                 "soldLabel": "5000+",
                 "sold": 5000,
                 "priceLabel": "158",
@@ -1646,6 +1927,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "Pingu迷你相机盲盒",
+                "ip": "Pingu",
                 "soldLabel": "4000+",
                 "sold": 4000,
                 "priceLabel": "139起",
@@ -1658,6 +1940,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "宝可梦小小奇遇最初的伙伴盲盒",
+                "ip": "宝可梦",
                 "soldLabel": "4000+",
                 "sold": 4000,
                 "priceLabel": "59",
@@ -1670,6 +1953,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "宝可梦御三家盲盒",
+                "ip": "宝可梦",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "59",
@@ -1682,6 +1966,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DODO RARA拒绝驯服毛绒盲盒",
+                "ip": "DODO RARA",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "79",
@@ -1694,6 +1979,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DUIDUIDUI怼堆堆早安毛绒盲盒",
+                "ip": "DUIDUIDUI 怼堆堆",
                 "soldLabel": "2000+",
                 "sold": 2000,
                 "priceLabel": "79",
@@ -1706,6 +1992,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "雪王世界观盲盒",
+                "ip": "雪王",
                 "soldLabel": "2000+",
                 "sold": 2000,
                 "priceLabel": "25",
@@ -1718,6 +2005,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "猎人 CLUTCH徽章",
+                "ip": "猎人 CLUTCH",
                 "soldLabel": "2000+",
                 "sold": 2000,
                 "priceLabel": "42",
@@ -1730,6 +2018,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "名创抽盒机",
+                "ip": "",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "29",
@@ -1742,6 +2031,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "莉洛洛红楼梦系列12分可动关节玩偶盲盒",
+                "ip": "莉洛洛",
                 "soldLabel": "300+",
                 "sold": 300,
                 "priceLabel": "119",
@@ -1770,6 +2060,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "高达模型",
               "name": "万代高达模型拼装RG",
+              "ip": "高达",
               "soldLabel": "3000+",
               "sold": 3000,
               "priceLabel": "153",
@@ -1783,6 +2074,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "万代高达模型拼装RG",
+                "ip": "高达",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "153",
@@ -1795,6 +2087,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "高达强袭自由红异端HG七剑元祖独角兽能天使",
+                "ip": "高达",
                 "soldLabel": "2000+",
                 "sold": 2000,
                 "priceLabel": "52.9",
@@ -1807,6 +2100,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【预付款】INART Action-《黑神话:悟空》-四姐",
+                "ip": "INART",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "125",
@@ -1819,6 +2113,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "暗源战锤40K暗鸦守卫 战团长艾索·沙恩",
+                "ip": "战锤40K",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "379",
@@ -1831,6 +2126,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "光年正传巴斯光年拼装模型",
+                "ip": "巴斯光年",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "169",
@@ -1843,6 +2139,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【定金】新蝙蝠侠 1/12成品可动模型",
+                "ip": "蝙蝠侠",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "50",
@@ -1855,6 +2152,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "高达强袭自由红异端HG新生自由机动战士",
+                "ip": "高达",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "78.8",
@@ -1867,6 +2165,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "暗源战锤40K 黑色军团 附魔大师",
+                "ip": "战锤40K",
                 "soldLabel": "700+",
                 "sold": 700,
                 "priceLabel": "379",
@@ -1879,6 +2178,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "暗源战锤40K 黑色圣堂十字军远征军旗手",
+                "ip": "战锤40K",
                 "soldLabel": "600+",
                 "sold": 600,
                 "priceLabel": "349",
@@ -1891,6 +2191,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "莉洛洛红楼梦系列12分可动关节玩偶盲盒",
+                "ip": "莉洛洛",
                 "soldLabel": "300+",
                 "sold": 300,
                 "priceLabel": "119",
@@ -1903,6 +2204,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "万代高达模型 盒损",
+                "ip": "高达",
                 "soldLabel": "300+",
                 "sold": 300,
                 "priceLabel": "17.9",
@@ -1915,6 +2217,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "新蝙蝠侠 1/12成品可动模型",
+                "ip": "蝙蝠侠",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "429",
@@ -1927,6 +2230,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【预付款】INART Action-《超级少女》超级少女",
+                "ip": "INART",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "725",
@@ -1939,6 +2243,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【预售】WAY STUDIOS正版变形金刚飞翼擎天柱",
+                "ip": "变形金刚",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "1199",
@@ -1951,6 +2256,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "万代Q版SDEX高达",
+                "ip": "高达",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "25.5",
@@ -1963,6 +2269,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "高达模型MG强袭自由午夜配色",
+                "ip": "高达",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "498",
@@ -1975,6 +2282,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "万代QMSV MINI海牛高达模型",
+                "ip": "高达",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "47",
@@ -1987,6 +2295,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "HG强袭自由红异端独角兽",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "97.8",
@@ -2015,6 +2324,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "卡牌",
               "name": "卡牌对对碰",
+              "ip": "卡牌对对碰",
               "soldLabel": "6万+",
               "sold": 60000,
               "priceLabel": "11.9",
@@ -2028,6 +2338,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "卡牌对对碰",
+                "ip": "卡牌对对碰",
                 "soldLabel": "6万+",
                 "sold": 60000,
                 "priceLabel": "11.9",
@@ -2040,6 +2351,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "宝可梦简中卡牌盲盒代拆",
+                "ip": "宝可梦",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "17.9",
@@ -2052,6 +2364,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "小马宝莉卡牌盲盒",
+                "ip": "小马宝莉",
                 "soldLabel": "9000+",
                 "sold": 9000,
                 "priceLabel": "39.9",
@@ -2064,6 +2377,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "Hitcard 天气刚刚好·白鹿十周年收藏卡",
+                "ip": "Hitcard",
                 "soldLabel": "6000+",
                 "sold": 6000,
                 "priceLabel": "39.6",
@@ -2076,6 +2390,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "宝可梦集换式简中宝石包",
+                "ip": "宝可梦",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "88.88",
@@ -2088,6 +2403,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "游戏王LOCH超越盲盒代拆",
+                "ip": "游戏王",
                 "soldLabel": "2000+",
                 "sold": 2000,
                 "priceLabel": "22.8",
@@ -2100,6 +2416,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "哪吒斗天包收藏卡牌",
+                "ip": "哪吒",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "29.9",
@@ -2112,6 +2429,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "《乘风2026浪姐》收藏卡",
+                "ip": "乘风2026",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "198",
@@ -2124,6 +2442,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "不凡玩品现在就出发系列卡牌",
+                "ip": "现在就出发",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "199",
@@ -2136,6 +2455,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "篮球帕尼尼国宝系列卡牌",
+                "ip": "帕尼尼",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "40000",
@@ -2164,6 +2484,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "AI玩具",
               "name": "天文(TEN-WIN)专注力训练机",
+              "ip": "",
               "soldLabel": "500+",
               "sold": 500,
               "priceLabel": "298",
@@ -2177,6 +2498,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "天文(TEN-WIN)专注力训练机",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "298",
@@ -2189,6 +2511,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "Fuzozo芙崽AI情感陪伴机器人毛绒玩具",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "499",
@@ -2201,6 +2524,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "索迪机器狗智能 AI 机器人",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "299",
@@ -2213,6 +2537,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "星云宝贝ai陪伴机器人",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "149",
@@ -2225,6 +2550,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "京东京造AI毛绒玩具儿童玩具",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "159",
@@ -2237,6 +2563,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "超棋大师多功能30合一智能棋盘",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "399",
@@ -2249,6 +2576,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "梦多福豆包 AI 抱抱喵电子宠物",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "399",
@@ -2261,6 +2589,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "当当狸智能棋盘电子围棋",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "398",
@@ -2273,6 +2602,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "喜马拉雅儿童波波AI电话故事机",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "479",
@@ -2285,6 +2615,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "芙崽华为AI憨憨毛绒陪伴机器人",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "399",
@@ -2297,6 +2628,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "米德宝机器人(二代无刷电机)表情机器人",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "899",
@@ -2309,6 +2641,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "enabot EBO SE 全屋移动监控摄像头",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "699",
@@ -2321,6 +2654,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "豆包智能ai儿童陪伴机器人",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "399",
@@ -2333,6 +2667,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "米德宝机器人发耳机配饰装饰品头盔帽子",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "199",
@@ -2345,6 +2680,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "WALULU猫猫AI陪伴机器宠物",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "599",
@@ -2357,6 +2693,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "WhalesBot鲸鱼AI智能眼镜",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "239",
@@ -2369,6 +2706,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "WhalesBot鲸鱼AI教育机器人",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "149",
@@ -2381,6 +2719,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "enabot EBO SE 全屋移动监控摄像头",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "699",
@@ -2393,6 +2732,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "元萝卜 SenseRobot AI 下棋机器人",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "2999",
@@ -2405,6 +2745,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "物灵 卢卡Luka Hero绘本阅读机器人",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "1299",
@@ -2421,6 +2762,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "CRYBABY Vacation Mode On系列搪胶毛绒盲盒",
+            "ip": "CRYBABY",
             "soldLabel": "30万+",
             "sold": 300000,
             "priceLabel": "129",
@@ -2433,6 +2775,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "YOYO萌趣歪头盲盒",
+            "ip": "YOYO",
             "soldLabel": "10万+",
             "sold": 100000,
             "priceLabel": "49",
@@ -2445,6 +2788,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "DIMOO秘密话剧毛绒盲盒",
+            "ip": "DIMOO",
             "soldLabel": "9万+",
             "sold": 90000,
             "priceLabel": "129",
@@ -2457,6 +2801,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "卡牌",
             "name": "卡牌对对碰",
+            "ip": "卡牌对对碰",
             "soldLabel": "6万+",
             "sold": 60000,
             "priceLabel": "11.9",
@@ -2469,6 +2814,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "ZSIGA l'm Zsiga毛绒盲盒",
+            "ip": "ZSIGA",
             "soldLabel": "5万+",
             "sold": 50000,
             "priceLabel": "129",
@@ -2481,6 +2827,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "WAKUKU哇库库毛毛潮趣派对系列盲盒",
+            "ip": "WAKUKU 哇库库",
             "soldLabel": "4万+",
             "sold": 40000,
             "priceLabel": "89",
@@ -2493,6 +2840,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "RELAX手表盲盒",
+            "ip": "RELAX",
             "soldLabel": "3万+",
             "sold": 30000,
             "priceLabel": "68起",
@@ -2505,6 +2853,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "一日一菇毛绒盲盒端盒",
+            "ip": "一日一菇",
             "soldLabel": "2万+",
             "sold": 20000,
             "priceLabel": "99",
@@ -2517,6 +2866,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "小嗷-万物可爱守则系列盲盒",
+            "ip": "小嗷",
             "soldLabel": "2万+",
             "sold": 20000,
             "priceLabel": "79",
@@ -2529,6 +2879,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "小嗷-惊喜BOX盲盒",
+            "ip": "小嗷",
             "soldLabel": "2万+",
             "sold": 20000,
             "priceLabel": "79",
@@ -2591,6 +2942,48 @@ window.TOY_RADAR_DATA = {
             "items": 1
           }
         ],
+        "topIps": [
+          {
+            "ip": "CRYBABY",
+            "sold": 300000,
+            "items": 1
+          },
+          {
+            "ip": "YOYO",
+            "sold": 110000,
+            "items": 2
+          },
+          {
+            "ip": "DIMOO",
+            "sold": 100000,
+            "items": 2
+          },
+          {
+            "ip": "卡牌对对碰",
+            "sold": 60000,
+            "items": 1
+          },
+          {
+            "ip": "WAKUKU 哇库库",
+            "sold": 50000,
+            "items": 2
+          },
+          {
+            "ip": "ZSIGA",
+            "sold": 50000,
+            "items": 1
+          },
+          {
+            "ip": "小嗷",
+            "sold": 45000,
+            "items": 3
+          },
+          {
+            "ip": "RELAX",
+            "sold": 30000,
+            "items": 1
+          }
+        ],
         "priceBands": [
           {
             "key": "under100",
@@ -2621,6 +3014,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "CRYBABY Vacation Mode On系列搪胶毛绒盲盒",
+            "ip": "CRYBABY",
             "soldLabel": "30万+",
             "sold": 300000,
             "priceLabel": "129",
@@ -2633,6 +3027,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "YOYO萌趣歪头盲盒",
+            "ip": "YOYO",
             "soldLabel": "10万+",
             "sold": 100000,
             "priceLabel": "49",
@@ -2645,6 +3040,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "小嗷-惊喜BOX盲盒",
+            "ip": "小嗷",
             "soldLabel": "2万+",
             "sold": 20000,
             "priceLabel": "79",
@@ -2659,6 +3055,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "CRYBABY Vacation Mode On系列搪胶毛绒盲盒",
+            "ip": "CRYBABY",
             "soldLabel": "30万+",
             "sold": 300000,
             "priceLabel": "129",
@@ -2671,6 +3068,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "高达模型",
             "name": "万代高达模型拼装RG",
+            "ip": "高达",
             "soldLabel": "3000+",
             "sold": 3000,
             "priceLabel": "153",
@@ -2683,6 +3081,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "卡牌",
             "name": "卡牌对对碰",
+            "ip": "卡牌对对碰",
             "soldLabel": "6万+",
             "sold": 60000,
             "priceLabel": "11.9",
@@ -2711,6 +3110,124 @@ window.TOY_RADAR_DATA = {
       "detail": {
         "weekRange": "2026.7.26 - 2026.8.1",
         "statDate": "2026.8.1",
+        "vsPrev": {
+          "prevLabel": "7.21-7.25",
+          "totalDeltaPct": 44.4,
+          "categoryDelta": {
+            "blind_box": 49.9,
+            "action_figure": -17.7,
+            "trading_card": 8.4,
+            "ai_toy": 3.8
+          },
+          "newCount": 28,
+          "newFaces": [
+            {
+              "category": "盲盒",
+              "name": "CRYBABY Vacation Mode On搪胶毛绒盲盒",
+              "ip": "CRYBABY",
+              "soldLabel": "30万+",
+              "sold": 300000,
+              "priceLabel": "129",
+              "price": 129.0,
+              "shop": "泡泡玛特旗舰店",
+              "date": "2026.8.1",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "星星人好梦气象局毛绒盲盒",
+              "ip": "星星人",
+              "soldLabel": "20万+",
+              "sold": 200000,
+              "priceLabel": "79",
+              "price": 79.0,
+              "shop": "泡泡玛特官方旗舰店",
+              "date": "2026.8.1",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "星星人怦然星动盲盒",
+              "ip": "星星人",
+              "soldLabel": "10万+",
+              "sold": 100000,
+              "priceLabel": "89",
+              "price": 89.0,
+              "shop": "泡泡玛特旗舰店",
+              "date": "2026.8.1",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "星星人怦然星动盲盒",
+              "ip": "星星人",
+              "soldLabel": "10万+",
+              "sold": 100000,
+              "priceLabel": "89",
+              "price": 89.0,
+              "shop": "泡泡玛特官方旗舰店",
+              "date": "2026.8.1",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "DIMOO WORLD × PIXAR联名盲盒",
+              "ip": "DIMOO",
+              "soldLabel": "3万+",
+              "sold": 30000,
+              "priceLabel": "69",
+              "price": 69.0,
+              "shop": "泡泡玛特官方旗舰店",
+              "date": "2026.8.1",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "HEYONE星梦奇缘2.0毛绒盲盒",
+              "ip": "HEYONE 黑玩",
+              "soldLabel": "1万+",
+              "sold": 10000,
+              "priceLabel": "69",
+              "price": 69.0,
+              "shop": "Heyone官方旗舰店",
+              "date": "2026.8.1",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "喜羊羊与灰太狼绒绒转脸盲盒",
+              "ip": "喜羊羊与灰太狼",
+              "soldLabel": "9000+",
+              "sold": 9000,
+              "priceLabel": "49",
+              "price": 49.0,
+              "shop": "喜羊羊与灰太狼周边旗舰店",
+              "date": "2026.8.1",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "爱宠大机密\"小白的生活\"盲盒",
+              "ip": "爱宠大机密",
+              "soldLabel": "8000+",
+              "sold": 8000,
+              "priceLabel": "69",
+              "price": 69.0,
+              "shop": "PLZDOT旗舰店",
+              "date": "2026.8.1",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            }
+          ],
+          "repeatedCount": 52
+        },
         "totalItems": 80,
         "totalSold": 1306058,
         "avgPrice": 768.1,
@@ -2736,6 +3253,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "盲盒",
               "name": "CRYBABY Vacation Mode On搪胶毛绒盲盒",
+              "ip": "CRYBABY",
               "soldLabel": "30万+",
               "sold": 300000,
               "priceLabel": "129",
@@ -2749,6 +3267,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "CRYBABY Vacation Mode On搪胶毛绒盲盒",
+                "ip": "CRYBABY",
                 "soldLabel": "30万+",
                 "sold": 300000,
                 "priceLabel": "129",
@@ -2761,6 +3280,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "YOYO萌趣歪头盲盒",
+                "ip": "YOYO",
                 "soldLabel": "20万+",
                 "sold": 200000,
                 "priceLabel": "49",
@@ -2773,6 +3293,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "星星人好梦气象局毛绒盲盒",
+                "ip": "星星人",
                 "soldLabel": "20万+",
                 "sold": 200000,
                 "priceLabel": "79",
@@ -2785,6 +3306,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "星星人怦然星动盲盒",
+                "ip": "星星人",
                 "soldLabel": "10万+",
                 "sold": 100000,
                 "priceLabel": "89",
@@ -2797,6 +3319,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "星星人怦然星动盲盒",
+                "ip": "星星人",
                 "soldLabel": "10万+",
                 "sold": 100000,
                 "priceLabel": "89",
@@ -2809,6 +3332,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "WAKUKU哇库库毛毛潮趣派对系列盲盒",
+                "ip": "WAKUKU 哇库库",
                 "soldLabel": "4万+",
                 "sold": 40000,
                 "priceLabel": "89",
@@ -2821,6 +3345,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "RELAX手表盲盒",
+                "ip": "RELAX",
                 "soldLabel": "3万+",
                 "sold": 30000,
                 "priceLabel": "68起",
@@ -2833,6 +3358,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DIMOO WORLD × PIXAR联名盲盒",
+                "ip": "DIMOO",
                 "soldLabel": "3万+",
                 "sold": 30000,
                 "priceLabel": "69",
@@ -2845,6 +3371,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "一日一菇毛绒盲盒端盒",
+                "ip": "一日一菇",
                 "soldLabel": "3万+",
                 "sold": 30000,
                 "priceLabel": "99",
@@ -2857,6 +3384,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "小嗷-惊喜BOX盲盒",
+                "ip": "小嗷",
                 "soldLabel": "2万+",
                 "sold": 20000,
                 "priceLabel": "79",
@@ -2869,6 +3397,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "小嗷-万物可爱守则系列盲盒",
+                "ip": "小嗷",
                 "soldLabel": "2万+",
                 "sold": 20000,
                 "priceLabel": "79",
@@ -2881,6 +3410,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DIMOO WORLD × PIXAR联名盲盒",
+                "ip": "DIMOO",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "69",
@@ -2893,6 +3423,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "玩具总动员5陪你长大系列盲盒",
+                "ip": "玩具总动员",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "59",
@@ -2905,6 +3436,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "猫猫pai乐无忧转转盲盒",
+                "ip": "猫猫pai",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "13.5",
@@ -2917,6 +3449,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DORA甜酷警告毛绒盲盒",
+                "ip": "DORA",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "79",
@@ -2929,6 +3462,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "HEYONE星梦奇缘2.0毛绒盲盒",
+                "ip": "HEYONE 黑玩",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "69",
@@ -2941,6 +3475,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "HelloKitty泳衣派对萌粒",
+                "ip": "Hello Kitty",
                 "soldLabel": "9000+",
                 "sold": 9000,
                 "priceLabel": "49",
@@ -2953,6 +3488,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "喜羊羊与灰太狼绒绒转脸盲盒",
+                "ip": "喜羊羊与灰太狼",
                 "soldLabel": "9000+",
                 "sold": 9000,
                 "priceLabel": "49",
@@ -2965,6 +3501,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "爱宠大机密\"小白的生活\"盲盒",
+                "ip": "爱宠大机密",
                 "soldLabel": "8000+",
                 "sold": 8000,
                 "priceLabel": "69",
@@ -2977,6 +3514,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "我是大王系列盲盒",
+                "ip": "我是大王",
                 "soldLabel": "7000+",
                 "sold": 7000,
                 "priceLabel": "69",
@@ -2989,6 +3527,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "宝可梦小小奇遇最初的伙伴盲盒",
+                "ip": "宝可梦",
                 "soldLabel": "6000+",
                 "sold": 6000,
                 "priceLabel": "59",
@@ -3001,6 +3540,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DODO RARA拒绝驯服毛绒盲盒",
+                "ip": "DODO RARA",
                 "soldLabel": "5000+",
                 "sold": 5000,
                 "priceLabel": "79",
@@ -3013,6 +3553,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "小嗷mini二代万物可爱守则毛绒盲盒",
+                "ip": "小嗷",
                 "soldLabel": "5000+",
                 "sold": 5000,
                 "priceLabel": "79",
@@ -3025,6 +3566,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "Pingu迷你相机盲盒",
+                "ip": "Pingu",
                 "soldLabel": "5000+",
                 "sold": 5000,
                 "priceLabel": "139起",
@@ -3037,6 +3579,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "宝可梦御三家盲盒",
+                "ip": "宝可梦",
                 "soldLabel": "4000+",
                 "sold": 4000,
                 "priceLabel": "59",
@@ -3049,6 +3592,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DUIDUIDUI怼堆堆早安毛绒盲盒",
+                "ip": "DUIDUIDUI 怼堆堆",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "79",
@@ -3061,6 +3605,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "雪王世界观盲盒",
+                "ip": "雪王",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "59",
@@ -3073,6 +3618,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "名创抽盒机",
+                "ip": "",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "29",
@@ -3085,6 +3631,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "ShyShy兔闪闪小小的你甜品系列手机挂件盲盒",
+                "ip": "ShyShy 兔",
                 "soldLabel": "2000+",
                 "sold": 2000,
                 "priceLabel": "49",
@@ -3097,6 +3644,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "芭萨卡做喜欢的事很开心毛绒盲盒",
+                "ip": "芭萨卡",
                 "soldLabel": "300+",
                 "sold": 300,
                 "priceLabel": "79",
@@ -3125,6 +3673,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "高达模型",
               "name": "万代高达模型拼装RG",
+              "ip": "高达",
               "soldLabel": "3000+",
               "sold": 3000,
               "priceLabel": "153",
@@ -3138,6 +3687,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "万代高达模型拼装RG",
+                "ip": "高达",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "153",
@@ -3150,6 +3700,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "HG强袭自由机甲拼装玩具",
+                "ip": "",
                 "soldLabel": "2000+",
                 "sold": 2000,
                 "priceLabel": "37.5",
@@ -3162,6 +3713,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【预付款】INART Action-《黑神话:悟空》-四姐",
+                "ip": "INART",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "125",
@@ -3174,6 +3726,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "光年正传巴斯光年拼装模型",
+                "ip": "巴斯光年",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "169",
@@ -3186,6 +3739,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "暗源战锤40K 黑色圣堂 执裁者",
+                "ip": "战锤40K",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "289",
@@ -3198,6 +3752,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "暗源战锤40K帝国之拳 达纳斯·莱山德",
+                "ip": "战锤40K",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "379",
@@ -3210,6 +3765,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "高达强袭自由红异端HG新生自由机动战士",
+                "ip": "高达",
                 "soldLabel": "400+",
                 "sold": 400,
                 "priceLabel": "78.8",
@@ -3222,6 +3778,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "街头霸王 SDCC限定限量",
+                "ip": "街头霸王",
                 "soldLabel": "300+",
                 "sold": 300,
                 "priceLabel": "399",
@@ -3234,6 +3791,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "暗源战锤40K极限战士 费伦·阿瑞奥斯",
+                "ip": "战锤40K",
                 "soldLabel": "300+",
                 "sold": 300,
                 "priceLabel": "319",
@@ -3246,6 +3804,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "新蝙蝠侠 1/12成品可动模型",
+                "ip": "蝙蝠侠",
                 "soldLabel": "300+",
                 "sold": 300,
                 "priceLabel": "429",
@@ -3258,6 +3817,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "万代高达拼装模型 MG",
+                "ip": "高达",
                 "soldLabel": "300+",
                 "sold": 300,
                 "priceLabel": "17.9",
@@ -3270,6 +3830,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【预售】WAY STUDIOS正版变形金刚飞翼擎天柱",
+                "ip": "变形金刚",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "1199",
@@ -3282,6 +3843,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【预付款】INART Action-《超级少女》超级少女",
+                "ip": "INART",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "725",
@@ -3294,6 +3856,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【全款】莱欧斯利 换装可动人偶",
+                "ip": "原神",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "488",
@@ -3306,6 +3869,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "万代Q版SDEX高达",
+                "ip": "高达",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "25.5",
@@ -3318,6 +3882,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "高达模型MG强袭自由午夜配色",
+                "ip": "高达",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "498",
@@ -3330,6 +3895,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "万代QMSV MINI海牛高达模型",
+                "ip": "高达",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "62",
@@ -3342,6 +3908,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "HG强袭自由红异端独角兽",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "97.8",
@@ -3354,6 +3921,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "HG新生自由红异端独角兽",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "97.8",
@@ -3366,6 +3934,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "大班MG红异端拼装模型强袭自由白雪姬菲尼克斯",
+                "ip": "",
                 "soldLabel": "58",
                 "sold": 58,
                 "priceLabel": "236",
@@ -3394,6 +3963,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "卡牌",
               "name": "卡牌对对碰",
+              "ip": "卡牌对对碰",
               "soldLabel": "7万+",
               "sold": 70000,
               "priceLabel": "11.9",
@@ -3407,6 +3977,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "卡牌对对碰",
+                "ip": "卡牌对对碰",
                 "soldLabel": "7万+",
                 "sold": 70000,
                 "priceLabel": "11.9",
@@ -3419,6 +3990,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "小马宝莉卡牌盲盒",
+                "ip": "小马宝莉",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "39.9",
@@ -3431,6 +4003,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "宝可梦简中卡牌盲盒代拆",
+                "ip": "宝可梦",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "17.9",
@@ -3443,6 +4016,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "Hitcard 天气刚刚好·白鹿十周年收藏卡",
+                "ip": "Hitcard",
                 "soldLabel": "6000+",
                 "sold": 6000,
                 "priceLabel": "39.6",
@@ -3455,6 +4029,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "宝可梦简中太晶盛聚",
+                "ip": "宝可梦",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "89.6",
@@ -3467,6 +4042,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "宝可梦简中太晶盛聚组合",
+                "ip": "宝可梦",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "390",
@@ -3479,6 +4055,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "宝可梦简中太晶盛聚",
+                "ip": "宝可梦",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "44.8",
@@ -3491,6 +4068,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "宝可梦抓精灵代拆",
+                "ip": "宝可梦",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "169",
@@ -3503,6 +4081,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "宝可梦简中太晶盛聚",
+                "ip": "宝可梦",
                 "soldLabel": "800+",
                 "sold": 800,
                 "priceLabel": "44.8",
@@ -3515,6 +4094,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "篮球帕尼尼国宝系列卡牌",
+                "ip": "帕尼尼",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "40000",
@@ -3543,6 +4123,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "AI玩具",
               "name": "索迪机器狗智能 AI 机器人",
+              "ip": "",
               "soldLabel": "500+",
               "sold": 500,
               "priceLabel": "299",
@@ -3556,6 +4137,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "索迪机器狗智能 AI 机器人",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "299",
@@ -3568,6 +4150,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "Fuzozo芙崽AI情感陪伴机器人毛绒玩具",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "499",
@@ -3580,6 +4163,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "京东京造AI毛绒玩具儿童玩具",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "159",
@@ -3592,6 +4176,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "天文(TEN-WIN)专注力训练机",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "298",
@@ -3604,6 +4189,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "儿童AI随学宝早教玩具",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "269",
@@ -3616,6 +4202,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "超棋大师多功能30合一智能棋盘",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "399",
@@ -3628,6 +4215,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "星云宝贝ai陪伴机器人",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "149",
@@ -3640,6 +4228,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "梦多福豆包 AI 抱抱喵电子宠物",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "399",
@@ -3652,6 +4241,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "芙崽华为AI憨憨毛绒陪伴机器人",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "399",
@@ -3664,6 +4254,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "儿童AI打印机",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "279",
@@ -3676,6 +4267,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "enabot EBO SE 全屋移动监控摄像头",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "699",
@@ -3688,6 +4280,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "豆包智能ai儿童陪伴机器人",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "399",
@@ -3700,6 +4293,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "米德宝机器人发耳机配饰装饰品头盔帽子",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "199",
@@ -3712,6 +4306,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "WALULU猫猫AI陪伴机器宠物",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "599",
@@ -3724,6 +4319,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "WhalesBot鲸鱼AI智能眼镜",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "329",
@@ -3736,6 +4332,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "WhalesBot鲸鱼AI教育机器人",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "149",
@@ -3748,6 +4345,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "物灵 灵宇宙AI小方机学伴机",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "1399",
@@ -3760,6 +4358,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "iMooChi AI陪伴机器人",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "1699",
@@ -3772,6 +4371,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "enabot EBO SE 全屋移动监控摄像头",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "699",
@@ -3784,6 +4384,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "元萝卜 SenseRobot AI 下棋机器人",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "3299",
@@ -3800,6 +4401,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "CRYBABY Vacation Mode On搪胶毛绒盲盒",
+            "ip": "CRYBABY",
             "soldLabel": "30万+",
             "sold": 300000,
             "priceLabel": "129",
@@ -3812,6 +4414,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "YOYO萌趣歪头盲盒",
+            "ip": "YOYO",
             "soldLabel": "20万+",
             "sold": 200000,
             "priceLabel": "49",
@@ -3824,6 +4427,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "星星人好梦气象局毛绒盲盒",
+            "ip": "星星人",
             "soldLabel": "20万+",
             "sold": 200000,
             "priceLabel": "79",
@@ -3836,6 +4440,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "星星人怦然星动盲盒",
+            "ip": "星星人",
             "soldLabel": "10万+",
             "sold": 100000,
             "priceLabel": "89",
@@ -3848,6 +4453,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "星星人怦然星动盲盒",
+            "ip": "星星人",
             "soldLabel": "10万+",
             "sold": 100000,
             "priceLabel": "89",
@@ -3860,6 +4466,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "卡牌",
             "name": "卡牌对对碰",
+            "ip": "卡牌对对碰",
             "soldLabel": "7万+",
             "sold": 70000,
             "priceLabel": "11.9",
@@ -3872,6 +4479,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "WAKUKU哇库库毛毛潮趣派对系列盲盒",
+            "ip": "WAKUKU 哇库库",
             "soldLabel": "4万+",
             "sold": 40000,
             "priceLabel": "89",
@@ -3884,6 +4492,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "RELAX手表盲盒",
+            "ip": "RELAX",
             "soldLabel": "3万+",
             "sold": 30000,
             "priceLabel": "68起",
@@ -3896,6 +4505,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "DIMOO WORLD × PIXAR联名盲盒",
+            "ip": "DIMOO",
             "soldLabel": "3万+",
             "sold": 30000,
             "priceLabel": "69",
@@ -3908,6 +4518,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "一日一菇毛绒盲盒端盒",
+            "ip": "一日一菇",
             "soldLabel": "3万+",
             "sold": 30000,
             "priceLabel": "99",
@@ -3970,6 +4581,48 @@ window.TOY_RADAR_DATA = {
             "items": 3
           }
         ],
+        "topIps": [
+          {
+            "ip": "星星人",
+            "sold": 400000,
+            "items": 3
+          },
+          {
+            "ip": "CRYBABY",
+            "sold": 300000,
+            "items": 1
+          },
+          {
+            "ip": "YOYO",
+            "sold": 200000,
+            "items": 1
+          },
+          {
+            "ip": "卡牌对对碰",
+            "sold": 70000,
+            "items": 1
+          },
+          {
+            "ip": "小嗷",
+            "sold": 45000,
+            "items": 3
+          },
+          {
+            "ip": "DIMOO",
+            "sold": 40000,
+            "items": 2
+          },
+          {
+            "ip": "WAKUKU 哇库库",
+            "sold": 40000,
+            "items": 1
+          },
+          {
+            "ip": "RELAX",
+            "sold": 30000,
+            "items": 1
+          }
+        ],
         "priceBands": [
           {
             "key": "under100",
@@ -4000,6 +4653,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "CRYBABY Vacation Mode On搪胶毛绒盲盒",
+            "ip": "CRYBABY",
             "soldLabel": "30万+",
             "sold": 300000,
             "priceLabel": "129",
@@ -4012,6 +4666,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "YOYO萌趣歪头盲盒",
+            "ip": "YOYO",
             "soldLabel": "20万+",
             "sold": 200000,
             "priceLabel": "49",
@@ -4024,6 +4679,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "一日一菇毛绒盲盒端盒",
+            "ip": "一日一菇",
             "soldLabel": "3万+",
             "sold": 30000,
             "priceLabel": "99",
@@ -4038,6 +4694,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "CRYBABY Vacation Mode On搪胶毛绒盲盒",
+            "ip": "CRYBABY",
             "soldLabel": "30万+",
             "sold": 300000,
             "priceLabel": "129",
@@ -4050,6 +4707,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "高达模型",
             "name": "万代高达模型拼装RG",
+            "ip": "高达",
             "soldLabel": "3000+",
             "sold": 3000,
             "priceLabel": "153",
@@ -4062,6 +4720,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "卡牌",
             "name": "卡牌对对碰",
+            "ip": "卡牌对对碰",
             "soldLabel": "7万+",
             "sold": 70000,
             "priceLabel": "11.9",
@@ -4090,6 +4749,124 @@ window.TOY_RADAR_DATA = {
       "detail": {
         "weekRange": "2026.8.9 - 2026.8.15",
         "statDate": "2026.8.15",
+        "vsPrev": {
+          "prevLabel": "7.26-8.1",
+          "totalDeltaPct": -24.8,
+          "categoryDelta": {
+            "blind_box": -27.7,
+            "action_figure": 71.2,
+            "trading_card": -2.3,
+            "ai_toy": 5.6
+          },
+          "newCount": 38,
+          "newFaces": [
+            {
+              "category": "盲盒",
+              "name": "星星人好梦气象局盲盒",
+              "ip": "星星人",
+              "soldLabel": "10万+",
+              "sold": 100000,
+              "priceLabel": "79",
+              "price": 79.0,
+              "shop": "泡泡玛特旗舰店",
+              "date": "2026.8.15",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "DIMOO秘密话剧社盲盒",
+              "ip": "DIMOO",
+              "soldLabel": "9万+",
+              "sold": 90000,
+              "priceLabel": "129",
+              "price": 129.0,
+              "shop": "泡泡玛特旗舰店",
+              "date": "2026.8.15",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "SKULLPANDA不想不想毛绒盲盒",
+              "ip": "SKULLPANDA",
+              "soldLabel": "4万+",
+              "sold": 40000,
+              "priceLabel": "89",
+              "price": 89.0,
+              "shop": "泡泡玛特官方旗舰店",
+              "date": "2026.8.15",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "凡人修仙传盲盒",
+              "ip": "凡人修仙传",
+              "soldLabel": "3万+",
+              "sold": 30000,
+              "priceLabel": "79",
+              "price": 79.0,
+              "shop": "共鸣官方旗舰店",
+              "date": "2026.8.15",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "凡人修仙传盲盒",
+              "ip": "凡人修仙传",
+              "soldLabel": "3万+",
+              "sold": 30000,
+              "priceLabel": "79",
+              "price": 79.0,
+              "shop": "共鸣旗舰店",
+              "date": "2026.8.15",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "无限火力代拆",
+              "ip": "",
+              "soldLabel": "5000+",
+              "sold": 5000,
+              "priceLabel": "289",
+              "price": 289.0,
+              "shop": "NB卡牌max",
+              "date": "2026.8.15",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "阿玛莉莉丝联名盲盒",
+              "ip": "阿玛莉莉丝",
+              "soldLabel": "5000+",
+              "sold": 5000,
+              "priceLabel": "104",
+              "price": 104.0,
+              "shop": "M Stand官方旗舰店",
+              "date": "2026.8.15",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            },
+            {
+              "category": "盲盒",
+              "name": "YOYO萌动心愿盲盒",
+              "ip": "YOYO",
+              "soldLabel": "5000+",
+              "sold": 5000,
+              "priceLabel": "58",
+              "price": 58.0,
+              "shop": "miniso名创优品旗舰店",
+              "date": "2026.8.15",
+              "section": "blind_box",
+              "sectionLabel": "盲盒"
+            }
+          ],
+          "repeatedCount": 39
+        },
         "totalItems": 78,
         "totalSold": 982400,
         "avgPrice": 825.4,
@@ -4115,6 +4892,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "盲盒",
               "name": "YOYO萌趣歪头盲盒",
+              "ip": "YOYO",
               "soldLabel": "20万+",
               "sold": 200000,
               "priceLabel": "49",
@@ -4128,6 +4906,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "YOYO萌趣歪头盲盒",
+                "ip": "YOYO",
                 "soldLabel": "20万+",
                 "sold": 200000,
                 "priceLabel": "49",
@@ -4140,6 +4919,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "星星人怦然星动盲盒",
+                "ip": "星星人",
                 "soldLabel": "10万+",
                 "sold": 100000,
                 "priceLabel": "89",
@@ -4152,6 +4932,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "星星人好梦气象局盲盒",
+                "ip": "星星人",
                 "soldLabel": "10万+",
                 "sold": 100000,
                 "priceLabel": "79",
@@ -4164,6 +4945,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DIMOO秘密话剧社盲盒",
+                "ip": "DIMOO",
                 "soldLabel": "9万+",
                 "sold": 90000,
                 "priceLabel": "129",
@@ -4176,6 +4958,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "SKULLPANDA不想不想毛绒盲盒",
+                "ip": "SKULLPANDA",
                 "soldLabel": "4万+",
                 "sold": 40000,
                 "priceLabel": "89",
@@ -4188,6 +4971,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DIMOO WORLD × PIXAR联名盲盒",
+                "ip": "DIMOO",
                 "soldLabel": "4万+",
                 "sold": 40000,
                 "priceLabel": "69",
@@ -4200,6 +4984,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DIMOO WORLD × PIXAR联名盲盒",
+                "ip": "DIMOO",
                 "soldLabel": "4万+",
                 "sold": 40000,
                 "priceLabel": "129",
@@ -4212,6 +4997,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "凡人修仙传盲盒",
+                "ip": "凡人修仙传",
                 "soldLabel": "3万+",
                 "sold": 30000,
                 "priceLabel": "79",
@@ -4224,6 +5010,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "一日一菇毛绒盲盒端盒",
+                "ip": "一日一菇",
                 "soldLabel": "3万+",
                 "sold": 30000,
                 "priceLabel": "99",
@@ -4236,6 +5023,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "小嗷-惊喜BOX盲盒",
+                "ip": "小嗷",
                 "soldLabel": "3万+",
                 "sold": 30000,
                 "priceLabel": "79",
@@ -4248,6 +5036,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "凡人修仙传盲盒",
+                "ip": "凡人修仙传",
                 "soldLabel": "3万+",
                 "sold": 30000,
                 "priceLabel": "79",
@@ -4260,6 +5049,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "RELAX手表盲盒",
+                "ip": "RELAX",
                 "soldLabel": "3万+",
                 "sold": 30000,
                 "priceLabel": "68起",
@@ -4272,6 +5062,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "小嗷-万物可爱守则系列盲盒",
+                "ip": "小嗷",
                 "soldLabel": "2万+",
                 "sold": 20000,
                 "priceLabel": "79",
@@ -4284,6 +5075,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "HelloKitty泳衣派对萌粒",
+                "ip": "Hello Kitty",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "49",
@@ -4296,6 +5088,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "猫猫pai乐无忧转转盲盒",
+                "ip": "猫猫pai",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "13.5",
@@ -4308,6 +5101,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "宝可梦小小奇遇最初的伙伴盲盒",
+                "ip": "宝可梦",
                 "soldLabel": "8000+",
                 "sold": 8000,
                 "priceLabel": "59",
@@ -4320,6 +5114,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "我是大王系列盲盒",
+                "ip": "我是大王",
                 "soldLabel": "8000+",
                 "sold": 8000,
                 "priceLabel": "69",
@@ -4332,6 +5127,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DODO RARA拒绝驯服毛绒盲盒",
+                "ip": "DODO RARA",
                 "soldLabel": "7000+",
                 "sold": 7000,
                 "priceLabel": "79",
@@ -4344,6 +5140,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "无限火力代拆",
+                "ip": "",
                 "soldLabel": "5000+",
                 "sold": 5000,
                 "priceLabel": "289",
@@ -4356,6 +5153,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "阿玛莉莉丝联名盲盒",
+                "ip": "阿玛莉莉丝",
                 "soldLabel": "5000+",
                 "sold": 5000,
                 "priceLabel": "104",
@@ -4368,6 +5166,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "YOYO萌动心愿盲盒",
+                "ip": "YOYO",
                 "soldLabel": "5000+",
                 "sold": 5000,
                 "priceLabel": "58",
@@ -4380,6 +5179,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "宝可梦御三家盲盒",
+                "ip": "宝可梦",
                 "soldLabel": "5000+",
                 "sold": 5000,
                 "priceLabel": "59",
@@ -4392,6 +5192,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "Pingu迷你相机盲盒",
+                "ip": "Pingu",
                 "soldLabel": "5000+",
                 "sold": 5000,
                 "priceLabel": "139起",
@@ -4404,6 +5205,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "DUIDUIDUI怼堆堆早安毛绒盲盒",
+                "ip": "DUIDUIDUI 怼堆堆",
                 "soldLabel": "4000+",
                 "sold": 4000,
                 "priceLabel": "79",
@@ -4416,6 +5218,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "雪王世界观盲盒",
+                "ip": "雪王",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "59",
@@ -4428,6 +5231,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "YOYO心愿魔法少女盲盒",
+                "ip": "YOYO",
                 "soldLabel": "2000+",
                 "sold": 2000,
                 "priceLabel": "69",
@@ -4440,6 +5244,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "吉伊卡哇Chiikawa 天使恶魔盲盒",
+                "ip": "吉伊卡哇",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "79",
@@ -4452,6 +5257,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "小水豚噜噜的日常萌粒盲盒",
+                "ip": "小水豚噜噜",
                 "soldLabel": "800+",
                 "sold": 800,
                 "priceLabel": "19.9",
@@ -4464,6 +5270,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "米菲梦幻海岛主题盲盒",
+                "ip": "米菲",
                 "soldLabel": "700+",
                 "sold": 700,
                 "priceLabel": "79.9",
@@ -4476,6 +5283,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "盲盒",
                 "name": "【奥比岛:梦想国度】12分可动BJD盲盒",
+                "ip": "奥比岛",
                 "soldLabel": "700+",
                 "sold": 700,
                 "priceLabel": "159",
@@ -4504,6 +5312,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "可动手办",
               "name": "光年正传巴斯光年拼装模型",
+              "ip": "巴斯光年",
               "soldLabel": "3000+",
               "sold": 3000,
               "priceLabel": "169",
@@ -4517,6 +5326,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "光年正传巴斯光年拼装模型",
+                "ip": "巴斯光年",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "169",
@@ -4529,6 +5339,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "万代高达模型拼装RG",
+                "ip": "高达",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "153",
@@ -4541,6 +5352,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "DIMOO Tiny Puppy 可动人偶",
+                "ip": "DIMOO",
                 "soldLabel": "2000+",
                 "sold": 2000,
                 "priceLabel": "399",
@@ -4553,6 +5365,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "HG强袭自由机甲拼装玩具",
+                "ip": "",
                 "soldLabel": "2000+",
                 "sold": 2000,
                 "priceLabel": "37.5",
@@ -4565,6 +5378,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【预付款】INART Action-《超人:钢铁之躯》-超人",
+                "ip": "INART",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "600",
@@ -4577,6 +5391,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【预付款】INART Action-《黑暗之夜:金属》-蹂躏者",
+                "ip": "INART",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "150",
@@ -4589,6 +5404,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【预付款】INART Action-《黑暗之夜:金属》-破晓诡灯",
+                "ip": "INART",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "140",
@@ -4601,6 +5417,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "暗源战锤40K莫塔里安 纳垢恶魔原体",
+                "ip": "战锤40K",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "850",
@@ -4613,6 +5430,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "【定金】MGSD 飞翼零式高达（EW）",
+                "ip": "高达",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "439",
@@ -4625,6 +5443,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "HG强袭自由机甲拼装玩具",
+                "ip": "",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "96.8",
@@ -4637,6 +5456,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "阿卡姆骑士 猫女",
+                "ip": "DC 蝙蝠侠",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "329",
@@ -4649,6 +5469,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "新蝙蝠侠 1/12成品可动模型",
+                "ip": "蝙蝠侠",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "425",
@@ -4661,6 +5482,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "莉洛洛红楼梦系列12分可动关节玩偶盲盒",
+                "ip": "莉洛洛",
                 "soldLabel": "400+",
                 "sold": 400,
                 "priceLabel": "119",
@@ -4673,6 +5495,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "可动手办",
                 "name": "【预售】WAY STUDIOS正版变形金刚飞翼擎天柱",
+                "ip": "变形金刚",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "1199",
@@ -4685,6 +5508,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "高达模型mgex强袭自由午夜配色",
+                "ip": "高达",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "498",
@@ -4697,6 +5521,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "模寿至臻级先祖效应上帝之鞭",
+                "ip": "模寿",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "1564",
@@ -4709,6 +5534,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "HG强袭自由红异端独角兽",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "97.8",
@@ -4721,6 +5547,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "高达模型",
                 "name": "万代QMSV MINI海牛高达模型",
+                "ip": "高达",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "62",
@@ -4749,6 +5576,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "卡牌",
               "name": "卡牌对对碰",
+              "ip": "卡牌对对碰",
               "soldLabel": "8万+",
               "sold": 80000,
               "priceLabel": "11.9",
@@ -4762,6 +5590,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "卡牌对对碰",
+                "ip": "卡牌对对碰",
                 "soldLabel": "8万+",
                 "sold": 80000,
                 "priceLabel": "11.9",
@@ -4774,6 +5603,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "宝可梦简中卡牌盲盒代拆",
+                "ip": "宝可梦",
                 "soldLabel": "1万+",
                 "sold": 10000,
                 "priceLabel": "17.9",
@@ -4786,6 +5616,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "宝可梦抓精灵代拆",
+                "ip": "宝可梦",
                 "soldLabel": "3000+",
                 "sold": 3000,
                 "priceLabel": "169",
@@ -4798,6 +5629,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "《永恒之镜》收藏卡牌",
+                "ip": "永恒之镜",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "109.9",
@@ -4810,6 +5642,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "凡人动画收藏卡",
+                "ip": "凡人修仙传",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "29.9",
@@ -4822,6 +5655,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "宝可梦简中太晶盛聚组合",
+                "ip": "宝可梦",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "390",
@@ -4834,6 +5668,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "小马宝莉辉月代拆",
+                "ip": "小马宝莉",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "19.9",
@@ -4846,6 +5681,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "卡游心悦斗天包",
+                "ip": "卡游",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "39.9",
@@ -4858,6 +5694,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "怪奇物语收藏卡",
+                "ip": "怪奇物语",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "79.9",
@@ -4870,6 +5707,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "卡牌",
                 "name": "篮球帕尼尼国宝系列卡牌",
+                "ip": "帕尼尼",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "40000",
@@ -4898,6 +5736,7 @@ window.TOY_RADAR_DATA = {
             "topItem": {
               "category": "AI玩具",
               "name": "儿童AI随学宝早教翻译机",
+              "ip": "",
               "soldLabel": "1000+",
               "sold": 1000,
               "priceLabel": "269",
@@ -4911,6 +5750,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "儿童AI随学宝早教翻译机",
+                "ip": "",
                 "soldLabel": "1000+",
                 "sold": 1000,
                 "priceLabel": "269",
@@ -4923,6 +5763,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "索迪机器狗智能 AI 机器人",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "129",
@@ -4935,6 +5776,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "京东京造AI毛绒玩具儿童玩具",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "159",
@@ -4947,6 +5789,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "超棋大师多功能30合一智能棋盘",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "399",
@@ -4959,6 +5802,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "喜马拉雅儿童波波AI电话故事机",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "489",
@@ -4971,6 +5815,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "星云宝贝ai陪伴机器人",
+                "ip": "",
                 "soldLabel": "500+",
                 "sold": 500,
                 "priceLabel": "149",
@@ -4983,6 +5828,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "enabot EBO SE 全屋移动监控摄像头",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "699",
@@ -4995,6 +5841,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "豆包智能ai儿童陪伴机器人",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "399",
@@ -5007,6 +5854,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "米德宝机器人发耳机配饰装饰品头盔帽子",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "199",
@@ -5019,6 +5867,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "WhalesBot鲸鱼AI智能眼镜",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "219",
@@ -5031,6 +5880,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "Fuzozo芙崽AI情感陪伴机器人毛绒玩具",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "499",
@@ -5043,6 +5893,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "天文（TEN-WIN）专注力训练机",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "298",
@@ -5055,6 +5906,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "奇多多星球口语宝儿童同声翻译机",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "349",
@@ -5067,6 +5919,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI玩具",
                 "name": "活石AI磁悬浮地球仪",
+                "ip": "",
                 "soldLabel": "200+",
                 "sold": 200,
                 "priceLabel": "368",
@@ -5079,6 +5932,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "物灵 灵宇宙AI小方机学伴机",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "1399",
@@ -5091,6 +5945,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "Loona机器狗AI智能陪伴机器人",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "3259",
@@ -5103,6 +5958,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "Moii H1 AI家庭陪伴机器人",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "1599",
@@ -5115,6 +5971,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "enabot EBO SE 全屋移动监控摄像头",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "699",
@@ -5127,6 +5984,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "WhalesBot鲸鱼AI教育机器人",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "149",
@@ -5139,6 +5997,7 @@ window.TOY_RADAR_DATA = {
               {
                 "category": "AI陪伴机器人",
                 "name": "肉派派AI机器宠物",
+                "ip": "",
                 "soldLabel": "100+",
                 "sold": 100,
                 "priceLabel": "1880",
@@ -5155,6 +6014,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "YOYO萌趣歪头盲盒",
+            "ip": "YOYO",
             "soldLabel": "20万+",
             "sold": 200000,
             "priceLabel": "49",
@@ -5167,6 +6027,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "星星人怦然星动盲盒",
+            "ip": "星星人",
             "soldLabel": "10万+",
             "sold": 100000,
             "priceLabel": "89",
@@ -5179,6 +6040,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "星星人好梦气象局盲盒",
+            "ip": "星星人",
             "soldLabel": "10万+",
             "sold": 100000,
             "priceLabel": "79",
@@ -5191,6 +6053,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "DIMOO秘密话剧社盲盒",
+            "ip": "DIMOO",
             "soldLabel": "9万+",
             "sold": 90000,
             "priceLabel": "129",
@@ -5203,6 +6066,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "卡牌",
             "name": "卡牌对对碰",
+            "ip": "卡牌对对碰",
             "soldLabel": "8万+",
             "sold": 80000,
             "priceLabel": "11.9",
@@ -5215,6 +6079,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "SKULLPANDA不想不想毛绒盲盒",
+            "ip": "SKULLPANDA",
             "soldLabel": "4万+",
             "sold": 40000,
             "priceLabel": "89",
@@ -5227,6 +6092,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "DIMOO WORLD × PIXAR联名盲盒",
+            "ip": "DIMOO",
             "soldLabel": "4万+",
             "sold": 40000,
             "priceLabel": "69",
@@ -5239,6 +6105,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "DIMOO WORLD × PIXAR联名盲盒",
+            "ip": "DIMOO",
             "soldLabel": "4万+",
             "sold": 40000,
             "priceLabel": "129",
@@ -5251,6 +6118,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "凡人修仙传盲盒",
+            "ip": "凡人修仙传",
             "soldLabel": "3万+",
             "sold": 30000,
             "priceLabel": "79",
@@ -5263,6 +6131,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "一日一菇毛绒盲盒端盒",
+            "ip": "一日一菇",
             "soldLabel": "3万+",
             "sold": 30000,
             "priceLabel": "99",
@@ -5325,6 +6194,48 @@ window.TOY_RADAR_DATA = {
             "items": 1
           }
         ],
+        "topIps": [
+          {
+            "ip": "YOYO",
+            "sold": 207000,
+            "items": 3
+          },
+          {
+            "ip": "星星人",
+            "sold": 200000,
+            "items": 2
+          },
+          {
+            "ip": "DIMOO",
+            "sold": 172000,
+            "items": 4
+          },
+          {
+            "ip": "卡牌对对碰",
+            "sold": 80000,
+            "items": 1
+          },
+          {
+            "ip": "凡人修仙传",
+            "sold": 61000,
+            "items": 3
+          },
+          {
+            "ip": "小嗷",
+            "sold": 50000,
+            "items": 2
+          },
+          {
+            "ip": "SKULLPANDA",
+            "sold": 40000,
+            "items": 1
+          },
+          {
+            "ip": "一日一菇",
+            "sold": 30000,
+            "items": 1
+          }
+        ],
         "priceBands": [
           {
             "key": "under100",
@@ -5355,6 +6266,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "YOYO萌趣歪头盲盒",
+            "ip": "YOYO",
             "soldLabel": "20万+",
             "sold": 200000,
             "priceLabel": "49",
@@ -5367,6 +6279,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "YOYO萌趣歪头盲盒",
+            "ip": "YOYO",
             "soldLabel": "20万+",
             "sold": 200000,
             "priceLabel": "49",
@@ -5379,6 +6292,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "一日一菇毛绒盲盒端盒",
+            "ip": "一日一菇",
             "soldLabel": "3万+",
             "sold": 30000,
             "priceLabel": "99",
@@ -5393,6 +6307,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "盲盒",
             "name": "YOYO萌趣歪头盲盒",
+            "ip": "YOYO",
             "soldLabel": "20万+",
             "sold": 200000,
             "priceLabel": "49",
@@ -5405,6 +6320,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "可动手办",
             "name": "光年正传巴斯光年拼装模型",
+            "ip": "巴斯光年",
             "soldLabel": "3000+",
             "sold": 3000,
             "priceLabel": "169",
@@ -5417,6 +6333,7 @@ window.TOY_RADAR_DATA = {
           {
             "category": "卡牌",
             "name": "卡牌对对碰",
+            "ip": "卡牌对对碰",
             "soldLabel": "8万+",
             "sold": 80000,
             "priceLabel": "11.9",

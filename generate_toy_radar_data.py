@@ -18,6 +18,77 @@ WEEK_RE = re.compile(r"(\d{1,2})\.(\d{1,2})\s*[-~]\s*(\d{1,2})\.(\d{1,2})")
 # 渠道关键词，用于从表格标题中识别数据来源
 CHANNEL_ALIASES = ["天猫", "抖音", "京东", "淘宝"]
 
+# 商品名 → IP/系列 的识别词表（覆盖盲盒/手办/卡牌里的收藏向 IP，AI 玩具等以功能为主的商品不归入 IP）
+IP_RULES = [
+    (("crybaby",), "CRYBABY"),
+    (("dimoo",), "DIMOO"),
+    (("skullpanda",), "SKULLPANDA"),
+    (("星星人",), "星星人"),
+    (("zsiga",), "ZSIGA"),
+    (("yoyo",), "YOYO"),
+    (("宝可梦",), "宝可梦"),
+    (("小嗷",), "小嗷"),
+    (("一日一菇",), "一日一菇"),
+    (("dora",), "DORA"),
+    (("wakuku",), "WAKUKU 哇库库"),
+    (("哇库库",), "WAKUKU 哇库库"),
+    (("hellokitty",), "Hello Kitty"),
+    (("雪王",), "雪王"),
+    (("米菲",), "米菲"),
+    (("吉伊卡哇",), "吉伊卡哇"),
+    (("chiikawa",), "吉伊卡哇"),
+    (("凡人修仙传",), "凡人修仙传"),
+    (("凡人动画",), "凡人修仙传"),
+    (("莉洛洛",), "莉洛洛"),
+    (("糯米儿",), "糯米儿"),
+    (("duiduidui",), "DUIDUIDUI 怼堆堆"),
+    (("怼堆堆",), "DUIDUIDUI 怼堆堆"),
+    (("猫猫pai",), "猫猫pai"),
+    (("奥比岛",), "奥比岛"),
+    (("小水豚",), "小水豚噜噜"),
+    (("阿玛莉莉丝",), "阿玛莉莉丝"),
+    (("玩具总动员",), "玩具总动员"),
+    (("巴斯光年",), "巴斯光年"),
+    (("我是大王",), "我是大王"),
+    (("爱宠大机密",), "爱宠大机密"),
+    (("shyshy",), "ShyShy 兔"),
+    (("芭萨卡",), "芭萨卡"),
+    (("喜羊羊",), "喜羊羊与灰太狼"),
+    (("heyone",), "HEYONE 黑玩"),
+    (("黑玩",), "HEYONE 黑玩"),
+    (("dodo rara",), "DODO RARA"),
+    (("pingu",), "Pingu"),
+    (("relax",), "RELAX"),
+    (("小马宝莉",), "小马宝莉"),
+    (("帕尼尼",), "帕尼尼"),
+    (("游戏王",), "游戏王"),
+    (("哪吒",), "哪吒"),
+    (("乘风2026",), "乘风2026"),
+    (("永恒之镜",), "永恒之镜"),
+    (("现在就出发",), "现在就出发"),
+    (("怪奇物语",), "怪奇物语"),
+    (("卡游",), "卡游"),
+    (("hitcard",), "Hitcard"),
+    (("卡牌对对碰",), "卡牌对对碰"),
+    (("战锤",), "战锤40K"),
+    (("40k",), "战锤40K"),
+    (("暗源",), "暗源"),
+    (("变形金刚",), "变形金刚"),
+    (("蝙蝠侠",), "蝙蝠侠"),
+    (("inart",), "INART"),
+    (("黑神话",), "黑神话：悟空"),
+    (("超人",), "DC 超人"),
+    (("超级少女",), "DC 超级少女"),
+    (("蹂躏者",), "DC 黑暗之夜"),
+    (("破晓诡灯",), "DC 黑暗之夜"),
+    (("阿卡姆",), "DC 蝙蝠侠"),
+    (("街头霸王",), "街头霸王"),
+    (("莱欧斯利",), "原神"),
+    (("高达",), "高达"),
+    (("模寿",), "模寿"),
+    (("猎人 clutch",), "猎人 CLUTCH"),
+]
+
 
 def parse_number(value: str) -> float | None:
     raw = value.strip().replace(",", "")
@@ -36,6 +107,14 @@ def parse_number(value: str) -> float | None:
 
 def clean_text(value: str) -> str:
     return value.replace("\xa0", " ").strip()
+
+
+def extract_ip(name: str) -> str:
+    low = name.lower()
+    for keywords, label in IP_RULES:
+        if all(keyword in low for keyword in keywords):
+            return label
+    return ""
 
 
 def section_slug(title: str) -> str:
@@ -168,6 +247,7 @@ def parse_md(path: Path) -> dict:
             item = {
                 "category": category,
                 "name": name,
+                "ip": extract_ip(name),
                 "soldLabel": sold_raw,
                 "sold": int(sold),
                 "priceLabel": price_raw,
@@ -275,7 +355,39 @@ def week_sort_key(path: Path) -> tuple[int, int]:
     return (99, 99)
 
 
-def build_payload(week: dict) -> dict:
+def build_vs_prev(week: dict, prev: dict) -> dict:
+    """计算本周相对上一周的环比指标与本周新上榜商品。"""
+
+    def key(item: dict) -> tuple:
+        return (item["name"], item["shop"])
+
+    cur_sections = {section["id"]: section["totalSold"] for section in week["sections"]}
+    prev_sections = {section["id"]: section["totalSold"] for section in prev["sections"]}
+    cur_keys = {key(item) for item in week["allItems"]}
+    prev_keys = {key(item) for item in prev["allItems"]}
+    new_items = sorted(
+        (item for item in week["allItems"] if key(item) not in prev_keys),
+        key=lambda x: x["sold"],
+        reverse=True,
+    )
+    return {
+        "prevLabel": prev["weekLabel"],
+        "totalDeltaPct": round((week["totalSold"] - prev["totalSold"]) / prev["totalSold"] * 100, 1)
+        if prev["totalSold"]
+        else 0.0,
+        "categoryDelta": {
+            section_id: round((cur_sections[section_id] - prev_sections.get(section_id, 0)) / prev_sections[section_id] * 100, 1)
+            if prev_sections.get(section_id)
+            else 0.0
+            for section_id in cur_sections
+        },
+        "newCount": len(new_items),
+        "newFaces": new_items[:8],
+        "repeatedCount": len(cur_keys & prev_keys),
+    }
+
+
+def build_payload(week: dict, prev: dict | None = None) -> dict:
     """把单周解析结果变成与主 payload 同形状的视图数据（不含 weeklySnapshots）。"""
     total_sold = week["totalSold"]
     price_bands = [
@@ -294,10 +406,21 @@ def build_payload(week: dict) -> dict:
 
     all_items_sorted = sorted(week["allItems"], key=lambda x: x["sold"], reverse=True)
     top_items = all_items_sorted[:10]
+    ip_sold = Counter()
+    ip_items = Counter()
+    for item in week["allItems"]:
+        if item["ip"]:
+            ip_sold[item["ip"]] += item["sold"]
+            ip_items[item["ip"]] += 1
+    top_ips = [
+        {"ip": ip, "sold": int(ip_sold[ip]), "items": ip_items[ip]}
+        for ip, _ in ip_sold.most_common(8)
+    ]
 
     return {
         "weekRange": week["weekRange"],
         "statDate": week["statDate"],
+        "vsPrev": build_vs_prev(week, prev) if prev else None,
         "totalItems": week["totalItems"],
         "totalSold": week["totalSold"],
         "avgPrice": week["avgPrice"],
@@ -308,6 +431,7 @@ def build_payload(week: dict) -> dict:
         "sections": week["sections"],
         "topItems": top_items,
         "topStores": top_stores,
+        "topIps": top_ips,
         "priceBands": price_bands,
         "consumerPicks": [
             top_items[0] if top_items else None,
@@ -334,8 +458,10 @@ def main() -> None:
     latest = parsed[-1]
 
     # 每个周快照都携带完整明细，前端可随时切换查看任意一周
-    weekly_snapshots = [
-        {
+    weekly_snapshots = []
+    for index, week in enumerate(parsed):
+        prev = parsed[index - 1] if index > 0 else None
+        weekly_snapshots.append({
             "week": week["weekLabel"],
             "label": week["weekLabel"],
             "weekRange": week["weekRange"],
@@ -343,12 +469,10 @@ def main() -> None:
             "totalSold": week["totalSold"],
             "totalItems": week["totalItems"],
             "sections": {section["id"]: section["totalSold"] for section in week["sections"]},
-            "detail": build_payload(week),
-        }
-        for week in parsed
-    ]
+            "detail": build_payload(week, prev),
+        })
 
-    payload = build_payload(latest)
+    payload = build_payload(latest, parsed[-2] if len(parsed) > 1 else None)
     payload["generatedAt"] = date.today().isoformat()
     payload["weeklySnapshots"] = weekly_snapshots
 

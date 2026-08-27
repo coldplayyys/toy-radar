@@ -1329,6 +1329,175 @@
       line-height: 1.8;
     }
 
+    .footer-sign {
+      display: block;
+      margin-top: 10px;
+      color: var(--gold);
+      font-style: normal;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-headline {
+      margin-top: 22px;
+      padding: 18px 20px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, rgba(103, 232, 249, 0.1), rgba(255, 107, 181, 0.07));
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .headline-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255, 209, 102, 0.14);
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      margin-bottom: 10px;
+    }
+
+    .headline-title {
+      font-family: "Fraunces", "Noto Sans SC", serif;
+      font-size: 26px;
+      margin: 0 0 8px;
+      line-height: 1.2;
+    }
+
+    .headline-story {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .headline-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .delta-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .delta-badge.up { color: #a7ff83; background: rgba(167, 255, 131, 0.12); }
+    .delta-badge.down { color: #ff8d9e; background: rgba(255, 141, 158, 0.12); }
+    .delta-badge.flat { color: var(--faint); background: rgba(232, 242, 255, 0.08); }
+
+    .new-pill {
+      display: inline-flex;
+      margin-left: 8px;
+      padding: 1px 7px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 700;
+      color: #06202b;
+      background: linear-gradient(135deg, #7fefff, #8fd0ff);
+      vertical-align: 1px;
+    }
+
+    .ip-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .ip-card {
+      padding: 16px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .ip-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .ip-rank {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent, #67e8f9);
+    }
+
+    .ip-head strong {
+      font-size: 15px;
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .ip-meta {
+      display: flex;
+      gap: 10px;
+      color: var(--faint);
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .paradox-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .paradox-grid h3 {
+      margin: 0 0 12px;
+      font-size: 15px;
+    }
+
+    .quadrant-chart svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .paradox-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .paradox-item {
+      display: flex;
+      gap: 12px;
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .paradox-item .num {
+      font-size: 12px;
+      color: var(--cyan);
+      font-weight: 700;
+      padding-top: 2px;
+    }
+
+    .paradox-item strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+
+    .paradox-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
     @keyframes sweep {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
@@ -1358,8 +1527,12 @@
       .hero-stats,
       .category-grid,
       .store-list,
-      .pick-grid {
+      .pick-grid,
+      .ip-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .paradox-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -1373,8 +1546,12 @@
       .category-grid,
       .store-list,
       .pick-grid,
+      .ip-grid,
       .modal-stats,
       .trend-grid {
+        grid-template-columns: 1fr;
+      }
+      .paradox-grid {
         grid-template-columns: 1fr;
       }
       .line-panel { grid-column: auto; }
@@ -1421,6 +1598,7 @@
           <div class="eyebrow">WEEKLY MARKET RADAR</div>
           <h1 class="title">潮玩雷达</h1>
           <p class="subtitle">面向潮玩用户与从业者的周度售卖雷达。用户看“买什么、值不值、去哪买”，从业者看“什么卖得动、哪个价位最好走、哪个渠道最强”。</p>
+          <div id="heroHeadline"></div>
           <div class="hero-actions">
             <div class="persona-switch" id="heroPersonaToggle"></div>
             <span class="section-note" id="heroWeekBadge"></span>
@@ -1485,6 +1663,35 @@
       <section class="panel section reveal">
         <div class="panel-head">
           <div>
+            <h2>IP 热度雷达</h2>
+            <p>按商品名识别 IP / 系列（盲盒、手办、卡牌），看本周哪些角色最吸量，并对比上周。</p>
+          </div>
+        </div>
+        <div class="ip-grid" id="ipGrid"></div>
+      </section>
+
+      <section class="panel section reveal">
+        <div class="panel-head">
+          <div>
+            <h2>被看见与被忽略</h2>
+            <p>销量与注意力并不总是一致：走量款、客单明星、榜单外黑马，本周谁在被看见？</p>
+          </div>
+        </div>
+        <div class="paradox-grid">
+          <div>
+            <h3>销量 × 单价四象限</h3>
+            <div class="quadrant-chart" id="paradoxChart"></div>
+          </div>
+          <div>
+            <h3>反直觉清单</h3>
+            <div class="paradox-list" id="paradoxList"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel section reveal">
+        <div class="panel-head">
+          <div>
             <h2>渠道热区</h2>
             <p>本周哪些店铺最能跑量，适合消费者找货，也适合从业者看供货节奏。</p>
           </div>
@@ -1499,7 +1706,7 @@
         <div class="panel-head">
           <div>
             <h2>潮玩热销榜</h2>
-            <p>全量 80 款商品，支持品类筛选、关键词搜索与销量/单价排序。点击任意一行查看单品详情。</p>
+            <p>全量商品支持品类筛选、关键词搜索（含 IP）与销量/单价排序，新上榜款带“新”标记。点击任意一行查看单品详情。</p>
           </div>
           <div class="rank-summary" id="rankSummary"></div>
         </div>

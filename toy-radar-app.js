@@ -50,6 +50,7 @@ function activateWeek(index) {
   if (!snap) return;
   weekIndex = index;
   DATA = snap.detail;
+  const newFaces = new Set((DATA.vsPrev?.newFaces || []).map((i) => `${i.name}|${i.shop}`));
   sectionMap = Object.fromEntries(DATA.sections.map((section) => [section.id, section]));
   allItems = DATA.sections.flatMap((section) =>
     section.items.map((item) => ({
@@ -58,6 +59,7 @@ function activateWeek(index) {
       sectionSummary: section.summary,
       roleNotes: section.roleNotes,
       channel: channelOf(section),
+      isNew: newFaces.has(`${item.name}|${item.shop}`),
     }))
   );
 }
@@ -84,6 +86,10 @@ const els = {
   insightNote: document.getElementById("insightNote"),
   personaPanel: document.getElementById("personaPanel"),
   categoryGrid: document.getElementById("categoryGrid"),
+  ipGrid: document.getElementById("ipGrid"),
+  paradoxChart: document.getElementById("paradoxChart"),
+  paradoxList: document.getElementById("paradoxList"),
+  heroHeadline: document.getElementById("heroHeadline"),
   storeList: document.getElementById("storeList"),
   rankSummary: document.getElementById("rankSummary"),
   rankCategoryChips: document.getElementById("rankCategoryChips"),
@@ -144,6 +150,7 @@ function getFilteredRankItems() {
       (item) =>
         item.name.toLowerCase().includes(query) ||
         item.shop.toLowerCase().includes(query) ||
+        (item.ip || "").toLowerCase().includes(query) ||
         item.sectionLabel.toLowerCase().includes(query)
     );
   }
@@ -213,13 +220,47 @@ function bindWeekSelect() {
 
 /* ===================== 总览 ===================== */
 
+function renderHeroHeadline() {
+  const top = [...allItems].sort((a, b) => b.sold - a.sold)[0];
+  const vs = DATA.vsPrev;
+  if (!top) {
+    els.heroHeadline.innerHTML = "";
+    return;
+  }
+  let story;
+  if (top.isNew) {
+    story = `上周榜上还没有它，这周直接以 ${top.soldLabel} 销量登顶——就像那只闯入中央公园的雪鸮，一只特别的“款”就能让整周的目光都聚焦过来。`;
+  } else if (vs) {
+    story = `以 ${top.soldLabel} 销量领跑全榜；盲盒仍占本周总销量 ${((sectionMap.blind_box.totalSold / DATA.totalSold) * 100).toFixed(1)}%。爆款不是偶然，是渠道、IP 与定价共同作用的结果。`;
+  } else {
+    story = `以 ${top.soldLabel} 销量领跑首批快照，雷达从这里开始扫描市场。`;
+  }
+  const meta = [];
+  if (vs) meta.push(`总销量环比 ${vs.totalDeltaPct >= 0 ? "↑" : "↓"} ${Math.abs(vs.totalDeltaPct).toFixed(1)}%`);
+  if (vs) meta.push(`${vs.newCount} 款新上榜`);
+  if (vs) meta.push(`对比 ${vs.prevLabel}`);
+  const ipTag = top.ip ? ` · ${top.ip}` : "";
+  els.heroHeadline.innerHTML = `
+    <div class="hero-headline">
+      <span class="headline-tag">本周头条 · WEEKLY SPARK</span>
+      <h2 class="headline-title">${escapeHtml(top.name)}${escapeHtml(ipTag)}</h2>
+      <p class="headline-story">${escapeHtml(story)}</p>
+      ${meta.length ? `<div class="headline-meta">${meta.map((m) => `<span class="pill">${escapeHtml(m)}</span>`).join("")}</div>` : ""}
+    </div>
+  `;
+}
+
 function renderHeroStats() {
   const blind = sectionMap.blind_box;
+  const vs = DATA.vsPrev;
+  const totalDelta = vs
+    ? `环比 ${vs.prevLabel} ${vs.totalDeltaPct >= 0 ? "↑" : "↓"} ${Math.abs(vs.totalDeltaPct).toFixed(1)}%`
+    : "首批快照";
   const stats = [
     {
       label: "周总销量",
       value: formatWan(DATA.totalSold),
-      delta: `${DATA.totalItems} 条记录`,
+      delta: totalDelta,
     },
     {
       label: "盲盒占比",
@@ -303,6 +344,7 @@ function renderHotList() {
               <div class="hot-rank">TOP ${index + 1} · ${escapeHtml(section.title)}</div>
               <h3>${escapeHtml(item.name)}</h3>
               <div class="hot-meta">
+                ${item.isNew ? '<span class="new-pill">新</span>' : ""}
                 <span class="pill">${escapeHtml(item.shop)}</span>
                 <span class="pill">${escapeHtml(formatMoney(item.price))}</span>
                 <span class="pill">${escapeHtml(item.soldLabel)}</span>
@@ -424,6 +466,10 @@ function renderCategoryCards() {
       const accent = sectionAccent[section.id] || "#66a6ff";
       const top = section.topItem;
       const share = ((section.totalSold / DATA.totalSold) * 100).toFixed(1);
+      const delta = DATA.vsPrev?.categoryDelta?.[section.id];
+      const deltaBadge = delta === undefined
+        ? '<span class="delta-badge flat">首批</span>'
+        : `<span class="delta-badge ${delta >= 0 ? "up" : "down"}">${delta >= 0 ? "↑" : "↓"}${Math.abs(delta).toFixed(1)}%</span>`;
       return `
         <article class="category-card" style="--accent:${accent}">
           <div class="category-top">
@@ -434,7 +480,7 @@ function renderCategoryCards() {
             </div>
             <div class="category-stat">
               <div class="stat">
-                <span class="label">销量</span>
+                <span class="label">销量 ${deltaBadge}</span>
                 <div class="value">${escapeHtml(formatWan(section.totalSold))}</div>
               </div>
               <div class="stat">
@@ -453,6 +499,111 @@ function renderCategoryCards() {
         </article>
       `;
     })
+    .join("");
+}
+
+const IP_COLORS = ["#67e8f9", "#ff6bb5", "#ffd166", "#a7ff83", "#66a6ff", "#ff8d4d", "#7fefff", "#ffb3d9"];
+
+function renderIpGrid() {
+  const ips = DATA.topIps || [];
+  const prevIps = weekIndex > 0 ? ALL_SNAPSHOTS[weekIndex - 1].detail.topIps || [] : [];
+  const prevMap = new Map(prevIps.map((ip) => [ip.ip, ip.sold]));
+  const maxSold = ips.length ? ips[0].sold : 1;
+  els.ipGrid.innerHTML = ips
+    .map((ip, index) => {
+      const prevSold = prevMap.get(ip.ip);
+      const delta = prevSold === undefined
+        ? '<span class="delta-badge flat">新</span>'
+        : `<span class="delta-badge ${ip.sold >= prevSold ? "up" : "down"}">${ip.sold >= prevSold ? "↑" : "↓"}${Math.round((Math.abs(ip.sold - prevSold) / prevSold) * 100)}%</span>`;
+      const width = Math.max(8, (ip.sold / maxSold) * 100);
+      return `
+        <div class="ip-card" style="--accent:${IP_COLORS[index % IP_COLORS.length]}">
+          <div class="ip-head">
+            <span class="ip-rank">${String(index + 1).padStart(2, "0")}</span>
+            <strong>${escapeHtml(ip.ip)}</strong>
+            ${delta}
+          </div>
+          <div class="ip-meta">
+            <span>${escapeHtml(formatWan(ip.sold))} 销量</span>
+            <span>${ip.items} 款上榜</span>
+          </div>
+          <div class="band-track"><span style="width:${width}%"></span></div>
+        </div>
+      `;
+    })
+    .join("");
+}
+
+function renderParadox() {
+  const items = [...allItems];
+  const total = DATA.totalSold || 1;
+  const sorted = [...items].sort((a, b) => b.sold - a.sold);
+  const top5Share = (sorted.slice(0, 5).reduce((sum, item) => sum + item.sold, 0) / total) * 100;
+  const medianSold = sorted[Math.floor(sorted.length / 2)]?.sold || 1;
+
+  const W = 560;
+  const H = 330;
+  const pad = { top: 24, right: 18, bottom: 44, left: 50 };
+  const prices = items.map((item) => Math.log10(Math.max(item.price, 1)));
+  const solds = items.map((item) => Math.log10(Math.max(item.sold, 1)));
+  const xMin = Math.min(...prices);
+  const xMax = Math.max(...prices);
+  const yMin = Math.min(...solds);
+  const yMax = Math.max(...solds);
+  const xFor = (price) => pad.left + ((Math.log10(price) - xMin) / (xMax - xMin || 1)) * (W - pad.left - pad.right);
+  const yFor = (sold) => pad.top + (1 - (Math.log10(sold) - yMin) / (yMax - yMin || 1)) * (H - pad.top - pad.bottom);
+  const xMid = xFor(100);
+  const yMid = pad.top + (1 - (Math.log10(medianSold) - yMin) / (yMax - yMin || 1)) * (H - pad.top - pad.bottom);
+
+  const grid = `
+    <line x1="${pad.left}" y1="${yMid.toFixed(1)}" x2="${W - pad.right}" y2="${yMid.toFixed(1)}" stroke="rgba(255,255,255,0.16)" stroke-dasharray="4 5" />
+    <line x1="${xMid.toFixed(1)}" y1="${pad.top}" x2="${xMid.toFixed(1)}" y2="${H - pad.bottom}" stroke="rgba(255,255,255,0.16)" stroke-dasharray="4 5" />
+  `;
+  const quadLabels = [
+    { x: pad.left + 8, y: yMid - 8, text: "低价走量" },
+    { x: xMid + 8, y: yMid - 8, text: "高价走量" },
+    { x: pad.left + 8, y: yMid + 20, text: "低价长尾" },
+    { x: xMid + 8, y: yMid + 20, text: "高价小众" },
+  ]
+    .map((q) => `<text x="${q.x}" y="${q.y}" fill="${q.text.includes("走量") ? "rgba(255,209,102,0.85)" : "rgba(232,242,255,0.42)"}" font-size="11">${q.text}</text>`)
+    .join("");
+  const dots = items
+    .map((item) => {
+      const accent = sectionAccent[item.section] || "#67e8f9";
+      const r = (5 + Math.log10(item.sold + 1) * 1.1).toFixed(1);
+      return `
+        <circle cx="${xFor(item.price).toFixed(1)}" cy="${yFor(item.sold).toFixed(1)}" r="${r}" fill="${accent}" fill-opacity="0.82" stroke="rgba(255,255,255,0.28)" stroke-width="0.6">
+          <title>${escapeHtml(item.name)} · ${escapeHtml(item.soldLabel)} · ${escapeHtml(formatMoney(item.price))}</title>
+        </circle>`;
+    })
+    .join("");
+  const axis = `
+    <text x="${pad.left}" y="${H - 14}" fill="rgba(232,242,255,0.4)" font-size="10">单价（对数 · ¥${nf.format(DATA.priceMin)} ~ ¥${nf.format(DATA.priceMax)}）</text>
+    <text x="${xMid.toFixed(1)}" y="${pad.top - 7}" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">¥100</text>
+    <text x="${pad.left - 10}" y="${pad.top + 12}" fill="rgba(232,242,255,0.4)" font-size="10" text-anchor="end" transform="rotate(-90 ${pad.left - 10} ${pad.top + 12})">销量（对数）</text>
+  `;
+  els.paradoxChart.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="销量-单价四象限散点图">${grid}${dots}${quadLabels}${axis}</svg>`;
+
+  const pricey = [...items].sort((a, b) => b.price - a.price)[0];
+  const sleeper = sorted.slice(5, 12).find((item) => item.price < 100) || sorted[5];
+  const newFace = DATA.vsPrev?.newFaces?.[0];
+  const rows = [
+    { k: "爆款集中度", v: `Top 5 商品贡献 ${top5Share.toFixed(1)}% 的销量——注意力高度集中在少数爆款上，长尾多数在陪跑。` },
+    { k: "客单明星", v: `${escapeHtml(pricey.name)} 标价 ${formatMoney(pricey.price)}，仍有 ${escapeHtml(pricey.soldLabel)} 人买单：稀缺与 IP 信仰可以穿透价格。` },
+    { k: "被忽略的潜力款", v: `榜单前五之外，${escapeHtml(sleeper.name)}（${escapeHtml(sleeper.soldLabel)} · ${formatMoney(sleeper.price)}）卖得不差却几乎没被讨论，可能是下周的黑马。` },
+  ];
+  if (DATA.vsPrev && newFace) {
+    rows.push({ k: "本周新面孔", v: `${DATA.vsPrev.newCount} 款商品首次上榜，其中 ${escapeHtml(newFace.name)}（${escapeHtml(newFace.soldLabel)}）涨得最猛。` });
+  }
+  els.paradoxList.innerHTML = rows
+    .map(
+      (row, index) => `
+      <div class="paradox-item">
+        <span class="num">${String(index + 1).padStart(2, "0")}</span>
+        <div><strong>${escapeHtml(row.k)}</strong><p>${row.v}</p></div>
+      </div>
+    `
+    )
     .join("");
 }
 
@@ -522,7 +673,7 @@ function renderRankTable() {
       return `
         <tr data-id="${escapeHtml(item.name)}|${escapeHtml(item.shop)}">
           <td>${medal}</td>
-          <td class="cell-name">${escapeHtml(item.name)}<small>${escapeHtml(item.channel)} · ${escapeHtml(item.date)}</small></td>
+          <td class="cell-name">${escapeHtml(item.name)}${item.isNew ? '<span class="new-pill">新</span>' : ""}<small>${escapeHtml(item.channel)} · ${escapeHtml(item.date)}</small></td>
           <td><span class="cell-cat" style="--dot:${accent}"><i></i>${escapeHtml(item.sectionLabel)}</span></td>
           <td class="cell-num">${escapeHtml(item.channel)}</td>
           <td class="cell-num">${escapeHtml(item.shop)}</td>
@@ -931,12 +1082,15 @@ function closeModal() {
 /* ===================== 渲染入口 ===================== */
 
 function renderOverview() {
+  renderHeroHeadline();
   renderHeroStats();
   renderRadarBadges();
   renderHeroSignal();
   renderHotList();
   renderPersonaPanel();
   renderCategoryCards();
+  renderIpGrid();
+  renderParadox();
   renderStoreList();
 }
 
@@ -946,7 +1100,7 @@ function renderAll() {
   els.weekBadge.textContent = DATA.weekRange;
   els.heroWeekBadge.textContent = DATA.weekRange;
   const channels = [...new Set(allItems.flatMap((item) => item.channel.split(" / ")))].join(" / ");
-  els.footerNote.innerHTML = `${DATA.weekRange} 周度快照（统计日 ${DATA.statDate}）· 数据来源：${escapeHtml(channels)}热销榜<br />当前已有 ${ALL_SNAPSHOTS.length} 期真实快照：趋势图中“模拟前 3 周”为演示数据，仅用于展示产品形态，不代表真实历史。`;
+  els.footerNote.innerHTML = `${DATA.weekRange} 周度快照（统计日 ${DATA.statDate}）· 数据来源：${escapeHtml(channels)}热销榜<br />当前已有 ${ALL_SNAPSHOTS.length} 期真实快照：趋势图中“模拟前 3 周”为演示数据，仅用于展示产品形态，不代表真实历史。<br /><em class="footer-sign">雷达的意义，不在于记录热度，而在于看见——每周更新，欢迎回来。</em>`;
   renderOverview();
   renderRankings();
   renderTrends();
