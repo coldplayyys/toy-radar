@@ -1568,6 +1568,421 @@
       .donut-wrap { justify-content: center; }
     }
   </style>
+
+  <style>
+    /* ===================== 白粉主题 ===================== */
+    :root {
+      --bg: #fff8fa;
+      --bg-2: #fff0f4;
+      --panel: rgba(255, 255, 255, 0.9);
+      --panel-strong: rgba(255, 255, 255, 0.98);
+      --line: rgba(244, 114, 182, 0.18);
+      --text: #4a3440;
+      --muted: rgba(74, 52, 64, 0.7);
+      --faint: rgba(74, 52, 64, 0.46);
+      --cyan: #ec4899;
+      --blue: #fb7185;
+      --orange: #fda4af;
+      --pink: #ec4899;
+      --lime: #f472b6;
+      --gold: #d4538f;
+      --shadow: 0 24px 70px rgba(236, 72, 153, 0.12);
+    }
+
+    body {
+      color: var(--text);
+      background:
+        radial-gradient(circle at 14% 4%, rgba(244, 114, 182, 0.12), transparent 34%),
+        radial-gradient(circle at 86% 8%, rgba(253, 164, 175, 0.2), transparent 30%),
+        radial-gradient(circle at 72% 96%, rgba(236, 72, 153, 0.09), transparent 32%),
+        linear-gradient(145deg, #fffbfc 0%, #fff4f7 48%, #ffeef4 100%);
+    }
+
+    body::before { display: none; }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid rgba(244, 114, 182, 0.16);
+      box-shadow: 0 20px 60px rgba(236, 72, 153, 0.1);
+    }
+
+    .topbar {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(244, 114, 182, 0.16);
+      box-shadow: 0 18px 50px rgba(236, 72, 153, 0.12);
+    }
+
+    .brand-mark {
+      background:
+        radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.85), transparent 28%),
+        linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(251, 113, 133, 0.18));
+      border: 1px solid rgba(244, 114, 182, 0.3);
+      color: #d4538f;
+    }
+
+    .brand-name span { color: #d4538f; }
+    .brand-sub { color: rgba(74, 52, 64, 0.5); }
+
+    .tabs {
+      background: #fff0f4;
+      border: 1px solid rgba(244, 114, 182, 0.2);
+    }
+
+    .tab { color: var(--muted); }
+    .tab:hover { color: var(--text); }
+
+    .tab.active {
+      color: #fff;
+      background: linear-gradient(135deg, #f472b6, #fb7185);
+      box-shadow: 0 8px 20px rgba(244, 114, 182, 0.3);
+    }
+
+    .section-note,
+    .week-select {
+      background: #fff;
+      color: #d4538f;
+      border-color: rgba(244, 114, 182, 0.25);
+    }
+
+    .week-select option { background: #fff; color: var(--text); }
+
+    .eyebrow {
+      background: rgba(244, 114, 182, 0.12);
+      color: #d4538f;
+    }
+
+    .subtitle,
+    .panel-head p,
+    .trend-mini .body,
+    .rank-summary {
+      color: var(--muted);
+    }
+
+    .hero-actions { justify-content: center; }
+
+    .stat,
+    .hot-card,
+    .insight-card,
+    .category-card,
+    .store-row,
+    .ip-card,
+    .paradox-item,
+    .insight-item,
+    .pick-card,
+    .modal-stat {
+      background: linear-gradient(180deg, #ffffff, #fff7fa);
+      border: 1px solid rgba(244, 114, 182, 0.16);
+    }
+
+    .hot-card:hover,
+    .pick-card:hover,
+    .ip-card:hover {
+      border-color: rgba(236, 72, 153, 0.42);
+    }
+
+    .stat .label,
+    .hot-meta,
+    .hot-note,
+    .band-row .label,
+    .store-meta,
+    .category-card .mini {
+      color: var(--muted);
+    }
+
+    .stat .delta,
+    .hot-foot {
+      color: #e03f87;
+    }
+
+    .hot-sold,
+    .cell-sold,
+    .legend-row .val,
+    .hbar-row .row-top .val {
+      color: #e03f87;
+    }
+
+    .pill,
+    .cell-cat,
+    .persona-btn,
+    .chip-btn,
+    .search-box,
+    .sort-select,
+    .demo-toggle,
+    .modal-close {
+      background: #fff;
+      border-color: rgba(244, 114, 182, 0.18);
+      color: var(--muted);
+    }
+
+    .search-box input,
+    .hero-search input { color: var(--text); }
+    .search-box input::placeholder,
+    .hero-search input::placeholder { color: var(--faint); }
+
+    .persona-btn.active,
+    .chip-btn.active {
+      background: linear-gradient(135deg, #f472b6, #fb7185);
+      border-color: transparent;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(244, 114, 182, 0.28);
+    }
+
+    .sort-select {
+      background-color: #fff;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23ec4899' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
+    }
+    .sort-select option { background: #fff; color: var(--text); }
+
+    .hot-bar,
+    .band-track,
+    .store-bar,
+    .share-cell .track,
+    .hbar-row .track {
+      background: rgba(244, 114, 182, 0.12);
+    }
+
+    .hot-bar span,
+    .band-track span,
+    .store-bar span,
+    .share-cell .track span {
+      background: linear-gradient(90deg, #f472b6, #fb7185);
+    }
+
+    .eyebrow-mini {
+      background: rgba(244, 114, 182, 0.12);
+      color: #d4538f;
+    }
+
+    .delta-badge.up { color: #16a34a; background: rgba(34, 197, 94, 0.12); }
+    .delta-badge.down { color: #e11d48; background: rgba(244, 63, 94, 0.1); }
+    .delta-badge.flat { color: var(--faint); background: rgba(74, 52, 64, 0.06); }
+
+    .new-pill {
+      color: #fff;
+      background: linear-gradient(135deg, #f472b6, #fb7185);
+    }
+
+    .table-wrap {
+      border-color: rgba(244, 114, 182, 0.16);
+      background: #fff;
+    }
+
+    .rank-table th {
+      background: #fff0f4;
+      color: var(--muted);
+      border-bottom-color: rgba(244, 114, 182, 0.18);
+    }
+
+    .rank-table td { border-top-color: rgba(244, 114, 182, 0.1); }
+    .rank-table tbody tr:hover { background: rgba(244, 114, 182, 0.07); }
+
+    .rank-no { color: rgba(74, 52, 64, 0.4); }
+    .rank-medal { color: #7c2d12; }
+
+    .share-cell .pct,
+    .empty-state,
+    .line-note,
+    .modal-chart-head span {
+      color: var(--faint);
+    }
+
+    .line-chart-wrap {
+      background: #fff;
+      border-color: rgba(244, 114, 182, 0.16);
+    }
+
+    .demo-toggle input { accent-color: #ec4899; }
+
+    .insight-item .num {
+      background: radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.9), transparent 30%), #fff0f4;
+      border-color: rgba(244, 114, 182, 0.2);
+      color: #d4538f;
+    }
+
+    .donut-center .k,
+    .legend-row .sub,
+    .hbar-row .row-top .sub,
+    .modal-stat .k {
+      color: var(--faint);
+    }
+
+    .modal-backdrop { background: rgba(74, 52, 64, 0.34); }
+
+    .modal {
+      background: linear-gradient(180deg, #ffffff, #fff4f8);
+      border-color: rgba(244, 114, 182, 0.2);
+      box-shadow: 0 40px 120px rgba(236, 72, 153, 0.2);
+    }
+
+    .modal-note {
+      background: rgba(244, 114, 182, 0.08);
+      border-color: rgba(244, 114, 182, 0.16);
+      color: #a13a68;
+    }
+
+    .footer-note { color: var(--faint); }
+    .footer-sign { color: #d4538f; }
+
+    .hero-headline {
+      background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 113, 133, 0.07));
+      border-color: rgba(244, 114, 182, 0.18);
+    }
+
+    .headline-tag {
+      background: rgba(244, 114, 182, 0.12);
+      color: #d4538f;
+    }
+
+    /* ---------- 极简总览：搜索页 ---------- */
+    .hero-mini {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: clamp(44px, 8vw, 104px) 8px 32px;
+      display: grid;
+      justify-items: center;
+      gap: 18px;
+      text-align: center;
+    }
+
+    .hero-mini .title {
+      font-size: clamp(42px, 6vw, 72px);
+      margin-bottom: 4px;
+    }
+
+    .hero-mini .subtitle { max-width: 540px; }
+
+    .hero-emoji {
+      width: 76px;
+      height: 76px;
+      border-radius: 26px;
+      display: grid;
+      place-items: center;
+      font-size: 36px;
+      background: linear-gradient(135deg, #ffffff, #ffe9f1);
+      border: 1px solid rgba(244, 114, 182, 0.24);
+      box-shadow: 0 18px 44px rgba(236, 72, 153, 0.16);
+      animation: floaty 5s ease-in-out infinite;
+    }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+
+    .hero-search {
+      width: 100%;
+      max-width: 560px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1.5px solid rgba(244, 114, 182, 0.26);
+      box-shadow: 0 18px 50px rgba(236, 72, 153, 0.14);
+      color: #d4538f;
+      transition: border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .hero-search:focus-within {
+      border-color: rgba(236, 72, 153, 0.55);
+      box-shadow: 0 18px 60px rgba(236, 72, 153, 0.22);
+    }
+
+    .hero-search input {
+      flex: 1;
+      min-width: 0;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      font: inherit;
+      font-size: 15px;
+    }
+
+    .hero-search-hint {
+      font-size: 11px;
+      color: var(--faint);
+      white-space: nowrap;
+    }
+
+    .hero-story {
+      max-width: 560px;
+      margin-top: 6px;
+    }
+
+    .hero-results {
+      width: 100%;
+      max-width: 640px;
+      display: grid;
+      gap: 10px;
+      text-align: left;
+      margin-top: 8px;
+    }
+
+    .hero-result {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 6px 16px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid rgba(244, 114, 182, 0.16);
+      box-shadow: 0 10px 28px rgba(236, 72, 153, 0.08);
+      cursor: pointer;
+      transition: transform 160ms ease, border-color 160ms ease;
+    }
+
+    .hero-result:hover {
+      transform: translateY(-2px);
+      border-color: rgba(236, 72, 153, 0.42);
+    }
+
+    .hero-result .r-name {
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .hero-result .r-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hero-result .r-side { text-align: right; }
+
+    .hero-result .r-sold {
+      color: #e03f87;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .hero-result .r-price {
+      color: var(--faint);
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    .hero-empty {
+      padding: 26px;
+      text-align: center;
+      color: var(--faint);
+      background: #fff;
+      border-radius: 18px;
+      border: 1px dashed rgba(244, 114, 182, 0.3);
+    }
+
+    @media (max-width: 760px) {
+      .hero-mini { padding-top: 34px; }
+      .hero-search { padding: 12px 16px; }
+      .hero-result { grid-template-columns: 1fr; }
+      .hero-result .r-side { text-align: left; }
+    }
+  </style>
 </head>
 <body>
   <main class="shell">
@@ -1586,117 +2001,24 @@
       </nav>
       <div class="top-actions">
         <select class="week-select" id="weekSelect" aria-label="选择统计周"></select>
-        <div class="persona-switch" id="personaToggle"></div>
         <span class="section-note" id="weekBadge"></span>
       </div>
     </header>
 
     <!-- ===================== 总览 ===================== -->
     <section class="view" id="view-overview">
-      <section class="hero">
-        <div class="panel hero-main reveal">
-          <div class="eyebrow">WEEKLY MARKET RADAR</div>
-          <h1 class="title">潮玩雷达</h1>
-          <p class="subtitle">面向潮玩用户与从业者的周度售卖雷达。用户看“买什么、值不值、去哪买”，从业者看“什么卖得动、哪个价位最好走、哪个渠道最强”。</p>
-          <div id="heroHeadline"></div>
-          <div class="hero-actions">
-            <div class="persona-switch" id="heroPersonaToggle"></div>
-            <span class="section-note" id="heroWeekBadge"></span>
-          </div>
-          <div class="hero-stats" id="heroStats"></div>
+      <section class="hero-mini">
+        <div class="hero-emoji" id="heroEmoji" aria-hidden="true">🧸</div>
+        <div class="eyebrow">WEEKLY MARKET RADAR</div>
+        <h1 class="title">潮玩雷达</h1>
+        <p class="subtitle">输入你记得的商品、IP 或店铺，一键找到它这周卖得怎么样。</p>
+        <div class="hero-search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input id="heroSearch" type="text" placeholder="搜索商品 / IP / 店铺，如 YOYO、DIMOO、宝可梦" autocomplete="off" />
+          <span class="hero-search-hint" id="heroSearchCount"></span>
         </div>
-
-        <aside class="panel hero-side reveal">
-          <div class="radar-stage">
-            <div class="sweep"></div>
-            <div class="ring r1"></div>
-            <div class="ring r2"></div>
-            <div class="ring r3"></div>
-            <div class="radar-node n1"></div>
-            <div class="radar-node n2"></div>
-            <div class="radar-node n3"></div>
-            <div class="radar-node n4"></div>
-            <div class="radar-labels">
-              <div class="badge"><strong id="radarA">--</strong> <span id="radarALabel">盲盒占比</span></div>
-              <div class="badge"><strong id="radarB">--</strong> <span id="radarBLabel">头部渠道</span></div>
-              <div class="badge"><strong id="radarC">--</strong> <span id="radarCLabel">价位跨度</span></div>
-            </div>
-          </div>
-          <div class="trend-mini" id="heroSignal"></div>
-        </aside>
-      </section>
-
-      <section class="main-grid">
-        <section class="panel section reveal">
-          <div class="panel-head">
-            <div>
-              <h2 id="feedTitle"></h2>
-              <p id="feedDesc"></p>
-            </div>
-            <div class="section-note" id="feedNote"></div>
-          </div>
-          <div class="hot-list" id="hotList"></div>
-        </section>
-
-        <aside class="panel section reveal">
-          <div class="panel-head">
-            <div>
-              <h2 id="insightTitle"></h2>
-              <p id="insightDesc"></p>
-            </div>
-            <div class="section-note" id="insightNote"></div>
-          </div>
-          <div class="insight-stack" id="personaPanel"></div>
-        </aside>
-      </section>
-
-      <section class="panel section reveal">
-        <div class="panel-head">
-          <div>
-            <h2>四大品类结构</h2>
-            <p>盲盒走量，卡牌抬客单，机甲做收藏，AI 玩具讲功能。</p>
-          </div>
-        </div>
-        <div class="category-grid" id="categoryGrid"></div>
-      </section>
-
-      <section class="panel section reveal">
-        <div class="panel-head">
-          <div>
-            <h2>IP 热度雷达</h2>
-            <p>按商品名识别 IP / 系列（盲盒、手办、卡牌），看本周哪些角色最吸量，并对比上周。</p>
-          </div>
-        </div>
-        <div class="ip-grid" id="ipGrid"></div>
-      </section>
-
-      <section class="panel section reveal">
-        <div class="panel-head">
-          <div>
-            <h2>被看见与被忽略</h2>
-            <p>销量与注意力并不总是一致：走量款、客单明星、榜单外黑马，本周谁在被看见？</p>
-          </div>
-        </div>
-        <div class="paradox-grid">
-          <div>
-            <h3>销量 × 单价四象限</h3>
-            <div class="quadrant-chart" id="paradoxChart"></div>
-          </div>
-          <div>
-            <h3>反直觉清单</h3>
-            <div class="paradox-list" id="paradoxList"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="panel section reveal">
-        <div class="panel-head">
-          <div>
-            <h2>渠道热区</h2>
-            <p>本周哪些店铺最能跑量，适合消费者找货，也适合从业者看供货节奏。</p>
-          </div>
-        </div>
-        <div class="store-list" id="storeList"></div>
+        <div class="hero-story" id="heroStory"></div>
+        <div class="hero-results hidden" id="heroSearchResults"></div>
       </section>
     </section>
 

@@ -19,6 +19,7 @@ const state = {
   rankCategory: "all",
   rankSort: "sold-desc",
   rankSearch: "",
+  heroQuery: "",
   view: "overview",
   demo: false,
 };
@@ -26,10 +27,10 @@ const state = {
 const nf = new Intl.NumberFormat("zh-CN");
 
 const sectionAccent = {
-  blind_box: "#67e8f9",
-  action_figure: "#ff6bb5",
-  trading_card: "#ff8d4d",
-  ai_toy: "#a7ff83",
+  blind_box: "#ec4899",
+  action_figure: "#7c6cf0",
+  trading_card: "#f59e0b",
+  ai_toy: "#10b981",
 };
 
 const sectionLabel = {
@@ -68,29 +69,12 @@ activateWeek(ALL_SNAPSHOTS.length - 1);
 
 const els = {
   tabs: document.getElementById("tabs"),
-  personaToggle: document.getElementById("personaToggle"),
-  heroPersonaToggle: document.getElementById("heroPersonaToggle"),
   weekBadge: document.getElementById("weekBadge"),
-  heroWeekBadge: document.getElementById("heroWeekBadge"),
-  heroStats: document.getElementById("heroStats"),
-  radarA: document.getElementById("radarA"),
-  radarB: document.getElementById("radarB"),
-  radarC: document.getElementById("radarC"),
-  heroSignal: document.getElementById("heroSignal"),
-  feedTitle: document.getElementById("feedTitle"),
-  feedDesc: document.getElementById("feedDesc"),
-  feedNote: document.getElementById("feedNote"),
-  hotList: document.getElementById("hotList"),
-  insightTitle: document.getElementById("insightTitle"),
-  insightDesc: document.getElementById("insightDesc"),
-  insightNote: document.getElementById("insightNote"),
-  personaPanel: document.getElementById("personaPanel"),
-  categoryGrid: document.getElementById("categoryGrid"),
-  ipGrid: document.getElementById("ipGrid"),
-  paradoxChart: document.getElementById("paradoxChart"),
-  paradoxList: document.getElementById("paradoxList"),
-  heroHeadline: document.getElementById("heroHeadline"),
-  storeList: document.getElementById("storeList"),
+  heroSearch: document.getElementById("heroSearch"),
+  heroSearchCount: document.getElementById("heroSearchCount"),
+  heroSearchResults: document.getElementById("heroSearchResults"),
+  heroStory: document.getElementById("heroStory"),
+  heroEmoji: document.getElementById("heroEmoji"),
   rankSummary: document.getElementById("rankSummary"),
   rankCategoryChips: document.getElementById("rankCategoryChips"),
   rankSearch: document.getElementById("rankSearch"),
@@ -192,15 +176,19 @@ function bindPersonaToggle(container) {
 
 function bindTabs() {
   els.tabs.querySelectorAll(".tab").forEach((tab) => {
-    tab.addEventListener("click", () => {
-      state.view = tab.dataset.view;
-      els.tabs.querySelectorAll(".tab").forEach((t) => t.classList.toggle("active", t === tab));
-      ["overview", "rankings", "trends"].forEach((name) => {
-        document.getElementById(`view-${name}`).classList.toggle("hidden", name !== state.view);
-      });
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
+    tab.addEventListener("click", () => switchView(tab.dataset.view));
   });
+}
+
+function switchView(name) {
+  state.view = name;
+  els.tabs.querySelectorAll(".tab").forEach((tab) => {
+    tab.classList.toggle("active", tab.dataset.view === name);
+  });
+  ["overview", "rankings", "trends"].forEach((viewName) => {
+    document.getElementById(`view-${viewName}`).classList.toggle("hidden", viewName !== name);
+  });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function bindWeekSelect() {
@@ -502,7 +490,7 @@ function renderCategoryCards() {
     .join("");
 }
 
-const IP_COLORS = ["#67e8f9", "#ff6bb5", "#ffd166", "#a7ff83", "#66a6ff", "#ff8d4d", "#7fefff", "#ffb3d9"];
+const IP_COLORS = ["#ec4899", "#7c6cf0", "#f59e0b", "#10b981", "#fb7185", "#f472b6", "#a78bfa", "#fda4af"];
 
 function renderIpGrid() {
   const ips = DATA.topIps || [];
@@ -565,11 +553,11 @@ function renderParadox() {
     { x: pad.left + 8, y: yMid + 20, text: "低价长尾" },
     { x: xMid + 8, y: yMid + 20, text: "高价小众" },
   ]
-    .map((q) => `<text x="${q.x}" y="${q.y}" fill="${q.text.includes("走量") ? "rgba(255,209,102,0.85)" : "rgba(232,242,255,0.42)"}" font-size="11">${q.text}</text>`)
+    .map((q) => `<text x="${q.x}" y="${q.y}" fill="${q.text.includes("走量") ? "rgba(212,83,143,0.9)" : "rgba(74,52,64,0.45)"}" font-size="11">${q.text}</text>`)
     .join("");
   const dots = items
     .map((item) => {
-      const accent = sectionAccent[item.section] || "#67e8f9";
+      const accent = sectionAccent[item.section] || "#ec4899";
       const r = (5 + Math.log10(item.sold + 1) * 1.1).toFixed(1);
       return `
         <circle cx="${xFor(item.price).toFixed(1)}" cy="${yFor(item.sold).toFixed(1)}" r="${r}" fill="${accent}" fill-opacity="0.82" stroke="rgba(255,255,255,0.28)" stroke-width="0.6">
@@ -578,9 +566,9 @@ function renderParadox() {
     })
     .join("");
   const axis = `
-    <text x="${pad.left}" y="${H - 14}" fill="rgba(232,242,255,0.4)" font-size="10">单价（对数 · ¥${nf.format(DATA.priceMin)} ~ ¥${nf.format(DATA.priceMax)}）</text>
+    <text x="${pad.left}" y="${H - 14}" fill="rgba(74,52,64,0.45)" font-size="10">单价（对数 · ¥${nf.format(DATA.priceMin)} ~ ¥${nf.format(DATA.priceMax)}）</text>
     <text x="${xMid.toFixed(1)}" y="${pad.top - 7}" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">¥100</text>
-    <text x="${pad.left - 10}" y="${pad.top + 12}" fill="rgba(232,242,255,0.4)" font-size="10" text-anchor="end" transform="rotate(-90 ${pad.left - 10} ${pad.top + 12})">销量（对数）</text>
+    <text x="${pad.left - 10}" y="${pad.top + 12}" fill="rgba(74,52,64,0.45)" font-size="10" text-anchor="end" transform="rotate(-90 ${pad.left - 10} ${pad.top + 12})">销量（对数）</text>
   `;
   els.paradoxChart.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="销量-单价四象限散点图">${grid}${dots}${quadLabels}${axis}</svg>`;
 
@@ -784,7 +772,7 @@ function renderDonut() {
 
   els.donutBox.innerHTML = `
     <svg width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="品类销量占比环形图">
-      <circle cx="100" cy="100" r="${R}" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="26" />
+      <circle cx="100" cy="100" r="${R}" fill="none" stroke="rgba(244,114,182,0.14)" stroke-width="26" />
       ${arcs}
     </svg>
     <div class="donut-center">
@@ -810,7 +798,7 @@ function renderDonut() {
 
 function renderBandBars() {
   const maxShare = Math.max(...DATA.priceBands.map((band) => band.share), 1);
-  const colors = ["#67e8f9", "#66a6ff", "#ff8d4d", "#ff6bb5"];
+  const colors = ["#ec4899", "#7c6cf0", "#f59e0b", "#10b981"];
   els.bandBars.innerHTML = DATA.priceBands
     .map((band, index) => `
       <div class="hbar-row">
@@ -826,7 +814,7 @@ function renderBandBars() {
 
 function renderStoreBars() {
   const max = DATA.topStores[0]?.sold || 1;
-  const palette = ["#67e8f9", "#66a6ff", "#ff8d4d", "#a7ff83", "#ff6bb5", "#ffd166", "#67e8f9", "#66a6ff", "#ff8d4d", "#a7ff83"];
+  const palette = ["#ec4899", "#fb7185", "#f59e0b", "#10b981", "#7c6cf0", "#f472b6", "#ec4899", "#fb7185", "#f59e0b", "#10b981"];
   els.storeBars.innerHTML = DATA.topStores
     .map(
       (store, index) => `
@@ -858,8 +846,8 @@ function renderLineChart() {
     .map(
       (g) => `
       <line x1="${pad.left}" y1="${yFor(g).toFixed(1)}" x2="${W - pad.right}" y2="${yFor(g).toFixed(1)}"
-        stroke="rgba(255,255,255,0.07)" stroke-width="1" stroke-dasharray="3 5" />
-      <text x="${pad.left - 10}" y="${(yFor(g) + 4).toFixed(1)}" fill="rgba(232,242,255,0.42)" font-size="10" text-anchor="end">${g}</text>
+        stroke="rgba(122,86,105,0.14)" stroke-width="1" stroke-dasharray="3 5" />
+      <text x="${pad.left - 10}" y="${(yFor(g) + 4).toFixed(1)}" fill="rgba(74,52,64,0.45)" font-size="10" text-anchor="end">${g}</text>
     `
     )
     .join("");
@@ -868,7 +856,7 @@ function renderLineChart() {
     .map((week, index) => {
       const isLatest = !week.simulated && index === series.length - 1;
       return `
-      <text x="${xFor(index).toFixed(1)}" y="${H - 14}" fill="${week.simulated ? "rgba(232,242,255,0.4)" : "#c8f7ff"}" font-size="11" text-anchor="middle">
+      <text x="${xFor(index).toFixed(1)}" y="${H - 14}" fill="${week.simulated ? "rgba(74,52,64,0.45)" : "#b04a76"}" font-size="11" text-anchor="middle">
         ${escapeHtml(week.label)}${isLatest ? "（本周）" : ""}
       </text>
     `;
@@ -887,7 +875,7 @@ function renderLineChart() {
         .map((p, index) => {
           const isReal = !series[index].simulated;
           return `
-            <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="${isReal ? 6 : 4}" fill="${isReal ? color : "rgba(5,10,16,0.9)"}"
+            <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="${isReal ? 6 : 4}" fill="${isReal ? color : "#ffffff"}"
               stroke="${color}" stroke-width="${isReal ? 2.5 : 1.5}"
               stroke-dasharray="${isReal ? "" : "2 2"}"
               opacity="${isReal ? 1 : 0.85}">
@@ -999,7 +987,7 @@ function openModal(id) {
   const rank = [...allItems].sort((a, b) => b.sold - a.sold).findIndex((x) => x.name === item.name && x.shop === item.shop) + 1;
   const share = ((item.sold / section.totalSold) * 100).toFixed(1);
   const roleNote = section.roleNotes[state.persona];
-  const accent = sectionAccent[item.section] || "#67e8f9";
+  const accent = sectionAccent[item.section] || "#ec4899";
 
   const chart = buildModalSpark(item);
 
@@ -1052,8 +1040,8 @@ function buildModalSpark(item) {
   const grid = [0, 50, 100]
     .map(
       (g) => `
-      <line x1="${pad.left}" y1="${yFor(g).toFixed(1)}" x2="${W - pad.right}" y2="${yFor(g).toFixed(1)}" stroke="rgba(255,255,255,0.07)" stroke-dasharray="3 5" />
-      <text x="${pad.left - 8}" y="${(yFor(g) + 4).toFixed(1)}" fill="rgba(232,242,255,0.4)" font-size="9" text-anchor="end">${g}</text>
+      <line x1="${pad.left}" y1="${yFor(g).toFixed(1)}" x2="${W - pad.right}" y2="${yFor(g).toFixed(1)}" stroke="rgba(122,86,105,0.14)" stroke-dasharray="3 5" />
+      <text x="${pad.left - 8}" y="${(yFor(g) + 4).toFixed(1)}" fill="rgba(74,52,64,0.45)" font-size="9" text-anchor="end">${g}</text>
     `
     )
     .join("");
@@ -1063,14 +1051,14 @@ function buildModalSpark(item) {
   const dots = points
     .map((p) => `
       <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="${p.week.simulated ? 4 : 6}"
-        fill="${p.week.simulated ? "rgba(5,10,16,0.9)" : sectionAccent[item.section] || "#67e8f9"}"
-        stroke="${sectionAccent[item.section] || "#67e8f9"}" stroke-width="2"
+        fill="${p.week.simulated ? "#ffffff" : sectionAccent[item.section] || "#ec4899"}"
+        stroke="${sectionAccent[item.section] || "#ec4899"}" stroke-width="2"
         stroke-dasharray="${p.week.simulated ? "2 2" : ""}" />
-      <text x="${p.x.toFixed(1)}" y="${H - 8}" fill="${p.week.simulated ? "rgba(232,242,255,0.4)" : "#c8f7ff"}" font-size="10" text-anchor="middle">${escapeHtml(p.week.label)}</text>
+      <text x="${p.x.toFixed(1)}" y="${H - 8}" fill="${p.week.simulated ? "rgba(74,52,64,0.45)" : "#b04a76"}" font-size="10" text-anchor="middle">${escapeHtml(p.week.label)}</text>
     `)
     .join("");
 
-  return `${grid}<path d="${d}" fill="none" stroke="${sectionAccent[item.section] || "#67e8f9"}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4" style="filter:drop-shadow(0 0 6px ${sectionAccent[item.section] || "#67e8f9"}66)"/>${dots}`;
+  return `${grid}<path d="${d}" fill="none" stroke="${sectionAccent[item.section] || "#ec4899"}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4" style="filter:drop-shadow(0 0 6px ${sectionAccent[item.section] || "#ec4899"}66)"/>${dots}`;
 }
 
 function closeModal() {
@@ -1081,24 +1069,114 @@ function closeModal() {
 
 /* ===================== 渲染入口 ===================== */
 
+const IP_EMOJI = {
+  CRYBABY: "😭",
+  DIMOO: "👦",
+  SKULLPANDA: "👻",
+  YOYO: "🐰",
+  星星人: "✨",
+  宝可梦: "⚡",
+  小嗷: "🐯",
+  一日一菇: "🍄",
+  "WAKUKU 哇库库": "🎈",
+  DORA: "😼",
+  "HEYONE 黑玩": "🖤",
+};
+const DEFAULT_EMOJI = "🧸";
+
+function renderHeroStory() {
+  const top = [...allItems].sort((a, b) => b.sold - a.sold)[0];
+  const vs = DATA.vsPrev;
+  if (els.heroEmoji) {
+    els.heroEmoji.textContent = (top && top.ip && IP_EMOJI[top.ip]) || DEFAULT_EMOJI;
+  }
+  if (!top) {
+    els.heroStory.innerHTML = "";
+    return;
+  }
+  let story;
+  if (top.isNew) {
+    story = `上周榜上还没有它，这周以 ${top.soldLabel} 销量直接登顶——像一只突然出现的“雪鸮”，让整周的目光都聚焦过来。`;
+  } else if (vs) {
+    story = `它以 ${top.soldLabel} 销量领跑本周${top.ip ? `（${top.ip}）` : ""}；总销量环比 ${vs.totalDeltaPct >= 0 ? "↑" : "↓"} ${Math.abs(vs.totalDeltaPct).toFixed(1)}%，${vs.newCount} 款新面孔登场。`;
+  } else {
+    story = `它以 ${top.soldLabel} 销量领跑首批快照，雷达从这里开始扫描市场。`;
+  }
+  const meta = [];
+  if (vs) meta.push(`${vs.newCount} 款新上榜`);
+  if (vs) meta.push(`对比 ${vs.prevLabel}`);
+  els.heroStory.innerHTML = `
+    <span class="headline-tag">本周头条 · WEEKLY SPARK</span>
+    <h2 class="headline-title">${escapeHtml(top.name)}${top.ip ? ` · ${escapeHtml(top.ip)}` : ""}</h2>
+    <p class="headline-story">${escapeHtml(story)}</p>
+    ${meta.length ? `<div class="headline-meta">${meta.map((m) => `<span class="pill">${escapeHtml(m)}</span>`).join("")}</div>` : ""}
+  `;
+}
+
+function getHeroSearchItems() {
+  const query = state.heroQuery.trim().toLowerCase();
+  if (!query) return [];
+  return [...allItems]
+    .filter(
+      (item) =>
+        item.name.toLowerCase().includes(query) ||
+        (item.ip || "").toLowerCase().includes(query) ||
+        item.shop.toLowerCase().includes(query) ||
+        item.sectionLabel.toLowerCase().includes(query)
+    )
+    .sort((a, b) => b.sold - a.sold)
+    .slice(0, 12);
+}
+
+function renderHeroResults() {
+  if (!els.heroSearchResults || !els.heroSearchCount) return;
+  const query = state.heroQuery.trim();
+  if (!query) {
+    els.heroSearchResults.classList.add("hidden");
+    els.heroSearchCount.textContent = "";
+    return;
+  }
+  const items = getHeroSearchItems();
+  els.heroSearchCount.textContent = `${items.length} 个结果`;
+  if (!items.length) {
+    els.heroSearchResults.classList.remove("hidden");
+    els.heroSearchResults.innerHTML = `<div class="hero-empty">没有找到匹配的商品，换个关键词试试。</div>`;
+    return;
+  }
+  els.heroSearchResults.classList.remove("hidden");
+  els.heroSearchResults.innerHTML = items
+    .map((item) => {
+      const accent = sectionAccent[item.section] || "#ec4899";
+      return `
+        <div class="hero-result" data-id="${escapeHtml(item.name)}|${escapeHtml(item.shop)}">
+          <div>
+            <div class="r-name">${escapeHtml(item.name)}${item.isNew ? '<span class="new-pill">新</span>' : ""}</div>
+            <div class="r-meta">
+              <span class="cell-cat" style="--dot:${accent}"><i></i>${escapeHtml(item.sectionLabel)}</span>
+              ${item.ip ? `<span class="pill">${escapeHtml(item.ip)}</span>` : ""}
+              <span>${escapeHtml(item.shop)}</span>
+            </div>
+          </div>
+          <div class="r-side">
+            <div class="r-sold">${escapeHtml(item.soldLabel)}</div>
+            <div class="r-price">${escapeHtml(formatMoney(item.price))}</div>
+          </div>
+        </div>
+      `;
+    })
+    .join("");
+  els.heroSearchResults.querySelectorAll(".hero-result").forEach((card) => {
+    card.addEventListener("click", () => openModal(card.dataset.id));
+  });
+}
+
 function renderOverview() {
-  renderHeroHeadline();
-  renderHeroStats();
-  renderRadarBadges();
-  renderHeroSignal();
-  renderHotList();
-  renderPersonaPanel();
-  renderCategoryCards();
-  renderIpGrid();
-  renderParadox();
-  renderStoreList();
+  renderHeroStory();
+  renderHeroResults();
 }
 
 function renderAll() {
-  bindPersonaToggle(els.personaToggle);
-  bindPersonaToggle(els.heroPersonaToggle);
   els.weekBadge.textContent = DATA.weekRange;
-  els.heroWeekBadge.textContent = DATA.weekRange;
   const channels = [...new Set(allItems.flatMap((item) => item.channel.split(" / ")))].join(" / ");
   els.footerNote.innerHTML = `${DATA.weekRange} 周度快照（统计日 ${DATA.statDate}）· 数据来源：${escapeHtml(channels)}热销榜<br />当前已有 ${ALL_SNAPSHOTS.length} 期真实快照：趋势图中“模拟前 3 周”为演示数据，仅用于展示产品形态，不代表真实历史。<br /><em class="footer-sign">雷达的意义，不在于记录热度，而在于看见——每周更新，欢迎回来。</em>`;
   renderOverview();
@@ -1110,6 +1188,20 @@ function renderAll() {
 
 bindTabs();
 bindWeekSelect();
+
+els.heroSearch.addEventListener("input", (event) => {
+  state.heroQuery = event.target.value;
+  renderHeroResults();
+});
+
+els.heroSearch.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" && state.heroQuery.trim()) {
+    state.rankSearch = state.heroQuery.trim();
+    els.rankSearch.value = state.rankSearch;
+    switchView("rankings");
+    renderRankings();
+  }
+});
 
 els.rankSearch.addEventListener("input", (event) => {
   state.rankSearch = event.target.value;
