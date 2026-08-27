@@ -83,6 +83,7 @@ const els = {
   insightList: document.getElementById("insightList"),
   modal: document.getElementById("modal"),
   modalBackdrop: document.getElementById("modalBackdrop"),
+  footerNote: document.getElementById("footerNote"),
 };
 
 function escapeHtml(value) {
@@ -200,7 +201,7 @@ function renderHeroStats() {
     {
       label: "价位跨度",
       value: formatPriceRange(DATA.priceMin, DATA.priceMax),
-      delta: "从 13.5 到 40000",
+      delta: `从 ${formatMoney(DATA.priceMin)} 到 ${formatMoney(DATA.priceMax)}`,
     },
   ];
 
@@ -523,15 +524,25 @@ const DEMO_WEEKS = [
   { label: "7.19-7.25", factor: 0.8 },
 ];
 
+function weekStart(label) {
+  const match = String(label).match(/(\d{1,2})\.(\d{1,2})/);
+  return match ? { m: Number(match[1]), d: Number(match[2]) } : null;
+}
+
 function buildTrendSeries() {
-  const current =
-    DATA.weeklySnapshots?.[DATA.weeklySnapshots.length - 1] ?? {
-      label: DATA.weekRange,
-      sections: Object.fromEntries(sectionOrder.map((key) => [key, sectionMap[key].totalSold])),
-    };
+  const snapshots = DATA.weeklySnapshots ?? [];
+  const current = snapshots[snapshots.length - 1] ?? {
+    label: DATA.weekRange,
+    sections: Object.fromEntries(sectionOrder.map((key) => [key, sectionMap[key].totalSold])),
+  };
+  const firstReal = snapshots.length ? weekStart(snapshots[0].label) : null;
   const weeks = [];
   if (state.demo) {
     DEMO_WEEKS.forEach((week) => {
+      const start = weekStart(week.label);
+      if (firstReal && start && (start.m > firstReal.m || (start.m === firstReal.m && start.d >= firstReal.d))) {
+        return;
+      }
       weeks.push({
         label: week.label,
         simulated: true,
@@ -544,11 +555,12 @@ function buildTrendSeries() {
       });
     });
   }
-  weeks.push({
-    label: current.label,
-    simulated: false,
-    sections: { ...current.sections },
+  snapshots.forEach((week) => {
+    weeks.push({ label: week.label, simulated: false, sections: { ...week.sections } });
   });
+  if (!weeks.length) {
+    weeks.push({ label: current.label, simulated: false, sections: { ...current.sections } });
+  }
 
   return weeks.map((week) => {
     const normalized = {};
@@ -721,7 +733,7 @@ function renderLineChart() {
 
   els.lineNote.innerHTML = state.demo
     ? "演示模式：虚线为按本周销量比例生成的模拟历史（非真实数据），仅用于展示趋势形态；实心圆点为真实快照。后续每接入一周真实快照，折线会自动向前延伸。"
-    : "当前仅有 7.26-8.1 一期真实快照，实心点为各品类本周销量（归一化基准 100）。趋势线将在每周数据自动累积后生成；打开「演示模式」可预览产品形态。";
+    : `当前已有 ${DATA.weeklySnapshots.length} 期真实快照（${DATA.weeklySnapshots.map((w) => w.label).join("、")}），各品类以最近一周为基准 100；趋势线会随每周数据自动延伸。`;
 }
 
 function renderInsights() {
@@ -732,11 +744,15 @@ function renderInsights() {
   const popoStores = DATA.topStores.filter((s) => s.shop.includes("泡泡玛特"));
   const popoSold = popoStores.reduce((sum, s) => sum + s.sold, 0);
   const under100 = DATA.priceBands.find((band) => band.key === "under100");
+  const topFigure = figures.items[0];
+  const priceyFigure = [...figures.items].sort((a, b) => b.price - a.price)[0];
+  const cardMin = [...cards.items].sort((a, b) => a.price - b.price)[0];
+  const cardMax = [...cards.items].sort((a, b) => b.price - a.price)[0];
 
   const insights = [
     {
       title: "盲盒仍是绝对主引擎",
-      body: `盲盒贡献 ${formatWan(blind.totalSold)} 销量，占本周总销量的 ${((blind.totalSold / DATA.totalSold) * 100).toFixed(1)}%；中位价 69 元，低价高频是基本盘。`,
+      body: `盲盒贡献 ${formatWan(blind.totalSold)} 销量，占本周总销量的 ${((blind.totalSold / DATA.totalSold) * 100).toFixed(1)}%；中位价 ${formatMoney(blind.medianPrice)} 元，低价高频是基本盘。`,
     },
     {
       title: "头部渠道高度集中",
@@ -744,15 +760,15 @@ function renderInsights() {
     },
     {
       title: "卡牌价格带断层明显",
-      body: `同一榜单从 11.9 元（卡牌对对碰，7万+）到 4 万元（帕尼尼国宝系列），走量靠低价拆卡、声量靠稀缺收藏卡，是典型的内容驱动品类。`,
+      body: `同一榜单从 ${formatMoney(cardMin?.price)}（${cardMin?.name ?? "—"}）到 ${formatMoney(cardMax?.price)}（${cardMax?.name ?? "—"}），走量靠低价拆卡、声量靠稀缺收藏卡，是典型的内容驱动品类。`,
     },
     {
       title: "AI 玩具客单最高、量级最小",
-      body: `中位价 399 元为四品类最高，但本周上榜总销量约 ${formatWan(ai.totalSold)}，教育/陪伴叙事决定购买意愿，适合做高客单慢周转。`,
+      body: `中位价 ${formatMoney(ai.medianPrice)} 元为四品类最高，但本周上榜总销量约 ${formatWan(ai.totalSold)}，教育/陪伴叙事决定购买意愿，适合做高客单慢周转。`,
     },
     {
       title: "可动手办双引擎：走量与客单",
-      body: `万代高达系列承担走量（153 元档，3000+），暗源战锤 40K 系列撑客单（289-379 元档），IP 粉丝盘的复购价值高于泛流量。`,
+      body: `走量靠 ${topFigure?.name ?? "—"}（${topFigure?.soldLabel ?? "—"}，${formatMoney(topFigure?.price)}），高客单由 ${priceyFigure?.name ?? "—"}（${formatMoney(priceyFigure?.price)}）撑起，IP 粉丝盘的复购价值高于泛流量。`,
     },
     {
       title: "100 元以下是走量主战场",
@@ -895,6 +911,8 @@ function renderAll() {
   bindPersonaToggle(els.heroPersonaToggle);
   els.weekBadge.textContent = DATA.weekRange;
   els.heroWeekBadge.textContent = DATA.weekRange;
+  const channels = [...new Set(allItems.flatMap((item) => item.channel.split(" / ")))].join(" / ");
+  els.footerNote.innerHTML = `${DATA.weekRange} 周度快照 · 数据来源：${escapeHtml(channels)}热销榜<br />当前已有 ${DATA.weeklySnapshots.length} 期真实快照：趋势图中“模拟前 3 周”为演示数据，仅用于展示产品形态，不代表真实历史。`;
   renderOverview();
   renderRankings();
   renderTrends();

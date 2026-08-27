@@ -15,6 +15,9 @@ OUT = BASE / "toy-radar-data.js"
 # 文件名里的周区间，例如“潮玩品类数据7.26-8.1.md”
 WEEK_RE = re.compile(r"(\d{1,2})\.(\d{1,2})\s*[-~]\s*(\d{1,2})\.(\d{1,2})")
 
+# 渠道关键词，用于从表格标题中识别数据来源
+CHANNEL_ALIASES = ["天猫", "抖音", "京东", "淘宝"]
+
 
 def parse_number(value: str) -> float | None:
     raw = value.strip().replace(",", "")
@@ -38,9 +41,9 @@ def clean_text(value: str) -> str:
 def section_slug(title: str) -> str:
     if "盲盒" in title:
         return "blind_box"
-    if "可动手办" in title:
+    if "可动手办" in title or "高达" in title or "机甲" in title:
         return "action_figure"
-    if "收藏卡牌" in title:
+    if "卡牌" in title:
         return "trading_card"
     if "AI" in title:
         return "ai_toy"
@@ -50,13 +53,34 @@ def section_slug(title: str) -> str:
 def section_label(title: str) -> str:
     if "盲盒" in title:
         return "盲盒"
-    if "可动手办" in title:
+    if "可动手办" in title or "高达" in title or "机甲" in title:
         return "可动手办"
-    if "收藏卡牌" in title:
+    if "卡牌" in title:
         return "收藏卡牌"
     if "AI" in title:
         return "AI 玩具"
     return title
+
+
+def clean_title(title: str) -> str:
+    """去掉“表N：”前缀、括号备注和开头渠道词，得到干净的展示标题。"""
+    title = re.sub(r"^表[一二三四五六七八九十百\d]+[:：]\s*", "", title)
+    title = re.sub(r"[（(][^）)]*[）)]", "", title)
+    title = title.strip(" ：:，,、")
+    while True:
+        stripped = False
+        for ch in CHANNEL_ALIASES:
+            if title.startswith(ch):
+                title = title[len(ch):].lstrip("、,， ")
+                stripped = True
+        if not stripped:
+            break
+    return title.strip()
+
+
+def extract_channel(title: str) -> str:
+    found = [ch for ch in CHANNEL_ALIASES if ch in title]
+    return " / ".join(dict.fromkeys(found)) or "综合"
 
 
 def build_insight(slug: str) -> str:
@@ -114,6 +138,10 @@ def parse_md(path: Path) -> dict:
     all_prices: list[float] = []
     stat_dates: list[str] = []
 
+    # 同一品类可能拆成多张表（如“可动手办”和“高达模型”），按品类 id 合并
+    merged_sections: dict[str, dict] = {}
+    merged_order: list[str] = []
+
     for section in sections:
         rows = section["rows"]
         if len(rows) < 3:
@@ -122,7 +150,7 @@ def parse_md(path: Path) -> dict:
         title = section["title"]
         slug = section_slug(title)
         label = section_label(title)
-        channel = title.split("（")[-1].rstrip("）")
+        channel = extract_channel(title)
 
         items = []
         sold_values = []
@@ -165,18 +193,43 @@ def parse_md(path: Path) -> dict:
             else:
                 price_band_sold["1000_plus"] += sold
 
-        items_sorted = sorted(items, key=lambda x: x["sold"], reverse=True)
+        if not items:
+            continue  # 纯店铺榜等没有商品数据的表跳过
+
+        if slug not in merged_sections:
+            merged_sections[slug] = {
+                "id": slug,
+                "title": clean_title(title),
+                "source": channel,
+                "summary": build_insight(slug),
+                "roleNotes": build_role_notes(slug),
+                "items": [],
+                "sold_values": [],
+                "price_values": [],
+            }
+            merged_order.append(slug)
+        entry = merged_sections[slug]
+        entry["items"].extend(items)
+        entry["sold_values"].extend(sold_values)
+        entry["price_values"].extend(price_values)
+        channels = set(entry["source"].split(" / ")) | set(channel.split(" / "))
+        channels.discard("")
+        entry["source"] = " / ".join(sorted(channels))
+
+    for slug in merged_order:
+        entry = merged_sections[slug]
+        items_sorted = sorted(entry["items"], key=lambda x: x["sold"], reverse=True)
         parsed_sections.append({
             "id": slug,
-            "title": label,
-            "source": channel,
-            "summary": build_insight(slug),
-            "roleNotes": build_role_notes(slug),
-            "itemCount": len(items),
-            "totalSold": int(sum(sold_values)),
-            "medianPrice": statistics.median(price_values) if price_values else 0,
-            "priceMin": min(price_values) if price_values else 0,
-            "priceMax": max(price_values) if price_values else 0,
+            "title": entry["title"],
+            "source": entry["source"],
+            "summary": entry["summary"],
+            "roleNotes": entry["roleNotes"],
+            "itemCount": len(items_sorted),
+            "totalSold": int(sum(entry["sold_values"])),
+            "medianPrice": statistics.median(entry["price_values"]) if entry["price_values"] else 0,
+            "priceMin": min(entry["price_values"]) if entry["price_values"] else 0,
+            "priceMax": max(entry["price_values"]) if entry["price_values"] else 0,
             "topItem": items_sorted[0] if items_sorted else None,
             "items": items_sorted,
         })
@@ -223,7 +276,10 @@ def week_sort_key(path: Path) -> tuple[int, int]:
 
 
 def main() -> None:
-    sources = sorted(DATA_DIR.glob("潮玩品类数据*.md"), key=week_sort_key)
+    sources = sorted(
+        (path for path in DATA_DIR.rglob("潮玩品类数据*.md") if path.is_file()),
+        key=week_sort_key,
+    )
     if not sources:
         raise SystemExit(f"未在 {DATA_DIR} 找到周数据 md 文件")
 
