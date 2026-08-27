@@ -1,8 +1,17 @@
-const DATA = window.TOY_RADAR_DATA;
+const RAW = window.TOY_RADAR_DATA;
 
-if (!DATA) {
+if (!RAW) {
   throw new Error("TOY_RADAR_DATA not loaded");
 }
+
+const ALL_SNAPSHOTS = RAW.weeklySnapshots && RAW.weeklySnapshots.length
+  ? RAW.weeklySnapshots
+  : [{ label: RAW.weekRange, weekRange: RAW.weekRange, statDate: RAW.statDate, sections: {}, detail: RAW }];
+
+let weekIndex = ALL_SNAPSHOTS.length - 1;
+let DATA = ALL_SNAPSHOTS[weekIndex].detail;
+let sectionMap = {};
+let allItems = [];
 
 const state = {
   persona: "consumer",
@@ -31,20 +40,29 @@ const sectionLabel = {
 };
 
 const sectionOrder = ["blind_box", "action_figure", "trading_card", "ai_toy"];
-const sectionMap = Object.fromEntries(DATA.sections.map((section) => [section.id, section]));
-const allItems = DATA.sections.flatMap((section) =>
-  section.items.map((item) => ({
-    ...item,
-    sectionTitle: section.title,
-    sectionSummary: section.summary,
-    roleNotes: section.roleNotes,
-    channel: channelOf(section),
-  }))
-);
 
 function channelOf(section) {
   return (section.source || "").replace(/\s*\d{4}\.\d{1,2}\.\d{1,2}/, "").trim();
 }
+
+function activateWeek(index) {
+  const snap = ALL_SNAPSHOTS[index];
+  if (!snap) return;
+  weekIndex = index;
+  DATA = snap.detail;
+  sectionMap = Object.fromEntries(DATA.sections.map((section) => [section.id, section]));
+  allItems = DATA.sections.flatMap((section) =>
+    section.items.map((item) => ({
+      ...item,
+      sectionTitle: section.title,
+      sectionSummary: section.summary,
+      roleNotes: section.roleNotes,
+      channel: channelOf(section),
+    }))
+  );
+}
+
+activateWeek(ALL_SNAPSHOTS.length - 1);
 
 const els = {
   tabs: document.getElementById("tabs"),
@@ -175,6 +193,21 @@ function bindTabs() {
       });
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
+  });
+}
+
+function bindWeekSelect() {
+  const select = document.getElementById("weekSelect");
+  if (!select) return;
+  select.innerHTML = ALL_SNAPSHOTS
+    .map((snap, index) => {
+      const isLatest = index === ALL_SNAPSHOTS.length - 1;
+      return `<option value="${index}" ${index === weekIndex ? "selected" : ""}>${escapeHtml(snap.label)}${isLatest ? "（本周）" : ""}</option>`;
+    })
+    .join("");
+  select.addEventListener("change", () => {
+    activateWeek(Number(select.value));
+    renderAll();
   });
 }
 
@@ -530,7 +563,7 @@ function weekStart(label) {
 }
 
 function buildTrendSeries() {
-  const snapshots = DATA.weeklySnapshots ?? [];
+  const snapshots = ALL_SNAPSHOTS;
   const current = snapshots[snapshots.length - 1] ?? {
     label: DATA.weekRange,
     sections: Object.fromEntries(sectionOrder.map((key) => [key, sectionMap[key].totalSold])),
@@ -681,13 +714,14 @@ function renderLineChart() {
     .join("");
 
   const xLabels = series
-    .map(
-      (week, index) => `
+    .map((week, index) => {
+      const isLatest = !week.simulated && index === series.length - 1;
+      return `
       <text x="${xFor(index).toFixed(1)}" y="${H - 14}" fill="${week.simulated ? "rgba(232,242,255,0.4)" : "#c8f7ff"}" font-size="11" text-anchor="middle">
-        ${escapeHtml(week.label)}${week.simulated ? "" : "（本周）"}
+        ${escapeHtml(week.label)}${isLatest ? "（本周）" : ""}
       </text>
-    `
-    )
+    `;
+    })
     .join("");
 
   const paths = sectionOrder
@@ -733,7 +767,7 @@ function renderLineChart() {
 
   els.lineNote.innerHTML = state.demo
     ? "演示模式：虚线为按本周销量比例生成的模拟历史（非真实数据），仅用于展示趋势形态；实心圆点为真实快照。后续每接入一周真实快照，折线会自动向前延伸。"
-    : `当前已有 ${DATA.weeklySnapshots.length} 期真实快照（${DATA.weeklySnapshots.map((w) => w.label).join("、")}），各品类以最近一周为基准 100；趋势线会随每周数据自动延伸。`;
+    : `当前已有 ${ALL_SNAPSHOTS.length} 期真实快照（${ALL_SNAPSHOTS.map((w) => w.label).join("、")}），各品类以最近一周为基准 100；趋势线会随每周数据自动延伸。`;
 }
 
 function renderInsights() {
@@ -912,7 +946,7 @@ function renderAll() {
   els.weekBadge.textContent = DATA.weekRange;
   els.heroWeekBadge.textContent = DATA.weekRange;
   const channels = [...new Set(allItems.flatMap((item) => item.channel.split(" / ")))].join(" / ");
-  els.footerNote.innerHTML = `${DATA.weekRange} 周度快照 · 数据来源：${escapeHtml(channels)}热销榜<br />当前已有 ${DATA.weeklySnapshots.length} 期真实快照：趋势图中“模拟前 3 周”为演示数据，仅用于展示产品形态，不代表真实历史。`;
+  els.footerNote.innerHTML = `${DATA.weekRange} 周度快照（统计日 ${DATA.statDate}）· 数据来源：${escapeHtml(channels)}热销榜<br />当前已有 ${ALL_SNAPSHOTS.length} 期真实快照：趋势图中“模拟前 3 周”为演示数据，仅用于展示产品形态，不代表真实历史。`;
   renderOverview();
   renderRankings();
   renderTrends();
@@ -921,6 +955,7 @@ function renderAll() {
 /* ===================== 事件绑定 ===================== */
 
 bindTabs();
+bindWeekSelect();
 
 els.rankSearch.addEventListener("input", (event) => {
   state.rankSearch = event.target.value;

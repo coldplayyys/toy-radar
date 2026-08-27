@@ -275,6 +275,53 @@ def week_sort_key(path: Path) -> tuple[int, int]:
     return (99, 99)
 
 
+def build_payload(week: dict) -> dict:
+    """把单周解析结果变成与主 payload 同形状的视图数据（不含 weeklySnapshots）。"""
+    total_sold = week["totalSold"]
+    price_bands = [
+        {"key": "under100", "label": "100 元以下", "sold": int(week["price_band_sold"]["under100"])},
+        {"key": "100_299", "label": "100-299 元", "sold": int(week["price_band_sold"]["100_299"])},
+        {"key": "300_999", "label": "300-999 元", "sold": int(week["price_band_sold"]["300_999"])},
+        {"key": "1000_plus", "label": "1000 元以上", "sold": int(week["price_band_sold"]["1000_plus"])},
+    ]
+    for band in price_bands:
+        band["share"] = round(band["sold"] / total_sold * 100, 1) if total_sold else 0
+
+    top_stores = [
+        {"shop": shop, "sold": int(sold), "items": week["store_counter"][shop]}
+        for shop, sold in week["store_sold"].most_common(10)
+    ]
+
+    all_items_sorted = sorted(week["allItems"], key=lambda x: x["sold"], reverse=True)
+    top_items = all_items_sorted[:10]
+
+    return {
+        "weekRange": week["weekRange"],
+        "statDate": week["statDate"],
+        "totalItems": week["totalItems"],
+        "totalSold": week["totalSold"],
+        "avgPrice": week["avgPrice"],
+        "priceMin": week["priceMin"],
+        "priceMax": week["priceMax"],
+        "topStore": top_stores[0]["shop"] if top_stores else "",
+        "topStoreSold": top_stores[0]["sold"] if top_stores else 0,
+        "sections": week["sections"],
+        "topItems": top_items,
+        "topStores": top_stores,
+        "priceBands": price_bands,
+        "consumerPicks": [
+            top_items[0] if top_items else None,
+            next((item for item in top_items if item["price"] < 100), top_items[0] if top_items else None),
+            next((item for item in top_items if item["price"] >= 1000), top_items[-1] if top_items else None),
+        ],
+        "practitionerPicks": [
+            week["sections"][0]["topItem"] if week["sections"] else None,
+            week["sections"][1]["topItem"] if len(week["sections"]) > 1 else None,
+            week["sections"][2]["topItem"] if len(week["sections"]) > 2 else None,
+        ],
+    }
+
+
 def main() -> None:
     sources = sorted(
         (path for path in DATA_DIR.rglob("潮玩品类数据*.md") if path.is_file()),
@@ -286,61 +333,24 @@ def main() -> None:
     parsed = [parse_md(path) for path in sources]
     latest = parsed[-1]
 
+    # 每个周快照都携带完整明细，前端可随时切换查看任意一周
     weekly_snapshots = [
         {
             "week": week["weekLabel"],
             "label": week["weekLabel"],
+            "weekRange": week["weekRange"],
+            "statDate": week["statDate"],
             "totalSold": week["totalSold"],
             "totalItems": week["totalItems"],
             "sections": {section["id"]: section["totalSold"] for section in week["sections"]},
+            "detail": build_payload(week),
         }
         for week in parsed
     ]
 
-    total_sold = latest["totalSold"]
-    price_bands = [
-        {"key": "under100", "label": "100 元以下", "sold": int(latest["price_band_sold"]["under100"])},
-        {"key": "100_299", "label": "100-299 元", "sold": int(latest["price_band_sold"]["100_299"])},
-        {"key": "300_999", "label": "300-999 元", "sold": int(latest["price_band_sold"]["300_999"])},
-        {"key": "1000_plus", "label": "1000 元以上", "sold": int(latest["price_band_sold"]["1000_plus"])},
-    ]
-    for band in price_bands:
-        band["share"] = round(band["sold"] / total_sold * 100, 1) if total_sold else 0
-
-    top_stores = [
-        {"shop": shop, "sold": int(sold), "items": latest["store_counter"][shop]}
-        for shop, sold in latest["store_sold"].most_common(10)
-    ]
-
-    all_items_sorted = sorted(latest["allItems"], key=lambda x: x["sold"], reverse=True)
-    top_items = all_items_sorted[:10]
-
-    payload = {
-        "weekRange": latest["weekRange"],
-        "generatedAt": date.today().isoformat(),
-        "totalItems": latest["totalItems"],
-        "totalSold": latest["totalSold"],
-        "avgPrice": latest["avgPrice"],
-        "priceMin": latest["priceMin"],
-        "priceMax": latest["priceMax"],
-        "topStore": top_stores[0]["shop"] if top_stores else "",
-        "topStoreSold": top_stores[0]["sold"] if top_stores else 0,
-        "sections": latest["sections"],
-        "topItems": top_items,
-        "topStores": top_stores,
-        "priceBands": price_bands,
-        "weeklySnapshots": weekly_snapshots,
-        "consumerPicks": [
-            top_items[0] if top_items else None,
-            next((item for item in top_items if item["price"] < 100), top_items[0] if top_items else None),
-            next((item for item in top_items if item["price"] >= 1000), top_items[-1] if top_items else None),
-        ],
-        "practitionerPicks": [
-            latest["sections"][0]["topItem"] if latest["sections"] else None,
-            latest["sections"][1]["topItem"] if len(latest["sections"]) > 1 else None,
-            latest["sections"][2]["topItem"] if len(latest["sections"]) > 2 else None,
-        ],
-    }
+    payload = build_payload(latest)
+    payload["generatedAt"] = date.today().isoformat()
+    payload["weeklySnapshots"] = weekly_snapshots
 
     lines = [
         "window.TOY_RADAR_DATA = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";",

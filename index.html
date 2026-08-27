@@ -183,6 +183,24 @@
       border: 1px solid rgba(103, 232, 249, 0.16);
     }
 
+    .week-select {
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(103, 232, 249, 0.1);
+      color: #c8f7ff;
+      font: inherit;
+      font-size: 12px;
+      white-space: nowrap;
+      border: 1px solid rgba(103, 232, 249, 0.16);
+      cursor: pointer;
+      outline: none;
+    }
+
+    .week-select option {
+      background: #0c1a2b;
+      color: #e8f2ff;
+    }
+
     /* ---------- Views ---------- */
     .view {
       display: grid;
@@ -1390,6 +1408,7 @@
         <button class="tab" data-view="trends">趋势</button>
       </nav>
       <div class="top-actions">
+        <select class="week-select" id="weekSelect" aria-label="选择统计周"></select>
         <div class="persona-switch" id="personaToggle"></div>
         <span class="section-note" id="weekBadge"></span>
       </div>
