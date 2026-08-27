@@ -206,6 +206,18 @@ function bindWeekSelect() {
   });
 }
 
+function bindSortButtons() {
+  els.rankSort.querySelectorAll(".sort-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.rankSort = button.dataset.sort;
+      els.rankSort.querySelectorAll(".sort-btn").forEach((b) => {
+        b.classList.toggle("active", b === button);
+      });
+      renderRankTable();
+    });
+  });
+}
+
 /* ===================== 总览 ===================== */
 
 function renderHeroHeadline() {
@@ -1208,10 +1220,7 @@ els.rankSearch.addEventListener("input", (event) => {
   renderRankTable();
 });
 
-els.rankSort.addEventListener("change", (event) => {
-  state.rankSort = event.target.value;
-  renderRankTable();
-});
+bindSortButtons();
 
 els.demoToggle.addEventListener("change", (event) => {
   state.demo = event.target.checked;
