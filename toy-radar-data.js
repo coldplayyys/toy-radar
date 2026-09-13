@@ -1596,7 +1596,7 @@ window.TOY_RADAR_DATA = {
       "sectionLabel": "收藏卡牌"
     }
   ],
-  "generatedAt": "2026-08-27",
+  "generatedAt": "2026-09-13",
   "weeklySnapshots": [
     {
       "week": "7.21-7.25",
