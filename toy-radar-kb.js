@@ -616,7 +616,7 @@
     ].join("\n");
   }
 
-  async function streamChat(messages, settings, onDelta) {
+  async function streamChat(messages, settings, onDelta, onReasoning) {
     const response = await apiFetch(
       "/chat/completions",
       { model: settings.chatModel, messages, stream: true, temperature: 0.2 },
@@ -625,7 +625,9 @@
     const contentType = response.headers.get("content-type") || "";
     if (!response.body || !contentType.includes("event-stream")) {
       const data = await response.json();
-      const text = data.choices?.[0]?.message?.content || "";
+      const message = data.choices?.[0]?.message || {};
+      if (message.reasoning_content && onReasoning) onReasoning(message.reasoning_content);
+      const text = message.content || "";
       if (text) onDelta(text);
       return text;
     }
@@ -636,21 +638,27 @@
     for (;;) {
       const { value, done } = await reader.read();
       if (done) break;
-      const delta = extractor.push(decoder.decode(value, { stream: true }));
-      if (delta) {
-        full += delta;
-        onDelta(delta);
+      const { content, reasoning } = extractor.push(decoder.decode(value, { stream: true }));
+      if (reasoning && onReasoning) onReasoning(reasoning);
+      if (content) {
+        full += content;
+        onDelta(content);
       }
     }
     const tail = extractor.push("\n");
-    if (tail) {
-      full += tail;
-      onDelta(tail);
+    if (tail.reasoning && onReasoning) onReasoning(tail.reasoning);
+    if (tail.content) {
+      full += tail.content;
+      onDelta(tail.content);
     }
     return full;
   }
 
-  /** SSE 增量解析：网络分包会把一行 JSON 切成两半，这里负责攒够再解析。 */
+  /**
+   * SSE 增量解析：网络分包会把一行 JSON 切成两半，这里负责攒够再解析。
+   * 返回 { content, reasoning }——推理型模型会先吐一大段 reasoning_content，
+   * 正文要等推理结束才出来，所以两者要分开处理。
+   */
   function sseDeltaExtractor() {
     let buffer = "";
     return {
@@ -658,15 +666,16 @@
         buffer += chunk;
         const lines = buffer.split("\n");
         buffer = lines.pop() || "";
-        let output = "";
+        const output = { content: "", reasoning: "" };
         for (const line of lines) {
           const trimmed = line.trim();
           if (!trimmed.startsWith("data:")) continue;
           const payload = trimmed.slice(5).trim();
           if (!payload || payload === "[DONE]") continue;
           try {
-            const json = JSON.parse(payload);
-            output += json.choices?.[0]?.delta?.content || "";
+            const delta = JSON.parse(payload).choices?.[0]?.delta || {};
+            output.content += delta.content || "";
+            output.reasoning += delta.reasoning_content || "";
           } catch (_error) {
             /* 半截 JSON 继续等下一包 */
           }
@@ -929,6 +938,7 @@
   /* --------------------------------- 提问流程 ------------------------------- */
 
   async function ask() {
+    readSettingsFromForm(); // 防止「输完 Key 没失焦就提问」时读到旧值
     const question = els.question.value.trim();
     if (!question) {
       setStatus("先写个问题，比如：这周盲盒里卖得最好的是哪几款？", "warn");
@@ -955,18 +965,44 @@
         return;
       }
       setStatus("正在基于原文生成答案…");
+      const startedAt = Date.now();
+      const reasoner = state.settings.chatModel.toLowerCase().includes("reason")
+        || state.settings.chatModel.includes("v4")
+        || state.settings.chatModel.startsWith("o");
+      let reasoningChars = 0;
+      const ticker = window.setInterval(() => {
+        const seconds = Math.round((Date.now() - startedAt) / 1000);
+        const thinking = reasoningChars
+          ? `模型仍在推理（已思考 ${reasoningChars} 字）`
+          : reasoner
+            ? "模型正在推理"
+            : "正在生成";
+        setStatus(`${thinking}…已用 ${seconds} 秒`);
+      }, 1000);
       let acc = "";
-      await streamChat(
-        [
-          { role: "system", content: SYSTEM_PROMPT },
-          { role: "user", content: buildPrompt(question, hits) },
-        ],
-        state.settings,
-        (delta) => {
-          acc += delta;
-          els.answer.innerHTML = renderAnswerHtml(acc, hits);
-        }
-      );
+      try {
+        await streamChat(
+          [
+            { role: "system", content: SYSTEM_PROMPT },
+            { role: "user", content: buildPrompt(question, hits) },
+          ],
+          state.settings,
+          (delta) => {
+            acc += delta;
+            window.clearInterval(ticker);
+            els.answer.innerHTML = renderAnswerHtml(acc, hits);
+          },
+          (reasoning) => {
+            reasoningChars += reasoning.length;
+            if (reasoningChars && !acc) {
+              els.answer.innerHTML =
+                '<div class="kb-note">模型正在推理原文（推理过程不展示，正文随后出现）…</div>';
+            }
+          }
+        );
+      } finally {
+        window.clearInterval(ticker);
+      }
       const cited = parseCitations(acc, hits.length);
       els.answer.innerHTML = `${renderAnswerHtml(acc, hits)}
         <div class="kb-cite-bar">${
@@ -1022,11 +1058,27 @@
     els.embedModel.value = state.settings.embedModel;
     els.useVector.checked = !!state.settings.useVector;
     els.proxy.checked = !!state.settings.preferProxy;
+    updateVectorHint();
+  }
+
+  function updateVectorHint() {
+    if (!els.vectorHint) return;
     els.vectorHint.textContent = state.settings.useVector
       ? state.settings.key
         ? "已开启：上传新文档时会调用向量模型，并缓存到本机"
         : "需要先填 Key 才能真正向量化"
       : "关闭时只用关键词（BM25）检索，不消耗向量额度";
+  }
+
+  /** 把表单里的当前值同步进 state。输入框只监听 input 也能生效，避免没失焦就提问的漏读。 */
+  function readSettingsFromForm() {
+    if (!els.base) return;
+    state.settings.base = els.base.value.trim();
+    state.settings.key = els.key.value.trim();
+    state.settings.chatModel = els.chatModel.value.trim();
+    state.settings.embedModel = els.embedModel.value.trim();
+    state.settings.useVector = els.useVector.checked;
+    state.settings.preferProxy = els.proxy.checked;
   }
 
   /* ---------------------------------- 初始化 -------------------------------- */
@@ -1110,24 +1162,21 @@
 
     els.provider.addEventListener("change", (event) => applyProvider(event.target.value));
     [els.base, els.key, els.chatModel, els.embedModel].forEach((input) =>
+      ["input", "change"].forEach((type) =>
+        input.addEventListener(type, () => {
+          readSettingsFromForm();
+          saveSettings();
+          updateVectorHint();
+        })
+      )
+    );
+    [els.useVector, els.proxy].forEach((input) =>
       input.addEventListener("change", () => {
-        state.settings.base = els.base.value.trim();
-        state.settings.key = els.key.value.trim();
-        state.settings.chatModel = els.chatModel.value.trim();
-        state.settings.embedModel = els.embedModel.value.trim();
+        readSettingsFromForm();
         saveSettings();
-        syncSettingsForm();
+        updateVectorHint();
       })
     );
-    els.useVector.addEventListener("change", () => {
-      state.settings.useVector = els.useVector.checked;
-      saveSettings();
-      syncSettingsForm();
-    });
-    els.proxy.addEventListener("change", () => {
-      state.settings.preferProxy = els.proxy.checked;
-      saveSettings();
-    });
   }
 
   async function init() {

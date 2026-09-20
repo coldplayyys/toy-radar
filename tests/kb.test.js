@@ -134,18 +134,32 @@ test("SSE 流式解析：分包切断 JSON 也能拼回完整答案", () => {
     'ices":[{"delta":{"content":"走量的品类"}}]}\n\n',
     "data: [DONE]\n\n",
   ];
-  const text = frames.map((frame) => extractor.push(frame)).join("") + extractor.push("\n");
+  const text =
+    frames.map((frame) => extractor.push(frame).content).join("") + extractor.push("\n").content;
   assert.strictEqual(text, "盲盒是最走量的品类");
 });
 
 test("SSE 流式解析：忽略非 data 行与坏 JSON", () => {
   const extractor = kb.sseDeltaExtractor();
   const text =
-    extractor.push(": keep-alive\n\n") +
-    extractor.push('data: {"choices":[{"delta":{"content":"A"}}]}\n') +
-    extractor.push("data: {坏掉的 json}\n") +
-    extractor.push('data: {"choices":[{"delta":{"content":"B"}}]}\n');
+    extractor.push(": keep-alive\n\n").content +
+    extractor.push('data: {"choices":[{"delta":{"content":"A"}}]}\n').content +
+    extractor.push("data: {坏掉的 json}\n").content +
+    extractor.push('data: {"choices":[{"delta":{"content":"B"}}]}\n').content;
   assert.strictEqual(text, "AB");
+});
+
+test("SSE 流式解析：推理型模型的 reasoning_content 与正文分开", () => {
+  const extractor = kb.sseDeltaExtractor();
+  const first = extractor.push('data: {"choices":[{"delta":{"reasoning_content":"先想想…"}}]}\n');
+  const second = extractor.push(
+    'data: {"choices":[{"delta":{"reasoning_content":"再想想。"}}]}\n' +
+      'data: {"choices":[{"delta":{"content":"结论"}}]}\n'
+  );
+  assert.strictEqual(first.content, "");
+  assert.strictEqual(first.reasoning, "先想想…");
+  assert.strictEqual(second.content, "结论");
+  assert.strictEqual(second.reasoning, "再想想。");
 });
 
 console.log(`\n通过 ${passed} 项，失败 ${failures.length} 项`);
