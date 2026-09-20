@@ -185,7 +185,7 @@ function switchView(name) {
   els.tabs.querySelectorAll(".tab").forEach((tab) => {
     tab.classList.toggle("active", tab.dataset.view === name);
   });
-  ["overview", "rankings", "trends"].forEach((viewName) => {
+  ["overview", "rankings", "trends", "knowledge"].forEach((viewName) => {
     document.getElementById(`view-${viewName}`).classList.toggle("hidden", viewName !== name);
   });
   window.scrollTo({ top: 0, behavior: "smooth" });

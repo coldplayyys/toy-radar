@@ -2012,6 +2012,416 @@
       .hero-result { grid-template-columns: 1fr; }
       .hero-result .r-side { text-align: left; }
     }
+
+    /* ===================== 知识库（RAG） ===================== */
+    .kb-hero { margin-bottom: 18px; }
+
+    .kb-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      min-width: 300px;
+    }
+
+    .kb-stat {
+      background: linear-gradient(150deg, #fff, #fff2f7);
+      border: 1px solid rgba(244, 114, 182, 0.18);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      text-align: center;
+    }
+
+    .kb-stat-value {
+      display: block;
+      font-size: 20px;
+      font-weight: 800;
+      color: #d4538f;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .kb-stat-label { font-size: 12px; color: var(--muted); }
+
+    .kb-flow {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .kb-step {
+      background: rgba(244, 114, 182, 0.1);
+      border: 1px solid rgba(244, 114, 182, 0.2);
+      color: #d4538f;
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-weight: 600;
+    }
+
+    .kb-arrow { color: rgba(244, 114, 182, 0.6); }
+
+    .kb-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .kb-title {
+      margin: 0 0 14px;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .kb-drop {
+      border: 1.5px dashed rgba(244, 114, 182, 0.45);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(160deg, #fff, #fff5f9);
+      padding: 20px;
+      text-align: center;
+      transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+    }
+
+    .kb-drop.is-over {
+      border-color: #ec4899;
+      background: #fff0f6;
+      transform: translateY(-2px);
+    }
+
+    .kb-drop-icon { font-size: 26px; }
+
+    .kb-drop-title { margin: 8px 0 4px; font-weight: 700; color: var(--text); }
+    .kb-drop-note { margin: 0 0 14px; font-size: 12px; color: var(--faint); line-height: 1.7; }
+    .kb-drop-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+    .kb-btn {
+      border: none;
+      border-radius: 999px;
+      padding: 10px 20px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #f472b6, #fb7185);
+      box-shadow: 0 10px 24px rgba(244, 114, 182, 0.28);
+      cursor: pointer;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .kb-btn:hover { transform: translateY(-1px); box-shadow: 0 14px 30px rgba(244, 114, 182, 0.34); }
+    .kb-btn:disabled { opacity: 0.55; cursor: default; transform: none; }
+
+    .kb-btn.ghost {
+      background: #fff;
+      color: #d4538f;
+      border: 1px solid rgba(244, 114, 182, 0.3);
+      box-shadow: none;
+    }
+
+    .kb-status {
+      margin-top: 12px;
+      font-size: 12.5px;
+      line-height: 1.7;
+      color: var(--muted);
+      background: rgba(244, 114, 182, 0.08);
+      border-left: 3px solid rgba(244, 114, 182, 0.5);
+      border-radius: 10px;
+      padding: 9px 12px;
+    }
+
+    .kb-status[data-tone="ok"] { border-left-color: #10b981; background: rgba(16, 185, 129, 0.09); }
+    .kb-status[data-tone="warn"] { border-left-color: #f59e0b; background: rgba(245, 158, 11, 0.1); }
+    .kb-status[data-tone="error"] { border-left-color: #ef4444; background: rgba(239, 68, 68, 0.09); }
+
+    .kb-docs { margin-top: 14px; display: flex; flex-direction: column; gap: 8px; }
+
+    .kb-doc {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: #fff;
+      border: 1px solid rgba(244, 114, 182, 0.16);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+    }
+
+    .kb-doc-title { font-size: 13.5px; font-weight: 600; color: var(--text); }
+    .kb-doc-meta { font-size: 11.5px; color: var(--faint); margin-top: 3px; }
+    .kb-doc-actions { display: flex; gap: 6px; flex-shrink: 0; }
+
+    .kb-mini {
+      border: 1px solid rgba(244, 114, 182, 0.25);
+      background: #fff;
+      color: #d4538f;
+      border-radius: 999px;
+      padding: 5px 12px;
+      font: inherit;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .kb-mini:hover { background: #fff0f6; }
+    .kb-mini.danger { color: #e11d48; border-color: rgba(225, 29, 72, 0.25); }
+
+    .kb-empty {
+      margin: 0;
+      font-size: 12.5px;
+      line-height: 1.8;
+      color: var(--faint);
+      background: rgba(244, 114, 182, 0.06);
+      border-radius: var(--radius-md);
+      padding: 14px;
+    }
+
+    .kb-ask {
+      background: #fff;
+      border: 1px solid rgba(244, 114, 182, 0.16);
+      border-radius: var(--radius-lg);
+      padding: 14px;
+    }
+
+    .kb-ask textarea {
+      width: 100%;
+      min-height: 74px;
+      border: none;
+      outline: none;
+      resize: vertical;
+      font: inherit;
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: var(--text);
+      background: transparent;
+    }
+
+    .kb-ask textarea::placeholder { color: var(--faint); }
+
+    .kb-ask-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border-top: 1px solid rgba(244, 114, 182, 0.12);
+      margin-top: 10px;
+      padding-top: 12px;
+      font-size: 11.5px;
+      color: var(--faint);
+    }
+
+    .kb-samples { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+
+    .kb-sample {
+      border: 1px solid rgba(244, 114, 182, 0.22);
+      background: #fff8fb;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 5px 11px;
+      font: inherit;
+      font-size: 11.5px;
+      cursor: pointer;
+    }
+
+    .kb-sample:hover { border-color: #ec4899; color: #d4538f; }
+
+    .kb-settings {
+      margin-top: 14px;
+      border: 1px solid rgba(244, 114, 182, 0.16);
+      border-radius: var(--radius-md);
+      background: #fff;
+      padding: 12px 14px;
+    }
+
+    .kb-settings summary {
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      color: #d4538f;
+      list-style: none;
+    }
+
+    .kb-settings summary::-webkit-details-marker { display: none; }
+    .kb-settings summary::after { content: " ▾"; font-size: 10px; }
+
+    .kb-fields {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .kb-field { display: flex; flex-direction: column; gap: 5px; }
+    .kb-field.span-2 { grid-column: span 2; }
+
+    .kb-field label { font-size: 11.5px; color: var(--faint); }
+
+    .kb-field input,
+    .kb-field select {
+      border: 1px solid rgba(244, 114, 182, 0.22);
+      border-radius: 10px;
+      padding: 8px 10px;
+      font: inherit;
+      font-size: 12.5px;
+      color: var(--text);
+      background: #fff;
+      outline: none;
+    }
+
+    .kb-field input:focus,
+    .kb-field select:focus { border-color: #ec4899; }
+
+    .kb-check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    .kb-hint { font-size: 11.5px; color: var(--faint); line-height: 1.7; margin: 8px 0 0; }
+
+    .kb-hits { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+
+    .kb-hit {
+      background: #fff;
+      border: 1px solid rgba(244, 114, 182, 0.16);
+      border-radius: var(--radius-md);
+      padding: 11px 13px;
+    }
+
+    .kb-hit-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11.5px;
+      color: var(--faint);
+      flex-wrap: wrap;
+    }
+
+    .kb-hit-idx { color: #d4538f; font-weight: 700; }
+    .kb-hit-src { flex: 1; min-width: 120px; }
+    .kb-hit-score { color: #10b981; }
+
+    .kb-hit-text {
+      margin: 8px 0 8px;
+      font-size: 12.5px;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .kb-answer {
+      margin-top: 14px;
+      font-size: 13.5px;
+      line-height: 1.85;
+      color: var(--text);
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+
+    .kb-cite {
+      border: none;
+      background: rgba(244, 114, 182, 0.16);
+      color: #d4538f;
+      border-radius: 6px;
+      padding: 0 5px;
+      margin: 0 2px;
+      font: inherit;
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+      vertical-align: super;
+    }
+
+    .kb-cite:hover { background: #ec4899; color: #fff; }
+
+    .kb-cite-bar {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px dashed rgba(244, 114, 182, 0.3);
+      font-size: 12px;
+      color: var(--faint);
+    }
+
+    .kb-note {
+      font-size: 12.5px;
+      line-height: 1.8;
+      color: var(--muted);
+      background: rgba(244, 114, 182, 0.08);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+    }
+
+    .kb-reader {
+      position: fixed;
+      inset: 0;
+      background: rgba(74, 52, 64, 0.32);
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      z-index: 60;
+    }
+
+    .kb-reader-panel {
+      width: min(860px, 100%);
+      max-height: 86vh;
+      background: #fff;
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(244, 114, 182, 0.2);
+      box-shadow: 0 30px 80px rgba(236, 72, 153, 0.22);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .kb-reader-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(244, 114, 182, 0.16);
+    }
+
+    .kb-reader-head h3 { margin: 0; font-size: 15px; color: var(--text); }
+    .kb-reader-body { padding: 16px 20px 24px; overflow-y: auto; }
+
+    .kb-chunk {
+      border-left: 3px solid rgba(244, 114, 182, 0.25);
+      padding: 8px 0 8px 14px;
+      margin-bottom: 14px;
+    }
+
+    .kb-chunk.is-target {
+      border-left-color: #ec4899;
+      background: #fff6fa;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .kb-chunk-head { font-size: 11px; color: var(--faint); margin-bottom: 5px; }
+    .kb-chunk p { margin: 0; font-size: 13px; line-height: 1.85; color: var(--text); }
+
+    .kb-mark {
+      background: linear-gradient(180deg, transparent 55%, rgba(244, 114, 182, 0.45) 55%);
+      color: inherit;
+      font-weight: 600;
+    }
+
+    @media (max-width: 1180px) {
+      .kb-grid { grid-template-columns: 1fr; }
+      .kb-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); min-width: 0; }
+    }
+
+    @media (max-width: 760px) {
+      .kb-fields { grid-template-columns: 1fr; }
+      .kb-field.span-2 { grid-column: span 1; }
+      .kb-reader { padding: 0; }
+      .kb-reader-panel { max-height: 100vh; border-radius: 0; height: 100%; }
+    }
   </style>
 </head>
 <body>
@@ -2028,6 +2438,7 @@
         <button class="tab active" data-view="overview">总览</button>
         <button class="tab" data-view="rankings">榜单</button>
         <button class="tab" data-view="trends">趋势</button>
+        <button class="tab" data-view="knowledge">知识库</button>
       </nav>
       <div class="top-actions">
         <select class="week-select" id="weekSelect" aria-label="选择统计周"></select>
@@ -2164,9 +2575,134 @@
       </div>
     </section>
 
+    <!-- ===================== 知识库（RAG） ===================== -->
+    <section class="view hidden" id="view-knowledge">
+      <section class="panel section kb-hero">
+        <div class="panel-head">
+          <div>
+            <h2>潮玩知识库</h2>
+            <p>
+              把行业报告、公众号文章、周数据表丢进来：页面会自动解析、切块、建索引；提问时先检索原文，
+              再让大模型<b>只依据检索到的内容</b>作答，每条结论都能点回原文那一页。
+            </p>
+          </div>
+          <div class="kb-stats" id="kbStats"></div>
+        </div>
+        <div class="kb-flow">
+          <span class="kb-step">① 上传</span><span class="kb-arrow">→</span>
+          <span class="kb-step">② 解析</span><span class="kb-arrow">→</span>
+          <span class="kb-step">③ 切块</span><span class="kb-arrow">→</span>
+          <span class="kb-step">④ 建索引</span><span class="kb-arrow">→</span>
+          <span class="kb-step">⑤ 混合检索</span><span class="kb-arrow">→</span>
+          <span class="kb-step">⑥ 引用作答</span><span class="kb-arrow">→</span>
+          <span class="kb-step">⑦ 回到原文</span>
+        </div>
+      </section>
+
+      <div class="kb-grid">
+        <section class="panel section kb-col">
+          <h3 class="kb-title">资料库</h3>
+          <div class="kb-drop" id="kbDrop">
+            <div class="kb-drop-icon">📚</div>
+            <p class="kb-drop-title">拖文件到这里，或点下面的按钮</p>
+            <p class="kb-drop-note">
+              支持 PDF / Word(.docx) / TXT / Markdown / HTML<br />
+              解析、切块、索引全部在本机浏览器完成，文件不会上传到任何服务器
+            </p>
+            <div class="kb-drop-actions">
+              <button class="kb-btn" id="kbPick">选择文件</button>
+              <button class="kb-btn ghost" id="kbImportSite">导入站内榜单数据</button>
+            </div>
+            <input type="file" id="kbFile" accept=".pdf,.docx,.txt,.md,.markdown,.html,.htm" multiple hidden />
+          </div>
+          <div class="kb-status hidden" id="kbStatus"></div>
+          <div class="kb-docs" id="kbDocs"></div>
+        </section>
+
+        <section class="panel section kb-col">
+          <h3 class="kb-title">智能检索问答</h3>
+          <div class="kb-ask">
+            <textarea
+              id="kbQuestion"
+              placeholder="例如：这三周里盲盒品类的销量结构发生了什么变化？高价卡牌为什么卖得动？"
+            ></textarea>
+            <div class="kb-samples" id="kbSamples">
+              <button class="kb-sample" type="button">这三周销量最高的商品是哪几款？</button>
+              <button class="kb-sample" type="button">盲盒和卡牌的客单价差多少？</button>
+              <button class="kb-sample" type="button">哪些店铺在榜单里出现得最多？</button>
+              <button class="kb-sample" type="button">高价商品主要集中在哪些品类？</button>
+            </div>
+            <div class="kb-ask-foot">
+              <span>Ctrl / ⌘ + Enter 直接提问</span>
+              <button class="kb-btn" id="kbAsk">检索并作答</button>
+            </div>
+          </div>
+
+          <details class="kb-settings" id="kbSettings">
+            <summary>模型设置（可选，填了才有 AI 作答）</summary>
+            <div class="kb-fields">
+              <div class="kb-field">
+                <label for="kbProvider">服务商</label>
+                <select id="kbProvider">
+                  <option value="deepseek">DeepSeek</option>
+                  <option value="siliconflow">硅基流动 SiliconFlow</option>
+                  <option value="zhipu">智谱 GLM</option>
+                  <option value="moonshot">月之暗面 Kimi</option>
+                  <option value="openai">OpenAI</option>
+                  <option value="custom">自定义（OpenAI 兼容）</option>
+                </select>
+              </div>
+              <div class="kb-field">
+                <label for="kbChatModel">对话模型</label>
+                <input id="kbChatModel" type="text" placeholder="deepseek-chat" />
+              </div>
+              <div class="kb-field span-2">
+                <label for="kbBase">接口地址（OpenAI 兼容）</label>
+                <input id="kbBase" type="text" placeholder="https://api.deepseek.com/v1" />
+              </div>
+              <div class="kb-field span-2">
+                <label for="kbKey">API Key（只存在本机浏览器 localStorage）</label>
+                <input id="kbKey" type="password" placeholder="sk-..." autocomplete="off" />
+              </div>
+              <div class="kb-field span-2">
+                <label for="kbEmbedModel">向量模型（填了才能开向量检索）</label>
+                <input id="kbEmbedModel" type="text" placeholder="BAAI/bge-m3" />
+              </div>
+            </div>
+            <label class="kb-check">
+              <input type="checkbox" id="kbUseVector" />
+              开启向量检索（和关键词 BM25 混合排序；上传时会调用向量模型）
+            </label>
+            <p class="kb-hint" id="kbVectorHint"></p>
+            <label class="kb-check">
+              <input type="checkbox" id="kbProxy" />
+              优先走本地代理（用 <code>启动仪表盘.bat</code> 打开时勾选，绕过浏览器跨域限制）
+            </label>
+            <p class="kb-hint">
+              直连模式下，浏览器会直接请求服务商接口，能否成功取决于对方是否允许跨域；
+              走本地代理则一定可用。Key 不会写进仓库，也不会发给除你选定的服务商之外的任何地方。
+            </p>
+          </details>
+
+          <div class="kb-answer" id="kbAnswer"></div>
+          <div class="kb-hits" id="kbHits"></div>
+        </section>
+      </div>
+
+      <div class="kb-reader hidden" id="kbReader">
+        <div class="kb-reader-panel">
+          <div class="kb-reader-head">
+            <h3 id="kbReaderTitle">原文</h3>
+            <button class="kb-mini" id="kbReaderClose">关闭</button>
+          </div>
+          <div class="kb-reader-body" id="kbReaderBody"></div>
+        </div>
+      </div>
+    </section>
+
     <div class="footer-note" id="footerNote">
-      2026.7.26 - 2026.8.1 周度快照（统计日 2026.8.1）· 数据来源：天猫 / 抖音 / 京东热销榜<br />
-      当前仅一期快照：趋势图中“模拟前 3 周”为演示数据，用于展示产品形态，不代表真实历史。
+      已收录 3 期周度快照：7.21-7.25 · 7.26-8.1 · 8.9-8.15（统计日 2026.8.15）· 数据来源：天猫 / 抖音 / 京东 / 淘宝榜单<br />
+      趋势页可切换周期查看真实数据；「知识库」支持上传资料，做原文引用式的智能检索问答。
     </div>
   </main>
 
@@ -2175,5 +2711,6 @@
 
   <script src="./toy-radar-data.js"></script>
   <script src="./toy-radar-app.js"></script>
+  <script src="./toy-radar-kb.js"></script>
 </body>
 </html>
