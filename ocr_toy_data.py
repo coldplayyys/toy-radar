@@ -68,6 +68,15 @@ CATEGORY_RULES: list[tuple[str, list[str]]] = [
     ("AI玩具", ["ai玩具", "智能玩具", "陪伴机器人", "ai陪伴", "机器人"]),
 ]
 
+# 表名里的品类词优先级最高。文章会把「手办热销榜」和「盲盒热销榜」分开列，
+# 表里却可能混着盲盒商品；此时必须听表名的，不能按商品词频投票。
+TITLE_CATEGORY_RULES: list[tuple[str, list[str]]] = [
+    ("收藏卡牌", ["卡牌", "球星卡", "收藏卡"]),
+    ("可动手办", ["手办", "高达", "机甲", "模型", "拼装"]),
+    ("盲盒", ["盲盒", "萌粒"]),
+    ("AI玩具", ["ai", "智能机器人", "陪伴机器人", "机器人", "智能玩具"]),
+]
+
 TITLE_NOISE = ["统计", "数据来源", "查看更多", "榜单说明", "更新时间"]
 # 数字列 OCR 置信度低于这个值时，即使解析得出来也拉进待核对清单
 LOW_SCORE_THRESHOLD = 0.55
@@ -440,6 +449,11 @@ def detect_date(header_rows: list[list[Cell]]) -> str:
 
 
 def detect_category(title: str, all_texts: list[str]) -> str:
+    low_title = title.lower()
+    for label, words in TITLE_CATEGORY_RULES:
+        if any(word.lower() in low_title for word in words):
+            return label
+
     def score(text: str, words: list[str]) -> int:
         low = text.lower()
         return sum(low.count(word.lower()) for word in words)
