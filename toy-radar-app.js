@@ -185,6 +185,7 @@ function bindPersonaToggle(container) {
 }
 
 function bindTabs() {
+  if (!els.tabs) return;
   els.tabs.querySelectorAll(".tab").forEach((tab) => {
     tab.addEventListener("click", () => switchView(tab.dataset.view));
   });
@@ -1316,9 +1317,7 @@ function renderHomeModules() {
 }
 
 function renderOverview() {
-  renderHeroStory();
   renderHeroResults();
-  renderHomeModules();
 }
 
 function buildPickList() {
@@ -1366,11 +1365,9 @@ function renderPicks() {
 function renderAll() {
   els.weekBadge.textContent = DATA.weekRange;
   const channels = [...new Set(allItems.flatMap((item) => item.channel.split(" / ")))].join(" / ");
-  els.footerNote.innerHTML = `${DATA.weekRange} 周度快照（统计日 ${DATA.statDate}）· 数据来源：${escapeHtml(channels)}热销榜<br />当前已有 ${ALL_SNAPSHOTS.length} 期真实快照：趋势图中“模拟前 3 周”为演示数据，仅用于展示产品形态，不代表真实历史。<br /><em class="footer-sign">雷达的意义，不在于记录热度，而在于看见——每周更新，欢迎回来。</em>`;
+  els.footerNote.innerHTML = `${DATA.weekRange} 周度快照（统计日 ${DATA.statDate}）· 数据来源：${escapeHtml(channels)}热销榜<br />当前已有 ${ALL_SNAPSHOTS.length} 期真实快照：${ALL_SNAPSHOTS.map((week) => escapeHtml(week.label)).join("、")} · 同款跨店已合并统计。<br /><em class="footer-sign">雷达的意义，不在于记录热度，而在于看见——每周更新，欢迎回来。</em>`;
   renderOverview();
   renderRankings();
-  renderTrends();
-  renderPicks();
 }
 
 /* ===================== 事件绑定 ===================== */
@@ -1386,9 +1383,10 @@ els.heroSearch.addEventListener("input", (event) => {
 els.heroSearch.addEventListener("keydown", (event) => {
   if (event.key === "Enter" && state.heroQuery.trim()) {
     state.rankSearch = state.heroQuery.trim();
+    state.rankCategory = "all";
     els.rankSearch.value = state.rankSearch;
-    switchView("rankings");
     renderRankings();
+    document.getElementById("view-rankings")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 });
 
@@ -1404,14 +1402,12 @@ if (els.heroQuickFilters) {
     const button = event.target.closest("button[data-cat]");
     if (!button) return;
     state.rankCategory = button.dataset.cat;
-    switchView("rankings");
+    state.rankSearch = "";
+    els.rankSearch.value = "";
     renderRankings();
+    document.getElementById("view-rankings")?.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 }
-
-document.querySelectorAll(".home-more[data-view]").forEach((button) => {
-  button.addEventListener("click", () => switchView(button.dataset.view));
-});
 
 els.demoToggle.addEventListener("change", (event) => {
   state.demo = event.target.checked;

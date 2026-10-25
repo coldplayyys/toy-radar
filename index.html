@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>潮玩雷达 · 品类数据 / 榜单 / 销量趋势</title>
+  <title>潮玩雷达 · 搜索与潮玩热销榜</title>
   <link rel="icon" type="image/svg+xml" href="./assets/mascot.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -121,6 +121,29 @@
       object-fit: contain;
       display: block;
     }
+
+    .topbar-minimal {
+      justify-content: center;
+      padding: 14px 22px;
+    }
+
+    .topbar-minimal .brand { gap: 12px; }
+    .topbar-minimal .brand-name { font-size: 24px; letter-spacing: 0.02em; }
+
+    .hot-list-side {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    .hot-list-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    #view-rankings { margin-top: 4px; }
 
     .brand-name {
       font-family: "Fraunces", "Noto Sans SC", serif;
@@ -2070,7 +2093,13 @@
     .modal-shop-row:first-of-type { border-top: none; }
     .modal-shops-note { font-size: 11px; color: var(--faint); margin: 8px 0 0; line-height: 1.6; }
 
-    .search-hero { padding-top: 26px; padding-bottom: 6px; }
+    .search-hero {
+      width: 100%;
+      max-width: 720px;
+      padding-top: 26px;
+      padding-bottom: 6px;
+    }
+    .search-hero .hero-search { width: 100%; max-width: 640px; }
     .search-lead { margin: 0 0 12px; text-align: center; font-size: 14px; color: var(--muted); }
 
     .hero-story-compact {
@@ -2679,23 +2708,10 @@
 </head>
 <body>
   <main class="shell">
-    <header class="panel topbar">
+    <header class="panel topbar topbar-minimal">
       <div class="brand">
         <div class="brand-mark"><img src="./assets/mascot.svg" alt="潮玩雷达吉祥物" /></div>
-        <div>
-          <div class="brand-name">潮玩雷达 <span>TOY MARKET RADAR</span></div>
-          <div class="brand-sub">搜索 · 销量 · 趋势 · 种草</div>
-        </div>
-      </div>
-      <nav class="tabs" id="tabs" aria-label="视图切换">
-        <button class="tab active" data-view="overview">搜索</button>
-        <button class="tab" data-view="rankings">销量</button>
-        <button class="tab" data-view="trends">趋势</button>
-        <button class="tab" data-view="picks">种草</button>
-      </nav>
-      <div class="top-actions">
-        <select class="week-select" id="weekSelect" aria-label="选择统计周"></select>
-        <span class="section-note" id="weekBadge"></span>
+        <div class="brand-name">潮玩雷达</div>
       </div>
     </header>
 
@@ -2718,53 +2734,23 @@
         <div class="hero-results hidden" id="heroSearchResults"></div>
       </section>
 
-      <div class="home-modules" id="homeModules">
-        <section class="home-block" id="homeSales">
-          <div class="home-block-head">
-            <div>
-              <h2>本周销量</h2>
-              <p>同款商品跨店铺、跨渠道已合并统计，按销量排序。</p>
-            </div>
-            <button class="home-more" type="button" data-view="rankings">查看完整榜单 →</button>
-          </div>
-          <div class="home-top-list" id="homeSalesList"></div>
-        </section>
-
-        <section class="home-block" id="homeTrends">
-          <div class="home-block-head">
-            <div>
-              <h2>本周趋势</h2>
-              <p>先看总量与结构，再判断某一款值不值得追。</p>
-            </div>
-            <button class="home-more" type="button" data-view="trends">查看趋势 →</button>
-          </div>
-          <div class="home-trends-body" id="homeTrendsBody"></div>
-        </section>
-
-        <section class="home-block" id="homePicks">
-          <div class="home-block-head">
-            <div>
-              <h2>本周种草</h2>
-              <p>根据销量、价格与上榜表现自动挑选，不是广告。</p>
-            </div>
-            <button class="home-more" type="button" data-view="picks">更多种草 →</button>
-          </div>
-          <div class="home-pick-grid" id="homePicksGrid"></div>
-        </section>
-      </div>
-
-      <div class="hero-story hero-story-compact" id="heroStory"></div>
     </section>
 
     <!-- ===================== 榜单 ===================== -->
-    <section class="view hidden" id="view-rankings">
+    <section class="view" id="view-rankings">
       <section class="panel section">
         <div class="panel-head">
           <div>
             <h2>潮玩热销榜</h2>
             <p>全量商品支持品类筛选、关键词搜索（含 IP）与销量/单价排序，新上榜款带“新”标记。点击任意一行查看单品详情。</p>
           </div>
-          <div class="rank-summary" id="rankSummary"></div>
+          <div class="hot-list-side">
+            <div class="hot-list-actions">
+              <select class="week-select" id="weekSelect" aria-label="选择统计周"></select>
+              <span class="section-note" id="weekBadge"></span>
+            </div>
+            <div class="rank-summary" id="rankSummary"></div>
+          </div>
         </div>
         <div class="rank-controls">
           <div class="chip-list" id="rankCategoryChips"></div>
@@ -3009,15 +2995,15 @@
     </section>
 
     <div class="footer-note" id="footerNote">
-      已收录 3 期周度快照：7.21-7.25 · 7.26-8.1 · 8.9-8.15（统计日 2026.8.15）· 数据来源：天猫 / 抖音 / 京东 / 淘宝榜单<br />
-      趋势页可切换周期查看真实数据；「知识库」支持上传资料，做原文引用式的智能检索问答。
+      已收录 5 期周度快照：7.21-7.25 · 7.26-8.1 · 8.9-8.15 · 8.24-8.30 · 9.7-9.13 · 数据来源：天猫 / 抖音 / 京东 / 淘宝榜单<br />
+      同款商品跨店铺、跨渠道已合并统计；可在潮玩热销榜右上角切换统计周。
     </div>
   </main>
 
   <div class="modal-backdrop hidden" id="modalBackdrop"></div>
   <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
 
-  <script src="./toy-radar-data.js?v=20261025i"></script>
-  <script src="./toy-radar-app.js?v=20261025i"></script>
+  <script src="./toy-radar-data.js?v=20261025l"></script>
+  <script src="./toy-radar-app.js?v=20261025l"></script>
 </body>
 </html>
