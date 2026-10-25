@@ -5,13 +5,48 @@ window.TOY_RADAR_DATA = {
     "prevLabel": "8.24-8.30",
     "totalDeltaPct": 30.5,
     "categoryDelta": {
-      "blind_box": -8.7,
-      "action_figure": 5105.0,
+      "blind_box": 14.5,
+      "action_figure": 2161.2,
       "trading_card": -44.3,
       "ai_toy": 1729.2
     },
-    "newCount": 58,
+    "newCount": 46,
     "newFaces": [
+      {
+        "category": "盲盒",
+        "name": "星星人怦然星动盲盒",
+        "ip": "星星人",
+        "soldLabel": "60万+",
+        "sold": 600000,
+        "priceLabel": "69–89",
+        "price": 82.33,
+        "shop": "泡泡玛特官方旗舰店 等 2 家",
+        "date": "2026.9.12",
+        "section": "blind_box",
+        "sectionLabel": "盲盒",
+        "priceMin": 69.0,
+        "priceMax": 89.0,
+        "shops": [
+          {
+            "shop": "泡泡玛特官方旗舰店",
+            "sold": 400000,
+            "priceMin": 89.0,
+            "priceMax": 89.0,
+            "soldLabel": "40万+",
+            "priceLabel": "89"
+          },
+          {
+            "shop": "泡泡玛特旗舰店",
+            "sold": 200000,
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "soldLabel": "20万+",
+            "priceLabel": "69"
+          }
+        ],
+        "shopCount": 2,
+        "sourceCount": 3
+      },
       {
         "category": "盲盒",
         "name": "CRYBABYVacation ModeOn塘胶盲盒",
@@ -23,20 +58,21 @@ window.TOY_RADAR_DATA = {
         "shop": "泡泡玛特旗舰店",
         "date": "2026.9.12",
         "section": "blind_box",
-        "sectionLabel": "盲盒"
-      },
-      {
-        "category": "盲盒",
-        "name": "星星人怦然星动盲盒",
-        "ip": "星星人",
-        "soldLabel": "30万+",
-        "sold": 300000,
-        "priceLabel": "89",
-        "price": 89.0,
-        "shop": "泡泡玛特官方旗舰店",
-        "date": "2026.9.12",
-        "section": "blind_box",
-        "sectionLabel": "盲盒"
+        "sectionLabel": "盲盒",
+        "priceMin": 129.0,
+        "priceMax": 129.0,
+        "shops": [
+          {
+            "shop": "泡泡玛特旗舰店",
+            "sold": 400000,
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "soldLabel": "40万+",
+            "priceLabel": "129"
+          }
+        ],
+        "shopCount": 1,
+        "sourceCount": 1
       },
       {
         "category": "可动手办",
@@ -49,20 +85,21 @@ window.TOY_RADAR_DATA = {
         "shop": "泡泡玛特旗舰店",
         "date": "2026.9.12",
         "section": "action_figure",
-        "sectionLabel": "可动手办"
-      },
-      {
-        "category": "可动手办",
-        "name": "星星人怦然星动盲盒",
-        "ip": "星星人",
-        "soldLabel": "20万+",
-        "sold": 200000,
-        "priceLabel": "69",
-        "price": 69.0,
-        "shop": "泡泡玛特旗舰店",
-        "date": "2026.9.12",
-        "section": "action_figure",
-        "sectionLabel": "可动手办"
+        "sectionLabel": "可动手办",
+        "priceMin": 69.0,
+        "priceMax": 69.0,
+        "shops": [
+          {
+            "shop": "泡泡玛特旗舰店",
+            "sold": 200000,
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "soldLabel": "20万+",
+            "priceLabel": "69"
+          }
+        ],
+        "shopCount": 1,
+        "sourceCount": 1
       },
       {
         "category": "可动手办",
@@ -75,20 +112,21 @@ window.TOY_RADAR_DATA = {
         "shop": "泡泡玛特旗舰店",
         "date": "2026.9.12",
         "section": "action_figure",
-        "sectionLabel": "可动手办"
-      },
-      {
-        "category": "盲盒",
-        "name": "星星人怦然星动盲盒",
-        "ip": "星星人",
-        "soldLabel": "10万+",
-        "sold": 100000,
-        "priceLabel": "89",
-        "price": 89.0,
-        "shop": "泡泡玛特官方旗舰店",
-        "date": "2026.9.12",
-        "section": "blind_box",
-        "sectionLabel": "盲盒"
+        "sectionLabel": "可动手办",
+        "priceMin": 69.0,
+        "priceMax": 69.0,
+        "shops": [
+          {
+            "shop": "泡泡玛特旗舰店",
+            "sold": 100000,
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "soldLabel": "10万+",
+            "priceLabel": "69"
+          }
+        ],
+        "shopCount": 1,
+        "sourceCount": 1
       },
       {
         "category": "盲盒",
@@ -101,7 +139,56 @@ window.TOY_RADAR_DATA = {
         "shop": "库洛游戏旗舰店",
         "date": "2026.9.12",
         "section": "blind_box",
-        "sectionLabel": "盲盒"
+        "sectionLabel": "盲盒",
+        "priceMin": 29.9,
+        "priceMax": 29.9,
+        "shops": [
+          {
+            "shop": "库洛游戏旗舰店",
+            "sold": 80000,
+            "priceMin": 29.9,
+            "priceMax": 29.9,
+            "soldLabel": "8万+",
+            "priceLabel": "29.9"
+          }
+        ],
+        "shopCount": 1,
+        "sourceCount": 1
+      },
+      {
+        "category": "AI玩具",
+        "name": "AI时间宝机器人",
+        "ip": "",
+        "soldLabel": "4.2万+",
+        "sold": 42000,
+        "priceLabel": "95–199",
+        "price": 194.05,
+        "shop": "名校堂官方旗舰店 等 2 家",
+        "date": "2026.9.12",
+        "section": "ai_toy",
+        "sectionLabel": "AI 玩具",
+        "priceMin": 95.0,
+        "priceMax": 199.0,
+        "shops": [
+          {
+            "shop": "名校堂官方旗舰店",
+            "sold": 40000,
+            "priceMin": 199.0,
+            "priceMax": 199.0,
+            "soldLabel": "4万+",
+            "priceLabel": "199"
+          },
+          {
+            "shop": "博士笔汇广泰智能教育专卖店",
+            "sold": 2000,
+            "priceMin": 95.0,
+            "priceMax": 95.0,
+            "soldLabel": "2000+",
+            "priceLabel": "95"
+          }
+        ],
+        "shopCount": 2,
+        "sourceCount": 3
       },
       {
         "category": "盲盒",
@@ -114,14 +201,55 @@ window.TOY_RADAR_DATA = {
         "shop": "范趣町潮玩旗舰店",
         "date": "2026.9.12",
         "section": "blind_box",
-        "sectionLabel": "盲盒"
+        "sectionLabel": "盲盒",
+        "priceMin": 69.0,
+        "priceMax": 69.0,
+        "shops": [
+          {
+            "shop": "范趣町潮玩旗舰店",
+            "sold": 40000,
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "soldLabel": "4万+",
+            "priceLabel": "69"
+          }
+        ],
+        "shopCount": 1,
+        "sourceCount": 1
+      },
+      {
+        "category": "盲盒",
+        "name": "一日一菇毛绒盒端盒",
+        "ip": "一日一菇",
+        "soldLabel": "4万+",
+        "sold": 40000,
+        "priceLabel": "99",
+        "price": 99.0,
+        "shop": "sowii潮玩旗舰店",
+        "date": "2026.9.12",
+        "section": "blind_box",
+        "sectionLabel": "盲盒",
+        "priceMin": 99.0,
+        "priceMax": 99.0,
+        "shops": [
+          {
+            "shop": "sowii潮玩旗舰店",
+            "sold": 40000,
+            "priceMin": 99.0,
+            "priceMax": 99.0,
+            "soldLabel": "4万+",
+            "priceLabel": "99"
+          }
+        ],
+        "shopCount": 1,
+        "sourceCount": 1
       }
     ],
-    "repeatedCount": 26
+    "repeatedCount": 29
   },
-  "totalItems": 87,
+  "totalItems": 75,
   "totalSold": 2515873,
-  "avgPrice": 912.8,
+  "avgPrice": 139.3,
   "priceMin": 2.9,
   "priceMax": 40000.0,
   "topStore": "泡泡玛特旗舰店",
@@ -136,25 +264,82 @@ window.TOY_RADAR_DATA = {
         "consumer": "适合买入：单价低，适合尝新和蹲隐藏款。",
         "operator": "运营建议：保持上新节奏，重点盯 TOPTOY / 泡泡玛特渠道。"
       },
-      "itemCount": 30,
-      "totalSold": 1608800,
-      "medianPrice": 79.0,
+      "itemCount": 26,
+      "totalSold": 2016800,
+      "medianPrice": 74.0,
       "priceMin": 2.9,
       "priceMax": 399.0,
       "topItem": {
         "category": "盲盒",
-        "name": "CRYBABYVacation ModeOn塘胶盲盒",
-        "ip": "CRYBABY",
-        "soldLabel": "40万+",
-        "sold": 400000,
-        "priceLabel": "129",
-        "price": 129.0,
-        "shop": "泡泡玛特旗舰店",
+        "name": "星星人怦然星动盲盒",
+        "ip": "星星人",
+        "soldLabel": "60万+",
+        "sold": 600000,
+        "priceLabel": "69–89",
+        "price": 82.33,
+        "shop": "泡泡玛特官方旗舰店 等 2 家",
         "date": "2026.9.12",
         "section": "blind_box",
-        "sectionLabel": "盲盒"
+        "sectionLabel": "盲盒",
+        "priceMin": 69.0,
+        "priceMax": 89.0,
+        "shops": [
+          {
+            "shop": "泡泡玛特官方旗舰店",
+            "sold": 400000,
+            "priceMin": 89.0,
+            "priceMax": 89.0,
+            "soldLabel": "40万+",
+            "priceLabel": "89"
+          },
+          {
+            "shop": "泡泡玛特旗舰店",
+            "sold": 200000,
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "soldLabel": "20万+",
+            "priceLabel": "69"
+          }
+        ],
+        "shopCount": 2,
+        "sourceCount": 3
       },
       "items": [
+        {
+          "category": "盲盒",
+          "name": "星星人怦然星动盲盒",
+          "ip": "星星人",
+          "soldLabel": "60万+",
+          "sold": 600000,
+          "priceLabel": "69–89",
+          "price": 82.33,
+          "shop": "泡泡玛特官方旗舰店 等 2 家",
+          "date": "2026.9.12",
+          "section": "blind_box",
+          "sectionLabel": "盲盒",
+          "priceMin": 69.0,
+          "priceMax": 89.0,
+          "shops": [
+            {
+              "shop": "泡泡玛特官方旗舰店",
+              "sold": 400000,
+              "priceMin": 89.0,
+              "priceMax": 89.0,
+              "soldLabel": "40万+",
+              "priceLabel": "89"
+            },
+            {
+              "shop": "泡泡玛特旗舰店",
+              "sold": 200000,
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "soldLabel": "20万+",
+              "priceLabel": "69"
+            }
+          ],
+          "shopCount": 2,
+          "sourceCount": 3
+        },
         {
           "category": "盲盒",
           "name": "CRYBABYVacation ModeOn塘胶盲盒",
@@ -166,59 +351,83 @@ window.TOY_RADAR_DATA = {
           "shop": "泡泡玛特旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
-        },
-        {
-          "category": "盲盒",
-          "name": "星星人怦然星动盲盒",
-          "ip": "星星人",
-          "soldLabel": "30万+",
-          "sold": 300000,
-          "priceLabel": "89",
-          "price": 89.0,
-          "shop": "泡泡玛特官方旗舰店",
-          "date": "2026.9.12",
-          "section": "blind_box",
-          "sectionLabel": "盲盒"
-        },
-        {
-          "category": "盲盒",
-          "name": "星星人好梦气象局盲盒",
-          "ip": "星星人",
-          "soldLabel": "20万+",
-          "sold": 200000,
-          "priceLabel": "79",
-          "price": 79.0,
-          "shop": "泡泡玛特旗舰店",
-          "date": "2026.9.12",
-          "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 129.0,
+          "priceMax": 129.0,
+          "shops": [
+            {
+              "shop": "泡泡玛特旗舰店",
+              "sold": 400000,
+              "priceMin": 129.0,
+              "priceMax": 129.0,
+              "soldLabel": "40万+",
+              "priceLabel": "129"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
           "name": "YOYO萌趣歪头盲盒",
           "ip": "YOYO",
-          "soldLabel": "20万+",
-          "sold": 200000,
+          "soldLabel": "40万+",
+          "sold": 400000,
           "priceLabel": "49",
           "price": 49.0,
           "shop": "miniso名创优品旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 49.0,
+          "priceMax": 49.0,
+          "shops": [
+            {
+              "shop": "miniso名创优品旗舰店",
+              "sold": 400000,
+              "priceMin": 49.0,
+              "priceMax": 49.0,
+              "soldLabel": "40万+",
+              "priceLabel": "49"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 2
         },
         {
           "category": "盲盒",
-          "name": "星星人怦然星动盲盒",
+          "name": "星星人好梦气象局盲盒",
           "ip": "星星人",
-          "soldLabel": "10万+",
-          "sold": 100000,
-          "priceLabel": "89",
-          "price": 89.0,
-          "shop": "泡泡玛特官方旗舰店",
+          "soldLabel": "22万+",
+          "sold": 220000,
+          "priceLabel": "79",
+          "price": 79.0,
+          "shop": "泡泡玛特旗舰店 等 2 家",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 79.0,
+          "priceMax": 79.0,
+          "shops": [
+            {
+              "shop": "泡泡玛特旗舰店",
+              "sold": 200000,
+              "priceMin": 79.0,
+              "priceMax": 79.0,
+              "soldLabel": "20万+",
+              "priceLabel": "79"
+            },
+            {
+              "shop": "泡泡玛特官方旗舰店",
+              "sold": 20000,
+              "priceMin": 79.0,
+              "priceMax": 79.0,
+              "soldLabel": "2万+",
+              "priceLabel": "79"
+            }
+          ],
+          "shopCount": 2,
+          "sourceCount": 2
         },
         {
           "category": "盲盒",
@@ -231,7 +440,56 @@ window.TOY_RADAR_DATA = {
           "shop": "库洛游戏旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 29.9,
+          "priceMax": 29.9,
+          "shops": [
+            {
+              "shop": "库洛游戏旗舰店",
+              "sold": 80000,
+              "priceMin": 29.9,
+              "priceMax": 29.9,
+              "soldLabel": "8万+",
+              "priceLabel": "29.9"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
+        },
+        {
+          "category": "盲盒",
+          "name": "凡人修仙传盲盒",
+          "ip": "凡人修仙传",
+          "soldLabel": "6万+",
+          "sold": 60000,
+          "priceLabel": "79",
+          "price": 79.0,
+          "shop": "共鸣旗舰店 等 2 家",
+          "date": "2026.9.12",
+          "section": "blind_box",
+          "sectionLabel": "盲盒",
+          "priceMin": 79.0,
+          "priceMax": 79.0,
+          "shops": [
+            {
+              "shop": "共鸣旗舰店",
+              "sold": 30000,
+              "priceMin": 79.0,
+              "priceMax": 79.0,
+              "soldLabel": "3万+",
+              "priceLabel": "79"
+            },
+            {
+              "shop": "共鸣官方旗舰店",
+              "sold": 30000,
+              "priceMin": 79.0,
+              "priceMax": 79.0,
+              "soldLabel": "3万+",
+              "priceLabel": "79"
+            }
+          ],
+          "shopCount": 2,
+          "sourceCount": 2
         },
         {
           "category": "盲盒",
@@ -244,7 +502,21 @@ window.TOY_RADAR_DATA = {
           "shop": "范趣町潮玩旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "shops": [
+            {
+              "shop": "范趣町潮玩旗舰店",
+              "sold": 40000,
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "soldLabel": "4万+",
+              "priceLabel": "69"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -257,7 +529,21 @@ window.TOY_RADAR_DATA = {
           "shop": "sowii潮玩旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 99.0,
+          "priceMax": 99.0,
+          "shops": [
+            {
+              "shop": "sowii潮玩旗舰店",
+              "sold": 40000,
+              "priceMin": 99.0,
+              "priceMax": 99.0,
+              "soldLabel": "4万+",
+              "priceLabel": "99"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -270,33 +556,56 @@ window.TOY_RADAR_DATA = {
           "shop": "miniso名创优品旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 49.0,
+          "priceMax": 49.0,
+          "shops": [
+            {
+              "shop": "miniso名创优品旗舰店",
+              "sold": 30000,
+              "priceMin": 49.0,
+              "priceMax": 49.0,
+              "soldLabel": "3万+",
+              "priceLabel": "49"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
-          "name": "凡人修仙传盲盒",
-          "ip": "凡人修仙传",
-          "soldLabel": "3万+",
-          "sold": 30000,
-          "priceLabel": "79",
-          "price": 79.0,
-          "shop": "共鸣旗舰店",
+          "name": "我是大王系列盲盒",
+          "ip": "我是大王",
+          "soldLabel": "2万+",
+          "sold": 20000,
+          "priceLabel": "69",
+          "price": 69.0,
+          "shop": "范趣町旗舰店 等 2 家",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
-        },
-        {
-          "category": "盲盒",
-          "name": "凡人修仙传盲盒",
-          "ip": "凡人修仙传",
-          "soldLabel": "3万+",
-          "sold": 30000,
-          "priceLabel": "79",
-          "price": 79.0,
-          "shop": "共鸣官方旗舰店",
-          "date": "2026.9.12",
-          "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "shops": [
+            {
+              "shop": "范趣町旗舰店",
+              "sold": 10000,
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "soldLabel": "1万+",
+              "priceLabel": "69"
+            },
+            {
+              "shop": "范趣町潮玩旗舰店",
+              "sold": 10000,
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "soldLabel": "1万+",
+              "priceLabel": "69"
+            }
+          ],
+          "shopCount": 2,
+          "sourceCount": 2
         },
         {
           "category": "盲盒",
@@ -309,33 +618,48 @@ window.TOY_RADAR_DATA = {
           "shop": "JOTOYS奇偶潮乐旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "shops": [
+            {
+              "shop": "JOTOYS奇偶潮乐旗舰店",
+              "sold": 20000,
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "soldLabel": "2万+",
+              "priceLabel": "69"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
-          "name": "星星人好梦气象局盲盒",
-          "ip": "星星人",
-          "soldLabel": "2万+",
-          "sold": 20000,
-          "priceLabel": "79",
-          "price": 79.0,
-          "shop": "泡泡玛特官方旗舰店",
+          "name": "宝可梦御三家盲盒",
+          "ip": "宝可梦",
+          "soldLabel": "1.6万+",
+          "sold": 16000,
+          "priceLabel": "59",
+          "price": 59.0,
+          "shop": "玩乐主义旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
-        },
-        {
-          "category": "盲盒",
-          "name": "我是大王系列盲盒",
-          "ip": "我是大王",
-          "soldLabel": "1万+",
-          "sold": 10000,
-          "priceLabel": "69",
-          "price": 69.0,
-          "shop": "范趣町旗舰店",
-          "date": "2026.9.12",
-          "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 59.0,
+          "priceMax": 59.0,
+          "shops": [
+            {
+              "shop": "玩乐主义旗舰店",
+              "sold": 16000,
+              "priceMin": 59.0,
+              "priceMax": 59.0,
+              "soldLabel": "1.6万+",
+              "priceLabel": "59"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 2
         },
         {
           "category": "盲盒",
@@ -348,7 +672,21 @@ window.TOY_RADAR_DATA = {
           "shop": "柠檬童话旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 13.5,
+          "priceMax": 13.5,
+          "shops": [
+            {
+              "shop": "柠檬童话旗舰店",
+              "sold": 10000,
+              "priceMin": 13.5,
+              "priceMax": 13.5,
+              "soldLabel": "1万+",
+              "priceLabel": "13.5"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -361,7 +699,21 @@ window.TOY_RADAR_DATA = {
           "shop": "miniso名创优品旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 58.0,
+          "priceMax": 58.0,
+          "shops": [
+            {
+              "shop": "miniso名创优品旗舰店",
+              "sold": 10000,
+              "priceMin": 58.0,
+              "priceMax": 58.0,
+              "soldLabel": "1万+",
+              "priceLabel": "58"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -374,7 +726,21 @@ window.TOY_RADAR_DATA = {
           "shop": "TOPTOY旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 49.0,
+          "priceMax": 49.0,
+          "shops": [
+            {
+              "shop": "TOPTOY旗舰店",
+              "sold": 10000,
+              "priceMin": 49.0,
+              "priceMax": 49.0,
+              "soldLabel": "1万+",
+              "priceLabel": "49"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -387,7 +753,21 @@ window.TOY_RADAR_DATA = {
           "shop": "MINISOTOYS潮玩旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 58.0,
+          "priceMax": 58.0,
+          "shops": [
+            {
+              "shop": "MINISOTOYS潮玩旗舰店",
+              "sold": 10000,
+              "priceMin": 58.0,
+              "priceMax": 58.0,
+              "soldLabel": "1万+",
+              "priceLabel": "58"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -400,7 +780,21 @@ window.TOY_RADAR_DATA = {
           "shop": "泡泡玛特官方旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 129.0,
+          "priceMax": 129.0,
+          "shops": [
+            {
+              "shop": "泡泡玛特官方旗舰店",
+              "sold": 10000,
+              "priceMin": 129.0,
+              "priceMax": 129.0,
+              "soldLabel": "1万+",
+              "priceLabel": "129"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -413,20 +807,21 @@ window.TOY_RADAR_DATA = {
           "shop": "AYORTOYS官方旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
-        },
-        {
-          "category": "盲盒",
-          "name": "我是大王系列盲盒",
-          "ip": "我是大王",
-          "soldLabel": "1万+",
-          "sold": 10000,
-          "priceLabel": "69",
-          "price": 69.0,
-          "shop": "范趣町潮玩旗舰店",
-          "date": "2026.9.12",
-          "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 89.0,
+          "priceMax": 89.0,
+          "shops": [
+            {
+              "shop": "AYORTOYS官方旗舰店",
+              "sold": 10000,
+              "priceMin": 89.0,
+              "priceMax": 89.0,
+              "soldLabel": "1万+",
+              "priceLabel": "89"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -439,7 +834,21 @@ window.TOY_RADAR_DATA = {
           "shop": "DODOSUGAR潮玩旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 79.0,
+          "priceMax": 79.0,
+          "shops": [
+            {
+              "shop": "DODOSUGAR潮玩旗舰店",
+              "sold": 9000,
+              "priceMin": 79.0,
+              "priceMax": 79.0,
+              "soldLabel": "9000+",
+              "priceLabel": "79"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -452,20 +861,21 @@ window.TOY_RADAR_DATA = {
           "shop": "泡泡玛特旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
-        },
-        {
-          "category": "盲盒",
-          "name": "宝可梦御三家盲盒",
-          "ip": "宝可梦",
-          "soldLabel": "8000+",
-          "sold": 8000,
-          "priceLabel": "59",
-          "price": 59.0,
-          "shop": "玩乐主义旗舰店",
-          "date": "2026.9.12",
-          "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 129.0,
+          "priceMax": 129.0,
+          "shops": [
+            {
+              "shop": "泡泡玛特旗舰店",
+              "sold": 8000,
+              "priceMin": 129.0,
+              "priceMax": 129.0,
+              "soldLabel": "8000+",
+              "priceLabel": "129"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -478,7 +888,21 @@ window.TOY_RADAR_DATA = {
           "shop": "金禧喜旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 2.9,
+          "priceMax": 2.9,
+          "shops": [
+            {
+              "shop": "金禧喜旗舰店",
+              "sold": 4000,
+              "priceMin": 2.9,
+              "priceMax": 2.9,
+              "soldLabel": "4000+",
+              "priceLabel": "2.9"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -491,7 +915,21 @@ window.TOY_RADAR_DATA = {
           "shop": "马克图布旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 79.9,
+          "priceMax": 79.9,
+          "shops": [
+            {
+              "shop": "马克图布旗舰店",
+              "sold": 3000,
+              "priceMin": 79.9,
+              "priceMax": 79.9,
+              "soldLabel": "3000+",
+              "priceLabel": "79.9"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -504,7 +942,21 @@ window.TOY_RADAR_DATA = {
           "shop": "AYORTOYS旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 89.0,
+          "priceMax": 89.0,
+          "shops": [
+            {
+              "shop": "AYORTOYS旗舰店",
+              "sold": 2000,
+              "priceMin": 89.0,
+              "priceMax": 89.0,
+              "soldLabel": "2000+",
+              "priceLabel": "89"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -517,7 +969,21 @@ window.TOY_RADAR_DATA = {
           "shop": "TOPTOY旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "shops": [
+            {
+              "shop": "TOPTOY旗舰店",
+              "sold": 2000,
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "soldLabel": "2000+",
+              "priceLabel": "69"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -530,7 +996,21 @@ window.TOY_RADAR_DATA = {
           "shop": "北京乐卡球星卡",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 399.0,
+          "priceMax": 399.0,
+          "shops": [
+            {
+              "shop": "北京乐卡球星卡",
+              "sold": 2000,
+              "priceMin": 399.0,
+              "priceMax": 399.0,
+              "soldLabel": "2000+",
+              "priceLabel": "399"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "盲盒",
@@ -543,7 +1023,21 @@ window.TOY_RADAR_DATA = {
           "shop": "动瞬息旗舰店",
           "date": "2026.9.12",
           "section": "blind_box",
-          "sectionLabel": "盲盒"
+          "sectionLabel": "盲盒",
+          "priceMin": 159.0,
+          "priceMax": 159.0,
+          "shops": [
+            {
+              "shop": "动瞬息旗舰店",
+              "sold": 800,
+              "priceMin": 159.0,
+              "priceMax": 159.0,
+              "soldLabel": "800+",
+              "priceLabel": "159"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         }
       ]
     },
@@ -556,38 +1050,39 @@ window.TOY_RADAR_DATA = {
         "consumer": "适合买入：适合收藏和摆件型消费。",
         "operator": "运营建议：关注联名和展会首发，适合做预售和限量策略。"
       },
-      "itemCount": 10,
-      "totalSold": 721407,
-      "medianPrice": 107.0,
-      "priceMin": 49.0,
+      "itemCount": 7,
+      "totalSold": 313407,
+      "medianPrice": 159.0,
+      "priceMin": 69.0,
       "priceMax": 850.0,
       "topItem": {
         "category": "可动手办",
-        "name": "YOYO萌趣歪头盲盒",
-        "ip": "YOYO",
+        "name": "星星人美味时刻盲盒",
+        "ip": "星星人",
         "soldLabel": "20万+",
         "sold": 200000,
-        "priceLabel": "49",
-        "price": 49.0,
-        "shop": "miniso名创优品旗舰店",
+        "priceLabel": "69",
+        "price": 69.0,
+        "shop": "泡泡玛特旗舰店",
         "date": "2026.9.12",
         "section": "action_figure",
-        "sectionLabel": "可动手办"
+        "sectionLabel": "可动手办",
+        "priceMin": 69.0,
+        "priceMax": 69.0,
+        "shops": [
+          {
+            "shop": "泡泡玛特旗舰店",
+            "sold": 200000,
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "soldLabel": "20万+",
+            "priceLabel": "69"
+          }
+        ],
+        "shopCount": 1,
+        "sourceCount": 1
       },
       "items": [
-        {
-          "category": "可动手办",
-          "name": "YOYO萌趣歪头盲盒",
-          "ip": "YOYO",
-          "soldLabel": "20万+",
-          "sold": 200000,
-          "priceLabel": "49",
-          "price": 49.0,
-          "shop": "miniso名创优品旗舰店",
-          "date": "2026.9.12",
-          "section": "action_figure",
-          "sectionLabel": "可动手办"
-        },
         {
           "category": "可动手办",
           "name": "星星人美味时刻盲盒",
@@ -599,20 +1094,21 @@ window.TOY_RADAR_DATA = {
           "shop": "泡泡玛特旗舰店",
           "date": "2026.9.12",
           "section": "action_figure",
-          "sectionLabel": "可动手办"
-        },
-        {
-          "category": "可动手办",
-          "name": "星星人怦然星动盲盒",
-          "ip": "星星人",
-          "soldLabel": "20万+",
-          "sold": 200000,
-          "priceLabel": "69",
-          "price": 69.0,
-          "shop": "泡泡玛特旗舰店",
-          "date": "2026.9.12",
-          "section": "action_figure",
-          "sectionLabel": "可动手办"
+          "sectionLabel": "可动手办",
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "shops": [
+            {
+              "shop": "泡泡玛特旗舰店",
+              "sold": 200000,
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "soldLabel": "20万+",
+              "priceLabel": "69"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "可动手办",
@@ -625,7 +1121,21 @@ window.TOY_RADAR_DATA = {
           "shop": "泡泡玛特旗舰店",
           "date": "2026.9.12",
           "section": "action_figure",
-          "sectionLabel": "可动手办"
+          "sectionLabel": "可动手办",
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "shops": [
+            {
+              "shop": "泡泡玛特旗舰店",
+              "sold": 100000,
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "soldLabel": "10万+",
+              "priceLabel": "69"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "可动手办",
@@ -638,33 +1148,48 @@ window.TOY_RADAR_DATA = {
           "shop": "Queenstudios旗舰店",
           "date": "2026.9.12",
           "section": "action_figure",
-          "sectionLabel": "可动手办"
-        },
-        {
-          "category": "可动手办",
-          "name": "宝可梦御三家盲盒",
-          "ip": "宝可梦",
-          "soldLabel": "8000+",
-          "sold": 8000,
-          "priceLabel": "59",
-          "price": 59.0,
-          "shop": "玩乐主义旗舰店",
-          "date": "2026.9.12",
-          "section": "action_figure",
-          "sectionLabel": "可动手办"
+          "sectionLabel": "可动手办",
+          "priceMin": 200.0,
+          "priceMax": 200.0,
+          "shops": [
+            {
+              "shop": "Queenstudios旗舰店",
+              "sold": 10000,
+              "priceMin": 200.0,
+              "priceMax": 200.0,
+              "soldLabel": "1万+",
+              "priceLabel": "200"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "可动手办",
           "name": "【预付款】INART-指环王：护戒使者-萨鲁曼",
           "ip": "INART",
-          "soldLabel": "200+1",
+          "soldLabel": "2001+",
           "sold": 2001,
           "priceLabel": "850",
           "price": 850.0,
           "shop": "Queenstudios旗舰店",
           "date": "2026.9.12",
           "section": "action_figure",
-          "sectionLabel": "可动手办"
+          "sectionLabel": "可动手办",
+          "priceMin": 850.0,
+          "priceMax": 850.0,
+          "shops": [
+            {
+              "shop": "Queenstudios旗舰店",
+              "sold": 2001,
+              "priceMin": 850.0,
+              "priceMax": 850.0,
+              "soldLabel": "2001+",
+              "priceLabel": "850"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "可动手办",
@@ -677,7 +1202,21 @@ window.TOY_RADAR_DATA = {
           "shop": "摩动瞬息旗舰店",
           "date": "2026.9.12",
           "section": "action_figure",
-          "sectionLabel": "可动手办"
+          "sectionLabel": "可动手办",
+          "priceMin": 159.0,
+          "priceMax": 159.0,
+          "shops": [
+            {
+              "shop": "摩动瞬息旗舰店",
+              "sold": 800,
+              "priceMin": 159.0,
+              "priceMax": 159.0,
+              "soldLabel": "800+",
+              "priceLabel": "159"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "可动手办",
@@ -690,20 +1229,48 @@ window.TOY_RADAR_DATA = {
           "shop": "Queenstudios旗舰店",
           "date": "2026.9.12",
           "section": "action_figure",
-          "sectionLabel": "可动手办"
+          "sectionLabel": "可动手办",
+          "priceMin": 145.0,
+          "priceMax": 145.0,
+          "shops": [
+            {
+              "shop": "Queenstudios旗舰店",
+              "sold": 600,
+              "priceMin": 145.0,
+              "priceMax": 145.0,
+              "soldLabel": "600+",
+              "priceLabel": "145"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "可动手办",
           "name": "【尾款】阵营系列丽娜1/7手办",
           "ip": "",
-          "soldLabel": "+006",
+          "soldLabel": "6+",
           "sold": 6,
           "priceLabel": "819",
           "price": 819.0,
           "shop": "绝区零三Z官方旗舰店",
           "date": "2026.9.12",
           "section": "action_figure",
-          "sectionLabel": "可动手办"
+          "sectionLabel": "可动手办",
+          "priceMin": 819.0,
+          "priceMax": 819.0,
+          "shops": [
+            {
+              "shop": "绝区零三Z官方旗舰店",
+              "sold": 6,
+              "priceMin": 819.0,
+              "priceMax": 819.0,
+              "soldLabel": "6+",
+              "priceLabel": "819"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         }
       ]
     },
@@ -732,7 +1299,21 @@ window.TOY_RADAR_DATA = {
         "shop": "久木潮玩卡铺",
         "date": "2026.9.12",
         "section": "trading_card",
-        "sectionLabel": "收藏卡牌"
+        "sectionLabel": "收藏卡牌",
+        "priceMin": 4306.0,
+        "priceMax": 4306.0,
+        "shops": [
+          {
+            "shop": "久木潮玩卡铺",
+            "sold": 20000,
+            "priceMin": 4306.0,
+            "priceMax": 4306.0,
+            "soldLabel": "2万+",
+            "priceLabel": "4306"
+          }
+        ],
+        "shopCount": 1,
+        "sourceCount": 1
       },
       "items": [
         {
@@ -746,7 +1327,21 @@ window.TOY_RADAR_DATA = {
           "shop": "久木潮玩卡铺",
           "date": "2026.9.12",
           "section": "trading_card",
-          "sectionLabel": "收藏卡牌"
+          "sectionLabel": "收藏卡牌",
+          "priceMin": 4306.0,
+          "priceMax": 4306.0,
+          "shops": [
+            {
+              "shop": "久木潮玩卡铺",
+              "sold": 20000,
+              "priceMin": 4306.0,
+              "priceMax": 4306.0,
+              "soldLabel": "2万+",
+              "priceLabel": "4306"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "收藏卡牌",
@@ -759,7 +1354,21 @@ window.TOY_RADAR_DATA = {
           "shop": "久木潮玩卡铺",
           "date": "2026.9.12",
           "section": "trading_card",
-          "sectionLabel": "收藏卡牌"
+          "sectionLabel": "收藏卡牌",
+          "priceMin": 39.9,
+          "priceMax": 39.9,
+          "shops": [
+            {
+              "shop": "久木潮玩卡铺",
+              "sold": 20000,
+              "priceMin": 39.9,
+              "priceMax": 39.9,
+              "soldLabel": "2万+",
+              "priceLabel": "39.9"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "收藏卡牌",
@@ -772,7 +1381,21 @@ window.TOY_RADAR_DATA = {
           "shop": "PTCG长安",
           "date": "2026.9.12",
           "section": "trading_card",
-          "sectionLabel": "收藏卡牌"
+          "sectionLabel": "收藏卡牌",
+          "priceMin": 29.9,
+          "priceMax": 29.9,
+          "shops": [
+            {
+              "shop": "PTCG长安",
+              "sold": 20000,
+              "priceMin": 29.9,
+              "priceMax": 29.9,
+              "soldLabel": "2万+",
+              "priceLabel": "29.9"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "收藏卡牌",
@@ -785,7 +1408,21 @@ window.TOY_RADAR_DATA = {
           "shop": "小小婵潮玩",
           "date": "2026.9.12",
           "section": "trading_card",
-          "sectionLabel": "收藏卡牌"
+          "sectionLabel": "收藏卡牌",
+          "priceMin": 1434.0,
+          "priceMax": 1434.0,
+          "shops": [
+            {
+              "shop": "小小婵潮玩",
+              "sold": 10000,
+              "priceMin": 1434.0,
+              "priceMax": 1434.0,
+              "soldLabel": "1万+",
+              "priceLabel": "1434"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "收藏卡牌",
@@ -798,7 +1435,21 @@ window.TOY_RADAR_DATA = {
           "shop": "拆卡叮叮",
           "date": "2026.9.12",
           "section": "trading_card",
-          "sectionLabel": "收藏卡牌"
+          "sectionLabel": "收藏卡牌",
+          "priceMin": 19.9,
+          "priceMax": 19.9,
+          "shops": [
+            {
+              "shop": "拆卡叮叮",
+              "sold": 7000,
+              "priceMin": 19.9,
+              "priceMax": 19.9,
+              "soldLabel": "7000+",
+              "priceLabel": "19.9"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "收藏卡牌",
@@ -811,7 +1462,21 @@ window.TOY_RADAR_DATA = {
           "shop": "酱酱好物店",
           "date": "2026.9.12",
           "section": "trading_card",
-          "sectionLabel": "收藏卡牌"
+          "sectionLabel": "收藏卡牌",
+          "priceMin": 39.9,
+          "priceMax": 39.9,
+          "shops": [
+            {
+              "shop": "酱酱好物店",
+              "sold": 2000,
+              "priceMin": 39.9,
+              "priceMax": 39.9,
+              "soldLabel": "2000+",
+              "priceLabel": "39.9"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "收藏卡牌",
@@ -824,7 +1489,21 @@ window.TOY_RADAR_DATA = {
           "shop": "镜像潮玩社",
           "date": "2026.9.12",
           "section": "trading_card",
-          "sectionLabel": "收藏卡牌"
+          "sectionLabel": "收藏卡牌",
+          "priceMin": 19.9,
+          "priceMax": 19.9,
+          "shops": [
+            {
+              "shop": "镜像潮玩社",
+              "sold": 1000,
+              "priceMin": 19.9,
+              "priceMax": 19.9,
+              "soldLabel": "1000+",
+              "priceLabel": "19.9"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "收藏卡牌",
@@ -837,7 +1516,21 @@ window.TOY_RADAR_DATA = {
           "shop": "悦卡潮玩社",
           "date": "2026.9.12",
           "section": "trading_card",
-          "sectionLabel": "收藏卡牌"
+          "sectionLabel": "收藏卡牌",
+          "priceMin": 198.0,
+          "priceMax": 198.0,
+          "shops": [
+            {
+              "shop": "悦卡潮玩社",
+              "sold": 1000,
+              "priceMin": 198.0,
+              "priceMax": 198.0,
+              "soldLabel": "1000+",
+              "priceLabel": "198"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "收藏卡牌",
@@ -850,7 +1543,21 @@ window.TOY_RADAR_DATA = {
           "shop": "PTCG锤妹拆卡",
           "date": "2026.9.12",
           "section": "trading_card",
-          "sectionLabel": "收藏卡牌"
+          "sectionLabel": "收藏卡牌",
+          "priceMin": 79.9,
+          "priceMax": 79.9,
+          "shops": [
+            {
+              "shop": "PTCG锤妹拆卡",
+              "sold": 300,
+              "priceMin": 79.9,
+              "priceMax": 79.9,
+              "soldLabel": "300+",
+              "priceLabel": "79.9"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "收藏卡牌",
@@ -863,7 +1570,21 @@ window.TOY_RADAR_DATA = {
           "shop": "魔都兄弟",
           "date": "2026.9.12",
           "section": "trading_card",
-          "sectionLabel": "收藏卡牌"
+          "sectionLabel": "收藏卡牌",
+          "priceMin": 40000.0,
+          "priceMax": 40000.0,
+          "shops": [
+            {
+              "shop": "魔都兄弟",
+              "sold": 100,
+              "priceMin": 40000.0,
+              "priceMax": 40000.0,
+              "soldLabel": "100+",
+              "priceLabel": "40000"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         }
       ]
     },
@@ -876,25 +1597,82 @@ window.TOY_RADAR_DATA = {
         "consumer": "适合买入：更适合亲子/陪伴场景，先看功能再看颜值。",
         "operator": "运营建议：功能点要讲清楚，亲子、教育和陪伴场景最关键。"
       },
-      "itemCount": 37,
+      "itemCount": 32,
       "totalSold": 104266,
       "medianPrice": 299.0,
       "priceMin": 95.0,
       "priceMax": 6666.0,
       "topItem": {
         "category": "AI玩具",
-        "name": "芙思AI陪伴机器人毛绒玩具",
+        "name": "AI时间宝机器人",
         "ip": "",
-        "soldLabel": "3万+",
-        "sold": 30000,
-        "priceLabel": "469",
-        "price": 469.0,
-        "shop": "芙思官方旗舰店",
+        "soldLabel": "4.2万+",
+        "sold": 42000,
+        "priceLabel": "95–199",
+        "price": 194.05,
+        "shop": "名校堂官方旗舰店 等 2 家",
         "date": "2026.9.12",
         "section": "ai_toy",
-        "sectionLabel": "AI 玩具"
+        "sectionLabel": "AI 玩具",
+        "priceMin": 95.0,
+        "priceMax": 199.0,
+        "shops": [
+          {
+            "shop": "名校堂官方旗舰店",
+            "sold": 40000,
+            "priceMin": 199.0,
+            "priceMax": 199.0,
+            "soldLabel": "4万+",
+            "priceLabel": "199"
+          },
+          {
+            "shop": "博士笔汇广泰智能教育专卖店",
+            "sold": 2000,
+            "priceMin": 95.0,
+            "priceMax": 95.0,
+            "soldLabel": "2000+",
+            "priceLabel": "95"
+          }
+        ],
+        "shopCount": 2,
+        "sourceCount": 3
       },
       "items": [
+        {
+          "category": "AI玩具",
+          "name": "AI时间宝机器人",
+          "ip": "",
+          "soldLabel": "4.2万+",
+          "sold": 42000,
+          "priceLabel": "95–199",
+          "price": 194.05,
+          "shop": "名校堂官方旗舰店 等 2 家",
+          "date": "2026.9.12",
+          "section": "ai_toy",
+          "sectionLabel": "AI 玩具",
+          "priceMin": 95.0,
+          "priceMax": 199.0,
+          "shops": [
+            {
+              "shop": "名校堂官方旗舰店",
+              "sold": 40000,
+              "priceMin": 199.0,
+              "priceMax": 199.0,
+              "soldLabel": "4万+",
+              "priceLabel": "199"
+            },
+            {
+              "shop": "博士笔汇广泰智能教育专卖店",
+              "sold": 2000,
+              "priceMin": 95.0,
+              "priceMax": 95.0,
+              "soldLabel": "2000+",
+              "priceLabel": "95"
+            }
+          ],
+          "shopCount": 2,
+          "sourceCount": 3
+        },
         {
           "category": "AI玩具",
           "name": "芙思AI陪伴机器人毛绒玩具",
@@ -906,33 +1684,21 @@ window.TOY_RADAR_DATA = {
           "shop": "芙思官方旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
-        },
-        {
-          "category": "AI玩具",
-          "name": "AI时间宝机器人",
-          "ip": "",
-          "soldLabel": "2万+",
-          "sold": 20000,
-          "priceLabel": "199",
-          "price": 199.0,
-          "shop": "名校堂官方旗舰店",
-          "date": "2026.9.12",
-          "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
-        },
-        {
-          "category": "AI玩具",
-          "name": "AI时间宝机器人",
-          "ip": "",
-          "soldLabel": "2万+",
-          "sold": 20000,
-          "priceLabel": "199",
-          "price": 199.0,
-          "shop": "名校堂官方旗舰店",
-          "date": "2026.9.12",
-          "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 469.0,
+          "priceMax": 469.0,
+          "shops": [
+            {
+              "shop": "芙思官方旗舰店",
+              "sold": 30000,
+              "priceMin": 469.0,
+              "priceMax": 469.0,
+              "soldLabel": "3万+",
+              "priceLabel": "469"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -945,7 +1711,21 @@ window.TOY_RADAR_DATA = {
           "shop": "SUREPOWER速豹创意礼品旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 2981.0,
+          "priceMax": 2981.0,
+          "shops": [
+            {
+              "shop": "SUREPOWER速豹创意礼品旗舰店",
+              "sold": 8000,
+              "priceMin": 2981.0,
+              "priceMax": 2981.0,
+              "soldLabel": "8000+",
+              "priceLabel": "2981"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -958,7 +1738,21 @@ window.TOY_RADAR_DATA = {
           "shop": "律眼小聪智能机器人旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 298.0,
+          "priceMax": 298.0,
+          "shops": [
+            {
+              "shop": "律眼小聪智能机器人旗舰店",
+              "sold": 8000,
+              "priceMin": 298.0,
+              "priceMax": 298.0,
+              "soldLabel": "8000+",
+              "priceLabel": "298"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -971,7 +1765,21 @@ window.TOY_RADAR_DATA = {
           "shop": "离火星超级球球智能机器人旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 299.0,
+          "priceMax": 299.0,
+          "shops": [
+            {
+              "shop": "离火星超级球球智能机器人旗舰店",
+              "sold": 4000,
+              "priceMin": 299.0,
+              "priceMax": 299.0,
+              "soldLabel": "4000+",
+              "priceLabel": "299"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -984,7 +1792,21 @@ window.TOY_RADAR_DATA = {
           "shop": "芙思官方旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 558.0,
+          "priceMax": 558.0,
+          "shops": [
+            {
+              "shop": "芙思官方旗舰店",
+              "sold": 3000,
+              "priceMin": 558.0,
+              "priceMax": 558.0,
+              "soldLabel": "3000+",
+              "priceLabel": "558"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -997,20 +1819,21 @@ window.TOY_RADAR_DATA = {
           "shop": "beiens贝恩施母婴玩具旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
-        },
-        {
-          "category": "AI玩具",
-          "name": "AI时间宝机器人",
-          "ip": "",
-          "soldLabel": "2000+",
-          "sold": 2000,
-          "priceLabel": "95",
-          "price": 95.0,
-          "shop": "博士笔汇广泰智能教育专卖店",
-          "date": "2026.9.12",
-          "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 219.0,
+          "priceMax": 219.0,
+          "shops": [
+            {
+              "shop": "beiens贝恩施母婴玩具旗舰店",
+              "sold": 3000,
+              "priceMin": 219.0,
+              "priceMax": 219.0,
+              "soldLabel": "3000+",
+              "priceLabel": "219"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1023,20 +1846,48 @@ window.TOY_RADAR_DATA = {
           "shop": "名校堂京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 269.0,
+          "priceMax": 269.0,
+          "shops": [
+            {
+              "shop": "名校堂京东自营旗舰店",
+              "sold": 1000,
+              "priceMin": 269.0,
+              "priceMax": 269.0,
+              "soldLabel": "1000+",
+              "priceLabel": "269"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
           "name": "喜马拉雅儿童波波AI电话故事机",
           "ip": "",
-          "soldLabel": "500+",
-          "sold": 500,
-          "priceLabel": "489",
-          "price": 489.0,
+          "soldLabel": "700+",
+          "sold": 700,
+          "priceLabel": "489–499",
+          "price": 491.86,
           "shop": "喜马拉雅儿童京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 489.0,
+          "priceMax": 499.0,
+          "shops": [
+            {
+              "shop": "喜马拉雅儿童京东自营旗舰店",
+              "sold": 700,
+              "priceMin": 489.0,
+              "priceMax": 499.0,
+              "soldLabel": "700+",
+              "priceLabel": "489–499"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 2
         },
         {
           "category": "AI玩具",
@@ -1049,7 +1900,21 @@ window.TOY_RADAR_DATA = {
           "shop": "京东京造自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 159.0,
+          "priceMax": 159.0,
+          "shops": [
+            {
+              "shop": "京东京造自营旗舰店",
+              "sold": 500,
+              "priceMin": 159.0,
+              "priceMax": 159.0,
+              "soldLabel": "500+",
+              "priceLabel": "159"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1062,7 +1927,21 @@ window.TOY_RADAR_DATA = {
           "shop": "多星球京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 249.0,
+          "priceMax": 249.0,
+          "shops": [
+            {
+              "shop": "多星球京东自营旗舰店",
+              "sold": 500,
+              "priceMin": 249.0,
+              "priceMax": 249.0,
+              "soldLabel": "500+",
+              "priceLabel": "249"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1075,7 +1954,56 @@ window.TOY_RADAR_DATA = {
           "shop": "索迪（SODEEP）玩具京东自营专区",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 129.0,
+          "priceMax": 129.0,
+          "shops": [
+            {
+              "shop": "索迪（SODEEP）玩具京东自营专区",
+              "sold": 500,
+              "priceMin": 129.0,
+              "priceMax": 129.0,
+              "soldLabel": "500+",
+              "priceLabel": "129"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
+        },
+        {
+          "category": "AI玩具",
+          "name": "enabotEBoSE全屋移动监控摄像头",
+          "ip": "",
+          "soldLabel": "400+",
+          "sold": 400,
+          "priceLabel": "666–669",
+          "price": 667.5,
+          "shop": "enabot京东自营旗舰店 等 2 家",
+          "date": "2026.9.12",
+          "section": "ai_toy",
+          "sectionLabel": "AI 玩具",
+          "priceMin": 666.0,
+          "priceMax": 669.0,
+          "shops": [
+            {
+              "shop": "enabot京东自营旗舰店",
+              "sold": 200,
+              "priceMin": 669.0,
+              "priceMax": 669.0,
+              "soldLabel": "200+",
+              "priceLabel": "669"
+            },
+            {
+              "shop": "enabot官方旗舰店",
+              "sold": 200,
+              "priceMin": 666.0,
+              "priceMax": 666.0,
+              "soldLabel": "200+",
+              "priceLabel": "666"
+            }
+          ],
+          "shopCount": 2,
+          "sourceCount": 2
         },
         {
           "category": "AI玩具",
@@ -1088,7 +2016,21 @@ window.TOY_RADAR_DATA = {
           "shop": "上纬启元智能机器人旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 1000.0,
+          "priceMax": 1000.0,
+          "shops": [
+            {
+              "shop": "上纬启元智能机器人旗舰店",
+              "sold": 200,
+              "priceMin": 1000.0,
+              "priceMax": 1000.0,
+              "soldLabel": "200+",
+              "priceLabel": "1000"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1101,7 +2043,21 @@ window.TOY_RADAR_DATA = {
           "shop": "CYMO玩具旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 199.0,
+          "priceMax": 199.0,
+          "shops": [
+            {
+              "shop": "CYMO玩具旗舰店",
+              "sold": 200,
+              "priceMin": 199.0,
+              "priceMax": 199.0,
+              "soldLabel": "200+",
+              "priceLabel": "199"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1114,20 +2070,21 @@ window.TOY_RADAR_DATA = {
           "shop": "星角萌萌官方旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
-        },
-        {
-          "category": "AI玩具",
-          "name": "enabotEBoSE全屋移动监控摄像头",
-          "ip": "",
-          "soldLabel": "200+",
-          "sold": 200,
-          "priceLabel": "669",
-          "price": 669.0,
-          "shop": "enabot京东自营旗舰店",
-          "date": "2026.9.12",
-          "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 399.0,
+          "priceMax": 399.0,
+          "shops": [
+            {
+              "shop": "星角萌萌官方旗舰店",
+              "sold": 200,
+              "priceMin": 399.0,
+              "priceMax": 399.0,
+              "soldLabel": "200+",
+              "priceLabel": "399"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1140,7 +2097,21 @@ window.TOY_RADAR_DATA = {
           "shop": "鲸鱼机器人whalesbot京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 219.0,
+          "priceMax": 219.0,
+          "shops": [
+            {
+              "shop": "鲸鱼机器人whalesbot京东自营旗舰店",
+              "sold": 200,
+              "priceMin": 219.0,
+              "priceMax": 219.0,
+              "soldLabel": "200+",
+              "priceLabel": "219"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1153,7 +2124,21 @@ window.TOY_RADAR_DATA = {
           "shop": "米德宝旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 199.0,
+          "priceMax": 199.0,
+          "shops": [
+            {
+              "shop": "米德宝旗舰店",
+              "sold": 200,
+              "priceMin": 199.0,
+              "priceMax": 199.0,
+              "soldLabel": "200+",
+              "priceLabel": "199"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1166,20 +2151,21 @@ window.TOY_RADAR_DATA = {
           "shop": "enabot京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
-        },
-        {
-          "category": "AI玩具",
-          "name": "enabotEBoSE全屋移动监控摄像头",
-          "ip": "",
-          "soldLabel": "200+",
-          "sold": 200,
-          "priceLabel": "666",
-          "price": 666.0,
-          "shop": "enabot官方旗舰店",
-          "date": "2026.9.12",
-          "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 999.0,
+          "priceMax": 999.0,
+          "shops": [
+            {
+              "shop": "enabot京东自营旗舰店",
+              "sold": 200,
+              "priceMin": 999.0,
+              "priceMax": 999.0,
+              "soldLabel": "200+",
+              "priceLabel": "999"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1192,7 +2178,21 @@ window.TOY_RADAR_DATA = {
           "shop": "芙志（Fuzozo）京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 349.0,
+          "priceMax": 349.0,
+          "shops": [
+            {
+              "shop": "芙志（Fuzozo）京东自营旗舰店",
+              "sold": 200,
+              "priceMin": 349.0,
+              "priceMax": 349.0,
+              "soldLabel": "200+",
+              "priceLabel": "349"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1205,7 +2205,21 @@ window.TOY_RADAR_DATA = {
           "shop": "华为京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 399.0,
+          "priceMax": 399.0,
+          "shops": [
+            {
+              "shop": "华为京东自营旗舰店",
+              "sold": 200,
+              "priceMin": 399.0,
+              "priceMax": 399.0,
+              "soldLabel": "200+",
+              "priceLabel": "399"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1218,7 +2232,21 @@ window.TOY_RADAR_DATA = {
           "shop": "超棋大师玩具京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 399.0,
+          "priceMax": 399.0,
+          "shops": [
+            {
+              "shop": "超棋大师玩具京东自营旗舰店",
+              "sold": 200,
+              "priceMin": 399.0,
+              "priceMax": 399.0,
+              "soldLabel": "200+",
+              "priceLabel": "399"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1231,20 +2259,21 @@ window.TOY_RADAR_DATA = {
           "shop": "星云宝贝ai陪伴机器人",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
-        },
-        {
-          "category": "AI玩具",
-          "name": "喜马拉雅儿童波波AI电话故事机",
-          "ip": "",
-          "soldLabel": "200+",
-          "sold": 200,
-          "priceLabel": "499",
-          "price": 499.0,
-          "shop": "喜马拉雅儿童京东自营旗舰店",
-          "date": "2026.9.12",
-          "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 199.0,
+          "priceMax": 199.0,
+          "shops": [
+            {
+              "shop": "星云宝贝ai陪伴机器人",
+              "sold": 200,
+              "priceMin": 199.0,
+              "priceMax": 199.0,
+              "soldLabel": "200+",
+              "priceLabel": "199"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1257,7 +2286,21 @@ window.TOY_RADAR_DATA = {
           "shop": "程天智能机器人旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 6666.0,
+          "priceMax": 6666.0,
+          "shops": [
+            {
+              "shop": "程天智能机器人旗舰店",
+              "sold": 100,
+              "priceMin": 6666.0,
+              "priceMax": 6666.0,
+              "soldLabel": "100+",
+              "priceLabel": "6666"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1270,7 +2313,21 @@ window.TOY_RADAR_DATA = {
           "shop": "beiens贝恩施母婴玩具旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 239.0,
+          "priceMax": 239.0,
+          "shops": [
+            {
+              "shop": "beiens贝恩施母婴玩具旗舰店",
+              "sold": 100,
+              "priceMin": 239.0,
+              "priceMax": 239.0,
+              "soldLabel": "100+",
+              "priceLabel": "239"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1283,7 +2340,21 @@ window.TOY_RADAR_DATA = {
           "shop": "LOONA京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 3259.0,
+          "priceMax": 3259.0,
+          "shops": [
+            {
+              "shop": "LOONA京东自营旗舰店",
+              "sold": 100,
+              "priceMin": 3259.0,
+              "priceMax": 3259.0,
+              "soldLabel": "100+",
+              "priceLabel": "3259"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1296,7 +2367,21 @@ window.TOY_RADAR_DATA = {
           "shop": "鲸鱼机器人whalesbot京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 158.0,
+          "priceMax": 158.0,
+          "shops": [
+            {
+              "shop": "鲸鱼机器人whalesbot京东自营旗舰店",
+              "sold": 100,
+              "priceMin": 158.0,
+              "priceMax": 158.0,
+              "soldLabel": "100+",
+              "priceLabel": "158"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1309,7 +2394,21 @@ window.TOY_RADAR_DATA = {
           "shop": "元萝卜SenseRobot京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 3299.0,
+          "priceMax": 3299.0,
+          "shops": [
+            {
+              "shop": "元萝卜SenseRobot京东自营旗舰店",
+              "sold": 100,
+              "priceMin": 3299.0,
+              "priceMax": 3299.0,
+              "soldLabel": "100+",
+              "priceLabel": "3299"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
@@ -1322,64 +2421,150 @@ window.TOY_RADAR_DATA = {
           "shop": "离火星超级球球京东自营旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 299.0,
+          "priceMax": 299.0,
+          "shops": [
+            {
+              "shop": "离火星超级球球京东自营旗舰店",
+              "sold": 100,
+              "priceMin": 299.0,
+              "priceMax": 299.0,
+              "soldLabel": "100+",
+              "priceLabel": "299"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
           "name": "AI智能机器人",
           "ip": "",
-          "soldLabel": "32",
-          "sold": 32,
-          "priceLabel": "229",
-          "price": 229.0,
-          "shop": "聚乐宝贝quLeBaby官方旗舰店",
+          "soldLabel": "50+",
+          "sold": 50,
+          "priceLabel": "218–229",
+          "price": 225.04,
+          "shop": "聚乐宝贝quLeBaby官方旗舰店 等 2 家",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
-        },
-        {
-          "category": "AI玩具",
-          "name": "AI智能机器人",
-          "ip": "",
-          "soldLabel": "18",
-          "sold": 18,
-          "priceLabel": "218",
-          "price": 218.0,
-          "shop": "万火官方旗舰店",
-          "date": "2026.9.12",
-          "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 218.0,
+          "priceMax": 229.0,
+          "shops": [
+            {
+              "shop": "聚乐宝贝quLeBaby官方旗舰店",
+              "sold": 32,
+              "priceMin": 229.0,
+              "priceMax": 229.0,
+              "soldLabel": "32+",
+              "priceLabel": "229"
+            },
+            {
+              "shop": "万火官方旗舰店",
+              "sold": 18,
+              "priceMin": 218.0,
+              "priceMax": 218.0,
+              "soldLabel": "18+",
+              "priceLabel": "218"
+            }
+          ],
+          "shopCount": 2,
+          "sourceCount": 2
         },
         {
           "category": "AI玩具",
           "name": "AI机器狗聊天宠物",
           "ip": "",
-          "soldLabel": "10",
+          "soldLabel": "10+",
           "sold": 10,
           "priceLabel": "299",
           "price": 299.0,
           "shop": "聚乐宝贝母婴玩具旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 299.0,
+          "priceMax": 299.0,
+          "shops": [
+            {
+              "shop": "聚乐宝贝母婴玩具旗舰店",
+              "sold": 10,
+              "priceMin": 299.0,
+              "priceMax": 299.0,
+              "soldLabel": "10+",
+              "priceLabel": "299"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         },
         {
           "category": "AI玩具",
           "name": "颂博士智能写字机器人",
           "ip": "",
-          "soldLabel": "+0006",
+          "soldLabel": "6+",
           "sold": 6,
           "priceLabel": "699",
           "price": 699.0,
           "shop": "颂博士智能机器人旗舰店",
           "date": "2026.9.12",
           "section": "ai_toy",
-          "sectionLabel": "AI 玩具"
+          "sectionLabel": "AI 玩具",
+          "priceMin": 699.0,
+          "priceMax": 699.0,
+          "shops": [
+            {
+              "shop": "颂博士智能机器人旗舰店",
+              "sold": 6,
+              "priceMin": 699.0,
+              "priceMax": 699.0,
+              "soldLabel": "6+",
+              "priceLabel": "699"
+            }
+          ],
+          "shopCount": 1,
+          "sourceCount": 1
         }
       ]
     }
   ],
   "topItems": [
+    {
+      "category": "盲盒",
+      "name": "星星人怦然星动盲盒",
+      "ip": "星星人",
+      "soldLabel": "60万+",
+      "sold": 600000,
+      "priceLabel": "69–89",
+      "price": 82.33,
+      "shop": "泡泡玛特官方旗舰店 等 2 家",
+      "date": "2026.9.12",
+      "section": "blind_box",
+      "sectionLabel": "盲盒",
+      "priceMin": 69.0,
+      "priceMax": 89.0,
+      "shops": [
+        {
+          "shop": "泡泡玛特官方旗舰店",
+          "sold": 400000,
+          "priceMin": 89.0,
+          "priceMax": 89.0,
+          "soldLabel": "40万+",
+          "priceLabel": "89"
+        },
+        {
+          "shop": "泡泡玛特旗舰店",
+          "sold": 200000,
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "soldLabel": "20万+",
+          "priceLabel": "69"
+        }
+      ],
+      "shopCount": 2,
+      "sourceCount": 3
+    },
     {
       "category": "盲盒",
       "name": "CRYBABYVacation ModeOn塘胶盲盒",
@@ -1391,59 +2576,83 @@ window.TOY_RADAR_DATA = {
       "shop": "泡泡玛特旗舰店",
       "date": "2026.9.12",
       "section": "blind_box",
-      "sectionLabel": "盲盒"
+      "sectionLabel": "盲盒",
+      "priceMin": 129.0,
+      "priceMax": 129.0,
+      "shops": [
+        {
+          "shop": "泡泡玛特旗舰店",
+          "sold": 400000,
+          "priceMin": 129.0,
+          "priceMax": 129.0,
+          "soldLabel": "40万+",
+          "priceLabel": "129"
+        }
+      ],
+      "shopCount": 1,
+      "sourceCount": 1
     },
     {
       "category": "盲盒",
-      "name": "星星人怦然星动盲盒",
-      "ip": "星星人",
-      "soldLabel": "30万+",
-      "sold": 300000,
-      "priceLabel": "89",
-      "price": 89.0,
-      "shop": "泡泡玛特官方旗舰店",
+      "name": "YOYO萌趣歪头盲盒",
+      "ip": "YOYO",
+      "soldLabel": "40万+",
+      "sold": 400000,
+      "priceLabel": "49",
+      "price": 49.0,
+      "shop": "miniso名创优品旗舰店",
       "date": "2026.9.12",
       "section": "blind_box",
-      "sectionLabel": "盲盒"
+      "sectionLabel": "盲盒",
+      "priceMin": 49.0,
+      "priceMax": 49.0,
+      "shops": [
+        {
+          "shop": "miniso名创优品旗舰店",
+          "sold": 400000,
+          "priceMin": 49.0,
+          "priceMax": 49.0,
+          "soldLabel": "40万+",
+          "priceLabel": "49"
+        }
+      ],
+      "shopCount": 1,
+      "sourceCount": 2
     },
     {
       "category": "盲盒",
       "name": "星星人好梦气象局盲盒",
       "ip": "星星人",
-      "soldLabel": "20万+",
-      "sold": 200000,
+      "soldLabel": "22万+",
+      "sold": 220000,
       "priceLabel": "79",
       "price": 79.0,
-      "shop": "泡泡玛特旗舰店",
+      "shop": "泡泡玛特旗舰店 等 2 家",
       "date": "2026.9.12",
       "section": "blind_box",
-      "sectionLabel": "盲盒"
-    },
-    {
-      "category": "盲盒",
-      "name": "YOYO萌趣歪头盲盒",
-      "ip": "YOYO",
-      "soldLabel": "20万+",
-      "sold": 200000,
-      "priceLabel": "49",
-      "price": 49.0,
-      "shop": "miniso名创优品旗舰店",
-      "date": "2026.9.12",
-      "section": "blind_box",
-      "sectionLabel": "盲盒"
-    },
-    {
-      "category": "可动手办",
-      "name": "YOYO萌趣歪头盲盒",
-      "ip": "YOYO",
-      "soldLabel": "20万+",
-      "sold": 200000,
-      "priceLabel": "49",
-      "price": 49.0,
-      "shop": "miniso名创优品旗舰店",
-      "date": "2026.9.12",
-      "section": "action_figure",
-      "sectionLabel": "可动手办"
+      "sectionLabel": "盲盒",
+      "priceMin": 79.0,
+      "priceMax": 79.0,
+      "shops": [
+        {
+          "shop": "泡泡玛特旗舰店",
+          "sold": 200000,
+          "priceMin": 79.0,
+          "priceMax": 79.0,
+          "soldLabel": "20万+",
+          "priceLabel": "79"
+        },
+        {
+          "shop": "泡泡玛特官方旗舰店",
+          "sold": 20000,
+          "priceMin": 79.0,
+          "priceMax": 79.0,
+          "soldLabel": "2万+",
+          "priceLabel": "79"
+        }
+      ],
+      "shopCount": 2,
+      "sourceCount": 2
     },
     {
       "category": "可动手办",
@@ -1456,20 +2665,21 @@ window.TOY_RADAR_DATA = {
       "shop": "泡泡玛特旗舰店",
       "date": "2026.9.12",
       "section": "action_figure",
-      "sectionLabel": "可动手办"
-    },
-    {
-      "category": "可动手办",
-      "name": "星星人怦然星动盲盒",
-      "ip": "星星人",
-      "soldLabel": "20万+",
-      "sold": 200000,
-      "priceLabel": "69",
-      "price": 69.0,
-      "shop": "泡泡玛特旗舰店",
-      "date": "2026.9.12",
-      "section": "action_figure",
-      "sectionLabel": "可动手办"
+      "sectionLabel": "可动手办",
+      "priceMin": 69.0,
+      "priceMax": 69.0,
+      "shops": [
+        {
+          "shop": "泡泡玛特旗舰店",
+          "sold": 200000,
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "soldLabel": "20万+",
+          "priceLabel": "69"
+        }
+      ],
+      "shopCount": 1,
+      "sourceCount": 1
     },
     {
       "category": "可动手办",
@@ -1482,20 +2692,21 @@ window.TOY_RADAR_DATA = {
       "shop": "泡泡玛特旗舰店",
       "date": "2026.9.12",
       "section": "action_figure",
-      "sectionLabel": "可动手办"
-    },
-    {
-      "category": "盲盒",
-      "name": "星星人怦然星动盲盒",
-      "ip": "星星人",
-      "soldLabel": "10万+",
-      "sold": 100000,
-      "priceLabel": "89",
-      "price": 89.0,
-      "shop": "泡泡玛特官方旗舰店",
-      "date": "2026.9.12",
-      "section": "blind_box",
-      "sectionLabel": "盲盒"
+      "sectionLabel": "可动手办",
+      "priceMin": 69.0,
+      "priceMax": 69.0,
+      "shops": [
+        {
+          "shop": "泡泡玛特旗舰店",
+          "sold": 100000,
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "soldLabel": "10万+",
+          "priceLabel": "69"
+        }
+      ],
+      "shopCount": 1,
+      "sourceCount": 1
     },
     {
       "category": "盲盒",
@@ -1508,7 +2719,118 @@ window.TOY_RADAR_DATA = {
       "shop": "库洛游戏旗舰店",
       "date": "2026.9.12",
       "section": "blind_box",
-      "sectionLabel": "盲盒"
+      "sectionLabel": "盲盒",
+      "priceMin": 29.9,
+      "priceMax": 29.9,
+      "shops": [
+        {
+          "shop": "库洛游戏旗舰店",
+          "sold": 80000,
+          "priceMin": 29.9,
+          "priceMax": 29.9,
+          "soldLabel": "8万+",
+          "priceLabel": "29.9"
+        }
+      ],
+      "shopCount": 1,
+      "sourceCount": 1
+    },
+    {
+      "category": "盲盒",
+      "name": "凡人修仙传盲盒",
+      "ip": "凡人修仙传",
+      "soldLabel": "6万+",
+      "sold": 60000,
+      "priceLabel": "79",
+      "price": 79.0,
+      "shop": "共鸣旗舰店 等 2 家",
+      "date": "2026.9.12",
+      "section": "blind_box",
+      "sectionLabel": "盲盒",
+      "priceMin": 79.0,
+      "priceMax": 79.0,
+      "shops": [
+        {
+          "shop": "共鸣旗舰店",
+          "sold": 30000,
+          "priceMin": 79.0,
+          "priceMax": 79.0,
+          "soldLabel": "3万+",
+          "priceLabel": "79"
+        },
+        {
+          "shop": "共鸣官方旗舰店",
+          "sold": 30000,
+          "priceMin": 79.0,
+          "priceMax": 79.0,
+          "soldLabel": "3万+",
+          "priceLabel": "79"
+        }
+      ],
+      "shopCount": 2,
+      "sourceCount": 2
+    },
+    {
+      "category": "AI玩具",
+      "name": "AI时间宝机器人",
+      "ip": "",
+      "soldLabel": "4.2万+",
+      "sold": 42000,
+      "priceLabel": "95–199",
+      "price": 194.05,
+      "shop": "名校堂官方旗舰店 等 2 家",
+      "date": "2026.9.12",
+      "section": "ai_toy",
+      "sectionLabel": "AI 玩具",
+      "priceMin": 95.0,
+      "priceMax": 199.0,
+      "shops": [
+        {
+          "shop": "名校堂官方旗舰店",
+          "sold": 40000,
+          "priceMin": 199.0,
+          "priceMax": 199.0,
+          "soldLabel": "4万+",
+          "priceLabel": "199"
+        },
+        {
+          "shop": "博士笔汇广泰智能教育专卖店",
+          "sold": 2000,
+          "priceMin": 95.0,
+          "priceMax": 95.0,
+          "soldLabel": "2000+",
+          "priceLabel": "95"
+        }
+      ],
+      "shopCount": 2,
+      "sourceCount": 3
+    },
+    {
+      "category": "盲盒",
+      "name": "MOW尼心语系毛绒盒",
+      "ip": "",
+      "soldLabel": "4万+",
+      "sold": 40000,
+      "priceLabel": "69",
+      "price": 69.0,
+      "shop": "范趣町潮玩旗舰店",
+      "date": "2026.9.12",
+      "section": "blind_box",
+      "sectionLabel": "盲盒",
+      "priceMin": 69.0,
+      "priceMax": 69.0,
+      "shops": [
+        {
+          "shop": "范趣町潮玩旗舰店",
+          "sold": 40000,
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "soldLabel": "4万+",
+          "priceLabel": "69"
+        }
+      ],
+      "shopCount": 1,
+      "sourceCount": 1
     }
   ],
   "topStores": [
@@ -1567,12 +2889,12 @@ window.TOY_RADAR_DATA = {
     {
       "ip": "星星人",
       "sold": 1020000,
-      "items": 6
+      "items": 3
     },
     {
       "ip": "YOYO",
       "sold": 440000,
-      "items": 4
+      "items": 3
     },
     {
       "ip": "CRYBABY",
@@ -1587,7 +2909,7 @@ window.TOY_RADAR_DATA = {
     {
       "ip": "凡人修仙传",
       "sold": 61000,
-      "items": 3
+      "items": 2
     },
     {
       "ip": "小马宝莉",
@@ -1602,7 +2924,7 @@ window.TOY_RADAR_DATA = {
     {
       "ip": "宝可梦",
       "sold": 36300,
-      "items": 4
+      "items": 3
     }
   ],
   "priceBands": [
@@ -1634,70 +2956,164 @@ window.TOY_RADAR_DATA = {
   "consumerPicks": [
     {
       "category": "盲盒",
-      "name": "CRYBABYVacation ModeOn塘胶盲盒",
-      "ip": "CRYBABY",
-      "soldLabel": "40万+",
-      "sold": 400000,
-      "priceLabel": "129",
-      "price": 129.0,
-      "shop": "泡泡玛特旗舰店",
+      "name": "星星人怦然星动盲盒",
+      "ip": "星星人",
+      "soldLabel": "60万+",
+      "sold": 600000,
+      "priceLabel": "69–89",
+      "price": 82.33,
+      "shop": "泡泡玛特官方旗舰店 等 2 家",
       "date": "2026.9.12",
       "section": "blind_box",
-      "sectionLabel": "盲盒"
+      "sectionLabel": "盲盒",
+      "priceMin": 69.0,
+      "priceMax": 89.0,
+      "shops": [
+        {
+          "shop": "泡泡玛特官方旗舰店",
+          "sold": 400000,
+          "priceMin": 89.0,
+          "priceMax": 89.0,
+          "soldLabel": "40万+",
+          "priceLabel": "89"
+        },
+        {
+          "shop": "泡泡玛特旗舰店",
+          "sold": 200000,
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "soldLabel": "20万+",
+          "priceLabel": "69"
+        }
+      ],
+      "shopCount": 2,
+      "sourceCount": 3
     },
     {
       "category": "盲盒",
       "name": "星星人怦然星动盲盒",
       "ip": "星星人",
-      "soldLabel": "30万+",
-      "sold": 300000,
-      "priceLabel": "89",
-      "price": 89.0,
-      "shop": "泡泡玛特官方旗舰店",
+      "soldLabel": "60万+",
+      "sold": 600000,
+      "priceLabel": "69–89",
+      "price": 82.33,
+      "shop": "泡泡玛特官方旗舰店 等 2 家",
       "date": "2026.9.12",
       "section": "blind_box",
-      "sectionLabel": "盲盒"
+      "sectionLabel": "盲盒",
+      "priceMin": 69.0,
+      "priceMax": 89.0,
+      "shops": [
+        {
+          "shop": "泡泡玛特官方旗舰店",
+          "sold": 400000,
+          "priceMin": 89.0,
+          "priceMax": 89.0,
+          "soldLabel": "40万+",
+          "priceLabel": "89"
+        },
+        {
+          "shop": "泡泡玛特旗舰店",
+          "sold": 200000,
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "soldLabel": "20万+",
+          "priceLabel": "69"
+        }
+      ],
+      "shopCount": 2,
+      "sourceCount": 3
     },
     {
       "category": "盲盒",
-      "name": "【预售】鸣潮团子叠叠乐第二弹在线抽盒机",
+      "name": "MOW尼心语系毛绒盒",
       "ip": "",
-      "soldLabel": "8万+",
-      "sold": 80000,
-      "priceLabel": "29.9",
-      "price": 29.9,
-      "shop": "库洛游戏旗舰店",
+      "soldLabel": "4万+",
+      "sold": 40000,
+      "priceLabel": "69",
+      "price": 69.0,
+      "shop": "范趣町潮玩旗舰店",
       "date": "2026.9.12",
       "section": "blind_box",
-      "sectionLabel": "盲盒"
+      "sectionLabel": "盲盒",
+      "priceMin": 69.0,
+      "priceMax": 69.0,
+      "shops": [
+        {
+          "shop": "范趣町潮玩旗舰店",
+          "sold": 40000,
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "soldLabel": "4万+",
+          "priceLabel": "69"
+        }
+      ],
+      "shopCount": 1,
+      "sourceCount": 1
     }
   ],
   "practitionerPicks": [
     {
       "category": "盲盒",
-      "name": "CRYBABYVacation ModeOn塘胶盲盒",
-      "ip": "CRYBABY",
-      "soldLabel": "40万+",
-      "sold": 400000,
-      "priceLabel": "129",
-      "price": 129.0,
-      "shop": "泡泡玛特旗舰店",
+      "name": "星星人怦然星动盲盒",
+      "ip": "星星人",
+      "soldLabel": "60万+",
+      "sold": 600000,
+      "priceLabel": "69–89",
+      "price": 82.33,
+      "shop": "泡泡玛特官方旗舰店 等 2 家",
       "date": "2026.9.12",
       "section": "blind_box",
-      "sectionLabel": "盲盒"
+      "sectionLabel": "盲盒",
+      "priceMin": 69.0,
+      "priceMax": 89.0,
+      "shops": [
+        {
+          "shop": "泡泡玛特官方旗舰店",
+          "sold": 400000,
+          "priceMin": 89.0,
+          "priceMax": 89.0,
+          "soldLabel": "40万+",
+          "priceLabel": "89"
+        },
+        {
+          "shop": "泡泡玛特旗舰店",
+          "sold": 200000,
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "soldLabel": "20万+",
+          "priceLabel": "69"
+        }
+      ],
+      "shopCount": 2,
+      "sourceCount": 3
     },
     {
       "category": "可动手办",
-      "name": "YOYO萌趣歪头盲盒",
-      "ip": "YOYO",
+      "name": "星星人美味时刻盲盒",
+      "ip": "星星人",
       "soldLabel": "20万+",
       "sold": 200000,
-      "priceLabel": "49",
-      "price": 49.0,
-      "shop": "miniso名创优品旗舰店",
+      "priceLabel": "69",
+      "price": 69.0,
+      "shop": "泡泡玛特旗舰店",
       "date": "2026.9.12",
       "section": "action_figure",
-      "sectionLabel": "可动手办"
+      "sectionLabel": "可动手办",
+      "priceMin": 69.0,
+      "priceMax": 69.0,
+      "shops": [
+        {
+          "shop": "泡泡玛特旗舰店",
+          "sold": 200000,
+          "priceMin": 69.0,
+          "priceMax": 69.0,
+          "soldLabel": "20万+",
+          "priceLabel": "69"
+        }
+      ],
+      "shopCount": 1,
+      "sourceCount": 1
     },
     {
       "category": "收藏卡牌",
@@ -1710,7 +3126,21 @@ window.TOY_RADAR_DATA = {
       "shop": "久木潮玩卡铺",
       "date": "2026.9.12",
       "section": "trading_card",
-      "sectionLabel": "收藏卡牌"
+      "sectionLabel": "收藏卡牌",
+      "priceMin": 4306.0,
+      "priceMax": 4306.0,
+      "shops": [
+        {
+          "shop": "久木潮玩卡铺",
+          "sold": 20000,
+          "priceMin": 4306.0,
+          "priceMax": 4306.0,
+          "soldLabel": "2万+",
+          "priceLabel": "4306"
+        }
+      ],
+      "shopCount": 1,
+      "sourceCount": 1
     }
   ],
   "generatedAt": "2026-10-25",
@@ -1721,10 +3151,10 @@ window.TOY_RADAR_DATA = {
       "weekRange": "2026.7.21 - 2026.7.25",
       "statDate": "2026.7.25",
       "totalSold": 904300,
-      "totalItems": 78,
+      "totalItems": 75,
       "sections": {
-        "blind_box": 793300,
-        "action_figure": 12700,
+        "blind_box": 793600,
+        "action_figure": 12400,
         "trading_card": 93100,
         "ai_toy": 5200
       },
@@ -1732,9 +3162,9 @@ window.TOY_RADAR_DATA = {
         "weekRange": "2026.7.21 - 2026.7.25",
         "statDate": "2026.7.25",
         "vsPrev": null,
-        "totalItems": 78,
+        "totalItems": 75,
         "totalSold": 904300,
-        "avgPrice": 763.0,
+        "avgPrice": 101.1,
         "priceMin": 11.9,
         "priceMax": 40000.0,
         "topStore": "泡泡玛特旗舰店",
@@ -1749,9 +3179,9 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：单价低，适合尝新和蹲隐藏款。",
               "operator": "运营建议：保持上新节奏，重点盯 TOPTOY / 泡泡玛特渠道。"
             },
-            "itemCount": 30,
-            "totalSold": 793300,
-            "medianPrice": 74.0,
+            "itemCount": 29,
+            "totalSold": 793600,
+            "medianPrice": 79.0,
             "priceMin": 14.3,
             "priceMax": 158.0,
             "topItem": {
@@ -1765,7 +3195,21 @@ window.TOY_RADAR_DATA = {
               "shop": "泡泡玛特旗舰店",
               "date": "2026.7.25",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 129.0,
+              "priceMax": 129.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 300000,
+                  "priceMin": 129.0,
+                  "priceMax": 129.0,
+                  "soldLabel": "30万+",
+                  "priceLabel": "129"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -1779,7 +3223,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 300000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "30万+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1792,7 +3250,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 100000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "10万+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1805,7 +3277,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特官方旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 90000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "9万+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1818,7 +3304,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特官方旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 50000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "5万+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1831,7 +3331,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "奇梦岛旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "shops": [
+                  {
+                    "shop": "奇梦岛旗舰店",
+                    "sold": 40000,
+                    "priceMin": 89.0,
+                    "priceMax": 89.0,
+                    "soldLabel": "4万+",
+                    "priceLabel": "89"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1839,12 +3353,26 @@ window.TOY_RADAR_DATA = {
                 "ip": "RELAX",
                 "soldLabel": "3万+",
                 "sold": 30000,
-                "priceLabel": "68起",
+                "priceLabel": "68",
                 "price": 68.0,
                 "shop": "POPSUNDAY旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 68.0,
+                "priceMax": 68.0,
+                "shops": [
+                  {
+                    "shop": "POPSUNDAY旗舰店",
+                    "sold": 30000,
+                    "priceMin": 68.0,
+                    "priceMax": 68.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "68"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1857,7 +3385,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "sowii潮玩旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 99.0,
+                "priceMax": 99.0,
+                "shops": [
+                  {
+                    "shop": "sowii潮玩旗舰店",
+                    "sold": 20000,
+                    "priceMin": 99.0,
+                    "priceMax": 99.0,
+                    "soldLabel": "2万+",
+                    "priceLabel": "99"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1870,7 +3412,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "奇梦岛官方旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "奇梦岛官方旗舰店",
+                    "sold": 20000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "2万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1883,7 +3439,56 @@ window.TOY_RADAR_DATA = {
                 "shop": "YHT与华同行专卖店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "YHT与华同行专卖店",
+                    "sold": 20000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "2万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
+              },
+              {
+                "category": "盲盒",
+                "name": "HelloKitty泳衣派对萌粒",
+                "ip": "Hello Kitty",
+                "soldLabel": "1.9万+",
+                "sold": 19000,
+                "priceLabel": "49",
+                "price": 49.0,
+                "shop": "TOPTOY官方旗舰店 等 2 家",
+                "date": "2026.7.25",
+                "section": "blind_box",
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY官方旗舰店",
+                    "sold": 10000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "49"
+                  },
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 9000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "9000+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "盲盒",
@@ -1896,7 +3501,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 10000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1909,7 +3528,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 10000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1922,7 +3555,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 10000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1935,20 +3582,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "奇梦岛旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "HelloKitty泳衣派对萌粒",
-                "ip": "Hello Kitty",
-                "soldLabel": "1万+",
-                "sold": 10000,
-                "priceLabel": "49",
-                "price": 49.0,
-                "shop": "TOPTOY官方旗舰店",
-                "date": "2026.7.25",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "奇梦岛旗舰店",
+                    "sold": 10000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1961,7 +3609,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TNTSPACE官方旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "TNTSPACE官方旗舰店",
+                    "sold": 10000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -1974,20 +3636,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "名创优品旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "HelloKitty泳衣派对萌粒",
-                "ip": "Hello Kitty",
-                "soldLabel": "9000+",
-                "sold": 9000,
-                "priceLabel": "49",
-                "price": 49.0,
-                "shop": "TOPTOY旗舰店",
-                "date": "2026.7.25",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 58.0,
+                "priceMax": 58.0,
+                "shops": [
+                  {
+                    "shop": "名创优品旗舰店",
+                    "sold": 10000,
+                    "priceMin": 58.0,
+                    "priceMax": 58.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "58"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2000,7 +3663,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "柠檬童话旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 14.3,
+                "priceMax": 14.3,
+                "shops": [
+                  {
+                    "shop": "柠檬童话旗舰店",
+                    "sold": 7000,
+                    "priceMin": 14.3,
+                    "priceMax": 14.3,
+                    "soldLabel": "7000+",
+                    "priceLabel": "14.3"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2013,7 +3690,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "范趣町旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "范趣町旗舰店",
+                    "sold": 6000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "6000+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2026,7 +3717,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "奇梦岛旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "奇梦岛旗舰店",
+                    "sold": 5000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2039,7 +3744,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "Heyone官方旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 158.0,
+                "priceMax": 158.0,
+                "shops": [
+                  {
+                    "shop": "Heyone官方旗舰店",
+                    "sold": 5000,
+                    "priceMin": 158.0,
+                    "priceMax": 158.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "158"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2047,12 +3766,26 @@ window.TOY_RADAR_DATA = {
                 "ip": "Pingu",
                 "soldLabel": "4000+",
                 "sold": 4000,
-                "priceLabel": "139起",
+                "priceLabel": "139",
                 "price": 139.0,
                 "shop": "马克图布旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 139.0,
+                "priceMax": 139.0,
+                "shops": [
+                  {
+                    "shop": "马克图布旗舰店",
+                    "sold": 4000,
+                    "priceMin": 139.0,
+                    "priceMax": 139.0,
+                    "soldLabel": "4000+",
+                    "priceLabel": "139"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2065,7 +3798,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "funism官方旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "funism官方旗舰店",
+                    "sold": 4000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "4000+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2078,7 +3825,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "玩乐主义旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "玩乐主义旗舰店",
+                    "sold": 3000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2091,7 +3852,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "DODOSUGAR潮玩旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "DODOSUGAR潮玩旗舰店",
+                    "sold": 3000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2104,7 +3879,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 2000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2117,7 +3906,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "蜜雪冰城旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 25.0,
+                "priceMax": 25.0,
+                "shops": [
+                  {
+                    "shop": "蜜雪冰城旗舰店",
+                    "sold": 2000,
+                    "priceMin": 25.0,
+                    "priceMax": 25.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "25"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2130,7 +3933,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "SHONENJUMPSHOP旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 42.0,
+                "priceMax": 42.0,
+                "shops": [
+                  {
+                    "shop": "SHONENJUMPSHOP旗舰店",
+                    "sold": 2000,
+                    "priceMin": 42.0,
+                    "priceMax": 42.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "42"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -2143,20 +3960,48 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 29.0,
+                "priceMax": 29.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 1000,
+                    "priceMin": 29.0,
+                    "priceMax": 29.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "29"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
                 "name": "莉洛洛红楼梦系列12分可动关节玩偶盲盒",
                 "ip": "莉洛洛",
-                "soldLabel": "300+",
-                "sold": 300,
+                "soldLabel": "600+",
+                "sold": 600,
                 "priceLabel": "119",
                 "price": 119.0,
                 "shop": "SIMONTOYS旗舰店",
                 "date": "2026.7.25",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 119.0,
+                "priceMax": 119.0,
+                "shops": [
+                  {
+                    "shop": "SIMONTOYS旗舰店",
+                    "sold": 600,
+                    "priceMin": 119.0,
+                    "priceMax": 119.0,
+                    "soldLabel": "600+",
+                    "priceLabel": "119"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 2
               }
             ]
           },
@@ -2169,9 +4014,9 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：适合收藏和摆件型消费。",
               "operator": "运营建议：关注联名和展会首发，适合做预售和限量策略。"
             },
-            "itemCount": 18,
-            "totalSold": 12700,
-            "medianPrice": 139.0,
+            "itemCount": 17,
+            "totalSold": 12400,
+            "medianPrice": 153.0,
             "priceMin": 17.9,
             "priceMax": 1199.0,
             "topItem": {
@@ -2185,7 +4030,21 @@ window.TOY_RADAR_DATA = {
               "shop": "空格动漫专营店",
               "date": "2026.7.25",
               "section": "action_figure",
-              "sectionLabel": "可动手办"
+              "sectionLabel": "可动手办",
+              "priceMin": 153.0,
+              "priceMax": 153.0,
+              "shops": [
+                {
+                  "shop": "空格动漫专营店",
+                  "sold": 3000,
+                  "priceMin": 153.0,
+                  "priceMax": 153.0,
+                  "soldLabel": "3000+",
+                  "priceLabel": "153"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -2199,7 +4058,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "空格动漫专营店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 153.0,
+                "priceMax": 153.0,
+                "shops": [
+                  {
+                    "shop": "空格动漫专营店",
+                    "sold": 3000,
+                    "priceMin": 153.0,
+                    "priceMax": 153.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "153"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -2212,7 +4085,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "蕾思绮玩具旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 52.9,
+                "priceMax": 52.9,
+                "shops": [
+                  {
+                    "shop": "蕾思绮玩具旗舰店",
+                    "sold": 2000,
+                    "priceMin": 52.9,
+                    "priceMax": 52.9,
+                    "soldLabel": "2000+",
+                    "priceLabel": "52.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -2225,7 +4112,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "QueenStudios旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 125.0,
+                "priceMax": 125.0,
+                "shops": [
+                  {
+                    "shop": "QueenStudios旗舰店",
+                    "sold": 1000,
+                    "priceMin": 125.0,
+                    "priceMax": 125.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "125"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -2238,7 +4139,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "暗源旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 379.0,
+                "priceMax": 379.0,
+                "shops": [
+                  {
+                    "shop": "暗源旗舰店",
+                    "sold": 1000,
+                    "priceMin": 379.0,
+                    "priceMax": 379.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "379"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -2251,7 +4166,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "共鸣旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 169.0,
+                "priceMax": 169.0,
+                "shops": [
+                  {
+                    "shop": "共鸣旗舰店",
+                    "sold": 1000,
+                    "priceMin": 169.0,
+                    "priceMax": 169.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "169"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -2264,7 +4193,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "圆野文化旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 50.0,
+                "priceMax": 50.0,
+                "shops": [
+                  {
+                    "shop": "圆野文化旗舰店",
+                    "sold": 1000,
+                    "priceMin": 50.0,
+                    "priceMax": 50.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "50"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -2277,7 +4220,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "蕾思绮玩具旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 78.8,
+                "priceMax": 78.8,
+                "shops": [
+                  {
+                    "shop": "蕾思绮玩具旗舰店",
+                    "sold": 1000,
+                    "priceMin": 78.8,
+                    "priceMax": 78.8,
+                    "soldLabel": "1000+",
+                    "priceLabel": "78.8"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -2290,7 +4247,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "暗源旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 379.0,
+                "priceMax": 379.0,
+                "shops": [
+                  {
+                    "shop": "暗源旗舰店",
+                    "sold": 700,
+                    "priceMin": 379.0,
+                    "priceMax": 379.0,
+                    "soldLabel": "700+",
+                    "priceLabel": "379"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -2303,20 +4274,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "暗源旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
-              },
-              {
-                "category": "可动手办",
-                "name": "莉洛洛红楼梦系列12分可动关节玩偶盲盒",
-                "ip": "莉洛洛",
-                "soldLabel": "300+",
-                "sold": 300,
-                "priceLabel": "119",
-                "price": 119.0,
-                "shop": "SIMONTOYS旗舰店",
-                "date": "2026.7.25",
-                "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 349.0,
+                "priceMax": 349.0,
+                "shops": [
+                  {
+                    "shop": "暗源旗舰店",
+                    "sold": 600,
+                    "priceMin": 349.0,
+                    "priceMax": 349.0,
+                    "soldLabel": "600+",
+                    "priceLabel": "349"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -2329,7 +4301,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "空格动漫专营店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 17.9,
+                "priceMax": 17.9,
+                "shops": [
+                  {
+                    "shop": "空格动漫专营店",
+                    "sold": 300,
+                    "priceMin": 17.9,
+                    "priceMax": 17.9,
+                    "soldLabel": "300+",
+                    "priceLabel": "17.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -2342,7 +4328,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "圆野文化旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 429.0,
+                "priceMax": 429.0,
+                "shops": [
+                  {
+                    "shop": "圆野文化旗舰店",
+                    "sold": 200,
+                    "priceMin": 429.0,
+                    "priceMax": 429.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "429"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -2355,7 +4355,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "QueenStudios旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 725.0,
+                "priceMax": 725.0,
+                "shops": [
+                  {
+                    "shop": "QueenStudios旗舰店",
+                    "sold": 100,
+                    "priceMin": 725.0,
+                    "priceMax": 725.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "725"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -2368,7 +4382,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "X11旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 1199.0,
+                "priceMax": 1199.0,
+                "shops": [
+                  {
+                    "shop": "X11旗舰店",
+                    "sold": 100,
+                    "priceMin": 1199.0,
+                    "priceMax": 1199.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -2381,7 +4409,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "凡尘宝玩具专营店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 25.5,
+                "priceMax": 25.5,
+                "shops": [
+                  {
+                    "shop": "凡尘宝玩具专营店",
+                    "sold": 100,
+                    "priceMin": 25.5,
+                    "priceMax": 25.5,
+                    "soldLabel": "100+",
+                    "priceLabel": "25.5"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -2394,7 +4436,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "猫点购旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 498.0,
+                "priceMax": 498.0,
+                "shops": [
+                  {
+                    "shop": "猫点购旗舰店",
+                    "sold": 100,
+                    "priceMin": 498.0,
+                    "priceMax": 498.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "498"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -2407,7 +4463,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "华忠乐园玩具旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 47.0,
+                "priceMax": 47.0,
+                "shops": [
+                  {
+                    "shop": "华忠乐园玩具旗舰店",
+                    "sold": 100,
+                    "priceMin": 47.0,
+                    "priceMax": 47.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "47"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -2420,7 +4490,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "浣嘉木旗舰店",
                 "date": "2026.7.25",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 97.8,
+                "priceMax": 97.8,
+                "shops": [
+                  {
+                    "shop": "浣嘉木旗舰店",
+                    "sold": 100,
+                    "priceMin": 97.8,
+                    "priceMax": 97.8,
+                    "soldLabel": "100+",
+                    "priceLabel": "97.8"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -2449,7 +4533,21 @@ window.TOY_RADAR_DATA = {
               "shop": "檬宝状元",
               "date": "2026.7.25",
               "section": "trading_card",
-              "sectionLabel": "收藏卡牌"
+              "sectionLabel": "收藏卡牌",
+              "priceMin": 11.9,
+              "priceMax": 11.9,
+              "shops": [
+                {
+                  "shop": "檬宝状元",
+                  "sold": 60000,
+                  "priceMin": 11.9,
+                  "priceMax": 11.9,
+                  "soldLabel": "6万+",
+                  "priceLabel": "11.9"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -2463,7 +4561,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "檬宝状元",
                 "date": "2026.7.25",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "shops": [
+                  {
+                    "shop": "檬宝状元",
+                    "sold": 60000,
+                    "priceMin": 11.9,
+                    "priceMax": 11.9,
+                    "soldLabel": "6万+",
+                    "priceLabel": "11.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -2476,7 +4588,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "PTCG长安",
                 "date": "2026.7.25",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 17.9,
+                "priceMax": 17.9,
+                "shops": [
+                  {
+                    "shop": "PTCG长安",
+                    "sold": 10000,
+                    "priceMin": 17.9,
+                    "priceMax": 17.9,
+                    "soldLabel": "1万+",
+                    "priceLabel": "17.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -2489,7 +4615,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "拆卡叮叮",
                 "date": "2026.7.25",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 39.9,
+                "priceMax": 39.9,
+                "shops": [
+                  {
+                    "shop": "拆卡叮叮",
+                    "sold": 9000,
+                    "priceMin": 39.9,
+                    "priceMax": 39.9,
+                    "soldLabel": "9000+",
+                    "priceLabel": "39.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -2502,7 +4642,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "宇宙飞行企业店",
                 "date": "2026.7.25",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 39.6,
+                "priceMax": 39.6,
+                "shops": [
+                  {
+                    "shop": "宇宙飞行企业店",
+                    "sold": 6000,
+                    "priceMin": 39.6,
+                    "priceMax": 39.6,
+                    "soldLabel": "6000+",
+                    "priceLabel": "39.6"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -2515,7 +4669,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "哪小嘟拆卡",
                 "date": "2026.7.25",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 88.88,
+                "priceMax": 88.88,
+                "shops": [
+                  {
+                    "shop": "哪小嘟拆卡",
+                    "sold": 3000,
+                    "priceMin": 88.88,
+                    "priceMax": 88.88,
+                    "soldLabel": "3000+",
+                    "priceLabel": "88.88"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -2528,7 +4696,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "三幻神卡牌",
                 "date": "2026.7.25",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 22.8,
+                "priceMax": 22.8,
+                "shops": [
+                  {
+                    "shop": "三幻神卡牌",
+                    "sold": 2000,
+                    "priceMin": 22.8,
+                    "priceMax": 22.8,
+                    "soldLabel": "2000+",
+                    "priceLabel": "22.8"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -2541,7 +4723,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "李白白拆卡",
                 "date": "2026.7.25",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 29.9,
+                "priceMax": 29.9,
+                "shops": [
+                  {
+                    "shop": "李白白拆卡",
+                    "sold": 1000,
+                    "priceMin": 29.9,
+                    "priceMax": 29.9,
+                    "soldLabel": "1000+",
+                    "priceLabel": "29.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -2554,7 +4750,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "悦卡潮玩社",
                 "date": "2026.7.25",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 198.0,
+                "priceMax": 198.0,
+                "shops": [
+                  {
+                    "shop": "悦卡潮玩社",
+                    "sold": 1000,
+                    "priceMin": 198.0,
+                    "priceMax": 198.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "198"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -2567,7 +4777,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "九欧拆卡",
                 "date": "2026.7.25",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 199.0,
+                "priceMax": 199.0,
+                "shops": [
+                  {
+                    "shop": "九欧拆卡",
+                    "sold": 1000,
+                    "priceMin": 199.0,
+                    "priceMax": 199.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -2580,7 +4804,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "魔都兄弟",
                 "date": "2026.7.25",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 40000.0,
+                "priceMax": 40000.0,
+                "shops": [
+                  {
+                    "shop": "魔都兄弟",
+                    "sold": 100,
+                    "priceMin": 40000.0,
+                    "priceMax": 40000.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "40000"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -2593,7 +4831,7 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：更适合亲子/陪伴场景，先看功能再看颜值。",
               "operator": "运营建议：功能点要讲清楚，亲子、教育和陪伴场景最关键。"
             },
-            "itemCount": 20,
+            "itemCount": 19,
             "totalSold": 5200,
             "medianPrice": 399.0,
             "priceMin": 149.0,
@@ -2609,7 +4847,21 @@ window.TOY_RADAR_DATA = {
               "shop": "天文(TEN-WIN)玩具京东自营旗舰店",
               "date": "2026.7.25",
               "section": "ai_toy",
-              "sectionLabel": "AI 玩具"
+              "sectionLabel": "AI 玩具",
+              "priceMin": 298.0,
+              "priceMax": 298.0,
+              "shops": [
+                {
+                  "shop": "天文(TEN-WIN)玩具京东自营旗舰店",
+                  "sold": 500,
+                  "priceMin": 298.0,
+                  "priceMax": 298.0,
+                  "soldLabel": "500+",
+                  "priceLabel": "298"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -2623,7 +4875,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "天文(TEN-WIN)玩具京东自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 298.0,
+                "priceMax": 298.0,
+                "shops": [
+                  {
+                    "shop": "天文(TEN-WIN)玩具京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 298.0,
+                    "priceMax": 298.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "298"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -2636,7 +4902,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "芙崽(Fuzozo)京东自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 499.0,
+                "priceMax": 499.0,
+                "shops": [
+                  {
+                    "shop": "芙崽(Fuzozo)京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 499.0,
+                    "priceMax": 499.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "499"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -2649,7 +4929,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "索迪(SODEEP)玩具京东自营专区",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 299.0,
+                "priceMax": 299.0,
+                "shops": [
+                  {
+                    "shop": "索迪(SODEEP)玩具京东自营专区",
+                    "sold": 500,
+                    "priceMin": 299.0,
+                    "priceMax": 299.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "299"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -2662,7 +4956,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "星云宝贝ai陪伴机器人",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 149.0,
+                "priceMax": 149.0,
+                "shops": [
+                  {
+                    "shop": "星云宝贝ai陪伴机器人",
+                    "sold": 500,
+                    "priceMin": 149.0,
+                    "priceMax": 149.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "149"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -2675,7 +4983,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "京东京造自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 159.0,
+                "priceMax": 159.0,
+                "shops": [
+                  {
+                    "shop": "京东京造自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 159.0,
+                    "priceMax": 159.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "159"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -2688,7 +5010,56 @@ window.TOY_RADAR_DATA = {
                 "shop": "超棋大师玩具京东自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "超棋大师玩具京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
+              },
+              {
+                "category": "AI陪伴机器人",
+                "name": "enabot EBO SE 全屋移动监控摄像头",
+                "ip": "",
+                "soldLabel": "300+",
+                "sold": 300,
+                "priceLabel": "699",
+                "price": 699.0,
+                "shop": "enabot京东自营旗舰店 等 2 家",
+                "date": "2026.7.25",
+                "section": "ai_toy",
+                "sectionLabel": "AI 玩具",
+                "priceMin": 699.0,
+                "priceMax": 699.0,
+                "shops": [
+                  {
+                    "shop": "enabot京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 699.0,
+                    "priceMax": 699.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "699"
+                  },
+                  {
+                    "shop": "ENABOT官方旗舰店",
+                    "sold": 100,
+                    "priceMin": 699.0,
+                    "priceMax": 699.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "699"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "AI玩具",
@@ -2701,7 +5072,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "梦多福玩具京东自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "梦多福玩具京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -2714,7 +5099,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "当当狸玩具京东自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 398.0,
+                "priceMax": 398.0,
+                "shops": [
+                  {
+                    "shop": "当当狸玩具京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 398.0,
+                    "priceMax": 398.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "398"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -2727,7 +5126,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "喜马拉雅儿童京东自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 479.0,
+                "priceMax": 479.0,
+                "shops": [
+                  {
+                    "shop": "喜马拉雅儿童京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 479.0,
+                    "priceMax": 479.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "479"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -2740,7 +5153,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "华为京东自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "华为京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -2753,20 +5180,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "米德宝旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI陪伴机器人",
-                "name": "enabot EBO SE 全屋移动监控摄像头",
-                "ip": "",
-                "soldLabel": "200+",
-                "sold": 200,
-                "priceLabel": "699",
-                "price": 699.0,
-                "shop": "enabot京东自营旗舰店",
-                "date": "2026.7.25",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 899.0,
+                "priceMax": 899.0,
+                "shops": [
+                  {
+                    "shop": "米德宝旗舰店",
+                    "sold": 200,
+                    "priceMin": 899.0,
+                    "priceMax": 899.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "899"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -2779,7 +5207,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "星角萌萌官方旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "星角萌萌官方旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -2792,7 +5234,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "米德宝旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 199.0,
+                "priceMax": 199.0,
+                "shops": [
+                  {
+                    "shop": "米德宝旗舰店",
+                    "sold": 200,
+                    "priceMin": 199.0,
+                    "priceMax": 199.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -2805,7 +5261,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "京东智能机器人自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 599.0,
+                "priceMax": 599.0,
+                "shops": [
+                  {
+                    "shop": "京东智能机器人自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 599.0,
+                    "priceMax": 599.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "599"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -2818,7 +5288,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 239.0,
+                "priceMax": 239.0,
+                "shops": [
+                  {
+                    "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 239.0,
+                    "priceMax": 239.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "239"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -2831,20 +5315,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI陪伴机器人",
-                "name": "enabot EBO SE 全屋移动监控摄像头",
-                "ip": "",
-                "soldLabel": "100+",
-                "sold": 100,
-                "priceLabel": "699",
-                "price": 699.0,
-                "shop": "ENABOT官方旗舰店",
-                "date": "2026.7.25",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 149.0,
+                "priceMax": 149.0,
+                "shops": [
+                  {
+                    "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 149.0,
+                    "priceMax": 149.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "149"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -2857,7 +5342,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "元萝卜SenseRobot 京东自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 2999.0,
+                "priceMax": 2999.0,
+                "shops": [
+                  {
+                    "shop": "元萝卜SenseRobot 京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 2999.0,
+                    "priceMax": 2999.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "2999"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -2870,7 +5369,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "物灵京东自营旗舰店",
                 "date": "2026.7.25",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 1299.0,
+                "priceMax": 1299.0,
+                "shops": [
+                  {
+                    "shop": "物灵京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 1299.0,
+                    "priceMax": 1299.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1299"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           }
@@ -2887,7 +5400,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 300000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "30万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -2900,7 +5427,21 @@ window.TOY_RADAR_DATA = {
             "shop": "miniso名创优品旗舰店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 49.0,
+            "priceMax": 49.0,
+            "shops": [
+              {
+                "shop": "miniso名创优品旗舰店",
+                "sold": 100000,
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "soldLabel": "10万+",
+                "priceLabel": "49"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -2913,7 +5454,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特官方旗舰店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 90000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "9万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "卡牌",
@@ -2926,7 +5481,21 @@ window.TOY_RADAR_DATA = {
             "shop": "檬宝状元",
             "date": "2026.7.25",
             "section": "trading_card",
-            "sectionLabel": "收藏卡牌"
+            "sectionLabel": "收藏卡牌",
+            "priceMin": 11.9,
+            "priceMax": 11.9,
+            "shops": [
+              {
+                "shop": "檬宝状元",
+                "sold": 60000,
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "soldLabel": "6万+",
+                "priceLabel": "11.9"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -2939,7 +5508,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特官方旗舰店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 50000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "5万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -2952,7 +5535,21 @@ window.TOY_RADAR_DATA = {
             "shop": "奇梦岛旗舰店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 89.0,
+            "priceMax": 89.0,
+            "shops": [
+              {
+                "shop": "奇梦岛旗舰店",
+                "sold": 40000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "4万+",
+                "priceLabel": "89"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -2960,12 +5557,26 @@ window.TOY_RADAR_DATA = {
             "ip": "RELAX",
             "soldLabel": "3万+",
             "sold": 30000,
-            "priceLabel": "68起",
+            "priceLabel": "68",
             "price": 68.0,
             "shop": "POPSUNDAY旗舰店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 68.0,
+            "priceMax": 68.0,
+            "shops": [
+              {
+                "shop": "POPSUNDAY旗舰店",
+                "sold": 30000,
+                "priceMin": 68.0,
+                "priceMax": 68.0,
+                "soldLabel": "3万+",
+                "priceLabel": "68"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -2978,7 +5589,21 @@ window.TOY_RADAR_DATA = {
             "shop": "sowii潮玩旗舰店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 99.0,
+            "priceMax": 99.0,
+            "shops": [
+              {
+                "shop": "sowii潮玩旗舰店",
+                "sold": 20000,
+                "priceMin": 99.0,
+                "priceMax": 99.0,
+                "soldLabel": "2万+",
+                "priceLabel": "99"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -2991,7 +5616,21 @@ window.TOY_RADAR_DATA = {
             "shop": "奇梦岛官方旗舰店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "奇梦岛官方旗舰店",
+                "sold": 20000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "2万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -3004,7 +5643,21 @@ window.TOY_RADAR_DATA = {
             "shop": "YHT与华同行专卖店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "YHT与华同行专卖店",
+                "sold": 20000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "2万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ],
         "topStores": [
@@ -3081,14 +5734,14 @@ window.TOY_RADAR_DATA = {
             "items": 1
           },
           {
-            "ip": "WAKUKU 哇库库",
-            "sold": 50000,
-            "items": 2
-          },
-          {
             "ip": "ZSIGA",
             "sold": 50000,
             "items": 1
+          },
+          {
+            "ip": "WAKUKU 哇库库",
+            "sold": 50000,
+            "items": 2
           },
           {
             "ip": "小嗷",
@@ -3139,7 +5792,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 300000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "30万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -3152,7 +5819,21 @@ window.TOY_RADAR_DATA = {
             "shop": "miniso名创优品旗舰店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 49.0,
+            "priceMax": 49.0,
+            "shops": [
+              {
+                "shop": "miniso名创优品旗舰店",
+                "sold": 100000,
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "soldLabel": "10万+",
+                "priceLabel": "49"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -3165,7 +5846,21 @@ window.TOY_RADAR_DATA = {
             "shop": "YHT与华同行专卖店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "YHT与华同行专卖店",
+                "sold": 20000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "2万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ],
         "practitionerPicks": [
@@ -3180,7 +5875,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.7.25",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 300000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "30万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "高达模型",
@@ -3193,7 +5902,21 @@ window.TOY_RADAR_DATA = {
             "shop": "空格动漫专营店",
             "date": "2026.7.25",
             "section": "action_figure",
-            "sectionLabel": "可动手办"
+            "sectionLabel": "可动手办",
+            "priceMin": 153.0,
+            "priceMax": 153.0,
+            "shops": [
+              {
+                "shop": "空格动漫专营店",
+                "sold": 3000,
+                "priceMin": 153.0,
+                "priceMax": 153.0,
+                "soldLabel": "3000+",
+                "priceLabel": "153"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "卡牌",
@@ -3206,7 +5929,21 @@ window.TOY_RADAR_DATA = {
             "shop": "檬宝状元",
             "date": "2026.7.25",
             "section": "trading_card",
-            "sectionLabel": "收藏卡牌"
+            "sectionLabel": "收藏卡牌",
+            "priceMin": 11.9,
+            "priceMax": 11.9,
+            "shops": [
+              {
+                "shop": "檬宝状元",
+                "sold": 60000,
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "soldLabel": "6万+",
+                "priceLabel": "11.9"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ]
       }
@@ -3217,7 +5954,7 @@ window.TOY_RADAR_DATA = {
       "weekRange": "2026.7.26 - 2026.8.1",
       "statDate": "2026.8.1",
       "totalSold": 1306058,
-      "totalItems": 80,
+      "totalItems": 75,
       "sections": {
         "blind_box": 1189300,
         "action_figure": 10458,
@@ -3232,11 +5969,11 @@ window.TOY_RADAR_DATA = {
           "totalDeltaPct": 44.4,
           "categoryDelta": {
             "blind_box": 49.9,
-            "action_figure": -17.7,
+            "action_figure": -15.7,
             "trading_card": 8.4,
             "ai_toy": 3.8
           },
-          "newCount": 28,
+          "newCount": 24,
           "newFaces": [
             {
               "category": "盲盒",
@@ -3249,7 +5986,56 @@ window.TOY_RADAR_DATA = {
               "shop": "泡泡玛特旗舰店",
               "date": "2026.8.1",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 129.0,
+              "priceMax": 129.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 300000,
+                  "priceMin": 129.0,
+                  "priceMax": 129.0,
+                  "soldLabel": "30万+",
+                  "priceLabel": "129"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
+            },
+            {
+              "category": "盲盒",
+              "name": "星星人怦然星动盲盒",
+              "ip": "星星人",
+              "soldLabel": "20万+",
+              "sold": 200000,
+              "priceLabel": "89",
+              "price": 89.0,
+              "shop": "泡泡玛特旗舰店 等 2 家",
+              "date": "2026.8.1",
+              "section": "blind_box",
+              "sectionLabel": "盲盒",
+              "priceMin": 89.0,
+              "priceMax": 89.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 100000,
+                  "priceMin": 89.0,
+                  "priceMax": 89.0,
+                  "soldLabel": "10万+",
+                  "priceLabel": "89"
+                },
+                {
+                  "shop": "泡泡玛特官方旗舰店",
+                  "sold": 100000,
+                  "priceMin": 89.0,
+                  "priceMax": 89.0,
+                  "soldLabel": "10万+",
+                  "priceLabel": "89"
+                }
+              ],
+              "shopCount": 2,
+              "sourceCount": 2
             },
             {
               "category": "盲盒",
@@ -3262,46 +6048,21 @@ window.TOY_RADAR_DATA = {
               "shop": "泡泡玛特官方旗舰店",
               "date": "2026.8.1",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
-            },
-            {
-              "category": "盲盒",
-              "name": "星星人怦然星动盲盒",
-              "ip": "星星人",
-              "soldLabel": "10万+",
-              "sold": 100000,
-              "priceLabel": "89",
-              "price": 89.0,
-              "shop": "泡泡玛特旗舰店",
-              "date": "2026.8.1",
-              "section": "blind_box",
-              "sectionLabel": "盲盒"
-            },
-            {
-              "category": "盲盒",
-              "name": "星星人怦然星动盲盒",
-              "ip": "星星人",
-              "soldLabel": "10万+",
-              "sold": 100000,
-              "priceLabel": "89",
-              "price": 89.0,
-              "shop": "泡泡玛特官方旗舰店",
-              "date": "2026.8.1",
-              "section": "blind_box",
-              "sectionLabel": "盲盒"
-            },
-            {
-              "category": "盲盒",
-              "name": "DIMOO WORLD × PIXAR联名盲盒",
-              "ip": "DIMOO",
-              "soldLabel": "3万+",
-              "sold": 30000,
-              "priceLabel": "69",
-              "price": 69.0,
-              "shop": "泡泡玛特官方旗舰店",
-              "date": "2026.8.1",
-              "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 79.0,
+              "priceMax": 79.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特官方旗舰店",
+                  "sold": 200000,
+                  "priceMin": 79.0,
+                  "priceMax": 79.0,
+                  "soldLabel": "20万+",
+                  "priceLabel": "79"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
@@ -3314,7 +6075,21 @@ window.TOY_RADAR_DATA = {
               "shop": "Heyone官方旗舰店",
               "date": "2026.8.1",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "shops": [
+                {
+                  "shop": "Heyone官方旗舰店",
+                  "sold": 10000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "1万+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
@@ -3327,7 +6102,21 @@ window.TOY_RADAR_DATA = {
               "shop": "喜羊羊与灰太狼周边旗舰店",
               "date": "2026.8.1",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 49.0,
+              "priceMax": 49.0,
+              "shops": [
+                {
+                  "shop": "喜羊羊与灰太狼周边旗舰店",
+                  "sold": 9000,
+                  "priceMin": 49.0,
+                  "priceMax": 49.0,
+                  "soldLabel": "9000+",
+                  "priceLabel": "49"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
@@ -3340,14 +6129,98 @@ window.TOY_RADAR_DATA = {
               "shop": "PLZDOT旗舰店",
               "date": "2026.8.1",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "shops": [
+                {
+                  "shop": "PLZDOT旗舰店",
+                  "sold": 8000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "8000+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
+            },
+            {
+              "category": "卡牌",
+              "name": "宝可梦简中太晶盛聚",
+              "ip": "宝可梦",
+              "soldLabel": "2800+",
+              "sold": 2800,
+              "priceLabel": "44.8–89.6",
+              "price": 60.8,
+              "shop": "卡萌三番队 等 3 家",
+              "date": "2026.8.1",
+              "section": "trading_card",
+              "sectionLabel": "收藏卡牌",
+              "priceMin": 44.8,
+              "priceMax": 89.6,
+              "shops": [
+                {
+                  "shop": "卡萌三番队",
+                  "sold": 1000,
+                  "priceMin": 89.6,
+                  "priceMax": 89.6,
+                  "soldLabel": "1000+",
+                  "priceLabel": "89.6"
+                },
+                {
+                  "shop": "KET",
+                  "sold": 1000,
+                  "priceMin": 44.8,
+                  "priceMax": 44.8,
+                  "soldLabel": "1000+",
+                  "priceLabel": "44.8"
+                },
+                {
+                  "shop": "BOS",
+                  "sold": 800,
+                  "priceMin": 44.8,
+                  "priceMax": 44.8,
+                  "soldLabel": "800+",
+                  "priceLabel": "44.8"
+                }
+              ],
+              "shopCount": 3,
+              "sourceCount": 3
+            },
+            {
+              "category": "盲盒",
+              "name": "ShyShy兔闪闪小小的你甜品系列手机挂件盲盒",
+              "ip": "ShyShy 兔",
+              "soldLabel": "2000+",
+              "sold": 2000,
+              "priceLabel": "49",
+              "price": 49.0,
+              "shop": "AYOR TOYS旗舰店",
+              "date": "2026.8.1",
+              "section": "blind_box",
+              "sectionLabel": "盲盒",
+              "priceMin": 49.0,
+              "priceMax": 49.0,
+              "shops": [
+                {
+                  "shop": "AYOR TOYS旗舰店",
+                  "sold": 2000,
+                  "priceMin": 49.0,
+                  "priceMax": 49.0,
+                  "soldLabel": "2000+",
+                  "priceLabel": "49"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             }
           ],
-          "repeatedCount": 52
+          "repeatedCount": 51
         },
-        "totalItems": 80,
+        "totalItems": 75,
         "totalSold": 1306058,
-        "avgPrice": 768.1,
+        "avgPrice": 87.3,
         "priceMin": 11.9,
         "priceMax": 40000.0,
         "topStore": "泡泡玛特旗舰店",
@@ -3362,7 +6235,7 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：单价低，适合尝新和蹲隐藏款。",
               "operator": "运营建议：保持上新节奏，重点盯 TOPTOY / 泡泡玛特渠道。"
             },
-            "itemCount": 30,
+            "itemCount": 28,
             "totalSold": 1189300,
             "medianPrice": 69.0,
             "priceMin": 13.5,
@@ -3378,7 +6251,21 @@ window.TOY_RADAR_DATA = {
               "shop": "泡泡玛特旗舰店",
               "date": "2026.8.1",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 129.0,
+              "priceMax": 129.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 300000,
+                  "priceMin": 129.0,
+                  "priceMax": 129.0,
+                  "soldLabel": "30万+",
+                  "priceLabel": "129"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -3392,7 +6279,56 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 300000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "30万+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
+              },
+              {
+                "category": "盲盒",
+                "name": "星星人怦然星动盲盒",
+                "ip": "星星人",
+                "soldLabel": "20万+",
+                "sold": 200000,
+                "priceLabel": "89",
+                "price": 89.0,
+                "shop": "泡泡玛特旗舰店 等 2 家",
+                "date": "2026.8.1",
+                "section": "blind_box",
+                "sectionLabel": "盲盒",
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 100000,
+                    "priceMin": 89.0,
+                    "priceMax": 89.0,
+                    "soldLabel": "10万+",
+                    "priceLabel": "89"
+                  },
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 100000,
+                    "priceMin": 89.0,
+                    "priceMax": 89.0,
+                    "soldLabel": "10万+",
+                    "priceLabel": "89"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "盲盒",
@@ -3405,7 +6341,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 200000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "20万+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3418,33 +6368,56 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特官方旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 200000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "20万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
-                "name": "星星人怦然星动盲盒",
-                "ip": "星星人",
-                "soldLabel": "10万+",
-                "sold": 100000,
-                "priceLabel": "89",
-                "price": 89.0,
-                "shop": "泡泡玛特旗舰店",
+                "name": "DIMOO WORLD × PIXAR联名盲盒",
+                "ip": "DIMOO",
+                "soldLabel": "4万+",
+                "sold": 40000,
+                "priceLabel": "69",
+                "price": 69.0,
+                "shop": "泡泡玛特官方旗舰店 等 2 家",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "星星人怦然星动盲盒",
-                "ip": "星星人",
-                "soldLabel": "10万+",
-                "sold": 100000,
-                "priceLabel": "89",
-                "price": 89.0,
-                "shop": "泡泡玛特官方旗舰店",
-                "date": "2026.8.1",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 30000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "69"
+                  },
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 10000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "盲盒",
@@ -3457,7 +6430,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "奇梦岛旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "shops": [
+                  {
+                    "shop": "奇梦岛旗舰店",
+                    "sold": 40000,
+                    "priceMin": 89.0,
+                    "priceMax": 89.0,
+                    "soldLabel": "4万+",
+                    "priceLabel": "89"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3465,25 +6452,26 @@ window.TOY_RADAR_DATA = {
                 "ip": "RELAX",
                 "soldLabel": "3万+",
                 "sold": 30000,
-                "priceLabel": "68起",
+                "priceLabel": "68",
                 "price": 68.0,
                 "shop": "POPSUNDAY旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "DIMOO WORLD × PIXAR联名盲盒",
-                "ip": "DIMOO",
-                "soldLabel": "3万+",
-                "sold": 30000,
-                "priceLabel": "69",
-                "price": 69.0,
-                "shop": "泡泡玛特官方旗舰店",
-                "date": "2026.8.1",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 68.0,
+                "priceMax": 68.0,
+                "shops": [
+                  {
+                    "shop": "POPSUNDAY旗舰店",
+                    "sold": 30000,
+                    "priceMin": 68.0,
+                    "priceMax": 68.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "68"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3496,7 +6484,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "sowii潮玩旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 99.0,
+                "priceMax": 99.0,
+                "shops": [
+                  {
+                    "shop": "sowii潮玩旗舰店",
+                    "sold": 30000,
+                    "priceMin": 99.0,
+                    "priceMax": 99.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "99"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3509,7 +6511,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "YHT与华同行专卖店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "YHT与华同行专卖店",
+                    "sold": 20000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "2万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3522,20 +6538,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "奇梦岛官方旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "DIMOO WORLD × PIXAR联名盲盒",
-                "ip": "DIMOO",
-                "soldLabel": "1万+",
-                "sold": 10000,
-                "priceLabel": "69",
-                "price": 69.0,
-                "shop": "泡泡玛特旗舰店",
-                "date": "2026.8.1",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "奇梦岛官方旗舰店",
+                    "sold": 20000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "2万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3548,7 +6565,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 10000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3561,7 +6592,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "柠檬童话旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 13.5,
+                "priceMax": 13.5,
+                "shops": [
+                  {
+                    "shop": "柠檬童话旗舰店",
+                    "sold": 10000,
+                    "priceMin": 13.5,
+                    "priceMax": 13.5,
+                    "soldLabel": "1万+",
+                    "priceLabel": "13.5"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3574,7 +6619,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TNTSPACE官方旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "TNTSPACE官方旗舰店",
+                    "sold": 10000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3587,7 +6646,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "Heyone官方旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "Heyone官方旗舰店",
+                    "sold": 10000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3600,7 +6673,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 9000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "9000+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3613,7 +6700,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "喜羊羊与灰太狼周边旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "喜羊羊与灰太狼周边旗舰店",
+                    "sold": 9000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "9000+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3626,7 +6727,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "PLZDOT旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "PLZDOT旗舰店",
+                    "sold": 8000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "8000+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3639,7 +6754,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "范趣町旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "范趣町旗舰店",
+                    "sold": 7000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "7000+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3652,7 +6781,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "funism官方旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "funism官方旗舰店",
+                    "sold": 6000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "6000+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3665,7 +6808,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "DODOSUGAR潮玩旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "DODOSUGAR潮玩旗舰店",
+                    "sold": 5000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3678,7 +6835,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "奇梦岛旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "奇梦岛旗舰店",
+                    "sold": 5000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3686,12 +6857,26 @@ window.TOY_RADAR_DATA = {
                 "ip": "Pingu",
                 "soldLabel": "5000+",
                 "sold": 5000,
-                "priceLabel": "139起",
+                "priceLabel": "139",
                 "price": 139.0,
                 "shop": "马克图布旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 139.0,
+                "priceMax": 139.0,
+                "shops": [
+                  {
+                    "shop": "马克图布旗舰店",
+                    "sold": 5000,
+                    "priceMin": 139.0,
+                    "priceMax": 139.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "139"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3704,7 +6889,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "玩乐主义旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "玩乐主义旗舰店",
+                    "sold": 4000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "4000+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3717,7 +6916,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 3000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3730,7 +6943,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "蜜雪冰城旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "蜜雪冰城旗舰店",
+                    "sold": 3000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3743,7 +6970,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 29.0,
+                "priceMax": 29.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 3000,
+                    "priceMin": 29.0,
+                    "priceMax": 29.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "29"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3756,7 +6997,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "AYOR TOYS旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "AYOR TOYS旗舰店",
+                    "sold": 2000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -3769,7 +7024,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.8.1",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 300,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "300+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -3798,7 +7067,21 @@ window.TOY_RADAR_DATA = {
               "shop": "空格动漫专营店",
               "date": "2026.8.1",
               "section": "action_figure",
-              "sectionLabel": "可动手办"
+              "sectionLabel": "可动手办",
+              "priceMin": 153.0,
+              "priceMax": 153.0,
+              "shops": [
+                {
+                  "shop": "空格动漫专营店",
+                  "sold": 3000,
+                  "priceMin": 153.0,
+                  "priceMax": 153.0,
+                  "soldLabel": "3000+",
+                  "priceLabel": "153"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -3812,7 +7095,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "空格动漫专营店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 153.0,
+                "priceMax": 153.0,
+                "shops": [
+                  {
+                    "shop": "空格动漫专营店",
+                    "sold": 3000,
+                    "priceMin": 153.0,
+                    "priceMax": 153.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "153"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -3825,7 +7122,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "纽茁益旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 37.5,
+                "priceMax": 37.5,
+                "shops": [
+                  {
+                    "shop": "纽茁益旗舰店",
+                    "sold": 2000,
+                    "priceMin": 37.5,
+                    "priceMax": 37.5,
+                    "soldLabel": "2000+",
+                    "priceLabel": "37.5"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -3838,7 +7149,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "QueenStudios旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 125.0,
+                "priceMax": 125.0,
+                "shops": [
+                  {
+                    "shop": "QueenStudios旗舰店",
+                    "sold": 1000,
+                    "priceMin": 125.0,
+                    "priceMax": 125.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "125"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -3851,7 +7176,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "共鸣旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 169.0,
+                "priceMax": 169.0,
+                "shops": [
+                  {
+                    "shop": "共鸣旗舰店",
+                    "sold": 1000,
+                    "priceMin": 169.0,
+                    "priceMax": 169.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "169"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -3864,7 +7203,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "暗源旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 289.0,
+                "priceMax": 289.0,
+                "shops": [
+                  {
+                    "shop": "暗源旗舰店",
+                    "sold": 500,
+                    "priceMin": 289.0,
+                    "priceMax": 289.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "289"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -3877,7 +7230,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "暗源旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 379.0,
+                "priceMax": 379.0,
+                "shops": [
+                  {
+                    "shop": "暗源旗舰店",
+                    "sold": 500,
+                    "priceMin": 379.0,
+                    "priceMax": 379.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "379"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -3890,7 +7257,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "蕾思绮玩具旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 78.8,
+                "priceMax": 78.8,
+                "shops": [
+                  {
+                    "shop": "蕾思绮玩具旗舰店",
+                    "sold": 400,
+                    "priceMin": 78.8,
+                    "priceMax": 78.8,
+                    "soldLabel": "400+",
+                    "priceLabel": "78.8"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -3903,7 +7284,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "jada旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "jada旗舰店",
+                    "sold": 300,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "300+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -3916,7 +7311,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "暗源旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 319.0,
+                "priceMax": 319.0,
+                "shops": [
+                  {
+                    "shop": "暗源旗舰店",
+                    "sold": 300,
+                    "priceMin": 319.0,
+                    "priceMax": 319.0,
+                    "soldLabel": "300+",
+                    "priceLabel": "319"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -3929,7 +7338,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "圆野文化旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 429.0,
+                "priceMax": 429.0,
+                "shops": [
+                  {
+                    "shop": "圆野文化旗舰店",
+                    "sold": 300,
+                    "priceMin": 429.0,
+                    "priceMax": 429.0,
+                    "soldLabel": "300+",
+                    "priceLabel": "429"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -3942,7 +7365,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "空格动漫专营店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 17.9,
+                "priceMax": 17.9,
+                "shops": [
+                  {
+                    "shop": "空格动漫专营店",
+                    "sold": 300,
+                    "priceMin": 17.9,
+                    "priceMax": 17.9,
+                    "soldLabel": "300+",
+                    "priceLabel": "17.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -3955,7 +7392,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "X11旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 1199.0,
+                "priceMax": 1199.0,
+                "shops": [
+                  {
+                    "shop": "X11旗舰店",
+                    "sold": 100,
+                    "priceMin": 1199.0,
+                    "priceMax": 1199.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -3968,7 +7419,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "QueenStudios旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 725.0,
+                "priceMax": 725.0,
+                "shops": [
+                  {
+                    "shop": "QueenStudios旗舰店",
+                    "sold": 100,
+                    "priceMin": 725.0,
+                    "priceMax": 725.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "725"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -3981,7 +7446,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "原神旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 488.0,
+                "priceMax": 488.0,
+                "shops": [
+                  {
+                    "shop": "原神旗舰店",
+                    "sold": 100,
+                    "priceMin": 488.0,
+                    "priceMax": 488.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "488"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -3994,7 +7473,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "凡尘宝玩具专营店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 25.5,
+                "priceMax": 25.5,
+                "shops": [
+                  {
+                    "shop": "凡尘宝玩具专营店",
+                    "sold": 100,
+                    "priceMin": 25.5,
+                    "priceMax": 25.5,
+                    "soldLabel": "100+",
+                    "priceLabel": "25.5"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -4007,7 +7500,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "猫点购旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 498.0,
+                "priceMax": 498.0,
+                "shops": [
+                  {
+                    "shop": "猫点购旗舰店",
+                    "sold": 100,
+                    "priceMin": 498.0,
+                    "priceMax": 498.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "498"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -4020,7 +7527,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "华忠乐园玩具旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 62.0,
+                "priceMax": 62.0,
+                "shops": [
+                  {
+                    "shop": "华忠乐园玩具旗舰店",
+                    "sold": 100,
+                    "priceMin": 62.0,
+                    "priceMax": 62.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "62"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -4033,7 +7554,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "浣嘉木旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 97.8,
+                "priceMax": 97.8,
+                "shops": [
+                  {
+                    "shop": "浣嘉木旗舰店",
+                    "sold": 100,
+                    "priceMin": 97.8,
+                    "priceMax": 97.8,
+                    "soldLabel": "100+",
+                    "priceLabel": "97.8"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -4046,20 +7581,48 @@ window.TOY_RADAR_DATA = {
                 "shop": "浣嘉木旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 97.8,
+                "priceMax": 97.8,
+                "shops": [
+                  {
+                    "shop": "浣嘉木旗舰店",
+                    "sold": 100,
+                    "priceMin": 97.8,
+                    "priceMax": 97.8,
+                    "soldLabel": "100+",
+                    "priceLabel": "97.8"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
                 "name": "大班MG红异端拼装模型强袭自由白雪姬菲尼克斯",
                 "ip": "",
-                "soldLabel": "58",
+                "soldLabel": "58+",
                 "sold": 58,
                 "priceLabel": "236",
                 "price": 236.0,
                 "shop": "旭动旗舰店",
                 "date": "2026.8.1",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 236.0,
+                "priceMax": 236.0,
+                "shops": [
+                  {
+                    "shop": "旭动旗舰店",
+                    "sold": 58,
+                    "priceMin": 236.0,
+                    "priceMax": 236.0,
+                    "soldLabel": "58+",
+                    "priceLabel": "236"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -4072,9 +7635,9 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：看稀缺卡和热门 IP，别只看低价。",
               "operator": "运营建议：高价卡适合内容种草，低价卡适合走量。"
             },
-            "itemCount": 10,
+            "itemCount": 8,
             "totalSold": 100900,
-            "medianPrice": 44.8,
+            "medianPrice": 50.349999999999994,
             "priceMin": 11.9,
             "priceMax": 40000.0,
             "topItem": {
@@ -4088,7 +7651,21 @@ window.TOY_RADAR_DATA = {
               "shop": "檬宝状元",
               "date": "2026.8.1",
               "section": "trading_card",
-              "sectionLabel": "收藏卡牌"
+              "sectionLabel": "收藏卡牌",
+              "priceMin": 11.9,
+              "priceMax": 11.9,
+              "shops": [
+                {
+                  "shop": "檬宝状元",
+                  "sold": 70000,
+                  "priceMin": 11.9,
+                  "priceMax": 11.9,
+                  "soldLabel": "7万+",
+                  "priceLabel": "11.9"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -4102,7 +7679,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "檬宝状元",
                 "date": "2026.8.1",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "shops": [
+                  {
+                    "shop": "檬宝状元",
+                    "sold": 70000,
+                    "priceMin": 11.9,
+                    "priceMax": 11.9,
+                    "soldLabel": "7万+",
+                    "priceLabel": "11.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -4115,7 +7706,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "拆卡叮叮",
                 "date": "2026.8.1",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 39.9,
+                "priceMax": 39.9,
+                "shops": [
+                  {
+                    "shop": "拆卡叮叮",
+                    "sold": 10000,
+                    "priceMin": 39.9,
+                    "priceMax": 39.9,
+                    "soldLabel": "1万+",
+                    "priceLabel": "39.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -4128,7 +7733,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "PTCG长安",
                 "date": "2026.8.1",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 17.9,
+                "priceMax": 17.9,
+                "shops": [
+                  {
+                    "shop": "PTCG长安",
+                    "sold": 10000,
+                    "priceMin": 17.9,
+                    "priceMax": 17.9,
+                    "soldLabel": "1万+",
+                    "priceLabel": "17.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -4141,20 +7760,64 @@ window.TOY_RADAR_DATA = {
                 "shop": "宇宙飞行企业店",
                 "date": "2026.8.1",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 39.6,
+                "priceMax": 39.6,
+                "shops": [
+                  {
+                    "shop": "宇宙飞行企业店",
+                    "sold": 6000,
+                    "priceMin": 39.6,
+                    "priceMax": 39.6,
+                    "soldLabel": "6000+",
+                    "priceLabel": "39.6"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
                 "name": "宝可梦简中太晶盛聚",
                 "ip": "宝可梦",
-                "soldLabel": "1000+",
-                "sold": 1000,
-                "priceLabel": "89.6",
-                "price": 89.6,
-                "shop": "卡萌三番队",
+                "soldLabel": "2800+",
+                "sold": 2800,
+                "priceLabel": "44.8–89.6",
+                "price": 60.8,
+                "shop": "卡萌三番队 等 3 家",
                 "date": "2026.8.1",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 44.8,
+                "priceMax": 89.6,
+                "shops": [
+                  {
+                    "shop": "卡萌三番队",
+                    "sold": 1000,
+                    "priceMin": 89.6,
+                    "priceMax": 89.6,
+                    "soldLabel": "1000+",
+                    "priceLabel": "89.6"
+                  },
+                  {
+                    "shop": "KET",
+                    "sold": 1000,
+                    "priceMin": 44.8,
+                    "priceMax": 44.8,
+                    "soldLabel": "1000+",
+                    "priceLabel": "44.8"
+                  },
+                  {
+                    "shop": "BOS",
+                    "sold": 800,
+                    "priceMin": 44.8,
+                    "priceMax": 44.8,
+                    "soldLabel": "800+",
+                    "priceLabel": "44.8"
+                  }
+                ],
+                "shopCount": 3,
+                "sourceCount": 3
               },
               {
                 "category": "卡牌",
@@ -4167,20 +7830,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "卡萌三番队",
                 "date": "2026.8.1",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
-              },
-              {
-                "category": "卡牌",
-                "name": "宝可梦简中太晶盛聚",
-                "ip": "宝可梦",
-                "soldLabel": "1000+",
-                "sold": 1000,
-                "priceLabel": "44.8",
-                "price": 44.8,
-                "shop": "KET",
-                "date": "2026.8.1",
-                "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 390.0,
+                "priceMax": 390.0,
+                "shops": [
+                  {
+                    "shop": "卡萌三番队",
+                    "sold": 1000,
+                    "priceMin": 390.0,
+                    "priceMax": 390.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "390"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -4193,20 +7857,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "不舍PTCG拆卡",
                 "date": "2026.8.1",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
-              },
-              {
-                "category": "卡牌",
-                "name": "宝可梦简中太晶盛聚",
-                "ip": "宝可梦",
-                "soldLabel": "800+",
-                "sold": 800,
-                "priceLabel": "44.8",
-                "price": 44.8,
-                "shop": "BOS",
-                "date": "2026.8.1",
-                "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 169.0,
+                "priceMax": 169.0,
+                "shops": [
+                  {
+                    "shop": "不舍PTCG拆卡",
+                    "sold": 1000,
+                    "priceMin": 169.0,
+                    "priceMax": 169.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "169"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -4219,7 +7884,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "魔都兄弟",
                 "date": "2026.8.1",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 40000.0,
+                "priceMax": 40000.0,
+                "shops": [
+                  {
+                    "shop": "魔都兄弟",
+                    "sold": 100,
+                    "priceMin": 40000.0,
+                    "priceMax": 40000.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "40000"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -4232,7 +7911,7 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：更适合亲子/陪伴场景，先看功能再看颜值。",
               "operator": "运营建议：功能点要讲清楚，亲子、教育和陪伴场景最关键。"
             },
-            "itemCount": 20,
+            "itemCount": 19,
             "totalSold": 5400,
             "medianPrice": 399.0,
             "priceMin": 149.0,
@@ -4248,7 +7927,21 @@ window.TOY_RADAR_DATA = {
               "shop": "索迪(SODEEP)玩具京东自营专区",
               "date": "2026.8.1",
               "section": "ai_toy",
-              "sectionLabel": "AI 玩具"
+              "sectionLabel": "AI 玩具",
+              "priceMin": 299.0,
+              "priceMax": 299.0,
+              "shops": [
+                {
+                  "shop": "索迪(SODEEP)玩具京东自营专区",
+                  "sold": 500,
+                  "priceMin": 299.0,
+                  "priceMax": 299.0,
+                  "soldLabel": "500+",
+                  "priceLabel": "299"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -4262,7 +7955,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "索迪(SODEEP)玩具京东自营专区",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 299.0,
+                "priceMax": 299.0,
+                "shops": [
+                  {
+                    "shop": "索迪(SODEEP)玩具京东自营专区",
+                    "sold": 500,
+                    "priceMin": 299.0,
+                    "priceMax": 299.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "299"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4275,7 +7982,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "芙崽(Fuzozo)京东自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 499.0,
+                "priceMax": 499.0,
+                "shops": [
+                  {
+                    "shop": "芙崽(Fuzozo)京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 499.0,
+                    "priceMax": 499.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "499"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4288,7 +8009,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "京东京造自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 159.0,
+                "priceMax": 159.0,
+                "shops": [
+                  {
+                    "shop": "京东京造自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 159.0,
+                    "priceMax": 159.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "159"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4301,7 +8036,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "天文(TEN-WIN)玩具京东自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 298.0,
+                "priceMax": 298.0,
+                "shops": [
+                  {
+                    "shop": "天文(TEN-WIN)玩具京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 298.0,
+                    "priceMax": 298.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "298"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4314,7 +8063,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "名校堂京东自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 269.0,
+                "priceMax": 269.0,
+                "shops": [
+                  {
+                    "shop": "名校堂京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 269.0,
+                    "priceMax": 269.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "269"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4327,7 +8090,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "超棋大师玩具京东自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "超棋大师玩具京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4340,7 +8117,56 @@ window.TOY_RADAR_DATA = {
                 "shop": "星云宝贝ai陪伴机器人",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 149.0,
+                "priceMax": 149.0,
+                "shops": [
+                  {
+                    "shop": "星云宝贝ai陪伴机器人",
+                    "sold": 500,
+                    "priceMin": 149.0,
+                    "priceMax": 149.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "149"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
+              },
+              {
+                "category": "AI玩具",
+                "name": "enabot EBO SE 全屋移动监控摄像头",
+                "ip": "",
+                "soldLabel": "300+",
+                "sold": 300,
+                "priceLabel": "699",
+                "price": 699.0,
+                "shop": "enabot京东自营旗舰店 等 2 家",
+                "date": "2026.8.1",
+                "section": "ai_toy",
+                "sectionLabel": "AI 玩具",
+                "priceMin": 699.0,
+                "priceMax": 699.0,
+                "shops": [
+                  {
+                    "shop": "enabot京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 699.0,
+                    "priceMax": 699.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "699"
+                  },
+                  {
+                    "shop": "ENABOT官方旗舰店",
+                    "sold": 100,
+                    "priceMin": 699.0,
+                    "priceMax": 699.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "699"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "AI玩具",
@@ -4353,7 +8179,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "梦多福玩具京东自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "梦多福玩具京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4366,7 +8206,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "华为京东自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "华为京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4379,20 +8233,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "阁阁居玩具乐器旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI玩具",
-                "name": "enabot EBO SE 全屋移动监控摄像头",
-                "ip": "",
-                "soldLabel": "200+",
-                "sold": 200,
-                "priceLabel": "699",
-                "price": 699.0,
-                "shop": "enabot京东自营旗舰店",
-                "date": "2026.8.1",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 279.0,
+                "priceMax": 279.0,
+                "shops": [
+                  {
+                    "shop": "阁阁居玩具乐器旗舰店",
+                    "sold": 200,
+                    "priceMin": 279.0,
+                    "priceMax": 279.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "279"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4405,7 +8260,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "星角萌萌官方旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "星角萌萌官方旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4418,7 +8287,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "米德宝旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 199.0,
+                "priceMax": 199.0,
+                "shops": [
+                  {
+                    "shop": "米德宝旗舰店",
+                    "sold": 200,
+                    "priceMin": 199.0,
+                    "priceMax": 199.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4431,7 +8314,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "京东智能机器人自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 599.0,
+                "priceMax": 599.0,
+                "shops": [
+                  {
+                    "shop": "京东智能机器人自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 599.0,
+                    "priceMax": 599.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "599"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4444,7 +8341,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 329.0,
+                "priceMax": 329.0,
+                "shops": [
+                  {
+                    "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 329.0,
+                    "priceMax": 329.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "329"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4457,7 +8368,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 149.0,
+                "priceMax": 149.0,
+                "shops": [
+                  {
+                    "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 149.0,
+                    "priceMax": 149.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "149"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4470,7 +8395,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "物灵京东自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 1399.0,
+                "priceMax": 1399.0,
+                "shops": [
+                  {
+                    "shop": "物灵京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 1399.0,
+                    "priceMax": 1399.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4483,20 +8422,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "努比亚京东自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI玩具",
-                "name": "enabot EBO SE 全屋移动监控摄像头",
-                "ip": "",
-                "soldLabel": "100+",
-                "sold": 100,
-                "priceLabel": "699",
-                "price": 699.0,
-                "shop": "ENABOT官方旗舰店",
-                "date": "2026.8.1",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 1699.0,
+                "priceMax": 1699.0,
+                "shops": [
+                  {
+                    "shop": "努比亚京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 1699.0,
+                    "priceMax": 1699.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1699"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -4509,7 +8449,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "元萝卜SenseRobot 京东自营旗舰店",
                 "date": "2026.8.1",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 3299.0,
+                "priceMax": 3299.0,
+                "shops": [
+                  {
+                    "shop": "元萝卜SenseRobot 京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 3299.0,
+                    "priceMax": 3299.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "3299"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           }
@@ -4526,7 +8480,56 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.8.1",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 300000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "30万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
+          },
+          {
+            "category": "盲盒",
+            "name": "星星人怦然星动盲盒",
+            "ip": "星星人",
+            "soldLabel": "20万+",
+            "sold": 200000,
+            "priceLabel": "89",
+            "price": 89.0,
+            "shop": "泡泡玛特旗舰店 等 2 家",
+            "date": "2026.8.1",
+            "section": "blind_box",
+            "sectionLabel": "盲盒",
+            "priceMin": 89.0,
+            "priceMax": 89.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 100000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "10万+",
+                "priceLabel": "89"
+              },
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 100000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "10万+",
+                "priceLabel": "89"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
           },
           {
             "category": "盲盒",
@@ -4539,7 +8542,21 @@ window.TOY_RADAR_DATA = {
             "shop": "miniso名创优品旗舰店",
             "date": "2026.8.1",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 49.0,
+            "priceMax": 49.0,
+            "shops": [
+              {
+                "shop": "miniso名创优品旗舰店",
+                "sold": 200000,
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "soldLabel": "20万+",
+                "priceLabel": "49"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -4552,33 +8569,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特官方旗舰店",
             "date": "2026.8.1",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
-          },
-          {
-            "category": "盲盒",
-            "name": "星星人怦然星动盲盒",
-            "ip": "星星人",
-            "soldLabel": "10万+",
-            "sold": 100000,
-            "priceLabel": "89",
-            "price": 89.0,
-            "shop": "泡泡玛特旗舰店",
-            "date": "2026.8.1",
-            "section": "blind_box",
-            "sectionLabel": "盲盒"
-          },
-          {
-            "category": "盲盒",
-            "name": "星星人怦然星动盲盒",
-            "ip": "星星人",
-            "soldLabel": "10万+",
-            "sold": 100000,
-            "priceLabel": "89",
-            "price": 89.0,
-            "shop": "泡泡玛特官方旗舰店",
-            "date": "2026.8.1",
-            "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 200000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "20万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "卡牌",
@@ -4591,7 +8596,56 @@ window.TOY_RADAR_DATA = {
             "shop": "檬宝状元",
             "date": "2026.8.1",
             "section": "trading_card",
-            "sectionLabel": "收藏卡牌"
+            "sectionLabel": "收藏卡牌",
+            "priceMin": 11.9,
+            "priceMax": 11.9,
+            "shops": [
+              {
+                "shop": "檬宝状元",
+                "sold": 70000,
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "soldLabel": "7万+",
+                "priceLabel": "11.9"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
+          },
+          {
+            "category": "盲盒",
+            "name": "DIMOO WORLD × PIXAR联名盲盒",
+            "ip": "DIMOO",
+            "soldLabel": "4万+",
+            "sold": 40000,
+            "priceLabel": "69",
+            "price": 69.0,
+            "shop": "泡泡玛特官方旗舰店 等 2 家",
+            "date": "2026.8.1",
+            "section": "blind_box",
+            "sectionLabel": "盲盒",
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 30000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "3万+",
+                "priceLabel": "69"
+              },
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 10000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "1万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
           },
           {
             "category": "盲盒",
@@ -4604,7 +8658,21 @@ window.TOY_RADAR_DATA = {
             "shop": "奇梦岛旗舰店",
             "date": "2026.8.1",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 89.0,
+            "priceMax": 89.0,
+            "shops": [
+              {
+                "shop": "奇梦岛旗舰店",
+                "sold": 40000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "4万+",
+                "priceLabel": "89"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -4612,25 +8680,26 @@ window.TOY_RADAR_DATA = {
             "ip": "RELAX",
             "soldLabel": "3万+",
             "sold": 30000,
-            "priceLabel": "68起",
+            "priceLabel": "68",
             "price": 68.0,
             "shop": "POPSUNDAY旗舰店",
             "date": "2026.8.1",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
-          },
-          {
-            "category": "盲盒",
-            "name": "DIMOO WORLD × PIXAR联名盲盒",
-            "ip": "DIMOO",
-            "soldLabel": "3万+",
-            "sold": 30000,
-            "priceLabel": "69",
-            "price": 69.0,
-            "shop": "泡泡玛特官方旗舰店",
-            "date": "2026.8.1",
-            "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 68.0,
+            "priceMax": 68.0,
+            "shops": [
+              {
+                "shop": "POPSUNDAY旗舰店",
+                "sold": 30000,
+                "priceMin": 68.0,
+                "priceMax": 68.0,
+                "soldLabel": "3万+",
+                "priceLabel": "68"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -4643,7 +8712,48 @@ window.TOY_RADAR_DATA = {
             "shop": "sowii潮玩旗舰店",
             "date": "2026.8.1",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 99.0,
+            "priceMax": 99.0,
+            "shops": [
+              {
+                "shop": "sowii潮玩旗舰店",
+                "sold": 30000,
+                "priceMin": 99.0,
+                "priceMax": 99.0,
+                "soldLabel": "3万+",
+                "priceLabel": "99"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
+          },
+          {
+            "category": "盲盒",
+            "name": "小嗷-惊喜BOX盲盒",
+            "ip": "小嗷",
+            "soldLabel": "2万+",
+            "sold": 20000,
+            "priceLabel": "79",
+            "price": 79.0,
+            "shop": "YHT与华同行专卖店",
+            "date": "2026.8.1",
+            "section": "blind_box",
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "YHT与华同行专卖店",
+                "sold": 20000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "2万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ],
         "topStores": [
@@ -4702,7 +8812,7 @@ window.TOY_RADAR_DATA = {
           {
             "ip": "星星人",
             "sold": 400000,
-            "items": 3
+            "items": 2
           },
           {
             "ip": "CRYBABY",
@@ -4727,7 +8837,7 @@ window.TOY_RADAR_DATA = {
           {
             "ip": "DIMOO",
             "sold": 40000,
-            "items": 2
+            "items": 1
           },
           {
             "ip": "WAKUKU 哇库库",
@@ -4778,33 +8888,83 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.8.1",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 300000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "30万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
-            "name": "YOYO萌趣歪头盲盒",
-            "ip": "YOYO",
+            "name": "星星人怦然星动盲盒",
+            "ip": "星星人",
             "soldLabel": "20万+",
             "sold": 200000,
-            "priceLabel": "49",
-            "price": 49.0,
-            "shop": "miniso名创优品旗舰店",
+            "priceLabel": "89",
+            "price": 89.0,
+            "shop": "泡泡玛特旗舰店 等 2 家",
             "date": "2026.8.1",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 89.0,
+            "priceMax": 89.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 100000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "10万+",
+                "priceLabel": "89"
+              },
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 100000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "10万+",
+                "priceLabel": "89"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
           },
           {
             "category": "盲盒",
-            "name": "一日一菇毛绒盲盒端盒",
-            "ip": "一日一菇",
-            "soldLabel": "3万+",
-            "sold": 30000,
-            "priceLabel": "99",
-            "price": 99.0,
-            "shop": "sowii潮玩旗舰店",
+            "name": "小嗷-惊喜BOX盲盒",
+            "ip": "小嗷",
+            "soldLabel": "2万+",
+            "sold": 20000,
+            "priceLabel": "79",
+            "price": 79.0,
+            "shop": "YHT与华同行专卖店",
             "date": "2026.8.1",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "YHT与华同行专卖店",
+                "sold": 20000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "2万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ],
         "practitionerPicks": [
@@ -4819,7 +8979,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.8.1",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 300000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "30万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "高达模型",
@@ -4832,7 +9006,21 @@ window.TOY_RADAR_DATA = {
             "shop": "空格动漫专营店",
             "date": "2026.8.1",
             "section": "action_figure",
-            "sectionLabel": "可动手办"
+            "sectionLabel": "可动手办",
+            "priceMin": 153.0,
+            "priceMax": 153.0,
+            "shops": [
+              {
+                "shop": "空格动漫专营店",
+                "sold": 3000,
+                "priceMin": 153.0,
+                "priceMax": 153.0,
+                "soldLabel": "3000+",
+                "priceLabel": "153"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "卡牌",
@@ -4845,7 +9033,21 @@ window.TOY_RADAR_DATA = {
             "shop": "檬宝状元",
             "date": "2026.8.1",
             "section": "trading_card",
-            "sectionLabel": "收藏卡牌"
+            "sectionLabel": "收藏卡牌",
+            "priceMin": 11.9,
+            "priceMax": 11.9,
+            "shops": [
+              {
+                "shop": "檬宝状元",
+                "sold": 70000,
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "soldLabel": "7万+",
+                "priceLabel": "11.9"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ]
       }
@@ -4856,7 +9058,7 @@ window.TOY_RADAR_DATA = {
       "weekRange": "2026.8.9 - 2026.8.15",
       "statDate": "2026.8.15",
       "totalSold": 982400,
-      "totalItems": 78,
+      "totalItems": 74,
       "sections": {
         "blind_box": 860200,
         "action_figure": 17900,
@@ -4875,7 +9077,7 @@ window.TOY_RADAR_DATA = {
             "trading_card": -2.3,
             "ai_toy": 5.6
           },
-          "newCount": 38,
+          "newCount": 34,
           "newFaces": [
             {
               "category": "盲盒",
@@ -4888,7 +9090,21 @@ window.TOY_RADAR_DATA = {
               "shop": "泡泡玛特旗舰店",
               "date": "2026.8.15",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 79.0,
+              "priceMax": 79.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 100000,
+                  "priceMin": 79.0,
+                  "priceMax": 79.0,
+                  "soldLabel": "10万+",
+                  "priceLabel": "79"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
@@ -4901,7 +9117,56 @@ window.TOY_RADAR_DATA = {
               "shop": "泡泡玛特旗舰店",
               "date": "2026.8.15",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 129.0,
+              "priceMax": 129.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 90000,
+                  "priceMin": 129.0,
+                  "priceMax": 129.0,
+                  "soldLabel": "9万+",
+                  "priceLabel": "129"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
+            },
+            {
+              "category": "盲盒",
+              "name": "凡人修仙传盲盒",
+              "ip": "凡人修仙传",
+              "soldLabel": "6万+",
+              "sold": 60000,
+              "priceLabel": "79",
+              "price": 79.0,
+              "shop": "共鸣官方旗舰店 等 2 家",
+              "date": "2026.8.15",
+              "section": "blind_box",
+              "sectionLabel": "盲盒",
+              "priceMin": 79.0,
+              "priceMax": 79.0,
+              "shops": [
+                {
+                  "shop": "共鸣官方旗舰店",
+                  "sold": 30000,
+                  "priceMin": 79.0,
+                  "priceMax": 79.0,
+                  "soldLabel": "3万+",
+                  "priceLabel": "79"
+                },
+                {
+                  "shop": "共鸣旗舰店",
+                  "sold": 30000,
+                  "priceMin": 79.0,
+                  "priceMax": 79.0,
+                  "soldLabel": "3万+",
+                  "priceLabel": "79"
+                }
+              ],
+              "shopCount": 2,
+              "sourceCount": 2
             },
             {
               "category": "盲盒",
@@ -4914,33 +9179,21 @@ window.TOY_RADAR_DATA = {
               "shop": "泡泡玛特官方旗舰店",
               "date": "2026.8.15",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
-            },
-            {
-              "category": "盲盒",
-              "name": "凡人修仙传盲盒",
-              "ip": "凡人修仙传",
-              "soldLabel": "3万+",
-              "sold": 30000,
-              "priceLabel": "79",
-              "price": 79.0,
-              "shop": "共鸣官方旗舰店",
-              "date": "2026.8.15",
-              "section": "blind_box",
-              "sectionLabel": "盲盒"
-            },
-            {
-              "category": "盲盒",
-              "name": "凡人修仙传盲盒",
-              "ip": "凡人修仙传",
-              "soldLabel": "3万+",
-              "sold": 30000,
-              "priceLabel": "79",
-              "price": 79.0,
-              "shop": "共鸣旗舰店",
-              "date": "2026.8.15",
-              "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 89.0,
+              "priceMax": 89.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特官方旗舰店",
+                  "sold": 40000,
+                  "priceMin": 89.0,
+                  "priceMax": 89.0,
+                  "soldLabel": "4万+",
+                  "priceLabel": "89"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
@@ -4953,7 +9206,21 @@ window.TOY_RADAR_DATA = {
               "shop": "NB卡牌max",
               "date": "2026.8.15",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 289.0,
+              "priceMax": 289.0,
+              "shops": [
+                {
+                  "shop": "NB卡牌max",
+                  "sold": 5000,
+                  "priceMin": 289.0,
+                  "priceMax": 289.0,
+                  "soldLabel": "5000+",
+                  "priceLabel": "289"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
@@ -4966,7 +9233,21 @@ window.TOY_RADAR_DATA = {
               "shop": "M Stand官方旗舰店",
               "date": "2026.8.15",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 104.0,
+              "priceMax": 104.0,
+              "shops": [
+                {
+                  "shop": "M Stand官方旗舰店",
+                  "sold": 5000,
+                  "priceMin": 104.0,
+                  "priceMax": 104.0,
+                  "soldLabel": "5000+",
+                  "priceLabel": "104"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
@@ -4979,14 +9260,55 @@ window.TOY_RADAR_DATA = {
               "shop": "miniso名创优品旗舰店",
               "date": "2026.8.15",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 58.0,
+              "priceMax": 58.0,
+              "shops": [
+                {
+                  "shop": "miniso名创优品旗舰店",
+                  "sold": 5000,
+                  "priceMin": 58.0,
+                  "priceMax": 58.0,
+                  "soldLabel": "5000+",
+                  "priceLabel": "58"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
+            },
+            {
+              "category": "盲盒",
+              "name": "YOYO心愿魔法少女盲盒",
+              "ip": "YOYO",
+              "soldLabel": "2000+",
+              "sold": 2000,
+              "priceLabel": "69",
+              "price": 69.0,
+              "shop": "miniso名创优品旗舰店",
+              "date": "2026.8.15",
+              "section": "blind_box",
+              "sectionLabel": "盲盒",
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "shops": [
+                {
+                  "shop": "miniso名创优品旗舰店",
+                  "sold": 2000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "2000+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             }
           ],
-          "repeatedCount": 39
+          "repeatedCount": 40
         },
-        "totalItems": 78,
+        "totalItems": 74,
         "totalSold": 982400,
-        "avgPrice": 825.4,
+        "avgPrice": 84.8,
         "priceMin": 11.9,
         "priceMax": 40000.0,
         "topStore": "泡泡玛特旗舰店",
@@ -5001,7 +9323,7 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：单价低，适合尝新和蹲隐藏款。",
               "operator": "运营建议：保持上新节奏，重点盯 TOPTOY / 泡泡玛特渠道。"
             },
-            "itemCount": 30,
+            "itemCount": 28,
             "totalSold": 860200,
             "medianPrice": 79.0,
             "priceMin": 13.5,
@@ -5017,7 +9339,21 @@ window.TOY_RADAR_DATA = {
               "shop": "miniso名创优品旗舰店",
               "date": "2026.8.15",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 49.0,
+              "priceMax": 49.0,
+              "shops": [
+                {
+                  "shop": "miniso名创优品旗舰店",
+                  "sold": 200000,
+                  "priceMin": 49.0,
+                  "priceMax": 49.0,
+                  "soldLabel": "20万+",
+                  "priceLabel": "49"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -5031,7 +9367,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 200000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "20万+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5044,7 +9394,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特官方旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 100000,
+                    "priceMin": 89.0,
+                    "priceMax": 89.0,
+                    "soldLabel": "10万+",
+                    "priceLabel": "89"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5057,7 +9421,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 100000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "10万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5070,7 +9448,91 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 90000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "9万+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
+              },
+              {
+                "category": "盲盒",
+                "name": "DIMOO WORLD × PIXAR联名盲盒",
+                "ip": "DIMOO",
+                "soldLabel": "8万+",
+                "sold": 80000,
+                "priceLabel": "69–129",
+                "price": 99.0,
+                "shop": "泡泡玛特官方旗舰店 等 2 家",
+                "date": "2026.8.15",
+                "section": "blind_box",
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 40000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "4万+",
+                    "priceLabel": "69"
+                  },
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 40000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "4万+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
+              },
+              {
+                "category": "盲盒",
+                "name": "凡人修仙传盲盒",
+                "ip": "凡人修仙传",
+                "soldLabel": "6万+",
+                "sold": 60000,
+                "priceLabel": "79",
+                "price": 79.0,
+                "shop": "共鸣官方旗舰店 等 2 家",
+                "date": "2026.8.15",
+                "section": "blind_box",
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "共鸣官方旗舰店",
+                    "sold": 30000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "79"
+                  },
+                  {
+                    "shop": "共鸣旗舰店",
+                    "sold": 30000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "盲盒",
@@ -5083,46 +9545,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特官方旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "DIMOO WORLD × PIXAR联名盲盒",
-                "ip": "DIMOO",
-                "soldLabel": "4万+",
-                "sold": 40000,
-                "priceLabel": "69",
-                "price": 69.0,
-                "shop": "泡泡玛特官方旗舰店",
-                "date": "2026.8.15",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "DIMOO WORLD × PIXAR联名盲盒",
-                "ip": "DIMOO",
-                "soldLabel": "4万+",
-                "sold": 40000,
-                "priceLabel": "129",
-                "price": 129.0,
-                "shop": "泡泡玛特旗舰店",
-                "date": "2026.8.15",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "凡人修仙传盲盒",
-                "ip": "凡人修仙传",
-                "soldLabel": "3万+",
-                "sold": 30000,
-                "priceLabel": "79",
-                "price": 79.0,
-                "shop": "共鸣官方旗舰店",
-                "date": "2026.8.15",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 40000,
+                    "priceMin": 89.0,
+                    "priceMax": 89.0,
+                    "soldLabel": "4万+",
+                    "priceLabel": "89"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5135,7 +9572,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "sowii潮玩旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 99.0,
+                "priceMax": 99.0,
+                "shops": [
+                  {
+                    "shop": "sowii潮玩旗舰店",
+                    "sold": 30000,
+                    "priceMin": 99.0,
+                    "priceMax": 99.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "99"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5148,20 +9599,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "YHT与华同行专卖店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "凡人修仙传盲盒",
-                "ip": "凡人修仙传",
-                "soldLabel": "3万+",
-                "sold": 30000,
-                "priceLabel": "79",
-                "price": 79.0,
-                "shop": "共鸣旗舰店",
-                "date": "2026.8.15",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "YHT与华同行专卖店",
+                    "sold": 30000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5169,12 +9621,26 @@ window.TOY_RADAR_DATA = {
                 "ip": "RELAX",
                 "soldLabel": "3万+",
                 "sold": 30000,
-                "priceLabel": "68起",
+                "priceLabel": "68",
                 "price": 68.0,
                 "shop": "POPSUNDAY旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 68.0,
+                "priceMax": 68.0,
+                "shops": [
+                  {
+                    "shop": "POPSUNDAY旗舰店",
+                    "sold": 30000,
+                    "priceMin": 68.0,
+                    "priceMax": 68.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "68"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5187,7 +9653,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "奇梦岛官方旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "奇梦岛官方旗舰店",
+                    "sold": 20000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "2万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5200,7 +9680,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 10000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5213,7 +9707,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "柠檬童话旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 13.5,
+                "priceMax": 13.5,
+                "shops": [
+                  {
+                    "shop": "柠檬童话旗舰店",
+                    "sold": 10000,
+                    "priceMin": 13.5,
+                    "priceMax": 13.5,
+                    "soldLabel": "1万+",
+                    "priceLabel": "13.5"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5226,7 +9734,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "funism官方旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "funism官方旗舰店",
+                    "sold": 8000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "8000+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5239,7 +9761,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "范趣町旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "范趣町旗舰店",
+                    "sold": 8000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "8000+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5252,7 +9788,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "DODOSUGAR潮玩旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "DODOSUGAR潮玩旗舰店",
+                    "sold": 7000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "7000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5265,7 +9815,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "NB卡牌max",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 289.0,
+                "priceMax": 289.0,
+                "shops": [
+                  {
+                    "shop": "NB卡牌max",
+                    "sold": 5000,
+                    "priceMin": 289.0,
+                    "priceMax": 289.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "289"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5278,7 +9842,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "M Stand官方旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 104.0,
+                "priceMax": 104.0,
+                "shops": [
+                  {
+                    "shop": "M Stand官方旗舰店",
+                    "sold": 5000,
+                    "priceMin": 104.0,
+                    "priceMax": 104.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "104"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5291,7 +9869,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 58.0,
+                "priceMax": 58.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 5000,
+                    "priceMin": 58.0,
+                    "priceMax": 58.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "58"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5304,7 +9896,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "玩乐主义旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "玩乐主义旗舰店",
+                    "sold": 5000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5312,12 +9918,26 @@ window.TOY_RADAR_DATA = {
                 "ip": "Pingu",
                 "soldLabel": "5000+",
                 "sold": 5000,
-                "priceLabel": "139起",
+                "priceLabel": "139",
                 "price": 139.0,
                 "shop": "马克图布旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 139.0,
+                "priceMax": 139.0,
+                "shops": [
+                  {
+                    "shop": "马克图布旗舰店",
+                    "sold": 5000,
+                    "priceMin": 139.0,
+                    "priceMax": 139.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "139"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5330,7 +9950,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 4000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "4000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5343,7 +9977,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "蜜雪冰城旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "蜜雪冰城旗舰店",
+                    "sold": 3000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5356,7 +10004,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 2000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5369,7 +10031,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "吉伊卡哇旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "吉伊卡哇旗舰店",
+                    "sold": 1000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5382,7 +10058,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "52TOYS旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 19.9,
+                "priceMax": 19.9,
+                "shops": [
+                  {
+                    "shop": "52TOYS旗舰店",
+                    "sold": 800,
+                    "priceMin": 19.9,
+                    "priceMax": 19.9,
+                    "soldLabel": "800+",
+                    "priceLabel": "19.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5395,7 +10085,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "马克图布旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.9,
+                "priceMax": 79.9,
+                "shops": [
+                  {
+                    "shop": "马克图布旗舰店",
+                    "sold": 700,
+                    "priceMin": 79.9,
+                    "priceMax": 79.9,
+                    "soldLabel": "700+",
+                    "priceLabel": "79.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -5408,7 +10112,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "COME4FREE旗舰店",
                 "date": "2026.8.15",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 159.0,
+                "priceMax": 159.0,
+                "shops": [
+                  {
+                    "shop": "COME4FREE旗舰店",
+                    "sold": 700,
+                    "priceMin": 159.0,
+                    "priceMax": 159.0,
+                    "soldLabel": "700+",
+                    "priceLabel": "159"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -5421,9 +10139,9 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：适合收藏和摆件型消费。",
               "operator": "运营建议：关注联名和展会首发，适合做预售和限量策略。"
             },
-            "itemCount": 18,
+            "itemCount": 17,
             "totalSold": 17900,
-            "medianPrice": 249.0,
+            "medianPrice": 329.0,
             "priceMin": 37.5,
             "priceMax": 1564.0,
             "topItem": {
@@ -5437,7 +10155,21 @@ window.TOY_RADAR_DATA = {
               "shop": "共鸣旗舰店",
               "date": "2026.8.15",
               "section": "action_figure",
-              "sectionLabel": "可动手办"
+              "sectionLabel": "可动手办",
+              "priceMin": 169.0,
+              "priceMax": 169.0,
+              "shops": [
+                {
+                  "shop": "共鸣旗舰店",
+                  "sold": 3000,
+                  "priceMin": 169.0,
+                  "priceMax": 169.0,
+                  "soldLabel": "3000+",
+                  "priceLabel": "169"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -5451,7 +10183,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "共鸣旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 169.0,
+                "priceMax": 169.0,
+                "shops": [
+                  {
+                    "shop": "共鸣旗舰店",
+                    "sold": 3000,
+                    "priceMin": 169.0,
+                    "priceMax": 169.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "169"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -5464,7 +10210,48 @@ window.TOY_RADAR_DATA = {
                 "shop": "空格动漫专营店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 153.0,
+                "priceMax": 153.0,
+                "shops": [
+                  {
+                    "shop": "空格动漫专营店",
+                    "sold": 3000,
+                    "priceMin": 153.0,
+                    "priceMax": 153.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "153"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
+              },
+              {
+                "category": "高达模型",
+                "name": "HG强袭自由机甲拼装玩具",
+                "ip": "",
+                "soldLabel": "3000+",
+                "sold": 3000,
+                "priceLabel": "37.5–96.8",
+                "price": 57.27,
+                "shop": "纽茁益旗舰店",
+                "date": "2026.8.15",
+                "section": "action_figure",
+                "sectionLabel": "可动手办",
+                "priceMin": 37.5,
+                "priceMax": 96.8,
+                "shops": [
+                  {
+                    "shop": "纽茁益旗舰店",
+                    "sold": 3000,
+                    "priceMin": 37.5,
+                    "priceMax": 96.8,
+                    "soldLabel": "3000+",
+                    "priceLabel": "37.5–96.8"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 2
               },
               {
                 "category": "可动手办",
@@ -5477,20 +10264,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
-              },
-              {
-                "category": "高达模型",
-                "name": "HG强袭自由机甲拼装玩具",
-                "ip": "",
-                "soldLabel": "2000+",
-                "sold": 2000,
-                "priceLabel": "37.5",
-                "price": 37.5,
-                "shop": "纽茁益旗舰店",
-                "date": "2026.8.15",
-                "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 2000,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -5503,7 +10291,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "QueenStudios旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 600.0,
+                "priceMax": 600.0,
+                "shops": [
+                  {
+                    "shop": "QueenStudios旗舰店",
+                    "sold": 1000,
+                    "priceMin": 600.0,
+                    "priceMax": 600.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "600"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -5516,7 +10318,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "QueenStudios旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 150.0,
+                "priceMax": 150.0,
+                "shops": [
+                  {
+                    "shop": "QueenStudios旗舰店",
+                    "sold": 1000,
+                    "priceMin": 150.0,
+                    "priceMax": 150.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "150"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -5529,7 +10345,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "QueenStudios旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 140.0,
+                "priceMax": 140.0,
+                "shops": [
+                  {
+                    "shop": "QueenStudios旗舰店",
+                    "sold": 1000,
+                    "priceMin": 140.0,
+                    "priceMax": 140.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "140"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -5542,7 +10372,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "暗源旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 850.0,
+                "priceMax": 850.0,
+                "shops": [
+                  {
+                    "shop": "暗源旗舰店",
+                    "sold": 1000,
+                    "priceMin": 850.0,
+                    "priceMax": 850.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "850"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -5555,20 +10399,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "万代官方旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
-              },
-              {
-                "category": "高达模型",
-                "name": "HG强袭自由机甲拼装玩具",
-                "ip": "",
-                "soldLabel": "1000+",
-                "sold": 1000,
-                "priceLabel": "96.8",
-                "price": 96.8,
-                "shop": "纽茁益旗舰店",
-                "date": "2026.8.15",
-                "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 439.0,
+                "priceMax": 439.0,
+                "shops": [
+                  {
+                    "shop": "万代官方旗舰店",
+                    "sold": 1000,
+                    "priceMin": 439.0,
+                    "priceMax": 439.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "439"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -5581,7 +10426,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "圆野文化旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 329.0,
+                "priceMax": 329.0,
+                "shops": [
+                  {
+                    "shop": "圆野文化旗舰店",
+                    "sold": 500,
+                    "priceMin": 329.0,
+                    "priceMax": 329.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "329"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -5594,7 +10453,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "圆野文化旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 425.0,
+                "priceMax": 425.0,
+                "shops": [
+                  {
+                    "shop": "圆野文化旗舰店",
+                    "sold": 500,
+                    "priceMin": 425.0,
+                    "priceMax": 425.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "425"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -5607,7 +10480,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "SIMONTOYS旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 119.0,
+                "priceMax": 119.0,
+                "shops": [
+                  {
+                    "shop": "SIMONTOYS旗舰店",
+                    "sold": 400,
+                    "priceMin": 119.0,
+                    "priceMax": 119.0,
+                    "soldLabel": "400+",
+                    "priceLabel": "119"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -5620,7 +10507,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "X11旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 1199.0,
+                "priceMax": 1199.0,
+                "shops": [
+                  {
+                    "shop": "X11旗舰店",
+                    "sold": 100,
+                    "priceMin": 1199.0,
+                    "priceMax": 1199.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -5633,7 +10534,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "猫点购旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 498.0,
+                "priceMax": 498.0,
+                "shops": [
+                  {
+                    "shop": "猫点购旗舰店",
+                    "sold": 100,
+                    "priceMin": 498.0,
+                    "priceMax": 498.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "498"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -5646,7 +10561,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "空格动漫专营店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 1564.0,
+                "priceMax": 1564.0,
+                "shops": [
+                  {
+                    "shop": "空格动漫专营店",
+                    "sold": 100,
+                    "priceMin": 1564.0,
+                    "priceMax": 1564.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1564"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -5659,7 +10588,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "浣嘉木旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 97.8,
+                "priceMax": 97.8,
+                "shops": [
+                  {
+                    "shop": "浣嘉木旗舰店",
+                    "sold": 100,
+                    "priceMin": 97.8,
+                    "priceMax": 97.8,
+                    "soldLabel": "100+",
+                    "priceLabel": "97.8"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "高达模型",
@@ -5672,7 +10615,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "华忠乐园玩具旗舰店",
                 "date": "2026.8.15",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 62.0,
+                "priceMax": 62.0,
+                "shops": [
+                  {
+                    "shop": "华忠乐园玩具旗舰店",
+                    "sold": 100,
+                    "priceMin": 62.0,
+                    "priceMax": 62.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "62"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -5701,7 +10658,21 @@ window.TOY_RADAR_DATA = {
               "shop": "檬宝状元",
               "date": "2026.8.15",
               "section": "trading_card",
-              "sectionLabel": "收藏卡牌"
+              "sectionLabel": "收藏卡牌",
+              "priceMin": 11.9,
+              "priceMax": 11.9,
+              "shops": [
+                {
+                  "shop": "檬宝状元",
+                  "sold": 80000,
+                  "priceMin": 11.9,
+                  "priceMax": 11.9,
+                  "soldLabel": "8万+",
+                  "priceLabel": "11.9"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -5715,7 +10686,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "檬宝状元",
                 "date": "2026.8.15",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "shops": [
+                  {
+                    "shop": "檬宝状元",
+                    "sold": 80000,
+                    "priceMin": 11.9,
+                    "priceMax": 11.9,
+                    "soldLabel": "8万+",
+                    "priceLabel": "11.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -5728,7 +10713,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "PTCG长安",
                 "date": "2026.8.15",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 17.9,
+                "priceMax": 17.9,
+                "shops": [
+                  {
+                    "shop": "PTCG长安",
+                    "sold": 10000,
+                    "priceMin": 17.9,
+                    "priceMax": 17.9,
+                    "soldLabel": "1万+",
+                    "priceLabel": "17.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -5741,7 +10740,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "不舍PTCG拆卡",
                 "date": "2026.8.15",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 169.0,
+                "priceMax": 169.0,
+                "shops": [
+                  {
+                    "shop": "不舍PTCG拆卡",
+                    "sold": 3000,
+                    "priceMin": 169.0,
+                    "priceMax": 169.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "169"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -5754,7 +10767,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "乐享动画",
                 "date": "2026.8.15",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 109.9,
+                "priceMax": 109.9,
+                "shops": [
+                  {
+                    "shop": "乐享动画",
+                    "sold": 1000,
+                    "priceMin": 109.9,
+                    "priceMax": 109.9,
+                    "soldLabel": "1000+",
+                    "priceLabel": "109.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -5767,7 +10794,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "镜像潮玩社",
                 "date": "2026.8.15",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 29.9,
+                "priceMax": 29.9,
+                "shops": [
+                  {
+                    "shop": "镜像潮玩社",
+                    "sold": 1000,
+                    "priceMin": 29.9,
+                    "priceMax": 29.9,
+                    "soldLabel": "1000+",
+                    "priceLabel": "29.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -5780,7 +10821,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "卡萌三番队",
                 "date": "2026.8.15",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 390.0,
+                "priceMax": 390.0,
+                "shops": [
+                  {
+                    "shop": "卡萌三番队",
+                    "sold": 1000,
+                    "priceMin": 390.0,
+                    "priceMax": 390.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "390"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -5793,7 +10848,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "千栗潮玩铺",
                 "date": "2026.8.15",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 19.9,
+                "priceMax": 19.9,
+                "shops": [
+                  {
+                    "shop": "千栗潮玩铺",
+                    "sold": 1000,
+                    "priceMin": 19.9,
+                    "priceMax": 19.9,
+                    "soldLabel": "1000+",
+                    "priceLabel": "19.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -5806,7 +10875,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "ej68sjjei",
                 "date": "2026.8.15",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 39.9,
+                "priceMax": 39.9,
+                "shops": [
+                  {
+                    "shop": "ej68sjjei",
+                    "sold": 1000,
+                    "priceMin": 39.9,
+                    "priceMax": 39.9,
+                    "soldLabel": "1000+",
+                    "priceLabel": "39.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -5819,7 +10902,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "贤至专营店",
                 "date": "2026.8.15",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 79.9,
+                "priceMax": 79.9,
+                "shops": [
+                  {
+                    "shop": "贤至专营店",
+                    "sold": 500,
+                    "priceMin": 79.9,
+                    "priceMax": 79.9,
+                    "soldLabel": "500+",
+                    "priceLabel": "79.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "卡牌",
@@ -5832,7 +10929,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "魔都兄弟",
                 "date": "2026.8.15",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 40000.0,
+                "priceMax": 40000.0,
+                "shops": [
+                  {
+                    "shop": "魔都兄弟",
+                    "sold": 100,
+                    "priceMin": 40000.0,
+                    "priceMax": 40000.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "40000"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -5845,9 +10956,9 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：更适合亲子/陪伴场景，先看功能再看颜值。",
               "operator": "运营建议：功能点要讲清楚，亲子、教育和陪伴场景最关键。"
             },
-            "itemCount": 20,
+            "itemCount": 19,
             "totalSold": 5700,
-            "medianPrice": 383.5,
+            "medianPrice": 368.0,
             "priceMin": 129.0,
             "priceMax": 3259.0,
             "topItem": {
@@ -5861,7 +10972,21 @@ window.TOY_RADAR_DATA = {
               "shop": "名校堂京东自营旗舰店",
               "date": "2026.8.15",
               "section": "ai_toy",
-              "sectionLabel": "AI 玩具"
+              "sectionLabel": "AI 玩具",
+              "priceMin": 269.0,
+              "priceMax": 269.0,
+              "shops": [
+                {
+                  "shop": "名校堂京东自营旗舰店",
+                  "sold": 1000,
+                  "priceMin": 269.0,
+                  "priceMax": 269.0,
+                  "soldLabel": "1000+",
+                  "priceLabel": "269"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -5875,7 +11000,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "名校堂京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 269.0,
+                "priceMax": 269.0,
+                "shops": [
+                  {
+                    "shop": "名校堂京东自营旗舰店",
+                    "sold": 1000,
+                    "priceMin": 269.0,
+                    "priceMax": 269.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "269"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -5888,7 +11027,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "索迪（SODEEP）玩具京东自营专区",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "索迪（SODEEP）玩具京东自营专区",
+                    "sold": 500,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -5901,7 +11054,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "京东京造自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 159.0,
+                "priceMax": 159.0,
+                "shops": [
+                  {
+                    "shop": "京东京造自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 159.0,
+                    "priceMax": 159.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "159"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -5914,7 +11081,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "超棋大师玩具京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "超棋大师玩具京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -5927,7 +11108,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "喜马拉雅儿童京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 489.0,
+                "priceMax": 489.0,
+                "shops": [
+                  {
+                    "shop": "喜马拉雅儿童京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 489.0,
+                    "priceMax": 489.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "489"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -5940,20 +11135,56 @@ window.TOY_RADAR_DATA = {
                 "shop": "星云宝贝ai陪伴机器人",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 149.0,
+                "priceMax": 149.0,
+                "shops": [
+                  {
+                    "shop": "星云宝贝ai陪伴机器人",
+                    "sold": 500,
+                    "priceMin": 149.0,
+                    "priceMax": 149.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "149"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
                 "name": "enabot EBO SE 全屋移动监控摄像头",
                 "ip": "",
-                "soldLabel": "200+",
-                "sold": 200,
+                "soldLabel": "300+",
+                "sold": 300,
                 "priceLabel": "699",
                 "price": 699.0,
-                "shop": "enabot京东自营旗舰店",
+                "shop": "enabot京东自营旗舰店 等 2 家",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 699.0,
+                "priceMax": 699.0,
+                "shops": [
+                  {
+                    "shop": "enabot京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 699.0,
+                    "priceMax": 699.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "699"
+                  },
+                  {
+                    "shop": "ENABOT官方旗舰店",
+                    "sold": 100,
+                    "priceMin": 699.0,
+                    "priceMax": 699.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "699"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "AI陪伴机器人",
@@ -5966,7 +11197,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "星角萌萌官方旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "星角萌萌官方旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -5979,7 +11224,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "米德宝旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 199.0,
+                "priceMax": 199.0,
+                "shops": [
+                  {
+                    "shop": "米德宝旗舰店",
+                    "sold": 200,
+                    "priceMin": 199.0,
+                    "priceMax": 199.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -5992,7 +11251,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 219.0,
+                "priceMax": 219.0,
+                "shops": [
+                  {
+                    "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 219.0,
+                    "priceMax": 219.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "219"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -6005,7 +11278,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "芙崽（Fuzozo）京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 499.0,
+                "priceMax": 499.0,
+                "shops": [
+                  {
+                    "shop": "芙崽（Fuzozo）京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 499.0,
+                    "priceMax": 499.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "499"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -6018,7 +11305,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "天文（TEN-WIN）玩具京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 298.0,
+                "priceMax": 298.0,
+                "shops": [
+                  {
+                    "shop": "天文（TEN-WIN）玩具京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 298.0,
+                    "priceMax": 298.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "298"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -6031,7 +11332,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "奇多多星球京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 349.0,
+                "priceMax": 349.0,
+                "shops": [
+                  {
+                    "shop": "奇多多星球京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 349.0,
+                    "priceMax": 349.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "349"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -6044,7 +11359,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "JOYSTONE玩具旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 368.0,
+                "priceMax": 368.0,
+                "shops": [
+                  {
+                    "shop": "JOYSTONE玩具旗舰店",
+                    "sold": 200,
+                    "priceMin": 368.0,
+                    "priceMax": 368.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "368"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -6057,7 +11386,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "物灵京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 1399.0,
+                "priceMax": 1399.0,
+                "shops": [
+                  {
+                    "shop": "物灵京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 1399.0,
+                    "priceMax": 1399.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -6070,7 +11413,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "LOONA京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 3259.0,
+                "priceMax": 3259.0,
+                "shops": [
+                  {
+                    "shop": "LOONA京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 3259.0,
+                    "priceMax": 3259.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "3259"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -6083,20 +11440,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "海信京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI陪伴机器人",
-                "name": "enabot EBO SE 全屋移动监控摄像头",
-                "ip": "",
-                "soldLabel": "100+",
-                "sold": 100,
-                "priceLabel": "699",
-                "price": 699.0,
-                "shop": "ENABOT官方旗舰店",
-                "date": "2026.8.15",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 1599.0,
+                "priceMax": 1599.0,
+                "shops": [
+                  {
+                    "shop": "海信京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 1599.0,
+                    "priceMax": 1599.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1599"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -6109,7 +11467,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 149.0,
+                "priceMax": 149.0,
+                "shops": [
+                  {
+                    "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 149.0,
+                    "priceMax": 149.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "149"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI陪伴机器人",
@@ -6122,7 +11494,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "ROPET智能机器人京东自营旗舰店",
                 "date": "2026.8.15",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 1880.0,
+                "priceMax": 1880.0,
+                "shops": [
+                  {
+                    "shop": "ROPET智能机器人京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 1880.0,
+                    "priceMax": 1880.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1880"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           }
@@ -6139,7 +11525,21 @@ window.TOY_RADAR_DATA = {
             "shop": "miniso名创优品旗舰店",
             "date": "2026.8.15",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 49.0,
+            "priceMax": 49.0,
+            "shops": [
+              {
+                "shop": "miniso名创优品旗舰店",
+                "sold": 200000,
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "soldLabel": "20万+",
+                "priceLabel": "49"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -6152,7 +11552,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特官方旗舰店",
             "date": "2026.8.15",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 89.0,
+            "priceMax": 89.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 100000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "10万+",
+                "priceLabel": "89"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -6165,7 +11579,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.8.15",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 100000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "10万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -6178,7 +11606,56 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.8.15",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 90000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "9万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
+          },
+          {
+            "category": "盲盒",
+            "name": "DIMOO WORLD × PIXAR联名盲盒",
+            "ip": "DIMOO",
+            "soldLabel": "8万+",
+            "sold": 80000,
+            "priceLabel": "69–129",
+            "price": 99.0,
+            "shop": "泡泡玛特官方旗舰店 等 2 家",
+            "date": "2026.8.15",
+            "section": "blind_box",
+            "sectionLabel": "盲盒",
+            "priceMin": 69.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 40000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "4万+",
+                "priceLabel": "69"
+              },
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 40000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "4万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
           },
           {
             "category": "卡牌",
@@ -6191,7 +11668,56 @@ window.TOY_RADAR_DATA = {
             "shop": "檬宝状元",
             "date": "2026.8.15",
             "section": "trading_card",
-            "sectionLabel": "收藏卡牌"
+            "sectionLabel": "收藏卡牌",
+            "priceMin": 11.9,
+            "priceMax": 11.9,
+            "shops": [
+              {
+                "shop": "檬宝状元",
+                "sold": 80000,
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "soldLabel": "8万+",
+                "priceLabel": "11.9"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
+          },
+          {
+            "category": "盲盒",
+            "name": "凡人修仙传盲盒",
+            "ip": "凡人修仙传",
+            "soldLabel": "6万+",
+            "sold": 60000,
+            "priceLabel": "79",
+            "price": 79.0,
+            "shop": "共鸣官方旗舰店 等 2 家",
+            "date": "2026.8.15",
+            "section": "blind_box",
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "共鸣官方旗舰店",
+                "sold": 30000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "3万+",
+                "priceLabel": "79"
+              },
+              {
+                "shop": "共鸣旗舰店",
+                "sold": 30000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "3万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
           },
           {
             "category": "盲盒",
@@ -6204,46 +11730,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特官方旗舰店",
             "date": "2026.8.15",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
-          },
-          {
-            "category": "盲盒",
-            "name": "DIMOO WORLD × PIXAR联名盲盒",
-            "ip": "DIMOO",
-            "soldLabel": "4万+",
-            "sold": 40000,
-            "priceLabel": "69",
-            "price": 69.0,
-            "shop": "泡泡玛特官方旗舰店",
-            "date": "2026.8.15",
-            "section": "blind_box",
-            "sectionLabel": "盲盒"
-          },
-          {
-            "category": "盲盒",
-            "name": "DIMOO WORLD × PIXAR联名盲盒",
-            "ip": "DIMOO",
-            "soldLabel": "4万+",
-            "sold": 40000,
-            "priceLabel": "129",
-            "price": 129.0,
-            "shop": "泡泡玛特旗舰店",
-            "date": "2026.8.15",
-            "section": "blind_box",
-            "sectionLabel": "盲盒"
-          },
-          {
-            "category": "盲盒",
-            "name": "凡人修仙传盲盒",
-            "ip": "凡人修仙传",
-            "soldLabel": "3万+",
-            "sold": 30000,
-            "priceLabel": "79",
-            "price": 79.0,
-            "shop": "共鸣官方旗舰店",
-            "date": "2026.8.15",
-            "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 89.0,
+            "priceMax": 89.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 40000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "4万+",
+                "priceLabel": "89"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -6256,7 +11757,48 @@ window.TOY_RADAR_DATA = {
             "shop": "sowii潮玩旗舰店",
             "date": "2026.8.15",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 99.0,
+            "priceMax": 99.0,
+            "shops": [
+              {
+                "shop": "sowii潮玩旗舰店",
+                "sold": 30000,
+                "priceMin": 99.0,
+                "priceMax": 99.0,
+                "soldLabel": "3万+",
+                "priceLabel": "99"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
+          },
+          {
+            "category": "盲盒",
+            "name": "小嗷-惊喜BOX盲盒",
+            "ip": "小嗷",
+            "soldLabel": "3万+",
+            "sold": 30000,
+            "priceLabel": "79",
+            "price": 79.0,
+            "shop": "YHT与华同行专卖店",
+            "date": "2026.8.15",
+            "section": "blind_box",
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "YHT与华同行专卖店",
+                "sold": 30000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "3万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ],
         "topStores": [
@@ -6325,7 +11867,7 @@ window.TOY_RADAR_DATA = {
           {
             "ip": "DIMOO",
             "sold": 172000,
-            "items": 4
+            "items": 3
           },
           {
             "ip": "卡牌对对碰",
@@ -6335,7 +11877,7 @@ window.TOY_RADAR_DATA = {
           {
             "ip": "凡人修仙传",
             "sold": 61000,
-            "items": 3
+            "items": 2
           },
           {
             "ip": "小嗷",
@@ -6391,7 +11933,21 @@ window.TOY_RADAR_DATA = {
             "shop": "miniso名创优品旗舰店",
             "date": "2026.8.15",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 49.0,
+            "priceMax": 49.0,
+            "shops": [
+              {
+                "shop": "miniso名创优品旗舰店",
+                "sold": 200000,
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "soldLabel": "20万+",
+                "priceLabel": "49"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -6404,20 +11960,48 @@ window.TOY_RADAR_DATA = {
             "shop": "miniso名创优品旗舰店",
             "date": "2026.8.15",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 49.0,
+            "priceMax": 49.0,
+            "shops": [
+              {
+                "shop": "miniso名创优品旗舰店",
+                "sold": 200000,
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "soldLabel": "20万+",
+                "priceLabel": "49"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
-            "name": "一日一菇毛绒盲盒端盒",
-            "ip": "一日一菇",
+            "name": "小嗷-惊喜BOX盲盒",
+            "ip": "小嗷",
             "soldLabel": "3万+",
             "sold": 30000,
-            "priceLabel": "99",
-            "price": 99.0,
-            "shop": "sowii潮玩旗舰店",
+            "priceLabel": "79",
+            "price": 79.0,
+            "shop": "YHT与华同行专卖店",
             "date": "2026.8.15",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "YHT与华同行专卖店",
+                "sold": 30000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "3万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ],
         "practitionerPicks": [
@@ -6432,7 +12016,21 @@ window.TOY_RADAR_DATA = {
             "shop": "miniso名创优品旗舰店",
             "date": "2026.8.15",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 49.0,
+            "priceMax": 49.0,
+            "shops": [
+              {
+                "shop": "miniso名创优品旗舰店",
+                "sold": 200000,
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "soldLabel": "20万+",
+                "priceLabel": "49"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "可动手办",
@@ -6445,7 +12043,21 @@ window.TOY_RADAR_DATA = {
             "shop": "共鸣旗舰店",
             "date": "2026.8.15",
             "section": "action_figure",
-            "sectionLabel": "可动手办"
+            "sectionLabel": "可动手办",
+            "priceMin": 169.0,
+            "priceMax": 169.0,
+            "shops": [
+              {
+                "shop": "共鸣旗舰店",
+                "sold": 3000,
+                "priceMin": 169.0,
+                "priceMax": 169.0,
+                "soldLabel": "3000+",
+                "priceLabel": "169"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "卡牌",
@@ -6458,7 +12070,21 @@ window.TOY_RADAR_DATA = {
             "shop": "檬宝状元",
             "date": "2026.8.15",
             "section": "trading_card",
-            "sectionLabel": "收藏卡牌"
+            "sectionLabel": "收藏卡牌",
+            "priceMin": 11.9,
+            "priceMax": 11.9,
+            "shops": [
+              {
+                "shop": "檬宝状元",
+                "sold": 80000,
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "soldLabel": "8万+",
+                "priceLabel": "11.9"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ]
       }
@@ -6469,7 +12095,7 @@ window.TOY_RADAR_DATA = {
       "weekRange": "2026.8.24 - 2026.8.30",
       "statDate": "2026.8.29",
       "totalSold": 1927460,
-      "totalItems": 79,
+      "totalItems": 75,
       "sections": {
         "blind_box": 1761700,
         "action_figure": 13860,
@@ -6488,7 +12114,7 @@ window.TOY_RADAR_DATA = {
             "trading_card": 48.3,
             "ai_toy": 0.0
           },
-          "newCount": 49,
+          "newCount": 34,
           "newFaces": [
             {
               "category": "盲盒",
@@ -6501,7 +12127,21 @@ window.TOY_RADAR_DATA = {
               "shop": "共鸣旗舰店",
               "date": "2026.8.29",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 59.0,
+              "priceMax": 59.0,
+              "shops": [
+                {
+                  "shop": "共鸣旗舰店",
+                  "sold": 400000,
+                  "priceMin": 59.0,
+                  "priceMax": 59.0,
+                  "soldLabel": "40万+",
+                  "priceLabel": "59"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
@@ -6514,33 +12154,21 @@ window.TOY_RADAR_DATA = {
               "shop": "泡泡玛特旗舰店",
               "date": "2026.8.29",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
-            },
-            {
-              "category": "盲盒",
-              "name": "星星人好梦气象局盲盒",
-              "ip": "星星人",
-              "soldLabel": "20万+",
-              "sold": 200000,
-              "priceLabel": "79",
-              "price": 79.0,
-              "shop": "泡泡玛特官方旗舰店",
-              "date": "2026.8.29",
-              "section": "blind_box",
-              "sectionLabel": "盲盒"
-            },
-            {
-              "category": "盲盒",
-              "name": "DIMOOWORLD×PIXAR联名盲盒",
-              "ip": "DIMOO",
-              "soldLabel": "5万+",
-              "sold": 50000,
-              "priceLabel": "129",
-              "price": 129.0,
-              "shop": "泡泡玛特旗舰店",
-              "date": "2026.8.29",
-              "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 129.0,
+              "priceMax": 129.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 300000,
+                  "priceMin": 129.0,
+                  "priceMax": 129.0,
+                  "soldLabel": "30万+",
+                  "priceLabel": "129"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
@@ -6553,7 +12181,21 @@ window.TOY_RADAR_DATA = {
               "shop": "保卫萝卜旗舰店",
               "date": "2026.8.29",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 9.9,
+              "priceMax": 9.9,
+              "shops": [
+                {
+                  "shop": "保卫萝卜旗舰店",
+                  "sold": 40000,
+                  "priceMin": 9.9,
+                  "priceMax": 9.9,
+                  "soldLabel": "4万+",
+                  "priceLabel": "9.9"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
@@ -6566,40 +12208,136 @@ window.TOY_RADAR_DATA = {
               "shop": "范趣町潮玩旗舰店",
               "date": "2026.8.29",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "shops": [
+                {
+                  "shop": "范趣町潮玩旗舰店",
+                  "sold": 40000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "4万+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
-              "name": "一日一菇毛绒盲盒端盒",
-              "ip": "一日一菇",
-              "soldLabel": "4万+",
-              "sold": 40000,
-              "priceLabel": "99",
-              "price": 99.0,
-              "shop": "sowi潮玩旗舰店",
+              "name": "YOYO生日会心愿抽盒机",
+              "ip": "YOYO",
+              "soldLabel": "2万+",
+              "sold": 20000,
+              "priceLabel": "29",
+              "price": 29.0,
+              "shop": "miniso名创优品旗舰店",
               "date": "2026.8.29",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 29.0,
+              "priceMax": 29.0,
+              "shops": [
+                {
+                  "shop": "miniso名创优品旗舰店",
+                  "sold": 20000,
+                  "priceMin": 29.0,
+                  "priceMax": 29.0,
+                  "soldLabel": "2万+",
+                  "priceLabel": "29"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
-              "name": "YOYO心愿魔法少女盲盒",
-              "ip": "YOYO",
-              "soldLabel": "3万+",
-              "sold": 30000,
+              "name": "奇偶潮乐Q宝今天出去玩盲盒",
+              "ip": "",
+              "soldLabel": "2万+",
+              "sold": 20000,
               "priceLabel": "69",
               "price": 69.0,
-              "shop": "名创优品专营店",
+              "shop": "JOTOYS奇偶潮乐旗舰店",
               "date": "2026.8.29",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "shops": [
+                {
+                  "shop": "JOTOYS奇偶潮乐旗舰店",
+                  "sold": 20000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "2万+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
+            },
+            {
+              "category": "收藏卡牌",
+              "name": "小马宝莉卡牌盲盒",
+              "ip": "小马宝莉",
+              "soldLabel": "2万+",
+              "sold": 20000,
+              "priceLabel": "39.9",
+              "price": 39.9,
+              "shop": "小乐拆卡糕手",
+              "date": "2026.8.29",
+              "section": "trading_card",
+              "sectionLabel": "收藏卡牌",
+              "priceMin": 39.9,
+              "priceMax": 39.9,
+              "shops": [
+                {
+                  "shop": "小乐拆卡糕手",
+                  "sold": 20000,
+                  "priceMin": 39.9,
+                  "priceMax": 39.9,
+                  "soldLabel": "2万+",
+                  "priceLabel": "39.9"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
+            },
+            {
+              "category": "盲盒",
+              "name": "我就是魔法蒜头熊盲盒",
+              "ip": "",
+              "soldLabel": "1万+",
+              "sold": 10000,
+              "priceLabel": "69",
+              "price": 69.0,
+              "shop": "JOTOYS奇偶潮乐旗舰店",
+              "date": "2026.8.29",
+              "section": "blind_box",
+              "sectionLabel": "盲盒",
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "shops": [
+                {
+                  "shop": "JOTOYS奇偶潮乐旗舰店",
+                  "sold": 10000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "1万+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             }
           ],
-          "repeatedCount": 30
+          "repeatedCount": 41
         },
-        "totalItems": 79,
+        "totalItems": 75,
         "totalSold": 1927460,
-        "avgPrice": 822.4,
+        "avgPrice": 79.3,
         "priceMin": 9.9,
         "priceMax": 40000.0,
         "topStore": "泡泡玛特旗舰店",
@@ -6614,25 +12352,82 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：单价低，适合尝新和蹲隐藏款。",
               "operator": "运营建议：保持上新节奏，重点盯 TOPTOY / 泡泡玛特渠道。"
             },
-            "itemCount": 30,
+            "itemCount": 28,
             "totalSold": 1761700,
-            "medianPrice": 74.0,
+            "medianPrice": 69.0,
             "priceMin": 9.9,
             "priceMax": 299.0,
             "topItem": {
               "category": "盲盒",
-              "name": "比奇堡的居民们搞怪毛绒盲盒",
-              "ip": "",
+              "name": "星星人好梦气象局盲盒",
+              "ip": "星星人",
               "soldLabel": "40万+",
               "sold": 400000,
-              "priceLabel": "59",
-              "price": 59.0,
-              "shop": "共鸣旗舰店",
+              "priceLabel": "79",
+              "price": 79.0,
+              "shop": "泡泡玛特旗舰店 等 2 家",
               "date": "2026.8.29",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 79.0,
+              "priceMax": 79.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 200000,
+                  "priceMin": 79.0,
+                  "priceMax": 79.0,
+                  "soldLabel": "20万+",
+                  "priceLabel": "79"
+                },
+                {
+                  "shop": "泡泡玛特官方旗舰店",
+                  "sold": 200000,
+                  "priceMin": 79.0,
+                  "priceMax": 79.0,
+                  "soldLabel": "20万+",
+                  "priceLabel": "79"
+                }
+              ],
+              "shopCount": 2,
+              "sourceCount": 2
             },
             "items": [
+              {
+                "category": "盲盒",
+                "name": "星星人好梦气象局盲盒",
+                "ip": "星星人",
+                "soldLabel": "40万+",
+                "sold": 400000,
+                "priceLabel": "79",
+                "price": 79.0,
+                "shop": "泡泡玛特旗舰店 等 2 家",
+                "date": "2026.8.29",
+                "section": "blind_box",
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 200000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "20万+",
+                    "priceLabel": "79"
+                  },
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 200000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "20万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
+              },
               {
                 "category": "盲盒",
                 "name": "比奇堡的居民们搞怪毛绒盲盒",
@@ -6644,7 +12439,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "共鸣旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "共鸣旗舰店",
+                    "sold": 400000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "40万+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6657,20 +12466,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "星星人好梦气象局盲盒",
-                "ip": "星星人",
-                "soldLabel": "20万+",
-                "sold": 200000,
-                "priceLabel": "79",
-                "price": 79.0,
-                "shop": "泡泡玛特旗舰店",
-                "date": "2026.8.29",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 300000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "30万+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6683,20 +12493,56 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 200000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "20万+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
-                "name": "星星人好梦气象局盲盒",
-                "ip": "星星人",
-                "soldLabel": "20万+",
-                "sold": 200000,
+                "name": "凡人修仙传盲盒",
+                "ip": "凡人修仙传",
+                "soldLabel": "6万+",
+                "sold": 60000,
                 "priceLabel": "79",
                 "price": 79.0,
-                "shop": "泡泡玛特官方旗舰店",
+                "shop": "共鸣旗舰店 等 2 家",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "共鸣旗舰店",
+                    "sold": 30000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "79"
+                  },
+                  {
+                    "shop": "共鸣官方旗舰店",
+                    "sold": 30000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "盲盒",
@@ -6709,7 +12555,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 50000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "5万+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6722,7 +12582,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特官方旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 50000,
+                    "priceMin": 89.0,
+                    "priceMax": 89.0,
+                    "soldLabel": "5万+",
+                    "priceLabel": "89"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6735,7 +12609,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "保卫萝卜旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 9.9,
+                "priceMax": 9.9,
+                "shops": [
+                  {
+                    "shop": "保卫萝卜旗舰店",
+                    "sold": 40000,
+                    "priceMin": 9.9,
+                    "priceMax": 9.9,
+                    "soldLabel": "4万+",
+                    "priceLabel": "9.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6748,7 +12636,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "范趣町潮玩旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "范趣町潮玩旗舰店",
+                    "sold": 40000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "4万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6761,20 +12663,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "sowi潮玩旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "凡人修仙传盲盒",
-                "ip": "凡人修仙传",
-                "soldLabel": "3万+",
-                "sold": 30000,
-                "priceLabel": "79",
-                "price": 79.0,
-                "shop": "共鸣旗舰店",
-                "date": "2026.8.29",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 99.0,
+                "priceMax": 99.0,
+                "shops": [
+                  {
+                    "shop": "sowi潮玩旗舰店",
+                    "sold": 40000,
+                    "priceMin": 99.0,
+                    "priceMax": 99.0,
+                    "soldLabel": "4万+",
+                    "priceLabel": "99"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6787,20 +12690,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "名创优品专营店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "凡人修仙传盲盒",
-                "ip": "凡人修仙传",
-                "soldLabel": "3万+",
-                "sold": 30000,
-                "priceLabel": "79",
-                "price": 79.0,
-                "shop": "共鸣官方旗舰店",
-                "date": "2026.8.29",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "名创优品专营店",
+                    "sold": 30000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6813,7 +12717,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 29.0,
+                "priceMax": 29.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 20000,
+                    "priceMin": 29.0,
+                    "priceMax": 29.0,
+                    "soldLabel": "2万+",
+                    "priceLabel": "29"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6826,7 +12744,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "JOTOYS奇偶潮乐旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "JOTOYS奇偶潮乐旗舰店",
+                    "sold": 20000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "2万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6839,7 +12771,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "JOTOYS奇偶潮乐旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "JOTOYS奇偶潮乐旗舰店",
+                    "sold": 10000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6852,7 +12798,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 10000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6865,7 +12825,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "柠檬童话旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 13.5,
+                "priceMax": 13.5,
+                "shops": [
+                  {
+                    "shop": "柠檬童话旗舰店",
+                    "sold": 10000,
+                    "priceMin": 13.5,
+                    "priceMax": 13.5,
+                    "soldLabel": "1万+",
+                    "priceLabel": "13.5"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6878,7 +12852,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "聪慧脑瓜班趣专卖店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 25.5,
+                "priceMax": 25.5,
+                "shops": [
+                  {
+                    "shop": "聪慧脑瓜班趣专卖店",
+                    "sold": 10000,
+                    "priceMin": 25.5,
+                    "priceMax": 25.5,
+                    "soldLabel": "1万+",
+                    "priceLabel": "25.5"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6891,7 +12879,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特官方旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 10000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6904,7 +12906,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TNTSPACE官方旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "TNTSPACE官方旗舰店",
+                    "sold": 10000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6917,7 +12933,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "funism官方旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "funism官方旗舰店",
+                    "sold": 10000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6930,7 +12960,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "DODOSUGAR潮玩旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "DODOSUGAR潮玩旗舰店",
+                    "sold": 9000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "9000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6943,7 +12987,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "范趣町旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "范趣町旗舰店",
+                    "sold": 8000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "8000+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6956,7 +13014,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "玩乐主义旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "玩乐主义旗舰店",
+                    "sold": 6000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "6000+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6969,7 +13041,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "NB卡牌max",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 289.0,
+                "priceMax": 289.0,
+                "shops": [
+                  {
+                    "shop": "NB卡牌max",
+                    "sold": 6000,
+                    "priceMin": 289.0,
+                    "priceMax": 289.0,
+                    "soldLabel": "6000+",
+                    "priceLabel": "289"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6982,7 +13068,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "共鸣旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "共鸣旗舰店",
+                    "sold": 5000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -6995,7 +13095,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 5000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "5000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -7008,7 +13122,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 2000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -7021,7 +13149,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "睿卡潮玩旗舰店",
                 "date": "2026.8.29",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 299.0,
+                "priceMax": 299.0,
+                "shops": [
+                  {
+                    "shop": "睿卡潮玩旗舰店",
+                    "sold": 700,
+                    "priceMin": 299.0,
+                    "priceMax": 299.0,
+                    "soldLabel": "700+",
+                    "priceLabel": "299"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -7034,9 +13176,9 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：适合收藏和摆件型消费。",
               "operator": "运营建议：关注联名和展会首发，适合做预售和限量策略。"
             },
-            "itemCount": 19,
+            "itemCount": 18,
             "totalSold": 13860,
-            "medianPrice": 215.0,
+            "medianPrice": 225.0,
             "priceMin": 47.0,
             "priceMax": 1199.0,
             "topItem": {
@@ -7050,7 +13192,21 @@ window.TOY_RADAR_DATA = {
               "shop": "空格动漫专营店",
               "date": "2026.8.29",
               "section": "action_figure",
-              "sectionLabel": "可动手办"
+              "sectionLabel": "可动手办",
+              "priceMin": 153.0,
+              "priceMax": 153.0,
+              "shops": [
+                {
+                  "shop": "空格动漫专营店",
+                  "sold": 3000,
+                  "priceMin": 153.0,
+                  "priceMax": 153.0,
+                  "soldLabel": "3000+",
+                  "priceLabel": "153"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -7064,7 +13220,48 @@ window.TOY_RADAR_DATA = {
                 "shop": "空格动漫专营店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 153.0,
+                "priceMax": 153.0,
+                "shops": [
+                  {
+                    "shop": "空格动漫专营店",
+                    "sold": 3000,
+                    "priceMin": 153.0,
+                    "priceMax": 153.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "153"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
+              },
+              {
+                "category": "可动手办",
+                "name": "HG强袭自由机甲拼装玩具",
+                "ip": "",
+                "soldLabel": "2000+",
+                "sold": 2000,
+                "priceLabel": "84–124",
+                "price": 104.0,
+                "shop": "百亿补贴品牌优选",
+                "date": "2026.8.29",
+                "section": "action_figure",
+                "sectionLabel": "可动手办",
+                "priceMin": 84.0,
+                "priceMax": 124.0,
+                "shops": [
+                  {
+                    "shop": "百亿补贴品牌优选",
+                    "sold": 2000,
+                    "priceMin": 84.0,
+                    "priceMax": 124.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "84–124"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 2
               },
               {
                 "category": "可动手办",
@@ -7077,7 +13274,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "Queenstudios旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 600.0,
+                "priceMax": 600.0,
+                "shops": [
+                  {
+                    "shop": "Queenstudios旗舰店",
+                    "sold": 1000,
+                    "priceMin": 600.0,
+                    "priceMax": 600.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "600"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7090,7 +13301,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "Queenstudios旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 125.0,
+                "priceMax": 125.0,
+                "shops": [
+                  {
+                    "shop": "Queenstudios旗舰店",
+                    "sold": 1000,
+                    "priceMin": 125.0,
+                    "priceMax": 125.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "125"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7103,7 +13328,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "原神旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 80.0,
+                "priceMax": 80.0,
+                "shops": [
+                  {
+                    "shop": "原神旗舰店",
+                    "sold": 1000,
+                    "priceMin": 80.0,
+                    "priceMax": 80.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "80"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7116,7 +13355,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "海洋堂旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 99.0,
+                "priceMax": 99.0,
+                "shops": [
+                  {
+                    "shop": "海洋堂旗舰店",
+                    "sold": 1000,
+                    "priceMin": 99.0,
+                    "priceMax": 99.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "99"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7129,7 +13382,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 1000,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7142,7 +13409,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "暗源旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 299.0,
+                "priceMax": 299.0,
+                "shops": [
+                  {
+                    "shop": "暗源旗舰店",
+                    "sold": 1000,
+                    "priceMin": 299.0,
+                    "priceMax": 299.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "299"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7155,33 +13436,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "纽苗益旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
-              },
-              {
-                "category": "可动手办",
-                "name": "HG强袭自由机甲拼装玩具",
-                "ip": "",
-                "soldLabel": "1000+",
-                "sold": 1000,
-                "priceLabel": "124",
-                "price": 124.0,
-                "shop": "百亿补贴品牌优选",
-                "date": "2026.8.29",
-                "section": "action_figure",
-                "sectionLabel": "可动手办"
-              },
-              {
-                "category": "可动手办",
-                "name": "HG强袭自由机甲拼装玩具",
-                "ip": "",
-                "soldLabel": "1000+",
-                "sold": 1000,
-                "priceLabel": "84",
-                "price": 84.0,
-                "shop": "百亿补贴品牌优选",
-                "date": "2026.8.29",
-                "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 96.8,
+                "priceMax": 96.8,
+                "shops": [
+                  {
+                    "shop": "纽苗益旗舰店",
+                    "sold": 1000,
+                    "priceMin": 96.8,
+                    "priceMax": 96.8,
+                    "soldLabel": "1000+",
+                    "priceLabel": "96.8"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7194,7 +13463,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "通德玩具专营店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 249.0,
+                "priceMax": 249.0,
+                "shops": [
+                  {
+                    "shop": "通德玩具专营店",
+                    "sold": 500,
+                    "priceMin": 249.0,
+                    "priceMax": 249.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "249"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7207,7 +13490,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "Queenstudios旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 625.0,
+                "priceMax": 625.0,
+                "shops": [
+                  {
+                    "shop": "Queenstudios旗舰店",
+                    "sold": 400,
+                    "priceMin": 625.0,
+                    "priceMax": 625.0,
+                    "soldLabel": "400+",
+                    "priceLabel": "625"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7220,7 +13517,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "空格动漫专营店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 235.0,
+                "priceMax": 235.0,
+                "shops": [
+                  {
+                    "shop": "空格动漫专营店",
+                    "sold": 400,
+                    "priceMin": 235.0,
+                    "priceMax": 235.0,
+                    "soldLabel": "400+",
+                    "priceLabel": "235"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7233,7 +13544,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "X11旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 1199.0,
+                "priceMax": 1199.0,
+                "shops": [
+                  {
+                    "shop": "X11旗舰店",
+                    "sold": 100,
+                    "priceMin": 1199.0,
+                    "priceMax": 1199.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7246,7 +13571,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "空格动漫专营店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 779.0,
+                "priceMax": 779.0,
+                "shops": [
+                  {
+                    "shop": "空格动漫专营店",
+                    "sold": 100,
+                    "priceMin": 779.0,
+                    "priceMax": 779.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "779"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7259,7 +13598,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "浣嘉木旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 97.8,
+                "priceMax": 97.8,
+                "shops": [
+                  {
+                    "shop": "浣嘉木旗舰店",
+                    "sold": 100,
+                    "priceMin": 97.8,
+                    "priceMax": 97.8,
+                    "soldLabel": "100+",
+                    "priceLabel": "97.8"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7272,7 +13625,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "华忠乐园玩具旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 47.0,
+                "priceMax": 47.0,
+                "shops": [
+                  {
+                    "shop": "华忠乐园玩具旗舰店",
+                    "sold": 100,
+                    "priceMin": 47.0,
+                    "priceMax": 47.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "47"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -7285,20 +13652,48 @@ window.TOY_RADAR_DATA = {
                 "shop": "猫点购旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 498.0,
+                "priceMax": 498.0,
+                "shops": [
+                  {
+                    "shop": "猫点购旗舰店",
+                    "sold": 100,
+                    "priceMin": 498.0,
+                    "priceMax": 498.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "498"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
                 "name": "预售万代食玩CONVERGE高达",
                 "ip": "高达",
-                "soldLabel": "60",
+                "soldLabel": "60+",
                 "sold": 60,
                 "priceLabel": "215",
                 "price": 215.0,
                 "shop": "漫盒旗舰店",
                 "date": "2026.8.29",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 215.0,
+                "priceMax": 215.0,
+                "shops": [
+                  {
+                    "shop": "漫盒旗舰店",
+                    "sold": 60,
+                    "priceMin": 215.0,
+                    "priceMax": 215.0,
+                    "soldLabel": "60+",
+                    "priceLabel": "215"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -7327,7 +13722,21 @@ window.TOY_RADAR_DATA = {
               "shop": "檬宝状元",
               "date": "2026.8.29",
               "section": "trading_card",
-              "sectionLabel": "收藏卡牌"
+              "sectionLabel": "收藏卡牌",
+              "priceMin": 11.9,
+              "priceMax": 11.9,
+              "shops": [
+                {
+                  "shop": "檬宝状元",
+                  "sold": 90000,
+                  "priceMin": 11.9,
+                  "priceMax": 11.9,
+                  "soldLabel": "9万+",
+                  "priceLabel": "11.9"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -7341,7 +13750,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "檬宝状元",
                 "date": "2026.8.29",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "shops": [
+                  {
+                    "shop": "檬宝状元",
+                    "sold": 90000,
+                    "priceMin": 11.9,
+                    "priceMax": 11.9,
+                    "soldLabel": "9万+",
+                    "priceLabel": "11.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -7354,7 +13777,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "PTCG长安",
                 "date": "2026.8.29",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 38.8,
+                "priceMax": 38.8,
+                "shops": [
+                  {
+                    "shop": "PTCG长安",
+                    "sold": 20000,
+                    "priceMin": 38.8,
+                    "priceMax": 38.8,
+                    "soldLabel": "2万+",
+                    "priceLabel": "38.8"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -7367,7 +13804,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "小乐拆卡糕手",
                 "date": "2026.8.29",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 39.9,
+                "priceMax": 39.9,
+                "shops": [
+                  {
+                    "shop": "小乐拆卡糕手",
+                    "sold": 20000,
+                    "priceMin": 39.9,
+                    "priceMax": 39.9,
+                    "soldLabel": "2万+",
+                    "priceLabel": "39.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -7380,7 +13831,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "久木潮玩卡铺",
                 "date": "2026.8.29",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 39.9,
+                "priceMax": 39.9,
+                "shops": [
+                  {
+                    "shop": "久木潮玩卡铺",
+                    "sold": 10000,
+                    "priceMin": 39.9,
+                    "priceMax": 39.9,
+                    "soldLabel": "1万+",
+                    "priceLabel": "39.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -7393,7 +13858,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "不舍PTCG拆卡",
                 "date": "2026.8.29",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 169.0,
+                "priceMax": 169.0,
+                "shops": [
+                  {
+                    "shop": "不舍PTCG拆卡",
+                    "sold": 3000,
+                    "priceMin": 169.0,
+                    "priceMax": 169.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "169"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -7406,7 +13885,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "镜像潮玩社",
                 "date": "2026.8.29",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 19.9,
+                "priceMax": 19.9,
+                "shops": [
+                  {
+                    "shop": "镜像潮玩社",
+                    "sold": 1000,
+                    "priceMin": 19.9,
+                    "priceMax": 19.9,
+                    "soldLabel": "1000+",
+                    "priceLabel": "19.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -7419,7 +13912,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "酱酱好物店",
                 "date": "2026.8.29",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 39.9,
+                "priceMax": 39.9,
+                "shops": [
+                  {
+                    "shop": "酱酱好物店",
+                    "sold": 1000,
+                    "priceMin": 39.9,
+                    "priceMax": 39.9,
+                    "soldLabel": "1000+",
+                    "priceLabel": "39.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -7432,7 +13939,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "悦卡潮玩社",
                 "date": "2026.8.29",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 198.0,
+                "priceMax": 198.0,
+                "shops": [
+                  {
+                    "shop": "悦卡潮玩社",
+                    "sold": 1000,
+                    "priceMin": 198.0,
+                    "priceMax": 198.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "198"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -7445,7 +13966,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "魔都兄弟",
                 "date": "2026.8.29",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 40000.0,
+                "priceMax": 40000.0,
+                "shops": [
+                  {
+                    "shop": "魔都兄弟",
+                    "sold": 100,
+                    "priceMin": 40000.0,
+                    "priceMax": 40000.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "40000"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -7458,7 +13993,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "九欧拆卡",
                 "date": "2026.8.29",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 599.0,
+                "priceMax": 599.0,
+                "shops": [
+                  {
+                    "shop": "九欧拆卡",
+                    "sold": 100,
+                    "priceMin": 599.0,
+                    "priceMax": 599.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "599"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -7471,7 +14020,7 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：更适合亲子/陪伴场景，先看功能再看颜值。",
               "operator": "运营建议：功能点要讲清楚，亲子、教育和陪伴场景最关键。"
             },
-            "itemCount": 20,
+            "itemCount": 19,
             "totalSold": 5700,
             "medianPrice": 399.0,
             "priceMin": 129.0,
@@ -7487,7 +14036,21 @@ window.TOY_RADAR_DATA = {
               "shop": "名校堂京东自营旗舰店",
               "date": "2026.8.29",
               "section": "ai_toy",
-              "sectionLabel": "AI 玩具"
+              "sectionLabel": "AI 玩具",
+              "priceMin": 269.0,
+              "priceMax": 269.0,
+              "shops": [
+                {
+                  "shop": "名校堂京东自营旗舰店",
+                  "sold": 1000,
+                  "priceMin": 269.0,
+                  "priceMax": 269.0,
+                  "soldLabel": "1000+",
+                  "priceLabel": "269"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -7501,7 +14064,56 @@ window.TOY_RADAR_DATA = {
                 "shop": "名校堂京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 269.0,
+                "priceMax": 269.0,
+                "shops": [
+                  {
+                    "shop": "名校堂京东自营旗舰店",
+                    "sold": 1000,
+                    "priceMin": 269.0,
+                    "priceMax": 269.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "269"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
+              },
+              {
+                "category": "AI玩具",
+                "name": "Fuzozo芙思AI情感陪伴机器人毛绒玩具",
+                "ip": "",
+                "soldLabel": "700+",
+                "sold": 700,
+                "priceLabel": "399–499",
+                "price": 427.57,
+                "shop": "华为京东自营旗舰店 等 2 家",
+                "date": "2026.8.29",
+                "section": "ai_toy",
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 499.0,
+                "shops": [
+                  {
+                    "shop": "华为京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "399"
+                  },
+                  {
+                    "shop": "芙志（Fuzozo）京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 499.0,
+                    "priceMax": 499.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "499"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "AI玩具",
@@ -7514,7 +14126,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "喜马拉雅儿童京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 489.0,
+                "priceMax": 489.0,
+                "shops": [
+                  {
+                    "shop": "喜马拉雅儿童京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 489.0,
+                    "priceMax": 489.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "489"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7527,7 +14153,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "京东京造自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 159.0,
+                "priceMax": 159.0,
+                "shops": [
+                  {
+                    "shop": "京东京造自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 159.0,
+                    "priceMax": 159.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "159"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7540,7 +14180,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "索迪（SODEEP）玩具京东自营专区",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "索迪（SODEEP）玩具京东自营专区",
+                    "sold": 500,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7553,20 +14207,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "奇多多星球京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI玩具",
-                "name": "Fuzozo芙思AI情感陪伴机器人毛绒玩具",
-                "ip": "",
-                "soldLabel": "500+",
-                "sold": 500,
-                "priceLabel": "399",
-                "price": 399.0,
-                "shop": "华为京东自营旗舰店",
-                "date": "2026.8.29",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 349.0,
+                "priceMax": 349.0,
+                "shops": [
+                  {
+                    "shop": "奇多多星球京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 349.0,
+                    "priceMax": 349.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "349"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7579,7 +14234,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "enabot京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 699.0,
+                "priceMax": 699.0,
+                "shops": [
+                  {
+                    "shop": "enabot京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 699.0,
+                    "priceMax": 699.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "699"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7592,7 +14261,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "星角萌萌官方旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "星角萌萌官方旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7605,7 +14288,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "米德宝旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 199.0,
+                "priceMax": 199.0,
+                "shops": [
+                  {
+                    "shop": "米德宝旗舰店",
+                    "sold": 200,
+                    "priceMin": 199.0,
+                    "priceMax": 199.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7618,20 +14315,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI玩具",
-                "name": "Fuzozo芙思AI情感陪伴机器人毛绒玩具",
-                "ip": "",
-                "soldLabel": "200+",
-                "sold": 200,
-                "priceLabel": "499",
-                "price": 499.0,
-                "shop": "芙志（Fuzozo）京东自营旗舰店",
-                "date": "2026.8.29",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 219.0,
+                "priceMax": 219.0,
+                "shops": [
+                  {
+                    "shop": "鲸鱼机器人Whalesbot京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 219.0,
+                    "priceMax": 219.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "219"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7644,7 +14342,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "超棋大师玩具京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "超棋大师玩具京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7657,7 +14369,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "天文（TEN-WIN）玩具京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 298.0,
+                "priceMax": 298.0,
+                "shops": [
+                  {
+                    "shop": "天文（TEN-WIN）玩具京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 298.0,
+                    "priceMax": 298.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "298"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7670,7 +14396,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "星云宝贝ai陪伴机器人",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 149.0,
+                "priceMax": 149.0,
+                "shops": [
+                  {
+                    "shop": "星云宝贝ai陪伴机器人",
+                    "sold": 200,
+                    "priceMin": 149.0,
+                    "priceMax": 149.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "149"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7683,7 +14423,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "LOONA京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 3259.0,
+                "priceMax": 3259.0,
+                "shops": [
+                  {
+                    "shop": "LOONA京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 3259.0,
+                    "priceMax": 3259.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "3259"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7696,7 +14450,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "物灵京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 999.0,
+                "priceMax": 999.0,
+                "shops": [
+                  {
+                    "shop": "物灵京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 999.0,
+                    "priceMax": 999.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "999"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7709,7 +14477,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "元萝卜SenseRobot京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 3299.0,
+                "priceMax": 3299.0,
+                "shops": [
+                  {
+                    "shop": "元萝卜SenseRobot京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 3299.0,
+                    "priceMax": 3299.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "3299"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7722,7 +14504,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "ROPET智能机器人京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 1880.0,
+                "priceMax": 1880.0,
+                "shops": [
+                  {
+                    "shop": "ROPET智能机器人京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 1880.0,
+                    "priceMax": 1880.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "1880"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7735,7 +14531,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "enabot京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 999.0,
+                "priceMax": 999.0,
+                "shops": [
+                  {
+                    "shop": "enabot京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 999.0,
+                    "priceMax": 999.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "999"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -7748,12 +14558,61 @@ window.TOY_RADAR_DATA = {
                 "shop": "鲸鱼机器人whalesbot京东自营旗舰店",
                 "date": "2026.8.29",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 158.0,
+                "priceMax": 158.0,
+                "shops": [
+                  {
+                    "shop": "鲸鱼机器人whalesbot京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 158.0,
+                    "priceMax": 158.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "158"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           }
         ],
         "topItems": [
+          {
+            "category": "盲盒",
+            "name": "星星人好梦气象局盲盒",
+            "ip": "星星人",
+            "soldLabel": "40万+",
+            "sold": 400000,
+            "priceLabel": "79",
+            "price": 79.0,
+            "shop": "泡泡玛特旗舰店 等 2 家",
+            "date": "2026.8.29",
+            "section": "blind_box",
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 200000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "20万+",
+                "priceLabel": "79"
+              },
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 200000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "20万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
+          },
           {
             "category": "盲盒",
             "name": "比奇堡的居民们搞怪毛绒盲盒",
@@ -7765,7 +14624,21 @@ window.TOY_RADAR_DATA = {
             "shop": "共鸣旗舰店",
             "date": "2026.8.29",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 59.0,
+            "priceMax": 59.0,
+            "shops": [
+              {
+                "shop": "共鸣旗舰店",
+                "sold": 400000,
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "soldLabel": "40万+",
+                "priceLabel": "59"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -7778,20 +14651,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.8.29",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
-          },
-          {
-            "category": "盲盒",
-            "name": "星星人好梦气象局盲盒",
-            "ip": "星星人",
-            "soldLabel": "20万+",
-            "sold": 200000,
-            "priceLabel": "79",
-            "price": 79.0,
-            "shop": "泡泡玛特旗舰店",
-            "date": "2026.8.29",
-            "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 300000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "30万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -7804,20 +14678,21 @@ window.TOY_RADAR_DATA = {
             "shop": "miniso名创优品旗舰店",
             "date": "2026.8.29",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
-          },
-          {
-            "category": "盲盒",
-            "name": "星星人好梦气象局盲盒",
-            "ip": "星星人",
-            "soldLabel": "20万+",
-            "sold": 200000,
-            "priceLabel": "79",
-            "price": 79.0,
-            "shop": "泡泡玛特官方旗舰店",
-            "date": "2026.8.29",
-            "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 49.0,
+            "priceMax": 49.0,
+            "shops": [
+              {
+                "shop": "miniso名创优品旗舰店",
+                "sold": 200000,
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "soldLabel": "20万+",
+                "priceLabel": "49"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "收藏卡牌",
@@ -7830,7 +14705,56 @@ window.TOY_RADAR_DATA = {
             "shop": "檬宝状元",
             "date": "2026.8.29",
             "section": "trading_card",
-            "sectionLabel": "收藏卡牌"
+            "sectionLabel": "收藏卡牌",
+            "priceMin": 11.9,
+            "priceMax": 11.9,
+            "shops": [
+              {
+                "shop": "檬宝状元",
+                "sold": 90000,
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "soldLabel": "9万+",
+                "priceLabel": "11.9"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
+          },
+          {
+            "category": "盲盒",
+            "name": "凡人修仙传盲盒",
+            "ip": "凡人修仙传",
+            "soldLabel": "6万+",
+            "sold": 60000,
+            "priceLabel": "79",
+            "price": 79.0,
+            "shop": "共鸣旗舰店 等 2 家",
+            "date": "2026.8.29",
+            "section": "blind_box",
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "共鸣旗舰店",
+                "sold": 30000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "3万+",
+                "priceLabel": "79"
+              },
+              {
+                "shop": "共鸣官方旗舰店",
+                "sold": 30000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "3万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
           },
           {
             "category": "盲盒",
@@ -7843,7 +14767,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.8.29",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 50000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "5万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -7856,7 +14794,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特官方旗舰店",
             "date": "2026.8.29",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 89.0,
+            "priceMax": 89.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 50000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "5万+",
+                "priceLabel": "89"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -7869,7 +14821,21 @@ window.TOY_RADAR_DATA = {
             "shop": "保卫萝卜旗舰店",
             "date": "2026.8.29",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 9.9,
+            "priceMax": 9.9,
+            "shops": [
+              {
+                "shop": "保卫萝卜旗舰店",
+                "sold": 40000,
+                "priceMin": 9.9,
+                "priceMax": 9.9,
+                "soldLabel": "4万+",
+                "priceLabel": "9.9"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -7882,7 +14848,21 @@ window.TOY_RADAR_DATA = {
             "shop": "范趣町潮玩旗舰店",
             "date": "2026.8.29",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "shops": [
+              {
+                "shop": "范趣町潮玩旗舰店",
+                "sold": 40000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "4万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ],
         "topStores": [
@@ -7941,7 +14921,7 @@ window.TOY_RADAR_DATA = {
           {
             "ip": "星星人",
             "sold": 400000,
-            "items": 2
+            "items": 1
           },
           {
             "ip": "CRYBABY",
@@ -7961,7 +14941,7 @@ window.TOY_RADAR_DATA = {
           {
             "ip": "凡人修仙传",
             "sold": 61000,
-            "items": 3
+            "items": 2
           },
           {
             "ip": "DIMOO",
@@ -8008,29 +14988,73 @@ window.TOY_RADAR_DATA = {
         "consumerPicks": [
           {
             "category": "盲盒",
-            "name": "比奇堡的居民们搞怪毛绒盲盒",
-            "ip": "",
+            "name": "星星人好梦气象局盲盒",
+            "ip": "星星人",
             "soldLabel": "40万+",
             "sold": 400000,
-            "priceLabel": "59",
-            "price": 59.0,
-            "shop": "共鸣旗舰店",
+            "priceLabel": "79",
+            "price": 79.0,
+            "shop": "泡泡玛特旗舰店 等 2 家",
             "date": "2026.8.29",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 200000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "20万+",
+                "priceLabel": "79"
+              },
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 200000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "20万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
           },
           {
             "category": "盲盒",
-            "name": "比奇堡的居民们搞怪毛绒盲盒",
-            "ip": "",
+            "name": "星星人好梦气象局盲盒",
+            "ip": "星星人",
             "soldLabel": "40万+",
             "sold": 400000,
-            "priceLabel": "59",
-            "price": 59.0,
-            "shop": "共鸣旗舰店",
+            "priceLabel": "79",
+            "price": 79.0,
+            "shop": "泡泡玛特旗舰店 等 2 家",
             "date": "2026.8.29",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 200000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "20万+",
+                "priceLabel": "79"
+              },
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 200000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "20万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
           },
           {
             "category": "盲盒",
@@ -8043,22 +15067,58 @@ window.TOY_RADAR_DATA = {
             "shop": "范趣町潮玩旗舰店",
             "date": "2026.8.29",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "shops": [
+              {
+                "shop": "范趣町潮玩旗舰店",
+                "sold": 40000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "4万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ],
         "practitionerPicks": [
           {
             "category": "盲盒",
-            "name": "比奇堡的居民们搞怪毛绒盲盒",
-            "ip": "",
+            "name": "星星人好梦气象局盲盒",
+            "ip": "星星人",
             "soldLabel": "40万+",
             "sold": 400000,
-            "priceLabel": "59",
-            "price": 59.0,
-            "shop": "共鸣旗舰店",
+            "priceLabel": "79",
+            "price": 79.0,
+            "shop": "泡泡玛特旗舰店 等 2 家",
             "date": "2026.8.29",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 200000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "20万+",
+                "priceLabel": "79"
+              },
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 200000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "20万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
           },
           {
             "category": "可动手办",
@@ -8071,7 +15131,21 @@ window.TOY_RADAR_DATA = {
             "shop": "空格动漫专营店",
             "date": "2026.8.29",
             "section": "action_figure",
-            "sectionLabel": "可动手办"
+            "sectionLabel": "可动手办",
+            "priceMin": 153.0,
+            "priceMax": 153.0,
+            "shops": [
+              {
+                "shop": "空格动漫专营店",
+                "sold": 3000,
+                "priceMin": 153.0,
+                "priceMax": 153.0,
+                "soldLabel": "3000+",
+                "priceLabel": "153"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "收藏卡牌",
@@ -8084,7 +15158,21 @@ window.TOY_RADAR_DATA = {
             "shop": "檬宝状元",
             "date": "2026.8.29",
             "section": "trading_card",
-            "sectionLabel": "收藏卡牌"
+            "sectionLabel": "收藏卡牌",
+            "priceMin": 11.9,
+            "priceMax": 11.9,
+            "shops": [
+              {
+                "shop": "檬宝状元",
+                "sold": 90000,
+                "priceMin": 11.9,
+                "priceMax": 11.9,
+                "soldLabel": "9万+",
+                "priceLabel": "11.9"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ]
       }
@@ -8095,10 +15183,10 @@ window.TOY_RADAR_DATA = {
       "weekRange": "2026.9.7 - 2026.9.13",
       "statDate": "2026.9.12",
       "totalSold": 2515873,
-      "totalItems": 87,
+      "totalItems": 75,
       "sections": {
-        "blind_box": 1608800,
-        "action_figure": 721407,
+        "blind_box": 2016800,
+        "action_figure": 313407,
         "trading_card": 81400,
         "ai_toy": 104266
       },
@@ -8109,13 +15197,48 @@ window.TOY_RADAR_DATA = {
           "prevLabel": "8.24-8.30",
           "totalDeltaPct": 30.5,
           "categoryDelta": {
-            "blind_box": -8.7,
-            "action_figure": 5105.0,
+            "blind_box": 14.5,
+            "action_figure": 2161.2,
             "trading_card": -44.3,
             "ai_toy": 1729.2
           },
-          "newCount": 58,
+          "newCount": 46,
           "newFaces": [
+            {
+              "category": "盲盒",
+              "name": "星星人怦然星动盲盒",
+              "ip": "星星人",
+              "soldLabel": "60万+",
+              "sold": 600000,
+              "priceLabel": "69–89",
+              "price": 82.33,
+              "shop": "泡泡玛特官方旗舰店 等 2 家",
+              "date": "2026.9.12",
+              "section": "blind_box",
+              "sectionLabel": "盲盒",
+              "priceMin": 69.0,
+              "priceMax": 89.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特官方旗舰店",
+                  "sold": 400000,
+                  "priceMin": 89.0,
+                  "priceMax": 89.0,
+                  "soldLabel": "40万+",
+                  "priceLabel": "89"
+                },
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 200000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "20万+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 2,
+              "sourceCount": 3
+            },
             {
               "category": "盲盒",
               "name": "CRYBABYVacation ModeOn塘胶盲盒",
@@ -8127,20 +15250,21 @@ window.TOY_RADAR_DATA = {
               "shop": "泡泡玛特旗舰店",
               "date": "2026.9.12",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
-            },
-            {
-              "category": "盲盒",
-              "name": "星星人怦然星动盲盒",
-              "ip": "星星人",
-              "soldLabel": "30万+",
-              "sold": 300000,
-              "priceLabel": "89",
-              "price": 89.0,
-              "shop": "泡泡玛特官方旗舰店",
-              "date": "2026.9.12",
-              "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 129.0,
+              "priceMax": 129.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 400000,
+                  "priceMin": 129.0,
+                  "priceMax": 129.0,
+                  "soldLabel": "40万+",
+                  "priceLabel": "129"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "可动手办",
@@ -8153,20 +15277,21 @@ window.TOY_RADAR_DATA = {
               "shop": "泡泡玛特旗舰店",
               "date": "2026.9.12",
               "section": "action_figure",
-              "sectionLabel": "可动手办"
-            },
-            {
-              "category": "可动手办",
-              "name": "星星人怦然星动盲盒",
-              "ip": "星星人",
-              "soldLabel": "20万+",
-              "sold": 200000,
-              "priceLabel": "69",
-              "price": 69.0,
-              "shop": "泡泡玛特旗舰店",
-              "date": "2026.9.12",
-              "section": "action_figure",
-              "sectionLabel": "可动手办"
+              "sectionLabel": "可动手办",
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 200000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "20万+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "可动手办",
@@ -8179,20 +15304,21 @@ window.TOY_RADAR_DATA = {
               "shop": "泡泡玛特旗舰店",
               "date": "2026.9.12",
               "section": "action_figure",
-              "sectionLabel": "可动手办"
-            },
-            {
-              "category": "盲盒",
-              "name": "星星人怦然星动盲盒",
-              "ip": "星星人",
-              "soldLabel": "10万+",
-              "sold": 100000,
-              "priceLabel": "89",
-              "price": 89.0,
-              "shop": "泡泡玛特官方旗舰店",
-              "date": "2026.9.12",
-              "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "可动手办",
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 100000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "10万+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             {
               "category": "盲盒",
@@ -8205,7 +15331,56 @@ window.TOY_RADAR_DATA = {
               "shop": "库洛游戏旗舰店",
               "date": "2026.9.12",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 29.9,
+              "priceMax": 29.9,
+              "shops": [
+                {
+                  "shop": "库洛游戏旗舰店",
+                  "sold": 80000,
+                  "priceMin": 29.9,
+                  "priceMax": 29.9,
+                  "soldLabel": "8万+",
+                  "priceLabel": "29.9"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
+            },
+            {
+              "category": "AI玩具",
+              "name": "AI时间宝机器人",
+              "ip": "",
+              "soldLabel": "4.2万+",
+              "sold": 42000,
+              "priceLabel": "95–199",
+              "price": 194.05,
+              "shop": "名校堂官方旗舰店 等 2 家",
+              "date": "2026.9.12",
+              "section": "ai_toy",
+              "sectionLabel": "AI 玩具",
+              "priceMin": 95.0,
+              "priceMax": 199.0,
+              "shops": [
+                {
+                  "shop": "名校堂官方旗舰店",
+                  "sold": 40000,
+                  "priceMin": 199.0,
+                  "priceMax": 199.0,
+                  "soldLabel": "4万+",
+                  "priceLabel": "199"
+                },
+                {
+                  "shop": "博士笔汇广泰智能教育专卖店",
+                  "sold": 2000,
+                  "priceMin": 95.0,
+                  "priceMax": 95.0,
+                  "soldLabel": "2000+",
+                  "priceLabel": "95"
+                }
+              ],
+              "shopCount": 2,
+              "sourceCount": 3
             },
             {
               "category": "盲盒",
@@ -8218,14 +15393,55 @@ window.TOY_RADAR_DATA = {
               "shop": "范趣町潮玩旗舰店",
               "date": "2026.9.12",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "shops": [
+                {
+                  "shop": "范趣町潮玩旗舰店",
+                  "sold": 40000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "4万+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
+            },
+            {
+              "category": "盲盒",
+              "name": "一日一菇毛绒盒端盒",
+              "ip": "一日一菇",
+              "soldLabel": "4万+",
+              "sold": 40000,
+              "priceLabel": "99",
+              "price": 99.0,
+              "shop": "sowii潮玩旗舰店",
+              "date": "2026.9.12",
+              "section": "blind_box",
+              "sectionLabel": "盲盒",
+              "priceMin": 99.0,
+              "priceMax": 99.0,
+              "shops": [
+                {
+                  "shop": "sowii潮玩旗舰店",
+                  "sold": 40000,
+                  "priceMin": 99.0,
+                  "priceMax": 99.0,
+                  "soldLabel": "4万+",
+                  "priceLabel": "99"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             }
           ],
-          "repeatedCount": 26
+          "repeatedCount": 29
         },
-        "totalItems": 87,
+        "totalItems": 75,
         "totalSold": 2515873,
-        "avgPrice": 912.8,
+        "avgPrice": 139.3,
         "priceMin": 2.9,
         "priceMax": 40000.0,
         "topStore": "泡泡玛特旗舰店",
@@ -8240,25 +15456,82 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：单价低，适合尝新和蹲隐藏款。",
               "operator": "运营建议：保持上新节奏，重点盯 TOPTOY / 泡泡玛特渠道。"
             },
-            "itemCount": 30,
-            "totalSold": 1608800,
-            "medianPrice": 79.0,
+            "itemCount": 26,
+            "totalSold": 2016800,
+            "medianPrice": 74.0,
             "priceMin": 2.9,
             "priceMax": 399.0,
             "topItem": {
               "category": "盲盒",
-              "name": "CRYBABYVacation ModeOn塘胶盲盒",
-              "ip": "CRYBABY",
-              "soldLabel": "40万+",
-              "sold": 400000,
-              "priceLabel": "129",
-              "price": 129.0,
-              "shop": "泡泡玛特旗舰店",
+              "name": "星星人怦然星动盲盒",
+              "ip": "星星人",
+              "soldLabel": "60万+",
+              "sold": 600000,
+              "priceLabel": "69–89",
+              "price": 82.33,
+              "shop": "泡泡玛特官方旗舰店 等 2 家",
               "date": "2026.9.12",
               "section": "blind_box",
-              "sectionLabel": "盲盒"
+              "sectionLabel": "盲盒",
+              "priceMin": 69.0,
+              "priceMax": 89.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特官方旗舰店",
+                  "sold": 400000,
+                  "priceMin": 89.0,
+                  "priceMax": 89.0,
+                  "soldLabel": "40万+",
+                  "priceLabel": "89"
+                },
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 200000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "20万+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 2,
+              "sourceCount": 3
             },
             "items": [
+              {
+                "category": "盲盒",
+                "name": "星星人怦然星动盲盒",
+                "ip": "星星人",
+                "soldLabel": "60万+",
+                "sold": 600000,
+                "priceLabel": "69–89",
+                "price": 82.33,
+                "shop": "泡泡玛特官方旗舰店 等 2 家",
+                "date": "2026.9.12",
+                "section": "blind_box",
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 89.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 400000,
+                    "priceMin": 89.0,
+                    "priceMax": 89.0,
+                    "soldLabel": "40万+",
+                    "priceLabel": "89"
+                  },
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 200000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "20万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 3
+              },
               {
                 "category": "盲盒",
                 "name": "CRYBABYVacation ModeOn塘胶盲盒",
@@ -8270,59 +15543,83 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "星星人怦然星动盲盒",
-                "ip": "星星人",
-                "soldLabel": "30万+",
-                "sold": 300000,
-                "priceLabel": "89",
-                "price": 89.0,
-                "shop": "泡泡玛特官方旗舰店",
-                "date": "2026.9.12",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "星星人好梦气象局盲盒",
-                "ip": "星星人",
-                "soldLabel": "20万+",
-                "sold": 200000,
-                "priceLabel": "79",
-                "price": 79.0,
-                "shop": "泡泡玛特旗舰店",
-                "date": "2026.9.12",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 400000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "40万+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
                 "name": "YOYO萌趣歪头盲盒",
                 "ip": "YOYO",
-                "soldLabel": "20万+",
-                "sold": 200000,
+                "soldLabel": "40万+",
+                "sold": 400000,
                 "priceLabel": "49",
                 "price": 49.0,
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 400000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "40万+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 2
               },
               {
                 "category": "盲盒",
-                "name": "星星人怦然星动盲盒",
+                "name": "星星人好梦气象局盲盒",
                 "ip": "星星人",
-                "soldLabel": "10万+",
-                "sold": 100000,
-                "priceLabel": "89",
-                "price": 89.0,
-                "shop": "泡泡玛特官方旗舰店",
+                "soldLabel": "22万+",
+                "sold": 220000,
+                "priceLabel": "79",
+                "price": 79.0,
+                "shop": "泡泡玛特旗舰店 等 2 家",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 200000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "20万+",
+                    "priceLabel": "79"
+                  },
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 20000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "2万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "盲盒",
@@ -8335,7 +15632,56 @@ window.TOY_RADAR_DATA = {
                 "shop": "库洛游戏旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 29.9,
+                "priceMax": 29.9,
+                "shops": [
+                  {
+                    "shop": "库洛游戏旗舰店",
+                    "sold": 80000,
+                    "priceMin": 29.9,
+                    "priceMax": 29.9,
+                    "soldLabel": "8万+",
+                    "priceLabel": "29.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
+              },
+              {
+                "category": "盲盒",
+                "name": "凡人修仙传盲盒",
+                "ip": "凡人修仙传",
+                "soldLabel": "6万+",
+                "sold": 60000,
+                "priceLabel": "79",
+                "price": 79.0,
+                "shop": "共鸣旗舰店 等 2 家",
+                "date": "2026.9.12",
+                "section": "blind_box",
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "共鸣旗舰店",
+                    "sold": 30000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "79"
+                  },
+                  {
+                    "shop": "共鸣官方旗舰店",
+                    "sold": 30000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "盲盒",
@@ -8348,7 +15694,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "范趣町潮玩旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "范趣町潮玩旗舰店",
+                    "sold": 40000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "4万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8361,7 +15721,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "sowii潮玩旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 99.0,
+                "priceMax": 99.0,
+                "shops": [
+                  {
+                    "shop": "sowii潮玩旗舰店",
+                    "sold": 40000,
+                    "priceMin": 99.0,
+                    "priceMax": 99.0,
+                    "soldLabel": "4万+",
+                    "priceLabel": "99"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8374,33 +15748,56 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 30000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
-                "name": "凡人修仙传盲盒",
-                "ip": "凡人修仙传",
-                "soldLabel": "3万+",
-                "sold": 30000,
-                "priceLabel": "79",
-                "price": 79.0,
-                "shop": "共鸣旗舰店",
+                "name": "我是大王系列盲盒",
+                "ip": "我是大王",
+                "soldLabel": "2万+",
+                "sold": 20000,
+                "priceLabel": "69",
+                "price": 69.0,
+                "shop": "范趣町旗舰店 等 2 家",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "凡人修仙传盲盒",
-                "ip": "凡人修仙传",
-                "soldLabel": "3万+",
-                "sold": 30000,
-                "priceLabel": "79",
-                "price": 79.0,
-                "shop": "共鸣官方旗舰店",
-                "date": "2026.9.12",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "范趣町旗舰店",
+                    "sold": 10000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "69"
+                  },
+                  {
+                    "shop": "范趣町潮玩旗舰店",
+                    "sold": 10000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "盲盒",
@@ -8413,33 +15810,48 @@ window.TOY_RADAR_DATA = {
                 "shop": "JOTOYS奇偶潮乐旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "JOTOYS奇偶潮乐旗舰店",
+                    "sold": 20000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "2万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
-                "name": "星星人好梦气象局盲盒",
-                "ip": "星星人",
-                "soldLabel": "2万+",
-                "sold": 20000,
-                "priceLabel": "79",
-                "price": 79.0,
-                "shop": "泡泡玛特官方旗舰店",
+                "name": "宝可梦御三家盲盒",
+                "ip": "宝可梦",
+                "soldLabel": "1.6万+",
+                "sold": 16000,
+                "priceLabel": "59",
+                "price": 59.0,
+                "shop": "玩乐主义旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "我是大王系列盲盒",
-                "ip": "我是大王",
-                "soldLabel": "1万+",
-                "sold": 10000,
-                "priceLabel": "69",
-                "price": 69.0,
-                "shop": "范趣町旗舰店",
-                "date": "2026.9.12",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 59.0,
+                "priceMax": 59.0,
+                "shops": [
+                  {
+                    "shop": "玩乐主义旗舰店",
+                    "sold": 16000,
+                    "priceMin": 59.0,
+                    "priceMax": 59.0,
+                    "soldLabel": "1.6万+",
+                    "priceLabel": "59"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 2
               },
               {
                 "category": "盲盒",
@@ -8452,7 +15864,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "柠檬童话旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 13.5,
+                "priceMax": 13.5,
+                "shops": [
+                  {
+                    "shop": "柠檬童话旗舰店",
+                    "sold": 10000,
+                    "priceMin": 13.5,
+                    "priceMax": 13.5,
+                    "soldLabel": "1万+",
+                    "priceLabel": "13.5"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8465,7 +15891,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "miniso名创优品旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 58.0,
+                "priceMax": 58.0,
+                "shops": [
+                  {
+                    "shop": "miniso名创优品旗舰店",
+                    "sold": 10000,
+                    "priceMin": 58.0,
+                    "priceMax": 58.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "58"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8478,7 +15918,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 10000,
+                    "priceMin": 49.0,
+                    "priceMax": 49.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "49"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8491,7 +15945,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "MINISOTOYS潮玩旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 58.0,
+                "priceMax": 58.0,
+                "shops": [
+                  {
+                    "shop": "MINISOTOYS潮玩旗舰店",
+                    "sold": 10000,
+                    "priceMin": 58.0,
+                    "priceMax": 58.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "58"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8504,7 +15972,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特官方旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特官方旗舰店",
+                    "sold": 10000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8517,20 +15999,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "AYORTOYS官方旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "我是大王系列盲盒",
-                "ip": "我是大王",
-                "soldLabel": "1万+",
-                "sold": 10000,
-                "priceLabel": "69",
-                "price": 69.0,
-                "shop": "范趣町潮玩旗舰店",
-                "date": "2026.9.12",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "shops": [
+                  {
+                    "shop": "AYORTOYS官方旗舰店",
+                    "sold": 10000,
+                    "priceMin": 89.0,
+                    "priceMax": 89.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "89"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8543,7 +16026,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "DODOSUGAR潮玩旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "shops": [
+                  {
+                    "shop": "DODOSUGAR潮玩旗舰店",
+                    "sold": 9000,
+                    "priceMin": 79.0,
+                    "priceMax": 79.0,
+                    "soldLabel": "9000+",
+                    "priceLabel": "79"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8556,20 +16053,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
-              },
-              {
-                "category": "盲盒",
-                "name": "宝可梦御三家盲盒",
-                "ip": "宝可梦",
-                "soldLabel": "8000+",
-                "sold": 8000,
-                "priceLabel": "59",
-                "price": 59.0,
-                "shop": "玩乐主义旗舰店",
-                "date": "2026.9.12",
-                "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 8000,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "8000+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8582,7 +16080,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "金禧喜旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 2.9,
+                "priceMax": 2.9,
+                "shops": [
+                  {
+                    "shop": "金禧喜旗舰店",
+                    "sold": 4000,
+                    "priceMin": 2.9,
+                    "priceMax": 2.9,
+                    "soldLabel": "4000+",
+                    "priceLabel": "2.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8595,7 +16107,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "马克图布旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 79.9,
+                "priceMax": 79.9,
+                "shops": [
+                  {
+                    "shop": "马克图布旗舰店",
+                    "sold": 3000,
+                    "priceMin": 79.9,
+                    "priceMax": 79.9,
+                    "soldLabel": "3000+",
+                    "priceLabel": "79.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8608,7 +16134,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "AYORTOYS旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "shops": [
+                  {
+                    "shop": "AYORTOYS旗舰店",
+                    "sold": 2000,
+                    "priceMin": 89.0,
+                    "priceMax": 89.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "89"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8621,7 +16161,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "TOPTOY旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "TOPTOY旗舰店",
+                    "sold": 2000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8634,7 +16188,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "北京乐卡球星卡",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "北京乐卡球星卡",
+                    "sold": 2000,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "盲盒",
@@ -8647,7 +16215,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "动瞬息旗舰店",
                 "date": "2026.9.12",
                 "section": "blind_box",
-                "sectionLabel": "盲盒"
+                "sectionLabel": "盲盒",
+                "priceMin": 159.0,
+                "priceMax": 159.0,
+                "shops": [
+                  {
+                    "shop": "动瞬息旗舰店",
+                    "sold": 800,
+                    "priceMin": 159.0,
+                    "priceMax": 159.0,
+                    "soldLabel": "800+",
+                    "priceLabel": "159"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -8660,38 +16242,39 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：适合收藏和摆件型消费。",
               "operator": "运营建议：关注联名和展会首发，适合做预售和限量策略。"
             },
-            "itemCount": 10,
-            "totalSold": 721407,
-            "medianPrice": 107.0,
-            "priceMin": 49.0,
+            "itemCount": 7,
+            "totalSold": 313407,
+            "medianPrice": 159.0,
+            "priceMin": 69.0,
             "priceMax": 850.0,
             "topItem": {
               "category": "可动手办",
-              "name": "YOYO萌趣歪头盲盒",
-              "ip": "YOYO",
+              "name": "星星人美味时刻盲盒",
+              "ip": "星星人",
               "soldLabel": "20万+",
               "sold": 200000,
-              "priceLabel": "49",
-              "price": 49.0,
-              "shop": "miniso名创优品旗舰店",
+              "priceLabel": "69",
+              "price": 69.0,
+              "shop": "泡泡玛特旗舰店",
               "date": "2026.9.12",
               "section": "action_figure",
-              "sectionLabel": "可动手办"
+              "sectionLabel": "可动手办",
+              "priceMin": 69.0,
+              "priceMax": 69.0,
+              "shops": [
+                {
+                  "shop": "泡泡玛特旗舰店",
+                  "sold": 200000,
+                  "priceMin": 69.0,
+                  "priceMax": 69.0,
+                  "soldLabel": "20万+",
+                  "priceLabel": "69"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
-              {
-                "category": "可动手办",
-                "name": "YOYO萌趣歪头盲盒",
-                "ip": "YOYO",
-                "soldLabel": "20万+",
-                "sold": 200000,
-                "priceLabel": "49",
-                "price": 49.0,
-                "shop": "miniso名创优品旗舰店",
-                "date": "2026.9.12",
-                "section": "action_figure",
-                "sectionLabel": "可动手办"
-              },
               {
                 "category": "可动手办",
                 "name": "星星人美味时刻盲盒",
@@ -8703,20 +16286,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.9.12",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
-              },
-              {
-                "category": "可动手办",
-                "name": "星星人怦然星动盲盒",
-                "ip": "星星人",
-                "soldLabel": "20万+",
-                "sold": 200000,
-                "priceLabel": "69",
-                "price": 69.0,
-                "shop": "泡泡玛特旗舰店",
-                "date": "2026.9.12",
-                "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 200000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "20万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -8729,7 +16313,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "泡泡玛特旗舰店",
                 "date": "2026.9.12",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "shops": [
+                  {
+                    "shop": "泡泡玛特旗舰店",
+                    "sold": 100000,
+                    "priceMin": 69.0,
+                    "priceMax": 69.0,
+                    "soldLabel": "10万+",
+                    "priceLabel": "69"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -8742,33 +16340,48 @@ window.TOY_RADAR_DATA = {
                 "shop": "Queenstudios旗舰店",
                 "date": "2026.9.12",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
-              },
-              {
-                "category": "可动手办",
-                "name": "宝可梦御三家盲盒",
-                "ip": "宝可梦",
-                "soldLabel": "8000+",
-                "sold": 8000,
-                "priceLabel": "59",
-                "price": 59.0,
-                "shop": "玩乐主义旗舰店",
-                "date": "2026.9.12",
-                "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 200.0,
+                "priceMax": 200.0,
+                "shops": [
+                  {
+                    "shop": "Queenstudios旗舰店",
+                    "sold": 10000,
+                    "priceMin": 200.0,
+                    "priceMax": 200.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "200"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
                 "name": "【预付款】INART-指环王：护戒使者-萨鲁曼",
                 "ip": "INART",
-                "soldLabel": "200+1",
+                "soldLabel": "2001+",
                 "sold": 2001,
                 "priceLabel": "850",
                 "price": 850.0,
                 "shop": "Queenstudios旗舰店",
                 "date": "2026.9.12",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 850.0,
+                "priceMax": 850.0,
+                "shops": [
+                  {
+                    "shop": "Queenstudios旗舰店",
+                    "sold": 2001,
+                    "priceMin": 850.0,
+                    "priceMax": 850.0,
+                    "soldLabel": "2001+",
+                    "priceLabel": "850"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -8781,7 +16394,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "摩动瞬息旗舰店",
                 "date": "2026.9.12",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 159.0,
+                "priceMax": 159.0,
+                "shops": [
+                  {
+                    "shop": "摩动瞬息旗舰店",
+                    "sold": 800,
+                    "priceMin": 159.0,
+                    "priceMax": 159.0,
+                    "soldLabel": "800+",
+                    "priceLabel": "159"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
@@ -8794,20 +16421,48 @@ window.TOY_RADAR_DATA = {
                 "shop": "Queenstudios旗舰店",
                 "date": "2026.9.12",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 145.0,
+                "priceMax": 145.0,
+                "shops": [
+                  {
+                    "shop": "Queenstudios旗舰店",
+                    "sold": 600,
+                    "priceMin": 145.0,
+                    "priceMax": 145.0,
+                    "soldLabel": "600+",
+                    "priceLabel": "145"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "可动手办",
                 "name": "【尾款】阵营系列丽娜1/7手办",
                 "ip": "",
-                "soldLabel": "+006",
+                "soldLabel": "6+",
                 "sold": 6,
                 "priceLabel": "819",
                 "price": 819.0,
                 "shop": "绝区零三Z官方旗舰店",
                 "date": "2026.9.12",
                 "section": "action_figure",
-                "sectionLabel": "可动手办"
+                "sectionLabel": "可动手办",
+                "priceMin": 819.0,
+                "priceMax": 819.0,
+                "shops": [
+                  {
+                    "shop": "绝区零三Z官方旗舰店",
+                    "sold": 6,
+                    "priceMin": 819.0,
+                    "priceMax": 819.0,
+                    "soldLabel": "6+",
+                    "priceLabel": "819"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -8836,7 +16491,21 @@ window.TOY_RADAR_DATA = {
               "shop": "久木潮玩卡铺",
               "date": "2026.9.12",
               "section": "trading_card",
-              "sectionLabel": "收藏卡牌"
+              "sectionLabel": "收藏卡牌",
+              "priceMin": 4306.0,
+              "priceMax": 4306.0,
+              "shops": [
+                {
+                  "shop": "久木潮玩卡铺",
+                  "sold": 20000,
+                  "priceMin": 4306.0,
+                  "priceMax": 4306.0,
+                  "soldLabel": "2万+",
+                  "priceLabel": "4306"
+                }
+              ],
+              "shopCount": 1,
+              "sourceCount": 1
             },
             "items": [
               {
@@ -8850,7 +16519,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "久木潮玩卡铺",
                 "date": "2026.9.12",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 4306.0,
+                "priceMax": 4306.0,
+                "shops": [
+                  {
+                    "shop": "久木潮玩卡铺",
+                    "sold": 20000,
+                    "priceMin": 4306.0,
+                    "priceMax": 4306.0,
+                    "soldLabel": "2万+",
+                    "priceLabel": "4306"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -8863,7 +16546,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "久木潮玩卡铺",
                 "date": "2026.9.12",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 39.9,
+                "priceMax": 39.9,
+                "shops": [
+                  {
+                    "shop": "久木潮玩卡铺",
+                    "sold": 20000,
+                    "priceMin": 39.9,
+                    "priceMax": 39.9,
+                    "soldLabel": "2万+",
+                    "priceLabel": "39.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -8876,7 +16573,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "PTCG长安",
                 "date": "2026.9.12",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 29.9,
+                "priceMax": 29.9,
+                "shops": [
+                  {
+                    "shop": "PTCG长安",
+                    "sold": 20000,
+                    "priceMin": 29.9,
+                    "priceMax": 29.9,
+                    "soldLabel": "2万+",
+                    "priceLabel": "29.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -8889,7 +16600,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "小小婵潮玩",
                 "date": "2026.9.12",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 1434.0,
+                "priceMax": 1434.0,
+                "shops": [
+                  {
+                    "shop": "小小婵潮玩",
+                    "sold": 10000,
+                    "priceMin": 1434.0,
+                    "priceMax": 1434.0,
+                    "soldLabel": "1万+",
+                    "priceLabel": "1434"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -8902,7 +16627,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "拆卡叮叮",
                 "date": "2026.9.12",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 19.9,
+                "priceMax": 19.9,
+                "shops": [
+                  {
+                    "shop": "拆卡叮叮",
+                    "sold": 7000,
+                    "priceMin": 19.9,
+                    "priceMax": 19.9,
+                    "soldLabel": "7000+",
+                    "priceLabel": "19.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -8915,7 +16654,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "酱酱好物店",
                 "date": "2026.9.12",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 39.9,
+                "priceMax": 39.9,
+                "shops": [
+                  {
+                    "shop": "酱酱好物店",
+                    "sold": 2000,
+                    "priceMin": 39.9,
+                    "priceMax": 39.9,
+                    "soldLabel": "2000+",
+                    "priceLabel": "39.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -8928,7 +16681,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "镜像潮玩社",
                 "date": "2026.9.12",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 19.9,
+                "priceMax": 19.9,
+                "shops": [
+                  {
+                    "shop": "镜像潮玩社",
+                    "sold": 1000,
+                    "priceMin": 19.9,
+                    "priceMax": 19.9,
+                    "soldLabel": "1000+",
+                    "priceLabel": "19.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -8941,7 +16708,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "悦卡潮玩社",
                 "date": "2026.9.12",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 198.0,
+                "priceMax": 198.0,
+                "shops": [
+                  {
+                    "shop": "悦卡潮玩社",
+                    "sold": 1000,
+                    "priceMin": 198.0,
+                    "priceMax": 198.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "198"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -8954,7 +16735,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "PTCG锤妹拆卡",
                 "date": "2026.9.12",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 79.9,
+                "priceMax": 79.9,
+                "shops": [
+                  {
+                    "shop": "PTCG锤妹拆卡",
+                    "sold": 300,
+                    "priceMin": 79.9,
+                    "priceMax": 79.9,
+                    "soldLabel": "300+",
+                    "priceLabel": "79.9"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "收藏卡牌",
@@ -8967,7 +16762,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "魔都兄弟",
                 "date": "2026.9.12",
                 "section": "trading_card",
-                "sectionLabel": "收藏卡牌"
+                "sectionLabel": "收藏卡牌",
+                "priceMin": 40000.0,
+                "priceMax": 40000.0,
+                "shops": [
+                  {
+                    "shop": "魔都兄弟",
+                    "sold": 100,
+                    "priceMin": 40000.0,
+                    "priceMax": 40000.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "40000"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           },
@@ -8980,25 +16789,82 @@ window.TOY_RADAR_DATA = {
               "consumer": "适合买入：更适合亲子/陪伴场景，先看功能再看颜值。",
               "operator": "运营建议：功能点要讲清楚，亲子、教育和陪伴场景最关键。"
             },
-            "itemCount": 37,
+            "itemCount": 32,
             "totalSold": 104266,
             "medianPrice": 299.0,
             "priceMin": 95.0,
             "priceMax": 6666.0,
             "topItem": {
               "category": "AI玩具",
-              "name": "芙思AI陪伴机器人毛绒玩具",
+              "name": "AI时间宝机器人",
               "ip": "",
-              "soldLabel": "3万+",
-              "sold": 30000,
-              "priceLabel": "469",
-              "price": 469.0,
-              "shop": "芙思官方旗舰店",
+              "soldLabel": "4.2万+",
+              "sold": 42000,
+              "priceLabel": "95–199",
+              "price": 194.05,
+              "shop": "名校堂官方旗舰店 等 2 家",
               "date": "2026.9.12",
               "section": "ai_toy",
-              "sectionLabel": "AI 玩具"
+              "sectionLabel": "AI 玩具",
+              "priceMin": 95.0,
+              "priceMax": 199.0,
+              "shops": [
+                {
+                  "shop": "名校堂官方旗舰店",
+                  "sold": 40000,
+                  "priceMin": 199.0,
+                  "priceMax": 199.0,
+                  "soldLabel": "4万+",
+                  "priceLabel": "199"
+                },
+                {
+                  "shop": "博士笔汇广泰智能教育专卖店",
+                  "sold": 2000,
+                  "priceMin": 95.0,
+                  "priceMax": 95.0,
+                  "soldLabel": "2000+",
+                  "priceLabel": "95"
+                }
+              ],
+              "shopCount": 2,
+              "sourceCount": 3
             },
             "items": [
+              {
+                "category": "AI玩具",
+                "name": "AI时间宝机器人",
+                "ip": "",
+                "soldLabel": "4.2万+",
+                "sold": 42000,
+                "priceLabel": "95–199",
+                "price": 194.05,
+                "shop": "名校堂官方旗舰店 等 2 家",
+                "date": "2026.9.12",
+                "section": "ai_toy",
+                "sectionLabel": "AI 玩具",
+                "priceMin": 95.0,
+                "priceMax": 199.0,
+                "shops": [
+                  {
+                    "shop": "名校堂官方旗舰店",
+                    "sold": 40000,
+                    "priceMin": 199.0,
+                    "priceMax": 199.0,
+                    "soldLabel": "4万+",
+                    "priceLabel": "199"
+                  },
+                  {
+                    "shop": "博士笔汇广泰智能教育专卖店",
+                    "sold": 2000,
+                    "priceMin": 95.0,
+                    "priceMax": 95.0,
+                    "soldLabel": "2000+",
+                    "priceLabel": "95"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 3
+              },
               {
                 "category": "AI玩具",
                 "name": "芙思AI陪伴机器人毛绒玩具",
@@ -9010,33 +16876,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "芙思官方旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI玩具",
-                "name": "AI时间宝机器人",
-                "ip": "",
-                "soldLabel": "2万+",
-                "sold": 20000,
-                "priceLabel": "199",
-                "price": 199.0,
-                "shop": "名校堂官方旗舰店",
-                "date": "2026.9.12",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI玩具",
-                "name": "AI时间宝机器人",
-                "ip": "",
-                "soldLabel": "2万+",
-                "sold": 20000,
-                "priceLabel": "199",
-                "price": 199.0,
-                "shop": "名校堂官方旗舰店",
-                "date": "2026.9.12",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 469.0,
+                "priceMax": 469.0,
+                "shops": [
+                  {
+                    "shop": "芙思官方旗舰店",
+                    "sold": 30000,
+                    "priceMin": 469.0,
+                    "priceMax": 469.0,
+                    "soldLabel": "3万+",
+                    "priceLabel": "469"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9049,7 +16903,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "SUREPOWER速豹创意礼品旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 2981.0,
+                "priceMax": 2981.0,
+                "shops": [
+                  {
+                    "shop": "SUREPOWER速豹创意礼品旗舰店",
+                    "sold": 8000,
+                    "priceMin": 2981.0,
+                    "priceMax": 2981.0,
+                    "soldLabel": "8000+",
+                    "priceLabel": "2981"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9062,7 +16930,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "律眼小聪智能机器人旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 298.0,
+                "priceMax": 298.0,
+                "shops": [
+                  {
+                    "shop": "律眼小聪智能机器人旗舰店",
+                    "sold": 8000,
+                    "priceMin": 298.0,
+                    "priceMax": 298.0,
+                    "soldLabel": "8000+",
+                    "priceLabel": "298"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9075,7 +16957,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "离火星超级球球智能机器人旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 299.0,
+                "priceMax": 299.0,
+                "shops": [
+                  {
+                    "shop": "离火星超级球球智能机器人旗舰店",
+                    "sold": 4000,
+                    "priceMin": 299.0,
+                    "priceMax": 299.0,
+                    "soldLabel": "4000+",
+                    "priceLabel": "299"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9088,7 +16984,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "芙思官方旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 558.0,
+                "priceMax": 558.0,
+                "shops": [
+                  {
+                    "shop": "芙思官方旗舰店",
+                    "sold": 3000,
+                    "priceMin": 558.0,
+                    "priceMax": 558.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "558"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9101,20 +17011,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "beiens贝恩施母婴玩具旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI玩具",
-                "name": "AI时间宝机器人",
-                "ip": "",
-                "soldLabel": "2000+",
-                "sold": 2000,
-                "priceLabel": "95",
-                "price": 95.0,
-                "shop": "博士笔汇广泰智能教育专卖店",
-                "date": "2026.9.12",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 219.0,
+                "priceMax": 219.0,
+                "shops": [
+                  {
+                    "shop": "beiens贝恩施母婴玩具旗舰店",
+                    "sold": 3000,
+                    "priceMin": 219.0,
+                    "priceMax": 219.0,
+                    "soldLabel": "3000+",
+                    "priceLabel": "219"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9127,20 +17038,48 @@ window.TOY_RADAR_DATA = {
                 "shop": "名校堂京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 269.0,
+                "priceMax": 269.0,
+                "shops": [
+                  {
+                    "shop": "名校堂京东自营旗舰店",
+                    "sold": 1000,
+                    "priceMin": 269.0,
+                    "priceMax": 269.0,
+                    "soldLabel": "1000+",
+                    "priceLabel": "269"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
                 "name": "喜马拉雅儿童波波AI电话故事机",
                 "ip": "",
-                "soldLabel": "500+",
-                "sold": 500,
-                "priceLabel": "489",
-                "price": 489.0,
+                "soldLabel": "700+",
+                "sold": 700,
+                "priceLabel": "489–499",
+                "price": 491.86,
                 "shop": "喜马拉雅儿童京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 489.0,
+                "priceMax": 499.0,
+                "shops": [
+                  {
+                    "shop": "喜马拉雅儿童京东自营旗舰店",
+                    "sold": 700,
+                    "priceMin": 489.0,
+                    "priceMax": 499.0,
+                    "soldLabel": "700+",
+                    "priceLabel": "489–499"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 2
               },
               {
                 "category": "AI玩具",
@@ -9153,7 +17092,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "京东京造自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 159.0,
+                "priceMax": 159.0,
+                "shops": [
+                  {
+                    "shop": "京东京造自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 159.0,
+                    "priceMax": 159.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "159"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9166,7 +17119,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "多星球京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 249.0,
+                "priceMax": 249.0,
+                "shops": [
+                  {
+                    "shop": "多星球京东自营旗舰店",
+                    "sold": 500,
+                    "priceMin": 249.0,
+                    "priceMax": 249.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "249"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9179,7 +17146,56 @@ window.TOY_RADAR_DATA = {
                 "shop": "索迪（SODEEP）玩具京东自营专区",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "shops": [
+                  {
+                    "shop": "索迪（SODEEP）玩具京东自营专区",
+                    "sold": 500,
+                    "priceMin": 129.0,
+                    "priceMax": 129.0,
+                    "soldLabel": "500+",
+                    "priceLabel": "129"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
+              },
+              {
+                "category": "AI玩具",
+                "name": "enabotEBoSE全屋移动监控摄像头",
+                "ip": "",
+                "soldLabel": "400+",
+                "sold": 400,
+                "priceLabel": "666–669",
+                "price": 667.5,
+                "shop": "enabot京东自营旗舰店 等 2 家",
+                "date": "2026.9.12",
+                "section": "ai_toy",
+                "sectionLabel": "AI 玩具",
+                "priceMin": 666.0,
+                "priceMax": 669.0,
+                "shops": [
+                  {
+                    "shop": "enabot京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 669.0,
+                    "priceMax": 669.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "669"
+                  },
+                  {
+                    "shop": "enabot官方旗舰店",
+                    "sold": 200,
+                    "priceMin": 666.0,
+                    "priceMax": 666.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "666"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "AI玩具",
@@ -9192,7 +17208,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "上纬启元智能机器人旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 1000.0,
+                "priceMax": 1000.0,
+                "shops": [
+                  {
+                    "shop": "上纬启元智能机器人旗舰店",
+                    "sold": 200,
+                    "priceMin": 1000.0,
+                    "priceMax": 1000.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "1000"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9205,7 +17235,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "CYMO玩具旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 199.0,
+                "priceMax": 199.0,
+                "shops": [
+                  {
+                    "shop": "CYMO玩具旗舰店",
+                    "sold": 200,
+                    "priceMin": 199.0,
+                    "priceMax": 199.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9218,20 +17262,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "星角萌萌官方旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI玩具",
-                "name": "enabotEBoSE全屋移动监控摄像头",
-                "ip": "",
-                "soldLabel": "200+",
-                "sold": 200,
-                "priceLabel": "669",
-                "price": 669.0,
-                "shop": "enabot京东自营旗舰店",
-                "date": "2026.9.12",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "星角萌萌官方旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9244,7 +17289,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "鲸鱼机器人whalesbot京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 219.0,
+                "priceMax": 219.0,
+                "shops": [
+                  {
+                    "shop": "鲸鱼机器人whalesbot京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 219.0,
+                    "priceMax": 219.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "219"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9257,7 +17316,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "米德宝旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 199.0,
+                "priceMax": 199.0,
+                "shops": [
+                  {
+                    "shop": "米德宝旗舰店",
+                    "sold": 200,
+                    "priceMin": 199.0,
+                    "priceMax": 199.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9270,20 +17343,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "enabot京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI玩具",
-                "name": "enabotEBoSE全屋移动监控摄像头",
-                "ip": "",
-                "soldLabel": "200+",
-                "sold": 200,
-                "priceLabel": "666",
-                "price": 666.0,
-                "shop": "enabot官方旗舰店",
-                "date": "2026.9.12",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 999.0,
+                "priceMax": 999.0,
+                "shops": [
+                  {
+                    "shop": "enabot京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 999.0,
+                    "priceMax": 999.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "999"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9296,7 +17370,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "芙志（Fuzozo）京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 349.0,
+                "priceMax": 349.0,
+                "shops": [
+                  {
+                    "shop": "芙志（Fuzozo）京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 349.0,
+                    "priceMax": 349.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "349"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9309,7 +17397,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "华为京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "华为京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9322,7 +17424,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "超棋大师玩具京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 399.0,
+                "priceMax": 399.0,
+                "shops": [
+                  {
+                    "shop": "超棋大师玩具京东自营旗舰店",
+                    "sold": 200,
+                    "priceMin": 399.0,
+                    "priceMax": 399.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "399"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9335,20 +17451,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "星云宝贝ai陪伴机器人",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI玩具",
-                "name": "喜马拉雅儿童波波AI电话故事机",
-                "ip": "",
-                "soldLabel": "200+",
-                "sold": 200,
-                "priceLabel": "499",
-                "price": 499.0,
-                "shop": "喜马拉雅儿童京东自营旗舰店",
-                "date": "2026.9.12",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 199.0,
+                "priceMax": 199.0,
+                "shops": [
+                  {
+                    "shop": "星云宝贝ai陪伴机器人",
+                    "sold": 200,
+                    "priceMin": 199.0,
+                    "priceMax": 199.0,
+                    "soldLabel": "200+",
+                    "priceLabel": "199"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9361,7 +17478,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "程天智能机器人旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 6666.0,
+                "priceMax": 6666.0,
+                "shops": [
+                  {
+                    "shop": "程天智能机器人旗舰店",
+                    "sold": 100,
+                    "priceMin": 6666.0,
+                    "priceMax": 6666.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "6666"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9374,7 +17505,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "beiens贝恩施母婴玩具旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 239.0,
+                "priceMax": 239.0,
+                "shops": [
+                  {
+                    "shop": "beiens贝恩施母婴玩具旗舰店",
+                    "sold": 100,
+                    "priceMin": 239.0,
+                    "priceMax": 239.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "239"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9387,7 +17532,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "LOONA京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 3259.0,
+                "priceMax": 3259.0,
+                "shops": [
+                  {
+                    "shop": "LOONA京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 3259.0,
+                    "priceMax": 3259.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "3259"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9400,7 +17559,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "鲸鱼机器人whalesbot京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 158.0,
+                "priceMax": 158.0,
+                "shops": [
+                  {
+                    "shop": "鲸鱼机器人whalesbot京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 158.0,
+                    "priceMax": 158.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "158"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9413,7 +17586,21 @@ window.TOY_RADAR_DATA = {
                 "shop": "元萝卜SenseRobot京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 3299.0,
+                "priceMax": 3299.0,
+                "shops": [
+                  {
+                    "shop": "元萝卜SenseRobot京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 3299.0,
+                    "priceMax": 3299.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "3299"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
@@ -9426,64 +17613,150 @@ window.TOY_RADAR_DATA = {
                 "shop": "离火星超级球球京东自营旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 299.0,
+                "priceMax": 299.0,
+                "shops": [
+                  {
+                    "shop": "离火星超级球球京东自营旗舰店",
+                    "sold": 100,
+                    "priceMin": 299.0,
+                    "priceMax": 299.0,
+                    "soldLabel": "100+",
+                    "priceLabel": "299"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
                 "name": "AI智能机器人",
                 "ip": "",
-                "soldLabel": "32",
-                "sold": 32,
-                "priceLabel": "229",
-                "price": 229.0,
-                "shop": "聚乐宝贝quLeBaby官方旗舰店",
+                "soldLabel": "50+",
+                "sold": 50,
+                "priceLabel": "218–229",
+                "price": 225.04,
+                "shop": "聚乐宝贝quLeBaby官方旗舰店 等 2 家",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
-              },
-              {
-                "category": "AI玩具",
-                "name": "AI智能机器人",
-                "ip": "",
-                "soldLabel": "18",
-                "sold": 18,
-                "priceLabel": "218",
-                "price": 218.0,
-                "shop": "万火官方旗舰店",
-                "date": "2026.9.12",
-                "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 218.0,
+                "priceMax": 229.0,
+                "shops": [
+                  {
+                    "shop": "聚乐宝贝quLeBaby官方旗舰店",
+                    "sold": 32,
+                    "priceMin": 229.0,
+                    "priceMax": 229.0,
+                    "soldLabel": "32+",
+                    "priceLabel": "229"
+                  },
+                  {
+                    "shop": "万火官方旗舰店",
+                    "sold": 18,
+                    "priceMin": 218.0,
+                    "priceMax": 218.0,
+                    "soldLabel": "18+",
+                    "priceLabel": "218"
+                  }
+                ],
+                "shopCount": 2,
+                "sourceCount": 2
               },
               {
                 "category": "AI玩具",
                 "name": "AI机器狗聊天宠物",
                 "ip": "",
-                "soldLabel": "10",
+                "soldLabel": "10+",
                 "sold": 10,
                 "priceLabel": "299",
                 "price": 299.0,
                 "shop": "聚乐宝贝母婴玩具旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 299.0,
+                "priceMax": 299.0,
+                "shops": [
+                  {
+                    "shop": "聚乐宝贝母婴玩具旗舰店",
+                    "sold": 10,
+                    "priceMin": 299.0,
+                    "priceMax": 299.0,
+                    "soldLabel": "10+",
+                    "priceLabel": "299"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               },
               {
                 "category": "AI玩具",
                 "name": "颂博士智能写字机器人",
                 "ip": "",
-                "soldLabel": "+0006",
+                "soldLabel": "6+",
                 "sold": 6,
                 "priceLabel": "699",
                 "price": 699.0,
                 "shop": "颂博士智能机器人旗舰店",
                 "date": "2026.9.12",
                 "section": "ai_toy",
-                "sectionLabel": "AI 玩具"
+                "sectionLabel": "AI 玩具",
+                "priceMin": 699.0,
+                "priceMax": 699.0,
+                "shops": [
+                  {
+                    "shop": "颂博士智能机器人旗舰店",
+                    "sold": 6,
+                    "priceMin": 699.0,
+                    "priceMax": 699.0,
+                    "soldLabel": "6+",
+                    "priceLabel": "699"
+                  }
+                ],
+                "shopCount": 1,
+                "sourceCount": 1
               }
             ]
           }
         ],
         "topItems": [
+          {
+            "category": "盲盒",
+            "name": "星星人怦然星动盲盒",
+            "ip": "星星人",
+            "soldLabel": "60万+",
+            "sold": 600000,
+            "priceLabel": "69–89",
+            "price": 82.33,
+            "shop": "泡泡玛特官方旗舰店 等 2 家",
+            "date": "2026.9.12",
+            "section": "blind_box",
+            "sectionLabel": "盲盒",
+            "priceMin": 69.0,
+            "priceMax": 89.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 400000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "40万+",
+                "priceLabel": "89"
+              },
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 200000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "20万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 3
+          },
           {
             "category": "盲盒",
             "name": "CRYBABYVacation ModeOn塘胶盲盒",
@@ -9495,59 +17768,83 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.9.12",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 129.0,
+            "priceMax": 129.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 400000,
+                "priceMin": 129.0,
+                "priceMax": 129.0,
+                "soldLabel": "40万+",
+                "priceLabel": "129"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
-            "name": "星星人怦然星动盲盒",
-            "ip": "星星人",
-            "soldLabel": "30万+",
-            "sold": 300000,
-            "priceLabel": "89",
-            "price": 89.0,
-            "shop": "泡泡玛特官方旗舰店",
+            "name": "YOYO萌趣歪头盲盒",
+            "ip": "YOYO",
+            "soldLabel": "40万+",
+            "sold": 400000,
+            "priceLabel": "49",
+            "price": 49.0,
+            "shop": "miniso名创优品旗舰店",
             "date": "2026.9.12",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 49.0,
+            "priceMax": 49.0,
+            "shops": [
+              {
+                "shop": "miniso名创优品旗舰店",
+                "sold": 400000,
+                "priceMin": 49.0,
+                "priceMax": 49.0,
+                "soldLabel": "40万+",
+                "priceLabel": "49"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 2
           },
           {
             "category": "盲盒",
             "name": "星星人好梦气象局盲盒",
             "ip": "星星人",
-            "soldLabel": "20万+",
-            "sold": 200000,
+            "soldLabel": "22万+",
+            "sold": 220000,
             "priceLabel": "79",
             "price": 79.0,
-            "shop": "泡泡玛特旗舰店",
+            "shop": "泡泡玛特旗舰店 等 2 家",
             "date": "2026.9.12",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
-          },
-          {
-            "category": "盲盒",
-            "name": "YOYO萌趣歪头盲盒",
-            "ip": "YOYO",
-            "soldLabel": "20万+",
-            "sold": 200000,
-            "priceLabel": "49",
-            "price": 49.0,
-            "shop": "miniso名创优品旗舰店",
-            "date": "2026.9.12",
-            "section": "blind_box",
-            "sectionLabel": "盲盒"
-          },
-          {
-            "category": "可动手办",
-            "name": "YOYO萌趣歪头盲盒",
-            "ip": "YOYO",
-            "soldLabel": "20万+",
-            "sold": 200000,
-            "priceLabel": "49",
-            "price": 49.0,
-            "shop": "miniso名创优品旗舰店",
-            "date": "2026.9.12",
-            "section": "action_figure",
-            "sectionLabel": "可动手办"
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 200000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "20万+",
+                "priceLabel": "79"
+              },
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 20000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "2万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
           },
           {
             "category": "可动手办",
@@ -9560,20 +17857,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.9.12",
             "section": "action_figure",
-            "sectionLabel": "可动手办"
-          },
-          {
-            "category": "可动手办",
-            "name": "星星人怦然星动盲盒",
-            "ip": "星星人",
-            "soldLabel": "20万+",
-            "sold": 200000,
-            "priceLabel": "69",
-            "price": 69.0,
-            "shop": "泡泡玛特旗舰店",
-            "date": "2026.9.12",
-            "section": "action_figure",
-            "sectionLabel": "可动手办"
+            "sectionLabel": "可动手办",
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 200000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "20万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "可动手办",
@@ -9586,20 +17884,21 @@ window.TOY_RADAR_DATA = {
             "shop": "泡泡玛特旗舰店",
             "date": "2026.9.12",
             "section": "action_figure",
-            "sectionLabel": "可动手办"
-          },
-          {
-            "category": "盲盒",
-            "name": "星星人怦然星动盲盒",
-            "ip": "星星人",
-            "soldLabel": "10万+",
-            "sold": 100000,
-            "priceLabel": "89",
-            "price": 89.0,
-            "shop": "泡泡玛特官方旗舰店",
-            "date": "2026.9.12",
-            "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "可动手办",
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 100000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "10万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "盲盒",
@@ -9612,7 +17911,118 @@ window.TOY_RADAR_DATA = {
             "shop": "库洛游戏旗舰店",
             "date": "2026.9.12",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 29.9,
+            "priceMax": 29.9,
+            "shops": [
+              {
+                "shop": "库洛游戏旗舰店",
+                "sold": 80000,
+                "priceMin": 29.9,
+                "priceMax": 29.9,
+                "soldLabel": "8万+",
+                "priceLabel": "29.9"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
+          },
+          {
+            "category": "盲盒",
+            "name": "凡人修仙传盲盒",
+            "ip": "凡人修仙传",
+            "soldLabel": "6万+",
+            "sold": 60000,
+            "priceLabel": "79",
+            "price": 79.0,
+            "shop": "共鸣旗舰店 等 2 家",
+            "date": "2026.9.12",
+            "section": "blind_box",
+            "sectionLabel": "盲盒",
+            "priceMin": 79.0,
+            "priceMax": 79.0,
+            "shops": [
+              {
+                "shop": "共鸣旗舰店",
+                "sold": 30000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "3万+",
+                "priceLabel": "79"
+              },
+              {
+                "shop": "共鸣官方旗舰店",
+                "sold": 30000,
+                "priceMin": 79.0,
+                "priceMax": 79.0,
+                "soldLabel": "3万+",
+                "priceLabel": "79"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 2
+          },
+          {
+            "category": "AI玩具",
+            "name": "AI时间宝机器人",
+            "ip": "",
+            "soldLabel": "4.2万+",
+            "sold": 42000,
+            "priceLabel": "95–199",
+            "price": 194.05,
+            "shop": "名校堂官方旗舰店 等 2 家",
+            "date": "2026.9.12",
+            "section": "ai_toy",
+            "sectionLabel": "AI 玩具",
+            "priceMin": 95.0,
+            "priceMax": 199.0,
+            "shops": [
+              {
+                "shop": "名校堂官方旗舰店",
+                "sold": 40000,
+                "priceMin": 199.0,
+                "priceMax": 199.0,
+                "soldLabel": "4万+",
+                "priceLabel": "199"
+              },
+              {
+                "shop": "博士笔汇广泰智能教育专卖店",
+                "sold": 2000,
+                "priceMin": 95.0,
+                "priceMax": 95.0,
+                "soldLabel": "2000+",
+                "priceLabel": "95"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 3
+          },
+          {
+            "category": "盲盒",
+            "name": "MOW尼心语系毛绒盒",
+            "ip": "",
+            "soldLabel": "4万+",
+            "sold": 40000,
+            "priceLabel": "69",
+            "price": 69.0,
+            "shop": "范趣町潮玩旗舰店",
+            "date": "2026.9.12",
+            "section": "blind_box",
+            "sectionLabel": "盲盒",
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "shops": [
+              {
+                "shop": "范趣町潮玩旗舰店",
+                "sold": 40000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "4万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ],
         "topStores": [
@@ -9671,12 +18081,12 @@ window.TOY_RADAR_DATA = {
           {
             "ip": "星星人",
             "sold": 1020000,
-            "items": 6
+            "items": 3
           },
           {
             "ip": "YOYO",
             "sold": 440000,
-            "items": 4
+            "items": 3
           },
           {
             "ip": "CRYBABY",
@@ -9691,7 +18101,7 @@ window.TOY_RADAR_DATA = {
           {
             "ip": "凡人修仙传",
             "sold": 61000,
-            "items": 3
+            "items": 2
           },
           {
             "ip": "小马宝莉",
@@ -9706,7 +18116,7 @@ window.TOY_RADAR_DATA = {
           {
             "ip": "宝可梦",
             "sold": 36300,
-            "items": 4
+            "items": 3
           }
         ],
         "priceBands": [
@@ -9738,70 +18148,164 @@ window.TOY_RADAR_DATA = {
         "consumerPicks": [
           {
             "category": "盲盒",
-            "name": "CRYBABYVacation ModeOn塘胶盲盒",
-            "ip": "CRYBABY",
-            "soldLabel": "40万+",
-            "sold": 400000,
-            "priceLabel": "129",
-            "price": 129.0,
-            "shop": "泡泡玛特旗舰店",
+            "name": "星星人怦然星动盲盒",
+            "ip": "星星人",
+            "soldLabel": "60万+",
+            "sold": 600000,
+            "priceLabel": "69–89",
+            "price": 82.33,
+            "shop": "泡泡玛特官方旗舰店 等 2 家",
             "date": "2026.9.12",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 69.0,
+            "priceMax": 89.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 400000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "40万+",
+                "priceLabel": "89"
+              },
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 200000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "20万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 3
           },
           {
             "category": "盲盒",
             "name": "星星人怦然星动盲盒",
             "ip": "星星人",
-            "soldLabel": "30万+",
-            "sold": 300000,
-            "priceLabel": "89",
-            "price": 89.0,
-            "shop": "泡泡玛特官方旗舰店",
+            "soldLabel": "60万+",
+            "sold": 600000,
+            "priceLabel": "69–89",
+            "price": 82.33,
+            "shop": "泡泡玛特官方旗舰店 等 2 家",
             "date": "2026.9.12",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 69.0,
+            "priceMax": 89.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 400000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "40万+",
+                "priceLabel": "89"
+              },
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 200000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "20万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 3
           },
           {
             "category": "盲盒",
-            "name": "【预售】鸣潮团子叠叠乐第二弹在线抽盒机",
+            "name": "MOW尼心语系毛绒盒",
             "ip": "",
-            "soldLabel": "8万+",
-            "sold": 80000,
-            "priceLabel": "29.9",
-            "price": 29.9,
-            "shop": "库洛游戏旗舰店",
+            "soldLabel": "4万+",
+            "sold": 40000,
+            "priceLabel": "69",
+            "price": 69.0,
+            "shop": "范趣町潮玩旗舰店",
             "date": "2026.9.12",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "shops": [
+              {
+                "shop": "范趣町潮玩旗舰店",
+                "sold": 40000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "4万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ],
         "practitionerPicks": [
           {
             "category": "盲盒",
-            "name": "CRYBABYVacation ModeOn塘胶盲盒",
-            "ip": "CRYBABY",
-            "soldLabel": "40万+",
-            "sold": 400000,
-            "priceLabel": "129",
-            "price": 129.0,
-            "shop": "泡泡玛特旗舰店",
+            "name": "星星人怦然星动盲盒",
+            "ip": "星星人",
+            "soldLabel": "60万+",
+            "sold": 600000,
+            "priceLabel": "69–89",
+            "price": 82.33,
+            "shop": "泡泡玛特官方旗舰店 等 2 家",
             "date": "2026.9.12",
             "section": "blind_box",
-            "sectionLabel": "盲盒"
+            "sectionLabel": "盲盒",
+            "priceMin": 69.0,
+            "priceMax": 89.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特官方旗舰店",
+                "sold": 400000,
+                "priceMin": 89.0,
+                "priceMax": 89.0,
+                "soldLabel": "40万+",
+                "priceLabel": "89"
+              },
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 200000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "20万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 2,
+            "sourceCount": 3
           },
           {
             "category": "可动手办",
-            "name": "YOYO萌趣歪头盲盒",
-            "ip": "YOYO",
+            "name": "星星人美味时刻盲盒",
+            "ip": "星星人",
             "soldLabel": "20万+",
             "sold": 200000,
-            "priceLabel": "49",
-            "price": 49.0,
-            "shop": "miniso名创优品旗舰店",
+            "priceLabel": "69",
+            "price": 69.0,
+            "shop": "泡泡玛特旗舰店",
             "date": "2026.9.12",
             "section": "action_figure",
-            "sectionLabel": "可动手办"
+            "sectionLabel": "可动手办",
+            "priceMin": 69.0,
+            "priceMax": 69.0,
+            "shops": [
+              {
+                "shop": "泡泡玛特旗舰店",
+                "sold": 200000,
+                "priceMin": 69.0,
+                "priceMax": 69.0,
+                "soldLabel": "20万+",
+                "priceLabel": "69"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           },
           {
             "category": "收藏卡牌",
@@ -9814,7 +18318,21 @@ window.TOY_RADAR_DATA = {
             "shop": "久木潮玩卡铺",
             "date": "2026.9.12",
             "section": "trading_card",
-            "sectionLabel": "收藏卡牌"
+            "sectionLabel": "收藏卡牌",
+            "priceMin": 4306.0,
+            "priceMax": 4306.0,
+            "shops": [
+              {
+                "shop": "久木潮玩卡铺",
+                "sold": 20000,
+                "priceMin": 4306.0,
+                "priceMax": 4306.0,
+                "soldLabel": "2万+",
+                "priceLabel": "4306"
+              }
+            ],
+            "shopCount": 1,
+            "sourceCount": 1
           }
         ]
       }

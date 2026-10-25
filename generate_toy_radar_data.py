@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 import statistics
+import unicodedata
 from collections import Counter
 from datetime import date
 from pathlib import Path
@@ -115,6 +116,113 @@ def extract_ip(name: str) -> str:
         if all(keyword in low for keyword in keywords):
             return label
     return ""
+
+
+def normalize_product_name(name: str) -> str:
+    """商品名归一化：只用于判断“是不是同一款”，不改变展示名。"""
+    value = unicodedata.normalize("NFKC", name or "").lower()
+    value = value.replace("×", "x").replace("✕", "x").replace("＊", "*")
+    value = re.sub(r"[\s\u3000]+", "", value)
+    value = re.sub(r"[·•・]", "", value)
+    value = re.sub(r"[，,。.;；:：!！?？\"'“”‘’（）()\[\]【】]", "", value)
+    return value
+
+
+def format_sold_label(value: float) -> str:
+    if value >= 10000:
+        wan = value / 10000
+        text = f"{wan:.1f}".rstrip("0").rstrip(".")
+        return f"{text}万+"
+    return f"{int(round(value))}+"
+
+
+def format_price_label(low: float, high: float) -> str:
+    if abs(low - high) < 1e-9:
+        return f"{low:g}"
+    return f"{low:g}–{high:g}"
+
+
+CATEGORY_PRIORITY = {"盲盒": 0, "收藏卡牌": 1, "可动手办": 2, "AI玩具": 3}
+
+
+def merge_duplicate_items(items: list[dict]) -> list[dict]:
+    """全周范围内，把同名商品的多店铺/多渠道/多榜单记录合并为一条。
+
+    销量求和；价格给出区间；店铺保留明细，榜单上显示“主店铺 等 N 家”。
+    若同一款同时出现在盲盒榜与手办榜，优先保留更贴近商品本身的品类。
+    """
+    groups: dict[str, list[dict]] = {}
+    order: list[str] = []
+    for item in items:
+        key = normalize_product_name(item["name"])
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(item)
+
+    merged: list[dict] = []
+    for key in order:
+        group = groups[key]
+        total_sold = sum(item["sold"] for item in group)
+        representative = max(
+            group,
+            key=lambda item: (item["sold"], -CATEGORY_PRIORITY.get(item["category"], 9)),
+        )
+
+        shop_records: dict[str, dict] = {}
+        for item in group:
+            shop = (item.get("shop") or "").strip()
+            if not shop:
+                continue
+            record = shop_records.setdefault(
+                shop,
+                {
+                    "shop": shop,
+                    "sold": 0,
+                    "priceMin": item["price"],
+                    "priceMax": item["price"],
+                },
+            )
+            record["sold"] += item["sold"]
+            record["priceMin"] = min(record["priceMin"], item["price"])
+            record["priceMax"] = max(record["priceMax"], item["price"])
+
+        shops = sorted(shop_records.values(), key=lambda record: record["sold"], reverse=True)
+        for record in shops:
+            record["soldLabel"] = format_sold_label(record["sold"])
+            record["priceLabel"] = format_price_label(record["priceMin"], record["priceMax"])
+
+        price_low = min(item["price"] for item in group)
+        price_high = max(item["price"] for item in group)
+        price_weighted = (
+            sum(item["price"] * item["sold"] for item in group) / total_sold
+            if total_sold
+            else representative["price"]
+        )
+        shop_label = (
+            shops[0]["shop"]
+            if len(shops) == 1
+            else f"{shops[0]['shop']} 等 {len(shops)} 家"
+            if shops
+            else representative.get("shop", "")
+        )
+
+        merged.append({
+            **representative,
+            "name": representative["name"],
+            "sold": int(total_sold),
+            "soldLabel": format_sold_label(total_sold),
+            "price": round(price_weighted, 2),
+            "priceMin": price_low,
+            "priceMax": price_high,
+            "priceLabel": format_price_label(price_low, price_high),
+            "shop": shop_label,
+            "shops": shops,
+            "shopCount": len(shops),
+            "sourceCount": len(group),
+        })
+
+    return sorted(merged, key=lambda item: item["sold"], reverse=True)
 
 
 def section_slug(title: str) -> str:
@@ -260,8 +368,6 @@ def parse_md(path: Path) -> dict:
             items.append(item)
             sold_values.append(sold)
             price_values.append(price)
-            all_items.append(item)
-            all_prices.append(price)
             store_counter[shop] += 1
             store_sold[shop] += sold
             if price < 100:
@@ -296,9 +402,14 @@ def parse_md(path: Path) -> dict:
         channels.discard("")
         entry["source"] = " / ".join(sorted(channels))
 
+    # 先在全周范围内合并同名商品（跨店铺、跨渠道、跨榜单），再按归属品类组装
+    raw_items = [item for slug in merged_order for item in merged_sections[slug]["items"]]
+    all_items = merge_duplicate_items(raw_items)
     for slug in merged_order:
         entry = merged_sections[slug]
-        items_sorted = sorted(entry["items"], key=lambda x: x["sold"], reverse=True)
+        items_sorted = [item for item in all_items if item["section"] == slug]
+        if not items_sorted:
+            continue
         parsed_sections.append({
             "id": slug,
             "title": entry["title"],
@@ -306,10 +417,10 @@ def parse_md(path: Path) -> dict:
             "summary": entry["summary"],
             "roleNotes": entry["roleNotes"],
             "itemCount": len(items_sorted),
-            "totalSold": int(sum(entry["sold_values"])),
-            "medianPrice": statistics.median(entry["price_values"]) if entry["price_values"] else 0,
-            "priceMin": min(entry["price_values"]) if entry["price_values"] else 0,
-            "priceMax": max(entry["price_values"]) if entry["price_values"] else 0,
+            "totalSold": int(sum(item["sold"] for item in items_sorted)),
+            "medianPrice": statistics.median(item["price"] for item in items_sorted),
+            "priceMin": min(item["priceMin"] for item in items_sorted),
+            "priceMax": max(item["priceMax"] for item in items_sorted),
             "topItem": items_sorted[0] if items_sorted else None,
             "items": items_sorted,
         })
@@ -328,16 +439,24 @@ def parse_md(path: Path) -> dict:
         else (f"{year}.{stat_date}" if stat_date else "本周")
     )
 
-    total_sold = sum(section["totalSold"] for section in parsed_sections)
+    # 榜单按合并后的商品展示；店铺统计与价格带仍用原始行（同一商品在不同店的价格/销量各自归位）
+    all_items = [item for section in parsed_sections for item in section["items"]]
+    all_prices = [item["price"] for item in all_items]
+    total_sold = sum(item["sold"] for item in all_items)
+    avg_price = (
+        sum(item["price"] * item["sold"] for item in all_items) / total_sold
+        if total_sold
+        else 0
+    )
     return {
         "weekLabel": week_label,
         "weekRange": week_range,
         "statDate": stat_date,
         "totalItems": len(all_items),
         "totalSold": int(total_sold),
-        "avgPrice": round(sum(all_prices) / len(all_prices), 1) if all_prices else 0,
-        "priceMin": min(all_prices) if all_prices else 0,
-        "priceMax": max(all_prices) if all_prices else 0,
+        "avgPrice": round(avg_price, 1),
+        "priceMin": min((item["priceMin"] for item in all_items), default=0),
+        "priceMax": max((item["priceMax"] for item in all_items), default=0),
         "sections": parsed_sections,
         "allItems": all_items,
         "allPrices": all_prices,
@@ -359,7 +478,8 @@ def build_vs_prev(week: dict, prev: dict) -> dict:
     """计算本周相对上一周的环比指标与本周新上榜商品。"""
 
     def key(item: dict) -> tuple:
-        return (item["name"], item["shop"])
+        # 合并后同一商品只有一个条目；身份只看商品名，避免品类归属变化被误判为新款
+        return normalize_product_name(item["name"])
 
     cur_sections = {section["id"]: section["totalSold"] for section in week["sections"]}
     prev_sections = {section["id"]: section["totalSold"] for section in prev["sections"]}

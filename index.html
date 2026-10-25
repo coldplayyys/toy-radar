@@ -1881,6 +1881,206 @@
       display: block;
     }
 
+    /* ===================== 首页：快捷筛选与三大模块 ===================== */
+    .hero-quickfilters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin: 14px auto 0;
+    }
+
+    .hero-quickfilters button {
+      border: 1px solid rgba(244, 114, 182, 0.22);
+      background: #fff;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 7px 16px;
+      font: inherit;
+      font-size: 13px;
+      cursor: pointer;
+      transition: transform 180ms ease, border-color 180ms ease, color 180ms ease;
+    }
+
+    .hero-quickfilters button:hover {
+      transform: translateY(-1px);
+      border-color: #ec4899;
+      color: #d4538f;
+    }
+
+    .home-modules {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .home-block {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(244, 114, 182, 0.16);
+      border-radius: var(--radius-xl);
+      box-shadow: 0 20px 60px rgba(236, 72, 153, 0.08);
+      padding: 22px 24px;
+    }
+
+    .home-block-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .home-block-head h2 { margin: 0; font-size: 19px; color: var(--text); }
+    .home-block-head p { margin: 4px 0 0; font-size: 12.5px; color: var(--faint); line-height: 1.6; }
+
+    .home-more {
+      border: none;
+      background: transparent;
+      color: #d4538f;
+      font: inherit;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      padding: 4px 0;
+    }
+
+    .home-more:hover { text-decoration: underline; }
+
+    .home-top-list { display: flex; flex-direction: column; }
+
+    .home-top-row {
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr) 96px 96px 128px;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 6px;
+      border-top: 1px solid rgba(244, 114, 182, 0.1);
+      cursor: pointer;
+      transition: background 160ms ease;
+    }
+
+    .home-top-row:first-child { border-top: none; }
+    .home-top-row:hover { background: rgba(244, 114, 182, 0.05); border-radius: 12px; }
+
+    .home-rank {
+      font-weight: 800;
+      color: #d4538f;
+      font-variant-numeric: tabular-nums;
+      text-align: center;
+    }
+
+    .home-top-name { font-weight: 600; font-size: 13.5px; color: var(--text); }
+    .home-top-sub { font-size: 11.5px; color: var(--faint); margin-top: 3px; }
+    .home-top-num { text-align: right; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--text); }
+    .home-top-num small { display: block; font-size: 10.5px; color: var(--faint); margin-top: 2px; }
+
+    .home-trends-body {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .home-trend-card {
+      background: linear-gradient(150deg, #fff, #fff5f9);
+      border: 1px solid rgba(244, 114, 182, 0.16);
+      border-radius: 16px;
+      padding: 14px;
+    }
+
+    .home-trend-card .k { font-size: 11.5px; color: var(--faint); }
+    .home-trend-card .v { font-size: 24px; font-weight: 800; color: #d4538f; margin-top: 4px; font-variant-numeric: tabular-nums; }
+    .home-trend-card .s { font-size: 11.5px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+
+    .home-bars { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 8px; margin-top: 2px; }
+
+    .home-bar-row {
+      display: grid;
+      grid-template-columns: 86px 1fr 64px;
+      gap: 10px;
+      align-items: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .home-bar-track { height: 8px; background: rgba(244, 114, 182, 0.12); border-radius: 999px; overflow: hidden; }
+    .home-bar-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #f472b6, #fb7185); }
+    .home-bar-val { text-align: right; font-variant-numeric: tabular-nums; }
+
+    .home-pick-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .home-pick-card {
+      background: #fff;
+      border: 1px solid rgba(244, 114, 182, 0.16);
+      border-radius: 16px;
+      padding: 14px;
+      cursor: pointer;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .home-pick-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(236, 72, 153, 0.14);
+    }
+
+    .home-pick-tag {
+      display: inline-block;
+      font-size: 10.5px;
+      color: #d4538f;
+      background: rgba(244, 114, 182, 0.12);
+      border-radius: 999px;
+      padding: 3px 8px;
+    }
+
+    .home-pick-name { font-size: 13.5px; font-weight: 600; margin: 8px 0 6px; line-height: 1.5; color: var(--text); }
+    .home-pick-meta { font-size: 11.5px; color: var(--faint); line-height: 1.7; }
+    .home-pick-price { color: #d4538f; font-weight: 700; }
+
+    .merge-badge {
+      display: inline-block;
+      margin-left: 6px;
+      font-size: 10px;
+      color: #d4538f;
+      background: rgba(244, 114, 182, 0.12);
+      border-radius: 999px;
+      padding: 1px 6px;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .modal-shops { margin-top: 14px; border-top: 1px dashed rgba(244, 114, 182, 0.3); padding-top: 12px; }
+    .modal-shops-head { font-size: 12px; color: #d4538f; font-weight: 600; margin-bottom: 8px; }
+    .modal-shop-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--muted);
+      padding: 6px 0;
+      border-top: 1px solid rgba(244, 114, 182, 0.1);
+    }
+    .modal-shop-row:first-of-type { border-top: none; }
+    .modal-shops-note { font-size: 11px; color: var(--faint); margin: 8px 0 0; line-height: 1.6; }
+
+    @media (max-width: 1180px) {
+      .home-pick-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .home-trends-body { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 760px) {
+      .home-block { padding: 18px; }
+      .home-top-row { grid-template-columns: 28px minmax(0, 1fr) 86px; }
+      .home-top-row .hide-sm { display: none; }
+      .home-pick-grid,
+      .home-trends-body { grid-template-columns: 1fr; }
+      .home-block-head { flex-direction: column; }
+    }
+
     @keyframes floaty {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-7px); }
@@ -2475,9 +2675,51 @@
           <input id="heroSearch" type="text" placeholder="搜索商品 / IP / 店铺，如 YOYO、DIMOO、宝可梦" autocomplete="off" />
           <span class="hero-search-hint" id="heroSearchCount"></span>
         </div>
+        <div class="hero-quickfilters" id="heroQuickFilters" aria-label="按品类快速查看">
+          <button type="button" data-cat="all">全部</button>
+          <button type="button" data-cat="blind_box">盲盒</button>
+          <button type="button" data-cat="action_figure">可动手办</button>
+          <button type="button" data-cat="trading_card">收藏卡牌</button>
+          <button type="button" data-cat="ai_toy">AI 玩具</button>
+        </div>
         <div class="hero-story" id="heroStory"></div>
         <div class="hero-results hidden" id="heroSearchResults"></div>
       </section>
+
+      <div class="home-modules" id="homeModules">
+        <section class="home-block" id="homeSales">
+          <div class="home-block-head">
+            <div>
+              <h2>本周销量</h2>
+              <p>同款商品跨店铺、跨渠道已合并统计，按销量排序。</p>
+            </div>
+            <button class="home-more" type="button" data-view="rankings">查看完整榜单 →</button>
+          </div>
+          <div class="home-top-list" id="homeSalesList"></div>
+        </section>
+
+        <section class="home-block" id="homeTrends">
+          <div class="home-block-head">
+            <div>
+              <h2>本周趋势</h2>
+              <p>先看总量与结构，再判断某一款值不值得追。</p>
+            </div>
+            <button class="home-more" type="button" data-view="trends">查看趋势 →</button>
+          </div>
+          <div class="home-trends-body" id="homeTrendsBody"></div>
+        </section>
+
+        <section class="home-block" id="homePicks">
+          <div class="home-block-head">
+            <div>
+              <h2>本周种草</h2>
+              <p>根据销量、价格与上榜表现自动挑选，不是广告。</p>
+            </div>
+            <button class="home-more" type="button" data-view="rankings">去找同款 →</button>
+          </div>
+          <div class="home-pick-grid" id="homePicksGrid"></div>
+        </section>
+      </div>
     </section>
 
     <!-- ===================== 榜单 ===================== -->
@@ -2726,8 +2968,8 @@
   <div class="modal-backdrop hidden" id="modalBackdrop"></div>
   <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
 
-  <script src="./toy-radar-data.js?v=20261025"></script>
-  <script src="./toy-radar-app.js?v=20261025c"></script>
+  <script src="./toy-radar-data.js?v=20261025f"></script>
+  <script src="./toy-radar-app.js?v=20261025f"></script>
   <script src="./toy-radar-kb.js"></script>
 </body>
 </html>

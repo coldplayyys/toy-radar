@@ -51,7 +51,7 @@ function activateWeek(index) {
   if (!snap) return;
   weekIndex = index;
   DATA = snap.detail;
-  const newFaces = new Set((DATA.vsPrev?.newFaces || []).map((i) => `${i.name}|${i.shop}`));
+  const newFaces = new Set((DATA.vsPrev?.newFaces || []).map((i) => i.name));
   sectionMap = Object.fromEntries(DATA.sections.map((section) => [section.id, section]));
   allItems = DATA.sections.flatMap((section) =>
     section.items.map((item) => ({
@@ -60,7 +60,7 @@ function activateWeek(index) {
       sectionSummary: section.summary,
       roleNotes: section.roleNotes,
       channel: channelOf(section),
-      isNew: newFaces.has(`${item.name}|${item.shop}`),
+      isNew: newFaces.has(item.name),
     }))
   );
 }
@@ -75,6 +75,10 @@ const els = {
   heroSearchResults: document.getElementById("heroSearchResults"),
   heroStory: document.getElementById("heroStory"),
   heroEmoji: document.getElementById("heroEmoji"),
+  heroQuickFilters: document.getElementById("heroQuickFilters"),
+  homeSalesList: document.getElementById("homeSalesList"),
+  homeTrendsBody: document.getElementById("homeTrendsBody"),
+  homePicksGrid: document.getElementById("homePicksGrid"),
   rankSummary: document.getElementById("rankSummary"),
   rankCategoryChips: document.getElementById("rankCategoryChips"),
   rankSearch: document.getElementById("rankSearch"),
@@ -123,6 +127,11 @@ function getSection(key) {
   return sectionMap[key] || sectionMap.blind_box;
 }
 
+function matchesShop(item, query) {
+  if ((item.shop || "").toLowerCase().includes(query)) return true;
+  return (item.shops || []).some((shop) => (shop.shop || "").toLowerCase().includes(query));
+}
+
 function getFilteredRankItems() {
   let items = allItems;
   if (state.rankCategory !== "all") {
@@ -133,7 +142,7 @@ function getFilteredRankItems() {
     items = items.filter(
       (item) =>
         item.name.toLowerCase().includes(query) ||
-        item.shop.toLowerCase().includes(query) ||
+        matchesShop(item, query) ||
         (item.ip || "").toLowerCase().includes(query) ||
         item.sectionLabel.toLowerCase().includes(query)
     );
@@ -263,7 +272,7 @@ function hasCoverageShift(vs) {
 }
 
 function renderHeroStats() {
-  const blind = sectionMap.blind_box;
+  const blind = sectionMap.blind_box || { totalSold: 0 };
   const vs = DATA.vsPrev;
   const totalDelta = vs && !hasCoverageShift(vs)
     ? `环比 ${vs.prevLabel} ${vs.totalDeltaPct >= 0 ? "↑" : "↓"} ${Math.abs(vs.totalDeltaPct).toFixed(1)}%`
@@ -685,13 +694,13 @@ function renderRankTable() {
           ? `<div class="rank-medal g${rank}">${rank}</div>`
           : `<div class="rank-no">${rank}</div>`;
       return `
-        <tr data-id="${escapeHtml(item.name)}|${escapeHtml(item.shop)}">
+        <tr data-id="${escapeHtml(item.name)}">
           <td>${medal}</td>
           <td class="cell-name">${escapeHtml(item.name)}${item.isNew ? '<span class="new-pill">新</span>' : ""}<small>${escapeHtml(item.channel)} · ${escapeHtml(item.date)}</small></td>
           <td><span class="cell-cat" style="--dot:${accent}"><i></i>${escapeHtml(item.sectionLabel)}</span></td>
           <td class="cell-num">${escapeHtml(item.channel)}</td>
-          <td class="cell-num">${escapeHtml(item.shop)}</td>
-          <td class="cell-num">${escapeHtml(formatMoney(item.price))}</td>
+          <td class="cell-num">${escapeHtml(item.shop)}${item.shopCount > 1 ? `<span class="merge-badge">合并 ${item.shopCount} 家</span>` : ""}</td>
+          <td class="cell-num">${escapeHtml(item.priceLabel || formatMoney(item.price))}</td>
           <td class="cell-sold cell-num">${escapeHtml(item.soldLabel)}</td>
           <td>
             <div class="share-cell">
@@ -1001,6 +1010,8 @@ function renderTrends() {
 /* ===================== 单品详情 ===================== */
 
 function findItem(id) {
+  const direct = allItems.find((item) => item.name === id);
+  if (direct) return direct;
   const [name, shop] = id.split("|");
   return allItems.find((item) => item.name === name && item.shop === shop);
 }
@@ -1010,7 +1021,7 @@ function openModal(id) {
   if (!item) return;
 
   const section = sectionMap[item.section];
-  const rank = [...allItems].sort((a, b) => b.sold - a.sold).findIndex((x) => x.name === item.name && x.shop === item.shop) + 1;
+  const rank = [...allItems].sort((a, b) => b.sold - a.sold).findIndex((x) => x.name === item.name) + 1;
   const share = ((item.sold / section.totalSold) * 100).toFixed(1);
   const roleNote = section.roleNotes[state.persona];
   const accent = sectionAccent[item.section] || "#ec4899";
@@ -1023,15 +1034,33 @@ function openModal(id) {
     <h2 class="modal-title" id="modalTitle">${escapeHtml(item.name)}</h2>
     <div class="modal-meta">
       <span class="pill">${escapeHtml(item.shop)}</span>
+      ${item.shopCount > 1 ? `<span class="pill">合并 ${item.shopCount} 家店铺</span>` : ""}
       <span class="pill">${escapeHtml(item.date)}</span>
       <span class="pill" style="color:${accent}">${escapeHtml(section.title)}</span>
     </div>
     <div class="modal-stats">
       <div class="modal-stat"><div class="k">已售</div><div class="v">${escapeHtml(item.soldLabel)}</div></div>
-      <div class="modal-stat"><div class="k">单价</div><div class="v">${escapeHtml(formatMoney(item.price))}</div></div>
+      <div class="modal-stat"><div class="k">单价</div><div class="v">${escapeHtml(item.priceLabel || formatMoney(item.price))}</div></div>
       <div class="modal-stat"><div class="k">占品类销量</div><div class="v">${share}%</div></div>
       <div class="modal-stat"><div class="k">品类中位价</div><div class="v">${escapeHtml(formatMoney(section.medianPrice))}</div></div>
     </div>
+    ${
+      item.shops && item.shops.length > 1
+        ? `<div class="modal-shops">
+            <div class="modal-shops-head">跨店合并明细 · ${item.shops.length} 家店铺 / ${item.sourceCount} 条榜单元数据</div>
+            ${item.shops
+              .map(
+                (shop) => `<div class="modal-shop-row">
+                  <span>${escapeHtml(shop.shop)}</span>
+                  <span>${escapeHtml(shop.soldLabel)}</span>
+                  <span>${escapeHtml(shop.priceLabel)}</span>
+                </div>`
+              )
+              .join("")}
+            <p class="modal-shops-note">同一商品在不同店铺/渠道的销量已合并求和；价格显示为区间。</p>
+          </div>`
+        : ""
+    }
     <div class="modal-chart-head">
       <h4>销量周趋势（演示）</h4>
       <span>以本周为基准 100 · 模拟历史仅用于展示</span>
@@ -1148,7 +1177,7 @@ function getHeroSearchItems() {
       (item) =>
         item.name.toLowerCase().includes(query) ||
         (item.ip || "").toLowerCase().includes(query) ||
-        item.shop.toLowerCase().includes(query) ||
+        matchesShop(item, query) ||
         item.sectionLabel.toLowerCase().includes(query)
     )
     .sort((a, b) => b.sold - a.sold)
@@ -1197,9 +1226,100 @@ function renderHeroResults() {
   });
 }
 
+function pickTag(item) {
+  if (item.isNew) return "本周新面孔";
+  if (item.price < 100 && item.sold >= 10000) return "百元内爆款";
+  if (item.sold >= 100000) return "十万级单品";
+  if (item.price >= 1000) return "高客单也有人买";
+  return "数据推荐";
+}
+
+function renderHomeModules() {
+  if (!els.homeSalesList) return;
+
+  const top = [...allItems].sort((a, b) => b.sold - a.sold).slice(0, 5);
+  els.homeSalesList.innerHTML = top
+    .map(
+      (item, index) => `
+      <div class="home-top-row" data-id="${escapeHtml(item.name)}">
+        <div class="home-rank">${index + 1}</div>
+        <div>
+          <div class="home-top-name">${escapeHtml(item.name)}${item.shopCount > 1 ? `<span class="merge-badge">合并 ${item.shopCount} 家</span>` : ""}</div>
+          <div class="home-top-sub">${escapeHtml(item.sectionLabel)} · ${escapeHtml(item.ip || "未识别 IP")} · ${escapeHtml(item.shop)}</div>
+        </div>
+        <div class="home-top-num">${escapeHtml(item.soldLabel)}<small>已售（合并）</small></div>
+        <div class="home-top-num hide-sm">${escapeHtml(item.priceLabel || formatMoney(item.price))}<small>${item.priceMin !== item.priceMax ? "价格区间" : "单价"}</small></div>
+        <div class="home-top-num hide-sm">${item.shopCount > 1 ? `${item.shopCount} 家店铺` : "单店"}<small>${item.sourceCount > 1 ? `${item.sourceCount} 条榜单` : "1 条榜单"}</small></div>
+      </div>`
+    )
+    .join("");
+  els.homeSalesList.querySelectorAll(".home-top-row").forEach((row) => {
+    row.addEventListener("click", () => openModal(row.dataset.id));
+  });
+
+  const vs = DATA.vsPrev;
+  const shift = hasCoverageShift(vs);
+  const blind = sectionMap.blind_box || { totalSold: 0 };
+  const blindShare = DATA.totalSold ? (blind.totalSold / DATA.totalSold) * 100 : 0;
+  const bars = DATA.sections
+    .map((section) => {
+      const share = DATA.totalSold ? (section.totalSold / DATA.totalSold) * 100 : 0;
+      return `<div class="home-bar-row">
+        <span>${escapeHtml(section.title)}</span>
+        <div class="home-bar-track"><span class="home-bar-fill" style="display:block;width:${Math.max(2, share).toFixed(1)}%;background:linear-gradient(90deg, ${sectionAccent[section.id] || "#f472b6"}, ${sectionAccent[section.id] || "#fb7185"})"></span></div>
+        <span class="home-bar-val">${share.toFixed(1)}%</span>
+      </div>`;
+    })
+    .join("");
+
+  els.homeTrendsBody.innerHTML = `
+    <div class="home-trend-card">
+      <div class="k">周总销量</div>
+      <div class="v">${formatWan(DATA.totalSold)}</div>
+      <div class="s">${vs ? (shift ? "本期收录范围变化，环比仅供参考" : `较上期 ${escapeHtml(vs.prevLabel)} ${vs.totalDeltaPct >= 0 ? "↑" : "↓"} ${Math.abs(vs.totalDeltaPct).toFixed(1)}%`) : "首批快照"}</div>
+    </div>
+    <div class="home-trend-card">
+      <div class="k">盲盒占比</div>
+      <div class="v">${blindShare.toFixed(1)}%</div>
+      <div class="s">${formatWan(blind.totalSold)} 销量</div>
+    </div>
+    <div class="home-trend-card">
+      <div class="k">本周新面孔</div>
+      <div class="v">${vs ? vs.newCount : DATA.totalItems}</div>
+      <div class="s">${vs ? `对比 ${escapeHtml(vs.prevLabel)}` : "首批快照"}</div>
+    </div>
+    <div class="home-bars">${bars}</div>
+  `;
+
+  const byName = new Map(allItems.map((item) => [item.name, item]));
+  const picks = [];
+  const seen = new Set();
+  [...(DATA.consumerPicks || []), ...(DATA.practitionerPicks || [])].forEach((pick) => {
+    if (!pick || !pick.name || seen.has(pick.name)) return;
+    seen.add(pick.name);
+    picks.push(byName.get(pick.name) || pick);
+  });
+
+  els.homePicksGrid.innerHTML = picks
+    .slice(0, 4)
+    .map(
+      (item) => `
+      <div class="home-pick-card" data-id="${escapeHtml(item.name)}">
+        <span class="home-pick-tag">${escapeHtml(pickTag(item))}</span>
+        <div class="home-pick-name">${escapeHtml(item.name)}</div>
+        <div class="home-pick-meta">${escapeHtml(item.sectionLabel)} · ${escapeHtml(item.shop)}<br /><span class="home-pick-price">${escapeHtml(item.priceLabel || formatMoney(item.price))}</span> · 已售 ${escapeHtml(item.soldLabel)}</div>
+      </div>`
+    )
+    .join("");
+  els.homePicksGrid.querySelectorAll(".home-pick-card").forEach((card) => {
+    card.addEventListener("click", () => openModal(card.dataset.id));
+  });
+}
+
 function renderOverview() {
   renderHeroStory();
   renderHeroResults();
+  renderHomeModules();
 }
 
 function renderAll() {
@@ -1236,6 +1356,20 @@ els.rankSearch.addEventListener("input", (event) => {
 });
 
 bindSortButtons();
+
+if (els.heroQuickFilters) {
+  els.heroQuickFilters.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-cat]");
+    if (!button) return;
+    state.rankCategory = button.dataset.cat;
+    switchView("rankings");
+    renderRankings();
+  });
+}
+
+document.querySelectorAll(".home-more[data-view]").forEach((button) => {
+  button.addEventListener("click", () => switchView(button.dataset.view));
+});
 
 els.demoToggle.addEventListener("change", (event) => {
   state.demo = event.target.checked;
