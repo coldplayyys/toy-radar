@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>潮玩雷达 · 搜索与潮玩热销榜</title>
-  <link rel="icon" type="image/svg+xml" href="./assets/mascot.svg" />
+  <link rel="icon" type="image/svg+xml" href="./assets/mascot-tech.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet" />
@@ -124,11 +124,38 @@
 
     .topbar-minimal {
       justify-content: center;
-      padding: 14px 22px;
+      padding: 20px 12px 10px;
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+      backdrop-filter: none;
     }
 
-    .topbar-minimal .brand { gap: 12px; }
-    .topbar-minimal .brand-name { font-size: 24px; letter-spacing: 0.02em; }
+    .topbar-minimal .brand { gap: 14px; align-items: center; }
+
+    .topbar-minimal .brand-mark {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      padding: 0;
+      background: none;
+      border: 0;
+      overflow: visible;
+      box-shadow: 0 12px 30px rgba(236, 72, 153, 0.18);
+    }
+
+    .topbar-minimal .brand-mark img { border-radius: 18px; display: block; }
+
+    .topbar-minimal .brand-name {
+      font-size: clamp(30px, 3.4vw, 42px);
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      line-height: 1.1;
+      background: linear-gradient(120deg, #3f2b38 0%, #b04a76 55%, #ec4899 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
 
     .hot-list-side {
       display: flex;
@@ -2704,13 +2731,21 @@
       .kb-reader { padding: 0; }
       .kb-reader-panel { max-height: 100vh; border-radius: 0; height: 100%; }
     }
+
+    /* 顶部无卡片边框：放在主题之后，确保覆盖 .topbar / .panel 的底色与阴影 */
+    .topbar-minimal {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
   </style>
 </head>
 <body>
   <main class="shell">
-    <header class="panel topbar topbar-minimal">
+    <header class="topbar topbar-minimal">
       <div class="brand">
-        <div class="brand-mark"><img src="./assets/mascot.svg" alt="潮玩雷达吉祥物" /></div>
+        <div class="brand-mark"><img src="./assets/mascot-tech.svg" alt="潮玩雷达科技版吉祥物" /></div>
         <div class="brand-name">潮玩雷达</div>
       </div>
     </header>
