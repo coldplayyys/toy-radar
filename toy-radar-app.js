@@ -79,6 +79,7 @@ const els = {
   homeSalesList: document.getElementById("homeSalesList"),
   homeTrendsBody: document.getElementById("homeTrendsBody"),
   homePicksGrid: document.getElementById("homePicksGrid"),
+  picksGrid: document.getElementById("picksGrid"),
   rankSummary: document.getElementById("rankSummary"),
   rankCategoryChips: document.getElementById("rankCategoryChips"),
   rankSearch: document.getElementById("rankSearch"),
@@ -194,7 +195,7 @@ function switchView(name) {
   els.tabs.querySelectorAll(".tab").forEach((tab) => {
     tab.classList.toggle("active", tab.dataset.view === name);
   });
-  ["overview", "rankings", "trends", "knowledge"].forEach((viewName) => {
+  ["overview", "rankings", "trends", "picks"].forEach((viewName) => {
     document.getElementById(`view-${viewName}`).classList.toggle("hidden", viewName !== name);
   });
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -1245,11 +1246,9 @@ function renderHomeModules() {
         <div class="home-rank">${index + 1}</div>
         <div>
           <div class="home-top-name">${escapeHtml(item.name)}${item.shopCount > 1 ? `<span class="merge-badge">合并 ${item.shopCount} 家</span>` : ""}</div>
-          <div class="home-top-sub">${escapeHtml(item.sectionLabel)} · ${escapeHtml(item.ip || "未识别 IP")} · ${escapeHtml(item.shop)}</div>
+          <div class="home-top-sub">${escapeHtml(item.sectionLabel)} · ${escapeHtml(item.priceLabel || formatMoney(item.price))} · ${escapeHtml(item.shop)}</div>
         </div>
-        <div class="home-top-num">${escapeHtml(item.soldLabel)}<small>已售（合并）</small></div>
-        <div class="home-top-num hide-sm">${escapeHtml(item.priceLabel || formatMoney(item.price))}<small>${item.priceMin !== item.priceMax ? "价格区间" : "单价"}</small></div>
-        <div class="home-top-num hide-sm">${item.shopCount > 1 ? `${item.shopCount} 家店铺` : "单店"}<small>${item.sourceCount > 1 ? `${item.sourceCount} 条榜单` : "1 条榜单"}</small></div>
+        <div class="home-top-num">${escapeHtml(item.soldLabel)}<small>已售</small></div>
       </div>`
     )
     .join("");
@@ -1322,6 +1321,48 @@ function renderOverview() {
   renderHomeModules();
 }
 
+function buildPickList() {
+  const sorted = [...allItems].sort((a, b) => b.sold - a.sold);
+  const picks = [];
+  const seen = new Set();
+  const add = (item, tag) => {
+    if (!item || !item.name || seen.has(item.name)) return;
+    seen.add(item.name);
+    picks.push({ item, tag });
+  };
+
+  sorted.slice(0, 2).forEach((item) => add(item, "销量头部"));
+  add(sorted.filter((item) => item.price < 100 && item.sold >= 10000)[0], "百元内走量");
+  add(sorted.filter((item) => item.price >= 1000 && item.sold >= 100)[0], "高客单热销");
+  sorted.filter((item) => item.isNew).slice(0, 2).forEach((item) => add(item, "本周新面孔"));
+  DATA.sections.slice(0, 2).forEach((section) => {
+    const label = sectionLabel[section.id] || section.title;
+    add([...section.items].sort((a, b) => b.sold - a.sold)[0], `${label} 第一`);
+  });
+  for (const item of sorted) {
+    if (picks.length >= 8) break;
+    add(item, pickTag(item));
+  }
+  return picks.slice(0, 8);
+}
+
+function renderPicks() {
+  if (!els.picksGrid) return;
+  els.picksGrid.innerHTML = buildPickList()
+    .map(
+      ({ item, tag }) => `
+      <div class="home-pick-card" data-id="${escapeHtml(item.name)}">
+        <span class="home-pick-tag">${escapeHtml(tag)}</span>
+        <div class="home-pick-name">${escapeHtml(item.name)}</div>
+        <div class="home-pick-meta">${escapeHtml(item.sectionLabel)} · ${escapeHtml(item.shop)}<br /><span class="home-pick-price">${escapeHtml(item.priceLabel || formatMoney(item.price))}</span> · 已售 ${escapeHtml(item.soldLabel)}</div>
+      </div>`
+    )
+    .join("");
+  els.picksGrid.querySelectorAll(".home-pick-card").forEach((card) => {
+    card.addEventListener("click", () => openModal(card.dataset.id));
+  });
+}
+
 function renderAll() {
   els.weekBadge.textContent = DATA.weekRange;
   const channels = [...new Set(allItems.flatMap((item) => item.channel.split(" / ")))].join(" / ");
@@ -1329,6 +1370,7 @@ function renderAll() {
   renderOverview();
   renderRankings();
   renderTrends();
+  renderPicks();
 }
 
 /* ===================== 事件绑定 ===================== */

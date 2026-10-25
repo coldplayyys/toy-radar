@@ -1909,10 +1909,11 @@
     }
 
     .home-modules {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
       margin-top: 20px;
+      align-items: stretch;
     }
 
     .home-block {
@@ -1921,6 +1922,8 @@
       border-radius: var(--radius-xl);
       box-shadow: 0 20px 60px rgba(236, 72, 153, 0.08);
       padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
     }
 
     .home-block-head {
@@ -1952,7 +1955,7 @@
 
     .home-top-row {
       display: grid;
-      grid-template-columns: 34px minmax(0, 1fr) 96px 96px 128px;
+      grid-template-columns: 30px minmax(0, 1fr) auto;
       gap: 10px;
       align-items: center;
       padding: 10px 6px;
@@ -1978,7 +1981,7 @@
 
     .home-trends-body {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: 1fr;
       gap: 12px;
     }
 
@@ -2010,7 +2013,7 @@
 
     .home-pick-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: 1fr;
       gap: 12px;
     }
 
@@ -2067,9 +2070,41 @@
     .modal-shop-row:first-of-type { border-top: none; }
     .modal-shops-note { font-size: 11px; color: var(--faint); margin: 8px 0 0; line-height: 1.6; }
 
+    .search-hero { padding-top: 26px; padding-bottom: 6px; }
+    .search-lead { margin: 0 0 12px; text-align: center; font-size: 14px; color: var(--muted); }
+
+    .hero-story-compact {
+      margin-top: 18px;
+      padding: 18px 22px;
+    }
+
+    .hero-story-compact .headline-tag { font-size: 10px; }
+    .hero-story-compact .headline-title { margin: 6px 0 4px; font-size: 18px; }
+    .hero-story-compact .headline-story { margin: 0; font-size: 12.5px; }
+    .hero-story-compact .headline-meta { margin-top: 8px; }
+
+    .picks-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .picks-note {
+      margin: 16px 0 0;
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--faint);
+      background: rgba(244, 114, 182, 0.06);
+      border-radius: 12px;
+      padding: 10px 14px;
+    }
+
     @media (max-width: 1180px) {
-      .home-pick-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .home-trends-body { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .picks-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 1100px) {
+      .home-modules { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 760px) {
@@ -2077,7 +2112,8 @@
       .home-top-row { grid-template-columns: 28px minmax(0, 1fr) 86px; }
       .home-top-row .hide-sm { display: none; }
       .home-pick-grid,
-      .home-trends-body { grid-template-columns: 1fr; }
+      .home-trends-body,
+      .picks-grid { grid-template-columns: 1fr; }
       .home-block-head { flex-direction: column; }
     }
 
@@ -2648,14 +2684,14 @@
         <div class="brand-mark"><img src="./assets/mascot.svg" alt="潮玩雷达吉祥物" /></div>
         <div>
           <div class="brand-name">潮玩雷达 <span>TOY MARKET RADAR</span></div>
-          <div class="brand-sub">品类数据 · 热销榜单 · 销量趋势</div>
+          <div class="brand-sub">搜索 · 销量 · 趋势 · 种草</div>
         </div>
       </div>
       <nav class="tabs" id="tabs" aria-label="视图切换">
-        <button class="tab active" data-view="overview">总览</button>
-        <button class="tab" data-view="rankings">榜单</button>
+        <button class="tab active" data-view="overview">搜索</button>
+        <button class="tab" data-view="rankings">销量</button>
         <button class="tab" data-view="trends">趋势</button>
-        <button class="tab" data-view="knowledge">知识库</button>
+        <button class="tab" data-view="picks">种草</button>
       </nav>
       <div class="top-actions">
         <select class="week-select" id="weekSelect" aria-label="选择统计周"></select>
@@ -2665,11 +2701,8 @@
 
     <!-- ===================== 总览 ===================== -->
     <section class="view" id="view-overview">
-      <section class="hero-mini">
-        <div class="hero-emoji" id="heroEmoji" aria-hidden="true"><img src="./assets/mascot.svg" alt="" /></div>
-        <div class="eyebrow">WEEKLY MARKET RADAR</div>
-        <h1 class="title">潮玩雷达</h1>
-        <p class="subtitle">输入你记得的商品、IP 或店铺，一键找到它这周卖得怎么样。</p>
+      <section class="hero-mini search-hero">
+        <p class="search-lead">搜商品、IP 或店铺，先看这周卖得怎么样。</p>
         <div class="hero-search">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
           <input id="heroSearch" type="text" placeholder="搜索商品 / IP / 店铺，如 YOYO、DIMOO、宝可梦" autocomplete="off" />
@@ -2682,7 +2715,6 @@
           <button type="button" data-cat="trading_card">收藏卡牌</button>
           <button type="button" data-cat="ai_toy">AI 玩具</button>
         </div>
-        <div class="hero-story" id="heroStory"></div>
         <div class="hero-results hidden" id="heroSearchResults"></div>
       </section>
 
@@ -2715,11 +2747,13 @@
               <h2>本周种草</h2>
               <p>根据销量、价格与上榜表现自动挑选，不是广告。</p>
             </div>
-            <button class="home-more" type="button" data-view="rankings">去找同款 →</button>
+            <button class="home-more" type="button" data-view="picks">更多种草 →</button>
           </div>
           <div class="home-pick-grid" id="homePicksGrid"></div>
         </section>
       </div>
+
+      <div class="hero-story hero-story-compact" id="heroStory"></div>
     </section>
 
     <!-- ===================== 榜单 ===================== -->
@@ -2834,7 +2868,22 @@
       </div>
     </section>
 
-    <!-- ===================== 知识库（RAG） ===================== -->
+    <!-- ===================== 种草 ===================== -->
+    <section class="view hidden" id="view-picks">
+      <section class="panel section">
+        <div class="panel-head">
+          <div>
+            <h2>本周种草</h2>
+            <p>根据销量、价格与上榜表现自动挑选；点开任意一款，能看清跨店价格与每家店的销量。</p>
+          </div>
+          <button class="home-more" type="button" data-view="rankings">去销量榜 →</button>
+        </div>
+        <div class="picks-grid" id="picksGrid"></div>
+        <p class="picks-note">筛选逻辑：销量头部 + 百元内走量款 + 高客单热销款 + 本周新面孔 + 各品类代表款。不是广告，也不接受付费排序。</p>
+      </section>
+    </section>
+
+    <!-- ===================== 知识库（RAG，已从主导航收起） ===================== -->
     <section class="view hidden" id="view-knowledge">
       <section class="panel section kb-hero">
         <div class="panel-head">
@@ -2968,8 +3017,7 @@
   <div class="modal-backdrop hidden" id="modalBackdrop"></div>
   <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
 
-  <script src="./toy-radar-data.js?v=20261025f"></script>
-  <script src="./toy-radar-app.js?v=20261025f"></script>
-  <script src="./toy-radar-kb.js"></script>
+  <script src="./toy-radar-data.js?v=20261025i"></script>
+  <script src="./toy-radar-app.js?v=20261025i"></script>
 </body>
 </html>
