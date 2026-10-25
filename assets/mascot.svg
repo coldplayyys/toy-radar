@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="奶油色小奶龙吉祥物">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF9E8"/>
+      <stop offset="1" stop-color="#FFEFC9"/>
+    </linearGradient>
+    <linearGradient id="horn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE6A8"/>
+      <stop offset="1" stop-color="#F2C96F"/>
+    </linearGradient>
+    <radialGradient id="cheek" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FF9FBF" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#FF9FBF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 雷达信号：呼应“潮玩雷达” -->
+  <g fill="none" stroke="#F472B6" stroke-linecap="round" opacity="0.35">
+    <path d="M91 28a24 24 0 0 1 7 17" stroke-width="3"/>
+    <path d="M98 20a34 34 0 0 1 10 24" stroke-width="2.5"/>
+  </g>
+
+  <!-- 尾巴 -->
+  <path d="M87 91c9 4 14 10 12 16-1.6 4.6-7 5.2-10 1.2"
+        fill="url(#body)" stroke="#E7C783" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- 小翅膀 -->
+  <path d="M31 68c-9-6-15-2-14 5 1 6 8 10 15 8" fill="#FFF3D2" stroke="#E7C783" stroke-width="2.5"/>
+  <path d="M89 68c9-6 15-2 14 5-1 6-8 10-15 8" fill="#FFF3D2" stroke="#E7C783" stroke-width="2.5"/>
+
+  <!-- 身体 -->
+  <path d="M60 52c20 0 31 13 31 29 0 14-12 23-31 23S29 95 29 81c0-16 11-29 31-29Z"
+        fill="url(#body)" stroke="#E7C783" stroke-width="3"/>
+  <ellipse cx="60" cy="84" rx="18" ry="15" fill="#FFFCF2"/>
+
+  <!-- 小脚 -->
+  <ellipse cx="46" cy="103" rx="9" ry="6" fill="#FFF3D2" stroke="#E7C783" stroke-width="2.5"/>
+  <ellipse cx="74" cy="103" rx="9" ry="6" fill="#FFF3D2" stroke="#E7C783" stroke-width="2.5"/>
+
+  <!-- 小手 -->
+  <ellipse cx="30" cy="80" rx="6" ry="9" transform="rotate(-18 30 80)"
+           fill="#FFF3D2" stroke="#E7C783" stroke-width="2.5"/>
+  <ellipse cx="90" cy="80" rx="6" ry="9" transform="rotate(18 90 80)"
+           fill="#FFF3D2" stroke="#E7C783" stroke-width="2.5"/>
+
+  <!-- 小角 -->
+  <path d="M46 25c-1-8 2-13 6-13s7 5 5 13" fill="url(#horn)" stroke="#E0B95F" stroke-width="2.5"/>
+  <path d="M62 25c-2-8 1-13 5-13s7 5 6 13" fill="url(#horn)" stroke="#E0B95F" stroke-width="2.5"/>
+
+  <!-- 大脑袋 -->
+  <ellipse cx="60" cy="45" rx="30" ry="27" fill="url(#body)" stroke="#E7C783" stroke-width="3"/>
+
+  <!-- 眼睛 -->
+  <ellipse cx="49" cy="44" rx="4.2" ry="5" fill="#4A3440"/>
+  <ellipse cx="71" cy="44" rx="4.2" ry="5" fill="#4A3440"/>
+  <circle cx="50.4" cy="42.2" r="1.5" fill="#FFFFFF"/>
+  <circle cx="72.4" cy="42.2" r="1.5" fill="#FFFFFF"/>
+
+  <!-- 腮红 -->
+  <ellipse cx="40" cy="53" rx="7" ry="4.5" fill="url(#cheek)"/>
+  <ellipse cx="80" cy="53" rx="7" ry="4.5" fill="url(#cheek)"/>
+
+  <!-- 微笑 -->
+  <path d="M56 54c1.6 2 6.4 2 8 0" fill="none" stroke="#4A3440" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1114,9 +1114,6 @@ function renderHeroStory() {
   const top = [...allItems].sort((a, b) => b.sold - a.sold)[0];
   const vs = DATA.vsPrev;
   const coverageShift = hasCoverageShift(vs);
-  if (els.heroEmoji) {
-    els.heroEmoji.textContent = (top && top.ip && IP_EMOJI[top.ip]) || DEFAULT_EMOJI;
-  }
   if (!top) {
     els.heroStory.innerHTML = "";
     return;
