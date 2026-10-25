@@ -2739,6 +2739,134 @@
       box-shadow: none;
       backdrop-filter: none;
     }
+
+    /* ===================== 手机端布局 ===================== */
+    .mobile-rank-list { display: none; }
+
+    @media (max-width: 760px) {
+      .shell { padding: 10px; gap: 12px; }
+
+      .topbar-minimal { padding: 12px 6px 2px; }
+      .topbar-minimal .brand { gap: 10px; }
+      .topbar-minimal .brand-mark {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+      }
+      .topbar-minimal .brand-mark img { border-radius: 14px; }
+      .topbar-minimal .brand-name { font-size: 28px; letter-spacing: 0.03em; }
+
+      .search-hero { padding-top: 10px; padding-bottom: 0; }
+      .search-lead { font-size: 12.5px; margin-bottom: 10px; }
+      .hero-search { max-width: 100%; padding: 12px 14px; }
+      .hero-search input { font-size: 14px; }
+
+      .hero-quickfilters {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 2px 2px 8px;
+        scrollbar-width: none;
+      }
+      .hero-quickfilters::-webkit-scrollbar { display: none; }
+      .hero-quickfilters button { flex: 0 0 auto; padding: 8px 14px; font-size: 12.5px; }
+
+      .section { padding: 16px 14px; border-radius: 20px; }
+      .panel-head {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+      .panel-head h2 { font-size: 19px; }
+      .panel-head p { font-size: 12px; line-height: 1.6; }
+
+      .hot-list-side { width: 100%; align-items: stretch; gap: 8px; }
+      .hot-list-actions { width: 100%; display: flex; gap: 8px; }
+      .hot-list-actions .week-select { flex: 1; min-width: 0; }
+      .rank-summary { font-size: 11.5px; line-height: 1.6; }
+
+      .rank-controls {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+      .chip-list {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 6px;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+      }
+      .chip-list::-webkit-scrollbar { display: none; }
+      .chip-list .chip { flex: 0 0 auto; }
+
+      .rank-tools { display: flex; flex-direction: column; align-items: stretch; gap: 8px; }
+      .rank-tools .search-box { width: 100%; }
+      .rank-sort { width: 100%; display: flex; gap: 6px; }
+      .rank-sort .sort-btn { flex: 1; padding: 9px 6px; font-size: 12px; }
+
+      .table-wrap { display: none; }
+      .mobile-rank-list { display: flex; flex-direction: column; gap: 10px; }
+
+      .m-rank-card {
+        background: #fff;
+        border: 1px solid rgba(244, 114, 182, 0.16);
+        border-radius: 16px;
+        padding: 12px 14px;
+        box-shadow: 0 8px 20px rgba(236, 72, 153, 0.06);
+      }
+      .m-rank-top { display: flex; align-items: flex-start; gap: 10px; }
+      .m-rank-no {
+        flex: 0 0 28px;
+        height: 28px;
+        border-radius: 9px;
+        display: grid;
+        place-items: center;
+        background: rgba(244, 114, 182, 0.12);
+        color: #d4538f;
+        font-weight: 800;
+        font-size: 12px;
+      }
+      .m-rank-name {
+        flex: 1;
+        min-width: 0;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.45;
+        color: var(--text);
+      }
+      .m-rank-name .new-pill { margin-left: 4px; }
+      .m-rank-sold {
+        flex: 0 0 auto;
+        text-align: right;
+        font-size: 15px;
+        font-weight: 800;
+        color: #d4538f;
+        font-variant-numeric: tabular-nums;
+      }
+      .m-rank-sold small {
+        display: block;
+        font-size: 10px;
+        font-weight: 500;
+        color: var(--faint);
+        margin-top: 2px;
+      }
+      .m-rank-meta { margin-top: 8px; font-size: 11.5px; color: var(--muted); line-height: 1.6; }
+      .m-rank-foot {
+        margin-top: 6px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+        font-size: 10.5px;
+        color: var(--faint);
+      }
+
+      .footer-note { font-size: 11px; text-align: center; line-height: 1.8; padding: 10px 6px 20px; }
+    }
   </style>
 </head>
 <body>
@@ -2818,6 +2946,7 @@
             <tbody id="rankBody"></tbody>
           </table>
         </div>
+        <div class="mobile-rank-list" id="mobileRankList"></div>
       </section>
     </section>
 
@@ -3038,7 +3167,7 @@
   <div class="modal-backdrop hidden" id="modalBackdrop"></div>
   <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
 
-  <script src="./toy-radar-data.js?v=20261025l"></script>
-  <script src="./toy-radar-app.js?v=20261025l"></script>
+  <script src="./toy-radar-data.js?v=20261025m"></script>
+  <script src="./toy-radar-app.js?v=20261025m"></script>
 </body>
 </html>

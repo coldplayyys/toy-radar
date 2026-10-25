@@ -85,6 +85,7 @@ const els = {
   rankSearch: document.getElementById("rankSearch"),
   rankSort: document.getElementById("rankSort"),
   rankBody: document.getElementById("rankBody"),
+  mobileRankList: document.getElementById("mobileRankList"),
   donutBox: document.getElementById("donutBox"),
   donutLegend: document.getElementById("donutLegend"),
   bandBars: document.getElementById("bandBars"),
@@ -683,6 +684,9 @@ function renderRankTable() {
 
   if (!items.length) {
     els.rankBody.innerHTML = `<tr><td colspan="8"><div class="empty-state">没有匹配的商品，换个关键词试试。</div></td></tr>`;
+    if (els.mobileRankList) {
+      els.mobileRankList.innerHTML = '<div class="empty-state">没有匹配的商品，换个关键词试试。</div>';
+    }
     return;
   }
 
@@ -717,6 +721,31 @@ function renderRankTable() {
 
   els.rankBody.querySelectorAll("tr[data-id]").forEach((row) => {
     row.addEventListener("click", () => openModal(row.dataset.id));
+  });
+  renderMobileRankList(items);
+}
+
+function renderMobileRankList(items) {
+  if (!els.mobileRankList) return;
+  els.mobileRankList.innerHTML = items
+    .map(
+      (item, index) => `
+      <article class="m-rank-card" data-id="${escapeHtml(item.name)}">
+        <div class="m-rank-top">
+          <div class="m-rank-no">${index + 1}</div>
+          <div class="m-rank-name">${escapeHtml(item.name)}${item.isNew ? '<span class="new-pill">新</span>' : ""}</div>
+          <div class="m-rank-sold">${escapeHtml(item.soldLabel)}<small>已售</small></div>
+        </div>
+        <div class="m-rank-meta">${escapeHtml(item.sectionLabel)} · ${escapeHtml(item.priceLabel || formatMoney(item.price))} · ${escapeHtml(item.shop)}</div>
+        <div class="m-rank-foot">
+          <span>${escapeHtml(item.channel)}</span>
+          ${item.shopCount > 1 ? `<span class="merge-badge">合并 ${item.shopCount} 家</span>` : ""}
+        </div>
+      </article>`
+    )
+    .join("");
+  els.mobileRankList.querySelectorAll(".m-rank-card").forEach((card) => {
+    card.addEventListener("click", () => openModal(card.dataset.id));
   });
 }
 
