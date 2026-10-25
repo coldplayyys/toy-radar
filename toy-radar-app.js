@@ -250,12 +250,26 @@ function renderHeroHeadline() {
   `;
 }
 
+/**
+ * 公众号每期收录的榜单张数并不固定（本期天猫盲盒 20 行、AI 榜从 2 张变 4 张）。
+ * 当销量或条目数变化过大时，环比反映的是收录口径，不是市场真实涨跌，需要在页面上明说。
+ */
+function hasCoverageShift(vs) {
+  if (!vs) return false;
+  const previous = ALL_SNAPSHOTS[weekIndex - 1];
+  const prevItems = previous && previous.detail ? previous.detail.totalItems : 0;
+  const itemDelta = prevItems ? Math.abs(DATA.totalItems - prevItems) / prevItems : 0;
+  return Math.abs(vs.totalDeltaPct) > 100 || itemDelta > 0.25;
+}
+
 function renderHeroStats() {
   const blind = sectionMap.blind_box;
   const vs = DATA.vsPrev;
-  const totalDelta = vs
+  const totalDelta = vs && !hasCoverageShift(vs)
     ? `环比 ${vs.prevLabel} ${vs.totalDeltaPct >= 0 ? "↑" : "↓"} ${Math.abs(vs.totalDeltaPct).toFixed(1)}%`
-    : "首批快照";
+    : vs
+      ? "本期口径变化，环比仅供参考"
+      : "首批快照";
   const stats = [
     {
       label: "周总销量",
@@ -1099,6 +1113,7 @@ const DEFAULT_EMOJI = "🧸";
 function renderHeroStory() {
   const top = [...allItems].sort((a, b) => b.sold - a.sold)[0];
   const vs = DATA.vsPrev;
+  const coverageShift = hasCoverageShift(vs);
   if (els.heroEmoji) {
     els.heroEmoji.textContent = (top && top.ip && IP_EMOJI[top.ip]) || DEFAULT_EMOJI;
   }
@@ -1109,12 +1124,15 @@ function renderHeroStory() {
   let story;
   if (top.isNew) {
     story = `上周榜上还没有它，这周以 ${top.soldLabel} 销量直接登顶——像一只突然出现的“雪鸮”，让整周的目光都聚焦过来。`;
-  } else if (vs) {
+  } else if (vs && !coverageShift) {
     story = `它以 ${top.soldLabel} 销量领跑本周${top.ip ? `（${top.ip}）` : ""}；总销量环比 ${vs.totalDeltaPct >= 0 ? "↑" : "↓"} ${Math.abs(vs.totalDeltaPct).toFixed(1)}%，${vs.newCount} 款新面孔登场。`;
+  } else if (vs) {
+    story = `它以 ${top.soldLabel} 销量领跑本周${top.ip ? `（${top.ip}）` : ""}；本期收录的榜单范围与上期不同，环比数字仅供参考。`;
   } else {
     story = `它以 ${top.soldLabel} 销量领跑首批快照，雷达从这里开始扫描市场。`;
   }
   const meta = [];
+  if (coverageShift) meta.push("本期收录范围变化，环比仅供参考");
   if (vs) meta.push(`${vs.newCount} 款新上榜`);
   if (vs) meta.push(`对比 ${vs.prevLabel}`);
   els.heroStory.innerHTML = `

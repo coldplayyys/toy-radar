@@ -209,6 +209,11 @@ def main() -> int:
     parser.add_argument("--week", required=True, help="周区间，例如 9.7-9.13")
     parser.add_argument("--date", required=True, help="统计日期，例如 2026.9.12")
     parser.add_argument("--reuse", action="store_true", help="复用目录里已下载的图片")
+    parser.add_argument(
+        "--publish-only",
+        action="store_true",
+        help="跳过抓取与 OCR，直接校验并发布目录中已人工核对好的 md",
+    )
     parser.add_argument("--publish", action="store_true", help="写入正式数据目录并重新生成")
     parser.add_argument("--force", action="store_true", help="该周已存在时允许覆盖")
     parser.add_argument("--min-width", type=int, default=200)
@@ -219,15 +224,28 @@ def main() -> int:
         out_dir = BASE / out_dir
 
     try:
-        if args.reuse and (out_dir / "manifest.json").exists():
+        if args.publish_only:
+            md_path = out_dir / f"潮玩品类数据{args.week}.md"
+            if not md_path.exists():
+                raise RuntimeError(f"找不到已核对草稿：{md_path}")
+            manifest_file = out_dir / "manifest.json"
+            manifest = (
+                json.loads(manifest_file.read_text(encoding="utf-8"))
+                if manifest_file.exists()
+                else {}
+            )
+            print(f"[1/4] --publish-only：跳过抓取，使用已核对草稿", file=sys.stderr)
+            print(f"[2/4] 跳过 OCR：{md_path.name}", file=sys.stderr)
+        elif args.reuse and (out_dir / "manifest.json").exists():
             manifest = json.loads((out_dir / "manifest.json").read_text(encoding="utf-8"))
             print(f"[1/4] 复用已有图片：{len(manifest.get('images', []))} 张", file=sys.stderr)
+            md_path = run_ocr(out_dir, args.week, args.date)
         else:
             if not args.url and not args.html:
                 raise RuntimeError("首次运行需要提供文章链接或 --html")
             manifest = fetch_images(args.url, args.html, out_dir, args.min_width)
+            md_path = run_ocr(out_dir, args.week, args.date)
 
-        md_path = run_ocr(out_dir, args.week, args.date)
         summary = validate(md_path, args.week, args.date)
         (out_dir / "sync_summary.json").write_text(
             json.dumps({**summary, "manifest": manifest}, ensure_ascii=False, indent=2) + "\n",

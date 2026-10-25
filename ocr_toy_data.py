@@ -116,7 +116,7 @@ class Table:
     stat_date: str
     rows: list[list[str]]
     kind: str  # "goods" 商品榜 / "shop" 店铺榜 / "unknown"
-    flags: list[tuple[str, str]] = field(default_factory=list)
+    flags: list[tuple[str, str, str, str]] = field(default_factory=list)
 
     @property
     def slug_ok(self) -> bool:
@@ -284,10 +284,8 @@ def resolve_bucket(cells: list[Cell], fields: list[str]) -> dict[str, str]:
     if len(fields) == 1:
         field = fields[0]
         text = join_cells(cells, spaced=(field == "name"))
-        if field in NUMERIC_FIELDS:
-            parts = split_merged_numbers(text)
-            if parts:
-                return {field: parts[0]}
+        # 数值列保留完整文本：若「已售+单价」被 OCR 粘成一格，
+        # 后续会统一拆分；在这里先截掉后半段会把单价丢掉。
         return {field: text}
     ordered = expand_cells(cells)
     numbers = [c for c in ordered if is_numericish(c.text)]
@@ -363,7 +361,7 @@ def parse_table(cells: list[Cell], image: str) -> Table | None:
     stat_date = detect_date(rows[: header_index + 1])
 
     parsed: list[list[str]] = []
-    flags: list[tuple[str, str]] = []
+    flags: list[tuple[str, str, str, str]] = []
     for row in rows[header_index + 1 :]:
         if any(noise in c.text for c in row for noise in TITLE_NOISE):
             continue
@@ -395,9 +393,16 @@ def parse_table(cells: list[Cell], image: str) -> Table | None:
                 continue
             parsed.append([category, name, sold or "-", price or "-", shop, stat_date])
             if any(looks_suspicious(value) for value in (sold, price) if value):
-                flags.append((name, f"数字里混进了噪声（已售={sold or '-'} 单价={price or '-'}），对照截图确认"))
+                flags.append(
+                    (
+                        name,
+                        sold or "-",
+                        price or "-",
+                        f"数字里混进了噪声（已售={sold or '-'} 单价={price or '-'}），对照截图确认",
+                    )
+                )
             elif low_score < LOW_SCORE_THRESHOLD and any(value for value in (sold, price)):
-                flags.append((name, f"数字识别置信度偏低（{low_score:.2f}），建议扫一眼"))
+                flags.append((name, sold or "-", price or "-", f"数字识别置信度偏低（{low_score:.2f}），建议扫一眼"))
         else:
             if not name and not shop:
                 continue
@@ -537,9 +542,7 @@ def reviewable_rows(tables: list[Table]) -> list[tuple[str, str, str, str]]:
     for table in tables:
         if table.kind != "goods":
             continue
-        flagged = dict(table.flags)
-        for name, problem in table.flags:
-            pending.append((table.image, name, problem, table.category))
+        flag_map = {(name, sold, price): problem for name, sold, price, problem in table.flags}
         for row in table.rows:
             _, name, sold, price, _, _ = row
             if not name or name == "-":
@@ -549,8 +552,16 @@ def reviewable_rows(tables: list[Table]) -> list[tuple[str, str, str, str]]:
                 bad.append(f"已售={sold}")
             if parse_number(price) is None:
                 bad.append(f"单价={price}")
-            if bad and name not in flagged:
-                pending.append((table.image, name, " ".join(bad), table.category))
+            problems = []
+            if (name, sold, price) in flag_map:
+                problems.append(flag_map[(name, sold, price)])
+            if bad:
+                bad_text = " ".join(bad)
+                if not problems or bad_text not in problems[0]:
+                    problems.append(bad_text)
+            # 按「整行」去重，而不是按商品名：同名商品可能在不同渠道各有一行异常。
+            if problems:
+                pending.append((table.image, name, "；".join(dict.fromkeys(problems)), table.category))
     return pending
 
 
